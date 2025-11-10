@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, render_template, request
-import os, json, openai
+import os, json
+from openai import OpenAI
 
 app = Flask(__name__)
 
@@ -37,21 +38,19 @@ def get_recipe(name):
 def ask_ai():
     data = request.get_json()
     question = data.get("question", "")
-
     if not question:
         return jsonify({"error": "No question provided"}), 400
 
-    openai.api_key = os.getenv("OPENAI_API_KEY")
-
     try:
-        response = openai.ChatCompletion.create(
+        client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": "You are a helpful Ugandan cooking assistant."},
                 {"role": "user", "content": question}
             ]
         )
-        answer = response["choices"][0]["message"]["content"]
+        answer = response.choices[0].message.content
         return jsonify({"answer": answer})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
