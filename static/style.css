@@ -1,0 +1,22 @@
+.ask-ai {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.ask-ai input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.ai-response {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  font-style: italic;
+  color: #333;
+  text-align: left;
+}

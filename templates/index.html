@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ugandan Cooking Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🍳 Ugandan Cooking Assistant</h1>
+      <p>Your AI-powered guide to authentic Ugandan cuisine</p>
+    </header>
+
+    <!-- 🔍 Search Section -->
+    <div class="search-section">
+      <input type="text" id="recipeName" placeholder="Boiled Sweet Potatoes" />
+      <button id="searchBtn" class="blue">Search Recipes</button>
+    </div>
+
+    <!-- 🔘 Control Buttons -->
+    <div class="button-group">
+      <button id="showAll" class="orange">Show All Recipes</button>
+      <button id="startCooking" class="orange">Start Cooking</button>
+      <button id="debugInfo" class="orange">Debug Info</button>
+    </div>
+
+    <!-- 📋 Recipe Display -->
+    <div id="recipeDisplay" class="card">
+      <h2>Welcome!</h2>
+      <p>Use the search bar above to find delicious Ugandan dishes.</p>
+    </div>
+
+    <!-- 💬 Ask AI Section -->
+    <div class="card ask-ai">
+      <h2>🧠 Ask the AI Chef</h2>
+      <input type="text" id="aiQuestion" placeholder="e.g. How long does luwombo take to cook?" />
+      <button id="askBtn" class="blue">Ask</button>
+      <div id="aiResponse" class="ai-response"></div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,10 +1,10 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import os
 import json
 import glob
 import random
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', template_folder='templates')
 
 # ---------------------------
 # Simple Cooking Assistant
@@ -133,7 +133,7 @@ class SimpleCookingAssistant:
         fallback = [
             "I can help with Ugandan cooking techniques, ingredient substitutions, and traditional methods.",
             "Ask about specific Ugandan ingredients or recipes!",
-            "I specialize in Ugandan cuisine - from street foods like Rolex to traditional dishes like Luwombo."
+            "I specialize in Ugandan cuisine — from street foods like Rolex to traditional dishes like Luwombo."
         ]
         return random.choice(fallback)
 
@@ -145,7 +145,7 @@ assistant = SimpleCookingAssistant('data/recipes')
 # ---------------------------
 @app.route('/')
 def home():
-    return "<h1>Ugandan Cooking Assistant API</h1><p>Use /api/recipes to get started!</p>"
+    return render_template('index.html')
 
 @app.route('/api/recipes', methods=['GET'])
 def get_recipes():
@@ -218,5 +218,5 @@ def ask_question():
 # ---------------------------
 # Run Flask
 # ---------------------------
-#if __name__ == "__main__":
- #  app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000, debug=True)
