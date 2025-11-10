@@ -18,7 +18,6 @@ class SimpleCookingAssistant:
         self.load_recipes_safe()
     
     def load_recipes_safe(self):
-        """Load JSON recipes safely"""
         try:
             if not os.path.exists(self.recipe_folder_path):
                 os.makedirs(self.recipe_folder_path)
@@ -47,7 +46,6 @@ class SimpleCookingAssistant:
             print(f"Critical error loading recipes: {e}")
     
     def create_sample_recipe(self):
-        """Create a sample recipe if none exist"""
         sample_recipe = {
             "name": "Ugandan Rolex",
             "description": "A popular Ugandan street food",
@@ -66,7 +64,7 @@ class SimpleCookingAssistant:
         sample_path = os.path.join(self.recipe_folder_path, "sample_rolex.json")
         with open(sample_path, 'w', encoding='utf-8') as f:
             json.dump(sample_recipe, f, indent=2)
-    
+
     # ---------------------------
     # Helper functions
     # ---------------------------
@@ -100,7 +98,7 @@ class SimpleCookingAssistant:
             recipe_data = current_recipe['data']
             if any(word in q for word in ['ingredient', 'what is in', 'what goes in', 'contains']):
                 ing = self.get_ingredients(recipe_data)
-                return f"For {recipe_name}, you'll need: {', '.join(ing[:5])}..." if len(ing)>5 else f"For {recipe_name}, you'll need: {', '.join(ing)}"
+                return f"For {recipe_name}, you'll need: {', '.join(ing[:5])}..." if len(ing) > 5 else f"For {recipe_name}, you'll need: {', '.join(ing)}"
             if any(word in q for word in ['how long', 'time', 'minutes', 'hours']):
                 prep_time = recipe_data.get('prep_time_mins', 'Unknown')
                 cook_time = recipe_data.get('cook_time_mins', 'Unknown')
@@ -138,7 +136,7 @@ def get_recipes():
 @app.route('/api/search', methods=['POST'])
 def search_recipes():
     keyword = request.json.get('keyword', '').lower()
-    matches = [r['name'] for k,r in assistant.recipes.items() if keyword in k or keyword in r['name'].lower()]
+    matches = [r['name'] for k, r in assistant.recipes.items() if keyword in k or keyword in r['name'].lower()]
     return jsonify({'matches': matches})
 
 @app.route('/api/cook', methods=['POST'])
@@ -181,8 +179,9 @@ def ask_question():
     return jsonify({'success': True, 'answer': answer})
 
 # ---------------------------
-# Run app
+# Run locally for testing only
 # ---------------------------
-if __name__ == '__main__':
-    print("🍳 Ugandan Cooking Assistant API starting...")
-    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)), debug=True)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    print(f"🍳 Ugandan Cooking Assistant API starting on port {port}...")
+    app.run(host="0.0.0.0", port=port, debug=True)
