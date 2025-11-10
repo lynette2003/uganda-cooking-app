@@ -10,7 +10,7 @@ app = Flask(__name__)
 # Simple Cooking Assistant
 # ---------------------------
 class SimpleCookingAssistant:
-    def _init_(self, recipe_folder_path: str):
+    def __init__(self, recipe_folder_path: str):
         self.recipe_folder_path = recipe_folder_path
         self.recipes = {}
         self.current_recipe = None
@@ -109,7 +109,6 @@ class SimpleCookingAssistant:
                 steps = self.get_steps(recipe_data)
                 return f"To make {recipe_name}, follow these {len(steps)} steps. Click 'Start Cooking' to see them step by step!"
         
-        # General fallback responses
         fallback = [
             "I can help with Ugandan cooking techniques, ingredient substitutions, and traditional methods.",
             "Ask about specific Ugandan ingredients or recipes!",
@@ -184,6 +183,6 @@ def ask_question():
 # ---------------------------
 # Run app
 # ---------------------------
-if __name__ == '_main_':
+if __name__ == '__main__':
     print("🍳 Ugandan Cooking Assistant API starting...")
     app.run(host='0.0.0.0', port=5000, debug=True)
