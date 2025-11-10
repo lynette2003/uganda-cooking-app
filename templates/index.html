@@ -1,46 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ugandan Cooking Assistant</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8">
+  <title>🍳 Ugandan Cooking Assistant</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffe5b4, #fff7e6);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #f4a261;
+      color: white;
+      padding: 20px;
+      border-bottom: 5px solid #e76f51;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    input, button {
+      padding: 10px;
+      margin: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+    button {
+      background-color: #2a9d8f;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #21867a;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #f1faee;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    li:hover {
+      background: #a8dadc;
+    }
+    #ai-response {
+      font-style: italic;
+      margin-top: 10px;
+      color: #264653;
+    }
+    h2 {
+      color: #e76f51;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>🍳 Ugandan Cooking Assistant</h1>
-      <p>Your AI-powered guide to authentic Ugandan cuisine</p>
-    </header>
+  <header>
+    <h1>🍳 Ugandan Cooking Assistant</h1>
+    <p>Your AI-powered guide to authentic Ugandan cuisine</p>
+  </header>
 
-    <!-- 🔍 Search Section -->
-    <div class="search-section">
-      <input type="text" id="recipeName" placeholder="Boiled Sweet Potatoes" />
-      <button id="searchBtn" class="blue">Search Recipes</button>
-    </div>
+  <main>
+    <h2>Search Recipes</h2>
+    <input id="search" placeholder="Type to search..." />
+    <button onclick="searchRecipes()">Show All Recipes</button>
+    <ul id="recipes"></ul>
 
-    <!-- 🔘 Control Buttons -->
-    <div class="button-group">
-      <button id="showAll" class="orange">Show All Recipes</button>
-      <button id="startCooking" class="orange">Start Cooking</button>
-      <button id="debugInfo" class="orange">Debug Info</button>
-    </div>
+    <h2>Start Cooking</h2>
+    <div id="recipe-details"></div>
 
-    <!-- 📋 Recipe Display -->
-    <div id="recipeDisplay" class="card">
-      <h2>Welcome!</h2>
-      <p>Use the search bar above to find delicious Ugandan dishes.</p>
-    </div>
+    <h2>🧠 Ask the AI Chef</h2>
+    <input id="question" placeholder="e.g. How long does luwombo take to cook?" />
+    <button onclick="askAI()">Ask</button>
+    <p id="ai-response"></p>
+  </main>
 
-    <!-- 💬 Ask AI Section -->
-    <div class="card ask-ai">
-      <h2>🧠 Ask the AI Chef</h2>
-      <input type="text" id="aiQuestion" placeholder="e.g. How long does luwombo take to cook?" />
-      <button id="askBtn" class="blue">Ask</button>
-      <div id="aiResponse" class="ai-response"></div>
-    </div>
-  </div>
+  <script>
+    async function searchRecipes() {
+      const res = await fetch("/api/recipes");
+      const data = await res.json();
+      const list = document.getElementById("recipes");
+      list.innerHTML = "";
+      data.forEach((name) => {
+        const li = document.createElement("li");
+        li.textContent = name;
+        li.onclick = () => loadRecipe(name);
+        list.appendChild(li);
+      });
+    }
 
-  <script src="{{ url_for('static', filename='script.js') }}"></script>
+    async function loadRecipe(name) {
+      const res = await fetch("/api/recipe/" + encodeURIComponent(name));
+      const recipe = await res.json();
+      const div = document.getElementById("recipe-details");
+      if (recipe.error) {
+        div.textContent = recipe.error;
+        return;
+      }
+      div.innerHTML = `
+        <h3>${recipe.name}</h3>
+        <p><strong>Ingredients:</strong></p>
+        <ul>${recipe.ingredients.map(i => `<li>${i}</li>`).join("")}</ul>
+        <p><strong>Steps:</strong></p>
+        <ol>${recipe.steps.map(s => `<li>${s}</li>`).join("")}</ol>
+      `;
+    }
+
+    async function askAI() {
+      const question = document.getElementById("question").value;
+      const res = await fetch("/api/ask_ai", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question }),
+      });
+      const data = await res.json();
+      document.getElementById("ai-response").textContent = data.answer || data.error;
+    }
+  </script>
 </body>
 </html>
