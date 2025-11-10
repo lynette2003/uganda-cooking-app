@@ -1,4 +1,4 @@
-Flask==2.3.3
+
 torch>=2.0.0
 transformers>=4.30.0
 datasets>=2.12.0
@@ -8,6 +8,7 @@ sentencepiece>=0.1.99
 protobuf>=3.20.0
 scikit-learn>=1.2.0
 numpy>=1.24.0
+Flask==2.3.5
 gunicorn==20.1.0
-gunicorn==20.1.0
+
 
