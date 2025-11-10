@@ -177,11 +177,3 @@ def ask_question():
     current_recipe = assistant.recipes.get(current.lower()) if current else None
     answer = assistant.answer_cooking_question(question, current_recipe)
     return jsonify({'success': True, 'answer': answer})
-
-# ---------------------------
-# Run locally for testing only
-# ---------------------------
-# if __name__ == "__main__":
- #   port = int(os.environ.get("PORT", 5000))
- #   print(f"🍳 Ugandan Cooking Assistant API starting on port {port}...")
- #   app.run(host="0.0.0.0", port=port, debug=True)
