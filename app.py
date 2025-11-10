@@ -27,21 +27,44 @@ class SimpleCookingAssistant:
             if not json_files:
                 self.create_sample_recipe()
                 json_files = glob.glob(os.path.join(self.recipe_folder_path, "*.json"))
-            
+
+            print(f"Found {len(json_files)} recipe files.")
+
             for file_path in json_files:
                 try:
                     with open(file_path, 'r', encoding='utf-8') as f:
                         data = json.load(f)
-                    recipe_name = data.get('name', os.path.splitext(os.path.basename(file_path))[0])
-                    if isinstance(recipe_name, dict):
-                        recipe_name = recipe_name.get('en', 'Unknown Recipe')
-                    self.recipes[recipe_name.lower()] = {
-                        'name': recipe_name,
+
+                    # Handle name as string or dict
+                    recipe_name_raw = data.get('name', os.path.splitext(os.path.basename(file_path))[0])
+                    if isinstance(recipe_name_raw, dict):
+                        recipe_name = recipe_name_raw.get('en', 'Unknown Recipe')
+                    elif isinstance(recipe_name_raw, str):
+                        recipe_name = recipe_name_raw
+                    else:
+                        recipe_name = os.path.splitext(os.path.basename(file_path))[0]
+
+                    recipe_name_clean = recipe_name.strip()
+                    if not recipe_name_clean:
+                        recipe_name_clean = os.path.splitext(os.path.basename(file_path))[0]
+
+                    self.recipes[recipe_name_clean.lower()] = {
+                        'name': recipe_name_clean,
                         'data': data,
                         'file_path': file_path
                     }
+                    print(f"✅ Loaded recipe: {recipe_name_clean}")
+
+                except json.JSONDecodeError as e:
+                    print(f"❌ JSON error in {file_path}: {e}")
                 except Exception as e:
-                    print(f"Error loading {file_path}: {e}")
+                    print(f"❌ Error loading {file_path}: {e}")
+
+            if not self.recipes:
+                print("⚠️ No valid recipes loaded, creating sample recipe.")
+                self.create_sample_recipe()
+                self.load_recipes_safe()  # reload after creating sample
+
         except Exception as e:
             print(f"Critical error loading recipes: {e}")
     
@@ -130,7 +153,21 @@ def get_recipes():
     for r in assistant.recipes.values():
         data = r['data']
         desc = data.get('description', 'Traditional recipe')
-        recipes.append({'name': r['name'], 'description': desc})
+
+        # Handle name dicts for display
+        name_field = data.get('name', r['name'])
+        if isinstance(name_field, dict):
+            name_en = name_field.get('en', r['name'])
+            name_local = name_field.get('local_name', '')
+        else:
+            name_en = name_field
+            name_local = ''
+
+        recipes.append({
+            'name_en': name_en,
+            'name_local': name_local,
+            'description': desc
+        })
     return jsonify({'success': True, 'recipes': recipes})
 
 @app.route('/api/search', methods=['POST'])
@@ -177,3 +214,9 @@ def ask_question():
     current_recipe = assistant.recipes.get(current.lower()) if current else None
     answer = assistant.answer_cooking_question(question, current_recipe)
     return jsonify({'success': True, 'answer': answer})
+
+# ---------------------------
+# Run Flask
+# ---------------------------
+#if __name__ == "__main__":
+ #  app.run(debug=True)
