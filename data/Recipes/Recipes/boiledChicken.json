@@ -1,0 +1,177 @@
+{
+  "recipe_id": "ug_recipe_smoked_boiled_chicken_131",
+  "name": {
+    "en": "Smoked Boiled Chicken",
+    "local_name": "Nkoko eyokwoome eyokubikka"
+  },
+  "description": "A simple, healthy, and deeply savory dish where smoked chicken is gently boiled with basic aromatics until tender and infused with flavor. Prepared without any oil, this method allows the natural smoky, salty essence of the chicken to create a rich, comforting broth and incredibly flavorful meat. It's a quick, protein-packed meal that requires minimal effort but delivers maximum taste.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "quick_traditional_protein_dish",
+    "occasions": ["daily_meals", "breakfast", "lunch", "dinner", "quick_meals", "light_meals"],
+    "cultural_notes": "Smoked boiled chicken is a practical dish for busy households and individuals. Smoking is a traditional preservation method that adds depth of flavor, while boiling is the simplest and healthiest way to prepare it. This dish is common in areas where smoked poultry is available, providing a convenient and tasty source of protein without the need for elaborate preparation. It represents the efficiency of traditional cooking methods that yield nutritious results with minimal ingredients."
+  },
+  "type": "main_dish",
+  "difficulty": "very_easy",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 5,
+  "cook_time_mins": 45,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_smoked_chicken",
+      "name": "Smoked Chicken",
+      "local_name": "Nkoko eyokwoome",
+      "quantity": 1,
+      "unit": "whole",
+      "notes": "About 1.2-1.5kg, cut into serving pieces. Can use chicken parts."
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 6,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion, quartered",
+      "local_name": "Tungurusumu",
+      "quantity": 1,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic cloves, crushed",
+      "local_name": "Tungurusumu Omuzungu",
+      "quantity": 3,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "ing_ginger",
+      "name": "Ginger, sliced",
+      "local_name": "Tangawizi",
+      "quantity": 1,
+      "unit": "inch_piece"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "notes": "Use very little or omit as smoked chicken is already salty"
+    },
+    {
+      "ingredient_id": "ing_green_peppers",
+      "name": "Green Bell Pepper (optional)",
+      "local_name": "Bibbo",
+      "quantity": 1,
+      "unit": "medium",
+      "notes": "Adds fresh flavor to the broth"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_medium_pot",
+      "name": "Medium Pot with Lid",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_slotted_spoon",
+      "name": "Slotted Spoon",
+      "local_name": "N/A"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Knife",
+      "local_name": "Mumo"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "If the smoked chicken is very salty, you can rinse it briefly under cold water. This step is optional and depends on personal preference.",
+      "action": "rinsing_chicken",
+      "ingredients": ["ing_smoked_chicken"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Place the smoked chicken pieces in a medium pot. Add the quartered onion, crushed garlic, sliced ginger, and green pepper if using.",
+      "action": "combining_ingredients",
+      "ingredients": ["ing_onion", "ing_garlic", "ing_ginger", "ing_green_peppers"],
+      "utensils": ["utn_medium_pot"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Pour the 6 cups of water over the chicken and aromatics. The water should just cover the chicken pieces.",
+      "action": "adding_water",
+      "ingredients": ["ing_water"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "If using salt, add it now. Be cautious as the smoked chicken already contains salt.",
+      "action": "adding_salt",
+      "ingredients": ["ing_salt"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Cover the pot and bring to a boil over medium-high heat.",
+      "action": "bringing_to_boil"
+    },
+    {
+      "step_number": 6,
+      "instruction": "Once boiling, reduce the heat to low to maintain a gentle simmer. Cover and let it cook for 30-40 minutes.",
+      "action": "simmering",
+      "cooking_indicators": {
+        "olfactory": "A pleasant smoky and savory aroma will develop.",
+        "time": "30-40 minutes"
+      }
+    },
+    {
+      "step_number": 7,
+      "instruction": "After 30 minutes, check the chicken for doneness. The meat should be tender and easily pull away from the bone. The internal temperature should reach 75°C (165°F).",
+      "action": "testing_doneness",
+      "cooking_indicators": {
+        "visual": "The meat will shrink slightly from the bones.",
+        "texture": "The chicken should be fork-tender."
+      }
+    },
+    {
+      "step_number": 8,
+      "instruction": "Once cooked, use a slotted spoon to remove the chicken pieces from the broth and place them on a serving platter.",
+      "action": "removing_chicken",
+      "utensils": ["utn_slotted_spoon"]
+    },
+    {
+      "step_number": 9,
+      "instruction": "Reserve the flavorful smoky broth. It makes a delicious light soup or can be used as a cooking liquid for rice or vegetables.",
+      "action": "reserving_broth"
+    },
+    {
+      "step_number": 10,
+      "instruction": "Serve the smoked boiled chicken hot with your chosen accompaniments.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "boiling_simmering",
+  "heat_level": "low",
+  "serving_suggestions": "Serve the tender smoked chicken with Posho (Ugali), Rice, or Matoke to soak up the flavorful broth. The reserved broth can be served as a light soup on the side. A fresh side salad of sliced tomatoes, onions, and cucumbers (Kachumbari) provides a refreshing contrast to the smoky chicken. Steamed leafy greens like Dodo or Sukuma Wiki also pair well.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 220,
+      "carbohydrates_g": 3,
+      "protein_g": 28,
+      "fat_g": 10,
+      "cholesterol_mg": 95,
+      "sodium_mg": 800
+    },
+    "health_benefits": ["high_quality_protein", "rich_in_selenium", "good_source_of_b_vitamins", "supports_muscle_health", "low_carbohydrate", "no_added_fat", "gluten_free"]
+  },
+  "tags": ["main_dish", "chicken", "smoked", "boiled", "no_oil", "protein_rich", "quick_meal", "healthy", "traditional", "gluten_free"],
+  "source": "traditional_ugandan_cooking",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

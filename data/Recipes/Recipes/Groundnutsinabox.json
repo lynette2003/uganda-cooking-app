@@ -1,0 +1,132 @@
+{
+  "recipe_id": "ug_recipe_luwombo_groundnut_paste_112",
+  "name": {
+    "en": "Luwombo Groundnut Paste (Binyebwa for Luwombo)",
+    "local_name": "Binyebwa ya Luwombo"
+  },
+  "description": "This is not a pourable sauce, but a thick, highly concentrated, and flavorful paste made from raw groundnuts. It is specifically used as a key ingredient in the ceremonial dish Luwombo. Spread over meat or mushrooms inside a banana leaf pouch, it steams and melts, creating an intensely nutty, rich, and aromatic gravy that infuses the entire dish.",
+  "origin_region": "Buganda Kingdom",
+  "cultural_significance": {
+    "importance": "key_ingredient_for_ceremonial_dish",
+    "occasions": ["weddings", "introduction_ceremonies", "holidays", "special_guests"],
+    "cultural_notes": "This specific preparation of groundnut is integral to the identity of Luwombo, a dish created for the Kabaka (King) of Buganda. The labor-intensive process of grinding the nuts by hand connects the cook to tradition. Its rich flavor symbolizes the importance and honor bestowed upon the guests who are served Luwombo."
+  },
+  "type": "paste_marinade",
+  "difficulty": "medium",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 30,
+  "cook_time_mins": 0,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_raw_groundnuts",
+      "name": "Raw, Shelled Groundnuts (Peanuts)",
+      "local_name": "Binyebwa",
+      "quantity": 2,
+      "unit": "cups",
+      "notes": "With red skins removed for a smoother paste"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 0.5,
+      "unit": "cup",
+      "notes": "Used gradually to facilitate grinding"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion, finely grated",
+      "local_name": "Tungurusumu",
+      "quantity": 0.5,
+      "unit": "medium",
+      "notes": "Adds moisture and sharpness to the paste"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 1,
+      "unit": "tsp"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_grinding_stone",
+      "name": "Grinding Stone (Mortar and Pestle)",
+      "local_name": "Ebiyondo n'Okubaaza",
+      "notes": "Traditional method for the best texture"
+    },
+    {
+      "utensil_id": "utn_food_processor",
+      "name": "Food Processor or Blender",
+      "local_name": "N/A",
+      "notes": "Modern alternative"
+    },
+    {
+      "utensil_id": "utn_mixing_bowl",
+      "name": "Mixing Bowl",
+      "local_name": "Sahani"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "If using raw groundnuts with red skins, you can remove the skins by rubbing them between your hands or blanching them briefly. This is optional but results in a smoother, more refined paste.",
+      "action": "preparing_nuts"
+    },
+    {
+      "step_number": 2,
+      "instruction": "Using a grinding stone (or a food processor), begin grinding the raw groundnuts. They will first turn into a coarse powder.",
+      "action": "initial_grinding"
+    },
+    {
+      "step_number": 3,
+      "instruction": "Continue grinding, adding a very small amount of water (a teaspoon at a time) to help the nuts release their oil and form a paste.",
+      "action": "adding_water_grinding"
+    },
+    {
+      "step_number": 4,
+      "instruction": "Grind for a long time until the paste becomes very smooth, thick, and shiny, indicating the oils have been fully released. This can take 15-20 minutes by hand.",
+      "action": "achieving_smooth_paste",
+      "cooking_indicators": {
+        "texture": "The paste should be thick, like natural peanut butter, and hold its shape."
+      }
+    },
+    {
+      "step_number": 5,
+      "instruction": "Transfer the smooth groundnut paste to a bowl. Mix in the grated onion and salt thoroughly.",
+      "action": "seasoning_paste"
+    },
+    {
+      "step_number": 6,
+      "instruction": "The paste is now ready to be used. It should be thick enough to be spooned and spread over meat or other fillings in a banana leaf without being runny.",
+      "action": "ready_to_use"
+    },
+    {
+      "step_number": 7,
+      "instruction": "The bowl is now placed on top of the food in banana leaves and wrapped with two or one banana leaf and left to cook. ",
+      "action": "steaming_in_banana_leaf"
+    }
+  ],
+  "cooking_method": "steaming",
+  "heat_level": "none",
+  "serving_suggestions": "This paste is not served on its own. It is served with rice,matooke and other foods.",
+    "per_serving": {
+      "calories": 300,
+      "carbohydrates_g": 10,
+      "protein_g": 12,
+      "fat_g": 25,
+      "cholesterol_mg": 0,
+      "sodium_mg": 400,
+      "health_benefits": ["high_in_healthy_fats", "excellent_source_of_protein", "rich_in_niacin", "vegan", "no_added_preservatives"]
+    },
+    
+  
+  "tags": ["paste", "luwombo", "ceremonial", "vegan", "gluten_free", "nutty", "buganda", "key_ingredient"],
+  "source": "traditional_royal_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

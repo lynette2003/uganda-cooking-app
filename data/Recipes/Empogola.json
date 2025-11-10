@@ -1,0 +1,147 @@
+{
+  "recipe_id": "ug_recipe_empogola_089",
+  "name": {
+    "en": "Empogola (Smoked Matooke with Peelings)",
+    "local_name": "Empogola"
+  },
+  "description": "A traditional and uniquely flavored dish from Western Uganda where whole, unpeeled green bananas (matooke) are smoked and steamed over a fire until the peel turns black and the inside becomes incredibly soft, sweet, and infused with a smoky aroma.",
+  "origin_region": "Western Uganda (Ankole, Kigezi regions)",
+  "cultural_significance": {
+    "importance": "traditional_smoked_delicacy",
+    "occasions": ["rural_meals", "traditional_feasts", "evening_meals", "cultural_events"],
+    "cultural_notes": "Empogola is a cherished traditional cooking method from Western Uganda, deeply rooted in the pastoralist cultures of Ankole and Kigezi. The process involves carefully arranging the bananas around a smoking fire, often using specific types of wood for flavor. This method not only cooks the bananas but also preserves them. The smoky flavor is highly valued, and eating Empogola is a nostalgic experience for many from the region, evoking memories of rural homesteads and open-fire cooking."
+  },
+  "type": "main_course",
+  "difficulty": "medium",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 5,
+  "cook_time_mins": 90,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_green_bananas",
+      "name": "Very Green Bananas (Matooke)",
+      "local_name": "Matooke",
+      "quantity": 15,
+      "unit": "fingers",
+      "notes": "Unpeeled, whole, and thoroughly washed. Must be very green and unripe."
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 1,
+      "unit": "cup",
+      "notes": "For steaming, if using a pot method"
+    },
+    {
+      "ingredient_id": "ing_banana_leaves",
+      "name": "Banana Leaves (Optional)",
+      "local_name": "Emiyembe",
+      "quantity": 4,
+      "unit": "large pieces",
+      "notes": "For lining the pot if not cooking directly on fire"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_open_fireplace",
+      "name": "Open Fireplace (Sigiri) with Smoke",
+      "local_name": "Sigiri omuriro"
+    },
+    {
+      "utensil_id": "utn_grating_stone_surface",
+      "name": "Grating Stone or Clean, Stable Surface",
+      "local_name": "Eibare",
+      "notes": "Traditional for mashing"
+    },
+    {
+      "utensil_id": "utn_tongs",
+      "name": "Tongs or Long Stick",
+      "local_name": "Koleko"
+    },
+    {
+      "utensil_id": "utn_large_pot",
+      "name": "Large Pot (Alternative Method)",
+      "local_name": "Sufuria Kubwa"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Build a steady fire using wood that produces a good amount of smoke (e.g., eucalyptus, coffee wood). Let the flames die down to a bed of hot embers and coals with consistent smoke.",
+      "action": "preparing_fire",
+      "utensils": ["utn_open_fireplace"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Arrange the whole, unpeeled green bananas directly around the hot embers, ensuring they are close enough to cook but not so close that they burn instantly. They should be in the path of the smoke.",
+      "action": "arranging_matooke",
+      "ingredients": ["ing_green_bananas"],
+      "utensils": ["utn_tongs"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Let the bananas smoke and cook for 60-90 minutes. Turn them every 15-20 minutes to ensure even cooking and smoking on all sides.",
+      "action": "smoking_cooking",
+      "cooking_indicators": {
+        "visual": "The peel will become completely blackened, charred, and dry. The banana inside will feel soft when pressed.",
+        "time": "60-90 minutes",
+        "texture": "The inner fruit is tender and steamed through."
+      }
+    },
+    {
+      "step_number": 4,
+      "instruction": "Remove the bananas from the fire using tongs and let them cool for a few minutes until they are safe to handle.",
+      "action": "cooling",
+      "utensils": ["utn_tongs"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Once cool enough to handle, peel the bananas. The blackened skin should come off easily, revealing the soft, smoky, and creamy yellow flesh inside.",
+      "action": "peeling"
+    },
+    {
+      "step_number": 6,
+      "instruction": "Place the peeled, smoked bananas on a clean, flat surface (traditionally a large, clean grinding stone) and mash them with the bottom of a clean bottle, a wooden pestle, or a large spoon until they form a smooth, cohesive mass.",
+      "action": "mashing",
+      "utensils": ["utn_grating_stone_surface"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Shape the mashed matooke into a large, round mound on a serving platter.",
+      "action": "shaping"
+    },
+    {
+      "step_number": 8,
+      "instruction": "Serve the Empogola immediately while still warm.",
+      "action": "serving"
+    }
+  ],
+  "alternative_methods": [
+    {
+      "name": "Pot Steaming Method",
+      "description": "If an open fire is not available, you can achieve a similar (though less smoky) result. Line a large pot with banana leaves. Add the washed, unpeeled bananas and 1 cup of water. Cover tightly with more banana leaves and the lid. Steam over medium heat for 60-90 minutes until tender. The peel will darken but not blacken."
+    }
+  ],
+  "cooking_method": "smoking_steaming",
+  "heat_level": "low_medium",
+  "serving_suggestions": "Traditionally served with hearty, flavorful stews to complement the smoky taste. Perfect with Beef Stew, Groundnut Sauce (Ebinyebwa), or a rich Bean Stew. A side of steamed greens like Dodo or Sukuma Wiki completes the meal.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 220,
+      "carbohydrates_g": 57,
+      "protein_g": 2,
+      "fat_g": 0.5,
+      "cholesterol_mg": 0,
+      "sodium_mg": 5
+    },
+    "health_benefits": ["high_in_potassium", "rich_in_vitamin_b6", "great_source_of_dietary_fiber", "naturally_fat_free", "sustained_energy"]
+  },
+  "tags": ["main_course", "traditional", "western_uganda", "smoked", "vegan", "gluten_free", "rural_cuisine"],
+  "source": "traditional_recipe_ankole_kigezi",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

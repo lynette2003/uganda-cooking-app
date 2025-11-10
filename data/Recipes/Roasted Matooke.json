@@ -1,0 +1,111 @@
+{
+  "recipe_id": "ug_recipe_matooke_roasted_001",
+  "name": {
+    "en": "Roasted Matooke",
+    "local_name": "Amatooke Ag’okwokya"
+  },
+  "description": "A traditional Ugandan method of preparing matooke by roasting whole unpeeled fingers over hot charcoal until tender. This gives the bananas a smoky flavor and a soft, savory texture.",
+  "origin_region": "Central",
+  "cultural_significance": {
+    "importance": "everyday_meal",
+    "occasions": ["casual_meal", "street_food", "family_meal"],
+    "cultural_notes": "Roasted matooke is often enjoyed as a simple snack or meal, especially where steaming or boiling may not be convenient."
+  },
+  "type": "main_dish",
+  "difficulty": "easy",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 5,
+  "cook_time_mins": 60,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_matooke_unpeeled",
+      "name": "Unpeeled Green Matooke (mature but not ripe)",
+      "local_name": "Amatooke",
+      "quantity": 20,
+      "unit": "fingers",
+      "standardized_quantity_g": 2000
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_charcoal_stove",
+      "name": "Charcoal Stove",
+      "local_name": "Sigiri",
+      "alternative": "open_fire_grill"
+    },
+    {
+      "utensil_id": "utn_mesh_grill",
+      "name": "Wire Mesh Grill",
+      "local_name": "Obutimba obw’oku Sigiri",
+      "purpose": "holding matooke over charcoal"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Knife (for checking doneness)",
+      "local_name": "Akambe"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Prepare a charcoal stove and light it. Allow it to heat for about 20 minutes until moderately hot.",
+      "action": "heating",
+      "utensils": ["utn_charcoal_stove"],
+      "time_min": 20
+    },
+    {
+      "step_number": 2,
+      "instruction": "Place the unpeeled matooke on a wire mesh over the charcoal stove and roast uncovered.",
+      "action": "roasting",
+      "ingredients": ["ing_matooke_unpeeled"],
+      "utensils": ["utn_mesh_grill", "utn_charcoal_stove"],
+      "time_min": 60
+    },
+    {
+      "step_number": 3,
+      "instruction": "Closely monitor and keep turning the matooke to ensure even roasting on all sides.",
+      "action": "turning",
+      "importance": "critical"
+    },
+    {
+      "step_number": 4,
+      "instruction": "Check for doneness: the peel should be brownish and shriveled, the matooke tender and soft to touch. Test by pricking with a sharp knife—it should come out dry with no sap.",
+      "action": "checking_doneness",
+      "utensils": ["utn_knife"],
+      "visual_cue": "peel brownish and shriveled"
+    },
+    {
+      "step_number": 5,
+      "instruction": "Remove from heat and serve whole, unpeeled. Each person peels their own matooke before eating.",
+      "action": "serving",
+      "serving_temperature": "hot",
+      "serving_style": "whole_unpeeled"
+    }
+  ],
+  "cooking_method": "roasting",
+  "heat_level": "moderate",
+  "cooking_indicators": {
+    "visual": "peel turns brownish and shriveled",
+    "texture": "tender and soft to touch",
+    "knife_test": "knife comes out dry, no sap"
+  },
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 100,
+      "carbohydrates_g": 28,
+      "protein_g": 1,
+      "fat_g": 0,
+      "cholesterol_mg": 0,
+      "sodium_mg": 0,
+      "vitamin_b6_mg": 0.5
+    },
+    "health_benefits": ["fat_free", "cholesterol_free", "smoky_flavor_without_oil"]
+  },
+  "tags": ["traditional", "quick_meal", "vegetarian", "smoky_flavor", "street_food"],
+  "source": "traditional_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-16"
+}

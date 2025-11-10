@@ -1,0 +1,230 @@
+
+{
+  "recipe_id": "ug_recipe_fried_macaroni_094",
+  "name": {
+    "en": "Fried Macaroni",
+    "local_name": "Macaroni ya Kukaanga"
+  },
+  "description": "A quick, flavorful, and satisfying one-pan dish where cooked macaroni is stir-fried with vegetables and a savory sauce, creating a delicious meal that's a favorite for lunch or dinner.",
+  "origin_region": "Nationwide (Modern Urban Cuisine)",
+  "cultural_significance": {
+    "importance": "popular_quick_meal",
+    "occasions": ["quick_lunch", "student_meals", "busy_weeknights", "childrens_food"],
+    "cultural_notes": "Fried macaroni is a staple of modern Ugandan home cooking, especially in urban areas. It's a go-to recipe for a fast, affordable, and filling meal that everyone in the family enjoys. It reflects the adaptability of Ugandan cuisine, incorporating pasta into everyday cooking with a local flavor profile using common vegetables and spices."
+  },
+  "type": "main_course",
+  "difficulty": "easy",
+  "servings": {
+    "min": 3,
+    "max": 4
+  },
+  "prep_time_mins": 10,
+  "cook_time_mins": 20,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_macaroni_pasta",
+      "name": "Macaroni Pasta",
+      "local_name": "Macaroni",
+      "quantity": 250,
+      "unit": "grams",
+      "notes": "Or about 2.5 cups dry"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion",
+      "local_name": "Kitungulu",
+      "quantity": 1,
+      "unit": "medium",
+      "notes": "Finely chopped"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic",
+      "local_name": "Vitungulu Saumuni",
+      "quantity": 2,
+      "unit": "cloves",
+      "notes": "Minced"
+    },
+    {
+      "ingredient_id": "ing_bell_pepper",
+      "name": "Bell Pepper (Any Color)",
+      "local_name": "Pilipili Hoho",
+      "quantity": 1,
+      "unit": "medium",
+      "notes": "Diced"
+    },
+    {
+      "ingredient_id": "ing_carrot",
+      "name": "Carrot",
+      "local_name": "Karoti",
+      "quantity": 1,
+      "unit": "medium",
+      "notes": "Grated or finely diced"
+    },
+    {
+      "ingredient_id": "ing_green_peas",
+      "name": "Green Peas",
+      "local_name": "Dengu",
+      "quantity": 0.5,
+      "unit": "cup",
+      "notes": "Fresh or frozen"
+    },
+    {
+      "ingredient_id": "ing_vegetable_oil",
+      "name": "Vegetable Oil",
+      "local_name": "Mafuta",
+      "quantity": 3,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_soy_sauce",
+      "name": "Soy Sauce",
+      "local_name": "Mchuzi wa Soy",
+      "quantity": 2,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_tomato_ketchup",
+      "name": "Tomato Ketchup",
+      "local_name": "Ketchup",
+      "quantity": 2,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Chumvi",
+      "quantity": 1,
+      "unit": "tsp",
+      "notes": "To taste, mindful of soy sauce"
+    },
+    {
+      "ingredient_id": "ing_black_pepper",
+      "name": "Black Pepper",
+      "local_name": "Pilipili Mweusi",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_curry_powder",
+      "name": "Curry Powder (Optional)",
+      "local_name": "Bizari",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_spring_onions",
+      "name": "Spring Onions",
+      "local_name": "Kitunguu Maji",
+      "quantity": 2,
+      "unit": "stalks",
+      "notes": "Chopped, for garnish"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_pot",
+      "name": "Large Pot",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_large_wok_skillet",
+      "name": "Large Wok or Skillet",
+      "local_name": "Sufuria Kubwa"
+    },
+    {
+      "utensil_id": "utn_colander",
+      "name": "Colander",
+      "local_name": "Kikomulo"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon or Spatula",
+      "local_name": "Mwiko"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Cook the macaroni according to package directions in a large pot of salted water until al dente (firm to the bite). Drain in a colander, rinse with cold water to stop the cooking, and set aside.",
+      "action": "cooking_pasta",
+      "ingredients": ["ing_macaroni_pasta"],
+      "utensils": ["utn_large_pot", "utn_colander"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "While the pasta cooks, prepare all vegetables: chop the onion, mince the garlic, dice the bell pepper, grate the carrot, and chop the spring onions.",
+      "action": "prepping_vegetables"
+    },
+    {
+      "step_number": 3,
+      "instruction": "Heat the vegetable oil in a large wok or skillet over medium-high heat. Add the chopped onion and sauté until soft and translucent, about 3-4 minutes.",
+      "action": "sautéing",
+      "ingredients": ["ing_vegetable_oil", "ing_onion"],
+      "utensils": ["utn_large_wok_skillet", "utn_wooden_spoon"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Add the minced garlic and optional curry powder. Sauté for 30 seconds until fragrant.",
+      "action": "cooking_aromatics",
+      "ingredients": ["ing_garlic", "ing_curry_powder"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Add the diced bell pepper, grated carrot, and green peas. Stir-fry for 3-4 minutes until the vegetables are tender-crisp.",
+      "action": "cooking_vegetables",
+      "ingredients": ["ing_bell_pepper", "ing_carrot", "ing_green_peas"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Add the cooked and drained macaroni to the wok. Pour the soy sauce and ketchup over the pasta. Season with salt and black pepper.",
+      "action": "combining",
+      "ingredients": ["ing_macaroni_pasta", "ing_soy_sauce", "ing_tomato_ketchup", "ing_salt", "ing_black_pepper"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Toss everything together and stir-fry for 4-5 minutes, until the pasta is heated through and evenly coated with the sauce.",
+      "action": "stir_frying",
+      "cooking_indicators": {
+        "visual": "Pasta is hot and has taken on the color of the sauce.",
+        "time": "4-5 minutes",
+        "texture": "Pasta is tender, vegetables are crisp-tender."
+      }
+    },
+    {
+      "step_number": 8,
+      "instruction": "Taste and adjust seasoning if needed.",
+      "action": "seasoning"
+    },
+    {
+      "step_number": 9,
+      "instruction": "Remove from heat and stir in the chopped spring onions.",
+      "action": "garnishing",
+      "ingredients": ["ing_spring_onions"]
+    },
+    {
+      "step_number": 10,
+      "instruction": "Serve the fried macaroni hot immediately.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "stir_frying",
+  "heat_level": "medium_high",
+  "serving_suggestions": "Serve as a complete meal on its own. It can also be accompanied by a simple tomato and cucumber salad or a fried egg on top for extra protein.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 380,
+      "carbohydrates_g": 60,
+      "protein_g": 10,
+      "fat_g": 12,
+      "cholesterol_mg": 0,
+      "sodium_mg": 900
+    },
+    "health_benefits": ["energy_boosting", "source_of_dietary_fiber", "contains_vegetables"]
+  },
+  "tags": ["main_course", "pasta", "quick_meal", "vegetarian", "one_pan", "family_friendly"],
+  "source": "modern_homestyle_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+
+}

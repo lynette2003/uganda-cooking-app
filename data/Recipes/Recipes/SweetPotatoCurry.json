@@ -1,0 +1,256 @@
+{
+  "recipe_id": "ug_recipe_sweetpotato_curry_101",
+  "name": {
+    "en": "Sweet Potato and Coconut Curry",
+    "local_name": "Mchuzi wa Viazi Vitamu na Nazi"
+  },
+  "description": "A creamy, fragrant, and mildly spicy curry where tender chunks of sweet potato are simmered in a rich coconut milk sauce infused with Ugandan curry spices. It's a comforting, vibrant, and naturally sweet dish that is both healthy and satisfying.",
+  "origin_region": "Nationwide (Modern Ugandan Fusion)",
+  "cultural_significance": {
+    "importance": "modern_vegetarian_dish",
+    "occasions": ["weeknight_dinner", "vegetarian_meals", "family_meals", "special_occasions", "healthy_eating"],
+    "cultural_notes": "This curry is a beautiful example of modern Ugandan home cooking, blending a beloved local staple (sweet potato) with the rich, creamy texture of coconut milk and the aromatic spices of curry powder, which have been integrated into East African cuisine. It reflects a growing trend towards vegetarianism and the creative use of local ingredients in globally-inspired dishes. It's a popular meal for families seeking a nutritious, flavorful, and meat-free option."
+  },
+  "type": "main_course",
+  "difficulty": "easy",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 15,
+  "cook_time_mins": 25,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_sweet_potatoes",
+      "name": "Sweet Potatoes",
+      "local_name": "Viazi Vitamu",
+      "quantity": 3,
+      "unit": "large",
+      "notes": "Peeled and cut into 1-inch cubes"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion",
+      "local_name": "Kitungulu",
+      "quantity": 1,
+      "unit": "large",
+      "notes": "Finely chopped"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic",
+      "local_name": "Vitungulu Saumuni",
+      "quantity": 3,
+      "unit": "cloves",
+      "notes": "Minced"
+    },
+    {
+      "ingredient_id": "ing_fresh_ginger",
+      "name": "Fresh Ginger",
+      "local_name": "Tangawizi",
+      "quantity": 1,
+      "unit": "inch piece",
+      "notes": "Grated"
+    },
+    {
+      "ingredient_id": "ing_red_bell_pepper",
+      "name": "Red Bell Pepper",
+      "local_name": "Pilipili Hoho Nyekundu",
+      "quantity": 1,
+      "unit": "medium",
+      "notes": "Diced"
+    },
+    {
+      "ingredient_id": "ing_tomatoes",
+      "name": "Ripe Tomatoes",
+      "local_name": "Nyanya",
+      "quantity": 2,
+      "unit": "medium",
+      "notes": "Chopped"
+    },
+    {
+      "ingredient_id": "ing_vegetable_oil",
+      "name": "Vegetable Oil",
+      "local_name": "Mafuta",
+      "quantity": 2,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_curry_powder",
+      "name": "Curry Powder",
+      "local_name": "Bizari",
+      "quantity": 2,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_ground_turmeric",
+      "name": "Ground Turmeric",
+      "local_name": "Manjano",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_ground_cumin",
+      "name": "Ground Cumin",
+      "local_name": "Dawa ya Kusafisha",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_coconut_milk",
+      "name": "Coconut Milk",
+      "local_name": "Maziwa ya Nazi",
+      "quantity": 1,
+      "unit": "can",
+      "notes": "400ml / 13.5oz"
+    },
+    {
+      "ingredient_id": "ing_vegetable_stock_water",
+      "name": "Vegetable Stock or Water",
+      "local_name": "Maji ya Mboga / Maji",
+      "quantity": 1,
+      "unit": "cup"
+    },
+    {
+      "ingredient_id": "ing_fresh_spinach",
+      "name": "Fresh Spinach or Dodo",
+      "local_name": "Supa / Dodo",
+      "quantity": 2,
+      "unit": "cups",
+      "notes": "Roughly chopped"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Chumvi",
+      "quantity": 1,
+      "unit": "tsp",
+      "notes": "To taste"
+    },
+    {
+      "ingredient_id": "ing_black_pepper",
+      "name": "Black Pepper",
+      "local_name": "Pilipili Mweusi",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_fresh_cilantro",
+      "name": "Fresh Cilantro (Dhania)",
+      "local_name": "Dhania",
+      "quantity": 2,
+      "unit": "tbsp",
+      "notes": "Chopped, for garnish"
+    },
+    {
+      "ingredient_id": "ing_lime",
+      "name": "Lime",
+      "local_name": "Ndimu",
+      "quantity": 1,
+      "unit": "piece",
+      "notes": "Cut into wedges, for serving"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_pot",
+      "name": "Large Pot or Dutch Oven",
+      "local_name": "Sufuria Kubwa"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Mwiko"
+    },
+    {
+      "utensil_id": "utn_knife_cutting_board",
+      "name": "Knife and Cutting Board",
+      "local_name": "Kisu na Ubao"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Peel the sweet potatoes and cut them into 1-inch cubes. Finely chop the onion, mince the garlic, grate the ginger, and dice the bell pepper and tomatoes.",
+      "action": "prepping_ingredients",
+      "ingredients": ["ing_sweet_potatoes", "ing_onion", "ing_garlic", "ing_fresh_ginger", "ing_red_bell_pepper", "ing_tomatoes"],
+      "utensils": ["utn_knife_cutting_board"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Heat the vegetable oil in a large pot over medium heat. Add the chopped onion and sauté until soft and translucent, about 5 minutes.",
+      "action": "sautéing_onion",
+      "ingredients": ["ing_vegetable_oil", "ing_onion"],
+      "utensils": ["utn_large_pot", "utn_wooden_spoon"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Add the minced garlic and grated ginger. Sauté for 1 minute until fragrant.",
+      "action": "cooking_aromatics",
+      "ingredients": ["ing_garlic", "ing_fresh_ginger"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Add the curry powder, turmeric, and cumin. Stir constantly for 30 seconds to toast the spices and release their aromas.",
+      "action": "toasting_spices",
+      "ingredients": ["ing_curry_powder", "ing_ground_turmeric", "ing_ground_cumin"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Add the diced bell pepper and chopped tomatoes. Cook for 5-7 minutes, stirring occasionally, until the tomatoes break down and soften.",
+      "action": "cooking_vegetables",
+      "ingredients": ["ing_red_bell_pepper", "ing_tomatoes"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Add the cubed sweet potatoes to the pot. Pour in the coconut milk and vegetable stock (or water). Season with salt and black pepper. Stir well to combine.",
+      "action": "combining_curry",
+      "ingredients": ["ing_sweet_potatoes", "ing_coconut_milk", "ing_vegetable_stock_water", "ing_salt", "ing_black_pepper"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Bring the curry to a simmer, then reduce the heat to low, cover, and cook for 15-20 minutes, or until the sweet potatoes are fork-tender.",
+      "action": "simmering",
+      "cooking_indicators": {
+        "visual": "The sauce will thicken slightly and the sweet potatoes will be easily pierced with a fork.",
+        "time": "15-20 minutes",
+        "texture": "Sweet potatoes are tender but not mushy."
+      }
+    },
+    {
+      "step_number": 8,
+      "instruction": "Stir in the fresh spinach (or dodo) and cook for another 2-3 minutes, just until the greens have wilted.",
+      "action": "wilting_greens",
+      "ingredients": ["ing_fresh_spinach"]
+    },
+    {
+      "step_number": 9,
+      "instruction": "Taste and adjust seasoning with more salt or pepper if needed.",
+      "action": "seasoning"
+    },
+    {
+      "step_number": 10,
+      "instruction": "Garnish with fresh cilantro and serve hot with lime wedges on the side for squeezing over the top.",
+      "action": "garnishing_serving",
+      "ingredients": ["ing_fresh_cilantro", "ing_lime"]
+    }
+  ],
+  "cooking_method": "simmering",
+  "heat_level": "medium_low",
+  "serving_suggestions": "Serve over a bed of steamed rice, with Ugali (Posho), or with Chapati for dipping. It also pairs wonderfully with a side of plain yogurt.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 280,
+      "carbohydrates_g": 35,
+      "protein_g": 5,
+      "fat_g": 15,
+      "cholesterol_mg": 0,
+      "sodium_mg": 600
+    },
+    "health_benefits": ["extremely_high_in_vitamin_a", "rich_in_antioxidants", "anti_inflammatory", "good_source_of_fiber", "plant_based", "supports_immune_health"]
+  },
+  "tags": ["main_course", "vegetarian", "vegan", "curry", "creamy", "healthy", "comfort_food", "gluten_free"],
+  "source": "modern_fusion_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

@@ -1,0 +1,124 @@
+{
+  "recipe_id": "ug_recipe_fried_eggs_tomatoes_044",
+  "name": {
+    "en": "Fried Eggs with Tomatoes",
+    "local_name": "Amagi g'okukaanga ne Enyaanya"
+  },
+  "description": "A simple and nutritious Ugandan breakfast or snack consisting of eggs fried with fresh tomatoes and a touch of seasoning.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "everyday_meal",
+    "occasions": ["breakfast", "quick_meal", "snack"],
+    "cultural_notes": "A common breakfast in Ugandan households, often served with bread, chapati, or maize porridge."
+  },
+  "type": "main_dish",
+  "difficulty": "easy",
+  "servings": {
+    "min": 1,
+    "max": 2
+  },
+  "prep_time_mins": 5,
+  "cook_time_mins": 10,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_egg",
+      "name": "Eggs",
+      "local_name": "Amagi",
+      "quantity": 2,
+      "unit": "pieces"
+    },
+    {
+      "ingredient_id": "ing_tomato",
+      "name": "Tomatoes, chopped",
+      "local_name": "Enyaanya",
+      "quantity": 2,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_oil",
+      "name": "Cooking Oil",
+      "local_name": "Amafuta",
+      "quantity": 1,
+      "unit": "tablespoon"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Munyu",
+      "quantity": "to taste",
+      "unit": "optional"
+    },
+    {
+      "ingredient_id": "ing_pepper",
+      "name": "Black Pepper",
+      "local_name": "Kamulali",
+      "quantity": "to taste",
+      "unit": "optional"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_fryingpan",
+      "name": "Frying Pan",
+      "local_name": "Sufuria ya Kukaanga"
+    },
+    {
+      "utensil_id": "utn_spatula",
+      "name": "Spatula",
+      "local_name": "Omwengeja"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Heat oil in a frying pan over medium heat.",
+      "action": "heating",
+      "utensils": ["utn_fryingpan"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Add chopped tomatoes and sauté until soft.",
+      "action": "sautéing",
+      "ingredients": ["ing_tomato"],
+      "utensils": ["utn_spatula"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Crack the eggs into the pan over the tomatoes and season with salt and pepper.",
+      "action": "frying",
+      "ingredients": ["ing_egg", "ing_salt", "ing_pepper"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Cook until eggs reach desired doneness, stirring gently if preferred.",
+      "action": "cooking"
+    },
+    {
+      "step_number": 5,
+      "instruction": "Serve hot as a standalone dish or with bread/chapati.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "frying",
+  "heat_level": "medium",
+  "cooking_indicators": {
+    "visual": "egg whites are set and yolks are slightly runny",
+    "time": "5–7 minutes",
+    "texture": "soft, fluffy eggs with tender tomatoes"
+  },
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 200,
+      "carbohydrates_g": 5,
+      "protein_g": 12,
+      "fat_g": 15,
+      "cholesterol_mg": 185,
+      "sodium_mg": 150
+    },
+    "health_benefits": ["protein_rich", "quick_energy", "vitamin_source"]
+  },
+  "tags": ["breakfast", "easy_meal", "protein_rich", "quick_meal"],
+  "source": "traditional_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

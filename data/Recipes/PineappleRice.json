@@ -1,0 +1,252 @@
+{
+  "recipe_id": "ug_recipe_pineapple_rice_073",
+  "name": {
+    "en": "Pineapple Rice",
+    "local_name": "Mchele wa Mananasi"
+  },
+  "description": "A vibrant, sweet, and savory fried rice dish cooked with fresh pineapple, vegetables, and aromatic spices. This colorful one-pot meal is a delightful fusion of tropical flavors and a Ugandan staple.",
+  "origin_region": "Nationwide (Modern Ugandan Fusion)",
+  "cultural_significance": {
+    "importance": "festive_modern_dish",
+    "occasions": ["family_dinners", "special_occasions", "potlucks", "weekend_meals"],
+    "cultural_notes": "While not a deeply traditional dish, pineapple rice is a popular modern home-cooked meal in Uganda that makes creative use of locally abundant pineapples. It represents the adaptability of Ugandan cuisine, incorporating tropical fruits into everyday meals. It's often prepared for guests or on weekends when families have more time to cook."
+  },
+  "type": "main_course",
+  "difficulty": "easy",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 20,
+  "cook_time_mins": 25,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_rice",
+      "name": "Long Grain Rice (Basmati or Jasmine)",
+      "local_name": "Mchele",
+      "quantity": 2,
+      "unit": "cups",
+      "notes": "Cooked and cooled (leftover rice works perfectly)"
+    },
+    {
+      "ingredient_id": "ing_fresh_pineapple",
+      "name": "Fresh Pineapple",
+      "local_name": "Mananasi",
+      "quantity": 2,
+      "unit": "cups",
+      "notes": "Cut into small chunks"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion",
+      "local_name": "Kitungulu",
+      "quantity": 1,
+      "unit": "large",
+      "notes": "Finely chopped"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic",
+      "local_name": "Vitungulu Saumuni",
+      "quantity": 3,
+      "unit": "cloves",
+      "notes": "Minced"
+    },
+    {
+      "ingredient_id": "ing_bell_pepper",
+      "name": "Bell Pepper (Red or Green)",
+      "local_name": "Pilipili Hoho",
+      "quantity": 1,
+      "unit": "medium",
+      "notes": "Diced"
+    },
+    {
+      "ingredient_id": "ing_carrot",
+      "name": "Carrot",
+      "local_name": "Karoti",
+      "quantity": 1,
+      "unit": "medium",
+      "notes": "Diced"
+    },
+    {
+      "ingredient_id": "ing_green_peas",
+      "name": "Green Peas",
+      "local_name": "Dengu",
+      "quantity": 0.5,
+      "unit": "cup",
+      "notes": "Fresh or frozen"
+    },
+    {
+      "ingredient_id": "ing_vegetable_oil",
+      "name": "Vegetable Oil",
+      "local_name": "Mafuta",
+      "quantity": 3,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_curry_powder",
+      "name": "Curry Powder",
+      "local_name": "Bizari",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_turmeric",
+      "name": "Turmeric Powder",
+      "local_name": "Manjano",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_soy_sauce",
+      "name": "Soy Sauce",
+      "local_name": "Mchuzi wa Soy",
+      "quantity": 2,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Chumvi",
+      "quantity": 1,
+      "unit": "tsp",
+      "notes": "To taste"
+    },
+    {
+      "ingredient_id": "ing_black_pepper",
+      "name": "Black Pepper",
+      "local_name": "Pilipili Mweusi",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_spring_onions",
+      "name": "Spring Onions",
+      "local_name": "Kitunguu Maji",
+      "quantity": 3,
+      "unit": "stalks",
+      "notes": "Chopped, for garnish"
+    },
+    {
+      "ingredient_id": "ing_cilantro",
+      "name": "Fresh Cilantro (Dhania)",
+      "local_name": "Dhania",
+      "quantity": 2,
+      "unit": "tbsp",
+      "notes": "Chopped, for garnish"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_wok_skillet",
+      "name": "Large Wok or Skillet",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon or Spatula",
+      "local_name": "Mwiko"
+    },
+    {
+      "utensil_id": "utn_knife_cutting_board",
+      "name": "Knife and Cutting Board",
+      "local_name": "Kisu na Ubao"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Ensure your rice is cooked and completely cooled. Leftover rice from the previous day is ideal as it's drier and fries better without becoming mushy.",
+      "action": "preparing_rice",
+      "ingredients": ["ing_rice"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Prepare all vegetables and pineapple: chop the onion, mince the garlic, dice the bell pepper and carrot, and cut the pineapple into small chunks.",
+      "action": "prepping_ingredients",
+      "ingredients": ["ing_fresh_pineapple", "ing_onion", "ing_garlic", "ing_bell_pepper", "ing_carrot"],
+      "utensils": ["utn_knife_cutting_board"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Heat the vegetable oil in a large wok or skillet over medium-high heat. Add the chopped onion and sauté until soft and translucent, about 3-4 minutes.",
+      "action": "sautéing",
+      "ingredients": ["ing_vegetable_oil", "ing_onion"],
+      "utensils": ["utn_large_wok_skillet", "utn_wooden_spoon"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Add the minced garlic and sauté for another minute until fragrant.",
+      "action": "sautéing",
+      "ingredients": ["ing_garlic"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Add the diced bell pepper and carrot. Stir-fry for 3-4 minutes until the vegetables begin to soften.",
+      "action": "cooking_vegetables",
+      "ingredients": ["ing_bell_pepper", "ing_carrot"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Push the vegetables to one side of the wok. Add the curry powder and turmeric to the empty space and toast for 30 seconds, then mix everything together.",
+      "action": "toasting_spices",
+      "ingredients": ["ing_curry_powder", "ing_turmeric"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Add the green peas and pineapple chunks. Stir-fry for 2 minutes until the pineapple is heated through and releases some of its juice.",
+      "action": "adding_fruit_veg",
+      "ingredients": ["ing_green_peas", "ing_fresh_pineapple"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Increase the heat to high. Add the cooled rice to the wok. Pour the soy sauce over the rice and add the salt and black pepper. Use the spoon to break up any clumps of rice.",
+      "action": "adding_rice",
+      "ingredients": ["ing_rice", "ing_soy_sauce", "ing_salt", "ing_black_pepper"]
+    },
+    {
+      "step_number": 9,
+      "instruction": "Stir-fry everything together for 4-5 minutes, tossing constantly, until the rice is evenly colored with the spices and heated through.",
+      "action": "stir_frying",
+      "cooking_indicators": {
+        "visual": "Rice is hot and grains are separate, vegetables are tender-crisp",
+        "time": "4-5 minutes",
+        "texture": "Fluffy and not mushy"
+      }
+    },
+    {
+      "step_number": 10,
+      "instruction": "Taste and adjust seasoning if needed. Remove from heat.",
+      "action": "seasoning"
+    },
+    {
+      "step_number": 11,
+      "instruction": "Garnish with chopped spring onions and fresh cilantro.",
+      "action": "garnishing",
+      "ingredients": ["ing_spring_onions", "ing_cilantro"]
+    },
+    {
+      "step_number": 12,
+      "instruction": "Serve the pineapple rice hot while fresh.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "stir_frying",
+  "heat_level": "medium_high",
+  "serving_suggestions": "Serve as a main course or as a side dish with grilled chicken, fish, or beef. A wedge of lime on the side for squeezing adds a refreshing zing.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 280,
+      "carbohydrates_g": 55,
+      "protein_g": 6,
+      "fat_g": 5,
+      "cholesterol_mg": 0,
+      "sodium_mg": 600
+    },
+    "health_benefits": ["high_in_fiber", "rich_in_vitamin_c", "energy_boosting", "antioxidants"]
+  },
+  "tags": ["main_course", "side_dish", "vegetarian", "tropical", "colorful", "modern", "one_pot"],
+  "source": "modern_fusion_recipe_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

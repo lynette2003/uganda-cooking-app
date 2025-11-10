@@ -1,0 +1,205 @@
+{
+  "recipe_id": "ug_recipe_grilled_chicken_124",
+  "name": {
+    "en": "Grilled Chicken",
+    "local_name": "Nkoko eyokwooma"
+  },
+  "description": "Succulent, flavorful chicken pieces marinated in a vibrant blend of onions, garlic, ginger, and citrus, then grilled over an open flame or charcoal. The result is juicy, tender meat with a beautifully charred, smoky, and crispy skin. A quintessential feature at social gatherings, roadside stalls, and backyard barbecues across Uganda.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "popular_festive_dish",
+    "occasions": ["weekend_meals", "social_gatherings", "birthdays", "holidays", "street_food", "bbq_parties"],
+    "cultural_notes": "Grilled chicken is the centerpiece of celebration and leisure in Uganda. On weekends, the aroma of chicken grilling over charcoal fills neighborhoods and wafts from roadside 'Muchomo' joints. 'Muchomo' (meaning 'roasted meat') is a social event where friends gather to eat grilled meat and drink. Preparing grilled chicken is associated with hospitality, festivity, and good times. The skill lies in achieving a perfectly cooked interior with a smoky, crispy exterior."
+  },
+  "type": "main_dish_meat",
+  "difficulty": "medium",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 30,
+  "cook_time_mins": 30,
+  "marinate_time_mins": 120,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_chicken",
+      "name": "Whole Chicken, cut into pieces",
+      "local_name": "Nkoko",
+      "quantity": 1,
+      "unit": "whole",
+      "notes": "About 1.5kg, skin-on for best flavor and crispiness"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion, roughly chopped",
+      "local_name": "Tungurusumu",
+      "quantity": 1,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic cloves, crushed",
+      "local_name": "Tungurusumu Omuzungu",
+      "quantity": 4,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "ing_ginger",
+      "name": "Fresh Ginger, grated",
+      "local_name": "Tangawizi",
+      "quantity": 1,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_lemon_juice",
+      "name": "Lemon or Lime Juice",
+      "local_name": "Maji ya Ndimu",
+      "quantity": 3,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_cooking_oil",
+      "name": "Cooking Oil",
+      "local_name": "Mafuta",
+      "quantity": 2,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_chicken_seasoning",
+      "name": "Chicken Seasoning Powder",
+      "local_name": "Curry",
+      "quantity": 1,
+      "unit": "tsp",
+      "notes": "A common Ugandan brand like 'Royco' or similar"
+    },
+    {
+      "ingredient_id": "ing_chili_powder",
+      "name": "Chili Powder or Paprika (optional)",
+      "local_name": "Pilipili",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "notes": "For color and a bit of heat"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_charcoal_grill",
+      "name": "Charcoal Grill or Gas Grill",
+      "local_name": "Mchina w'okwooka"
+    },
+    {
+      "utensil_id": "utn_mixing_bowl",
+      "name": "Large Mixing Bowl",
+      "local_name": "Sahani"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Sharp Knife",
+      "local_name": "Mumo"
+    },
+    {
+      "utensil_id": "utn_tongs",
+      "name": "Tongs",
+      "local_name": "N/A"
+    },
+    {
+      "utensil_id": "utn_basting_brush",
+      "name": "Basting Brush",
+      "local_name": "N/A"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "In a large bowl, combine the chopped onion, crushed garlic, grated ginger, lemon juice, cooking oil, salt, chicken seasoning, and chili powder (if using). Mix well to form a coarse marinade paste.",
+      "action": "making_marinade",
+      "ingredients": ["ing_onion", "ing_garlic", "ing_ginger", "ing_lemon_juice", "ing_cooking_oil", "ing_salt", "ing_chicken_seasoning", "ing_chili_powder"],
+      "utensils": ["utn_mixing_bowl"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Pat the chicken pieces dry with paper towels. Make 2-3 deep slashes on the thicker parts of each piece (like the breasts and thighs) to allow the marinade to penetrate.",
+      "action": "preparing_chicken",
+      "ingredients": ["ing_chicken"],
+      "utensils": ["utn_knife"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Add the chicken pieces to the marinade bowl. Using your hands, rub the marinade thoroughly into the chicken, ensuring it gets into the slashes and under the skin where possible.",
+      "action": "marinating"
+    },
+    {
+      "step_number": 4,
+      "instruction": "Cover the bowl and refrigerate for at least 2 hours, or ideally overnight, for the most flavorful results.",
+      "action": "resting_marinade",
+      "cooking_indicators": {
+        "time": "2 hours to overnight"
+      }
+    },
+    {
+      "step_number": 5,
+      "instruction": "Prepare your charcoal or gas grill for medium-high heat. The coals should be hot and covered with a layer of white ash.",
+      "action": "preparing_grill",
+      "utensils": ["utn_charcoal_grill"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Remove the chicken from the marinade, letting the excess drip off. Reserve a little marinade for basting.",
+      "action": "ready_for_grill"
+    },
+    {
+      "step_number": 7,
+      "instruction": "Place the chicken pieces on the grill, skin-side down first. Grill for 10-15 minutes until the skin is golden brown and has clear grill marks.",
+      "action": "grilling_first_side",
+      "cooking_indicators": {
+        "visual": "Skin is crispy, browned, and releases easily from the grill."
+      }
+    },
+    {
+      "step_number": 8,
+      "instruction": "Flip the chicken pieces. Continue to grill for another 10-20 minutes, depending on the size of the pieces. Baste occasionally with the reserved marinade.",
+      "action": "grilling_second_side",
+      "utensils": ["utn_tongs", "utn_basting_brush"]
+    },
+    {
+      "step_number": 9,
+      "instruction": "The chicken is done when the juices run clear (not pink) when the thickest part is pierced with a knife or fork, and the internal temperature reaches 75°C (165°F).",
+      "action": "testing_doneness"
+    },
+    {
+      "step_number": 10,
+      "instruction": "Transfer the grilled chicken to a clean platter, cover loosely with foil, and let it rest for 5-10 minutes before serving.",
+      "action": "resting"
+    },
+    {
+      "step_number": 11,
+      "instruction": "Serve the grilled chicken hot with your favorite accompaniments.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "grilling",
+  "heat_level": "medium_high",
+  "serving_suggestions": "A true 'Muchomo' experience: served with a generous wedge of lemon, sliced raw onions with tomatoes (Kachumbari), and a cold beer or soda. It is also perfectly accompanied by French fries (Chips), a side of Posho (Ugali), or a fresh vegetable salad.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 320,
+      "carbohydrates_g": 3,
+      "protein_g": 35,
+      "fat_g": 18,
+      "cholesterol_mg": 120,
+      "sodium_mg": 700
+    },
+    "health_benefits": ["excellent_source_of_protein", "rich_in_selenium", "good_source_of_b_vitamins", "supports_muscle_growth"]
+  },
+  "tags": ["main_dish", "grilled", "chicken", "protein", "festive", "bbq", "muchomo", "street_food", "gluten_free"],
+  "source": "popular_ugandan_bbq",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

@@ -1,0 +1,98 @@
+{
+  "bananaJuiceRecipe": {
+    "name": "Traditional Boiled Banana and Spear Grass Juice",
+    "description": "A clear, aromatic, and refreshing juice made by boiling ripe bananas and spear grass (lemongrass) to extract their flavors. This traditional method results in a subtly sweet and spiced beverage, distinct from a thick smoothie.",
+    "sourceReferences": [
+      "Traditional Caribbean and West African boiling methods for banana juice.",
+      "Common use of lemongrass (often called 'spear grass' in some regions) in herbal teas and infusions.",
+      "General food safety practices for boiling and cooling beverages."
+    ],
+    "yield": "Approximately 1 liter",
+    "prepTime": "10 minutes",
+    "cookTime": "25-30 minutes",
+    "coolingTime": "2-3 hours",
+    "ingredients": [
+      {
+        "item": "Very Ripe Bananas",
+        "quantity": "3-4 medium",
+        "notes": "Peeled. The bananas should have brown spots for maximum sweetness and flavor. Do not use overripe, mushy bananas that are fit only for baking."
+      },
+      {
+        "item": "Fresh Spear Grass (Lemongrass)",
+        "quantity": "3-4 stalks",
+        "notes": "Thoroughly washed. Lightly bruised with the back of a knife to release its essential oils and flavor."
+      },
+      {
+        "item": "Drinking Water",
+        "quantity": "1.5 liters",
+        "notes": "Start with more than a liter as some will evaporate during boiling."
+      },
+      {
+        "item": "Fresh Ginger",
+        "quantity": "1-inch piece",
+        "notes": "Peeled and lightly bruised (optional, but highly recommended for depth of flavor)."
+      },
+      {
+        "item": "Cinnamon Stick",
+        "quantity": "1",
+        "notes": "Optional, but adds a warm, spiced note."
+      },
+      {
+        "item": "Sweetener (e.g., Sugar, Honey)",
+        "quantity": "To taste",
+        "notes": "Start with 2-3 tablespoons. The ripe bananas provide some natural sweetness, but additional sweetener is usually needed."
+      }
+    ],
+    "equipment": [
+      "Large Pot",
+      "Fine Mesh Sieve",
+      "Cheesecloth or a clean, thin kitchen cloth",
+      "Large Bowl or Jug",
+      "Wooden Spoon",
+      "Measuring Jug"
+    ],
+    "instructions": [
+      {
+        "step": 1,
+        "action": "Prepare Ingredients",
+        "details": "Peel the ripe bananas. You can leave them whole or break them into 2-3 chunks. Thoroughly wash the spear grass (lemongrass) stalks. Use the back of a heavy knife to gently bruise and crush them, which helps release their flavor. Bruise the ginger piece as well."
+      },
+      {
+        "step": 2,
+        "action": "Combine and Boil",
+        "details": "In a large pot, combine the 1.5 liters of boiled drinking water, the peeled bananas, the bruised spear grass, and the optional ginger and cinnamon stick."
+      },
+      {
+        "step": 3,
+        "action": "Simmer",
+        "details": "Bring the pot to a rolling boil over high heat. Once boiling, reduce the heat to medium-low, cover the pot, and let it simmer for 20-25 minutes. The bananas will become very soft and may start to disintegrate, and the water will turn a light brown/yellow color and become fragrant."
+      },
+      {
+        "step": 4,
+        "action": "Mash and Infuse",
+        "details": "After simmering, use the back of the wooden spoon to gently mash the bananas against the side of the pot. This helps release any remaining starch and flavor. Turn off the heat and let the mixture steep, covered, for another 10 minutes."
+      },
+      {
+        "step": 5,
+        "action": "Strain the Juice",
+        "details": "Place a fine-mesh sieve lined with cheesecloth (or a clean thin kitchen cloth) over a large bowl or jug. Carefully pour the hot banana mixture through the sieve. Allow the liquid to drain through without pressing down, to ensure a clear juice. For an even clearer juice, you can strain it a second time."
+      },
+      {
+        "step": 6,
+        "action": "Sweeten",
+        "details": "While the juice is still warm, add your chosen sweetener (sugar or honey) and stir until it is completely dissolved. Taste and adjust sweetness to your preference."
+      },
+      {
+        "step": 7,
+        "action": "Cool and Serve",
+        "details": "Allow the juice to cool to room temperature before transferring it to a pitcher or bottles. Refrigerate for at least 2-3 hours until thoroughly chilled. Serve cold. Shake or stir before serving if any settling occurs."
+      }
+    ],
+    "notes": [
+      "The boiled bananas and lemongrass are discarded after straining. Their flavor and nutrients have been extracted into the water.",
+      "For the best flavor, consume the juice within 2-3 days.",
+      "The juice may have a slight natural sediment; this is normal.",
+      "You can add a squeeze of lime or lemon juice before serving for a tangy twist."
+    ]
+  }
+}

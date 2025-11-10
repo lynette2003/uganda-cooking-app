@@ -1,0 +1,136 @@
+{
+  "recipe_id": "ug_recipe_cassava_steamed_001",
+  "name": {
+    "en": "Steamed Cassava",
+    "local_name": "Kasawa Ekitokose"
+  },
+  "description": "Traditional Ugandan cassava peeled, wrapped in banana leaves, and steamed until tender. Served hot as a snack or alongside main meals, or eaten cold.",
+  "origin_region": "Central and Eastern Uganda",
+  "cultural_significance": {
+    "importance": "staple_food_snack",
+    "occasions": ["family_meal", "street_food", "everyday_meal", "snack"],
+    "cultural_notes": "Cassava is widely consumed in Uganda as both a staple and a snack. Steaming in banana leaves preserves flavor and adds cultural authenticity."
+  },
+  "type": "side_dish",
+  "difficulty": "easy",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 20,
+  "cook_time_mins": 30,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_cassava_steamed",
+      "name": "Cassava",
+      "local_name": "Kasawa",
+      "quantity": 3000,
+      "unit": "g",
+      "preparation": "peeled, washed, cut into equal lengths, divided into thick strips, membrane removed"
+    },
+    {
+      "ingredient_id": "ing_banana_leaves",
+      "name": "Banana Leaves",
+      "local_name": "Ebikola by’amatooke",
+      "quantity": 5,
+      "unit": "leaves",
+      "purpose": "wrapping for steaming"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Mazzi",
+      "quantity": 1500,
+      "unit": "ml",
+      "purpose": "steaming"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Munye",
+      "quantity": 1,
+      "unit": "tablespoon",
+      "purpose": "seasoning",
+      "optional": true
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_saucepan",
+      "name": "Saucepan",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Knife",
+      "local_name": "Akambe",
+      "purpose": "cutting cassava into strips"
+    },
+    {
+      "utensil_id": "utn_fork",
+      "name": "Fork",
+      "local_name": "Fok",
+      "purpose": "checking tenderness"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Cut the peeled and washed cassava into equal lengths and divide into thick strips. Remove the membrane in the middle and trim the flesh around it.",
+      "action": "preparing",
+      "ingredients": ["ing_cassava_steamed"],
+      "utensils": ["utn_knife"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Sprinkle a little salt over the cassava, wrap it in banana leaves, and place in a saucepan. Add enough water to allow steaming.",
+      "action": "wrapping",
+      "ingredients": ["ing_cassava_steamed", "ing_banana_leaves", "ing_salt", "ing_water"],
+      "utensils": ["utn_saucepan"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Bring the water to a boil, reduce the heat, and gently simmer for around 30 minutes. Check tenderness with a fork; the cassava should be easy to pierce without resistance.",
+      "action": "steaming",
+      "time_min": 30,
+      "utensils": ["utn_saucepan", "utn_fork"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Serve hot as a snack or alongside main meals. Can also be eaten cold.",
+      "action": "serving",
+      "serving_temperature": "hot_cold"
+    }
+  ],
+  "cooking_method": "steaming",
+  "heat_level": "medium",
+  "cooking_indicators": {
+    "visual": "banana leaves wilt and cassava strips soften",
+    "texture": "tender and easy to pierce with a fork",
+    "taste": "slightly salted, natural cassava flavor preserved"
+  },
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 160,
+      "carbohydrates_g": 38,
+      "protein_g": 1.5,
+      "fat_g": 0.2,
+      "cholesterol_mg": 0,
+      "sodium_mg": 10,
+      "fiber_g": 3,
+      "vitamin_c_mg": 15,
+      "calcium_mg": 30,
+      "phosphorus_mg": 40
+    },
+    "health_benefits": [
+      "rich_in_fiber",
+      "provides_energy",
+      "supports_digestive_health",
+      "preserves natural cassava nutrients"
+    ]
+  },
+  "tags": ["traditional", "cassava", "steamed", "staple_food", "snack", "vegetarian"],
+  "source": "traditional_recipe",
+  "version": "1.0",
+  "last_updated": "2025-10-01"
+}

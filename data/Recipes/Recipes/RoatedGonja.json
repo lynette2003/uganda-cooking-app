@@ -1,0 +1,114 @@
+{
+  "recipe_id": "ug_recipe_roasted_gonja_067",
+  "name": {
+    "en": "Roasted Gonja (Plantains)",
+    "local_name": "Gonja"
+  },
+  "description": "A popular and simple Ugandan street food made from ripe plantains, roasted over charcoal until the skin is blackened and the inside is soft, sweet, and caramelized.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "popular_street_food",
+    "occasions": ["snacking", "street_food", "quick_meals", "roadside_stops", "childrens_treat"],
+    "cultural_notes": "Gonja is one of the most ubiquitous street foods in Uganda. You will find vendors roasting them on charcoal stoves (sigiri) by roadsides, in markets, and outside schools. The smell of roasting gonja is a familiar and comforting aroma across the country. It's an affordable, quick, and satisfying snack for people on the go."
+  },
+  "type": "snack_side_dish",
+  "difficulty": "very_easy",
+  "servings": {
+    "min": 1,
+    "max": 1,
+    "yield": "1 gonja per person"
+  },
+  "prep_time_mins": 2,
+  "cook_time_mins": 20,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_ripe_plantains",
+      "name": "Ripe Plantains (Gonja)",
+      "local_name": "Gonja / Bigobe",
+      "quantity": 2,
+      "unit": "pieces",
+      "notes": "Skin should be yellow with significant black spots, but not entirely black and mushy. They must be ripe for sweetness."
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_charcoal_grill",
+      "name": "Charcoal Grill (Sigiri) or Gas Grill",
+      "local_name": "Sigiri"
+    },
+    {
+      "utensil_id": "utn_tongs",
+      "name": "Tongs",
+      "local_name": "Koleko"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Knife",
+      "local_name": "Kisu"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Light your charcoal grill (sigiri) and wait for the flames to die down, leaving you with hot embers. You want a medium heat.",
+      "action": "preparing_grill",
+      "utensils": ["utn_charcoal_grill"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Leave the plantains in their skins. Do not peel them. Place them directly onto the grill grate over the hot charcoal.",
+      "action": "placing_on_grill",
+      "ingredients": ["ing_ripe_plantains"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Roast the plantains for about 15-20 minutes, turning them every 3-5 minutes with tongs to ensure they cook evenly on all sides.",
+      "action": "roasting",
+      "utensils": ["utn_tongs"],
+      "cooking_indicators": {
+        "visual": "The skin will become charred, blackened, and split open.",
+        "time": "15-20 minutes",
+        "texture": "The plantain inside will feel soft when gently pressed."
+      }
+    },
+    {
+      "step_number": 4,
+      "instruction": "Once the gonja are thoroughly blackened on the outside and soft all the way through, remove them from the grill.",
+      "action": "removing_from_heat"
+    },
+    {
+      "step_number": 5,
+      "instruction": "Let the roasted gonja cool for a minute or two until they are safe to handle. The skin will be very hot.",
+      "action": "cooling"
+    },
+    {
+      "step_number": 6,
+      "instruction": "Use your fingers or a knife to peel back the charred skin. It should come off easily, revealing the soft, steaming, and sweet interior.",
+      "action": "peeling",
+      "utensils": ["utn_knife"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Serve the roasted gonja hot, straight from the peel.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "grilling_roasting",
+  "heat_level": "medium",
+  "serving_suggestions": "Traditionally eaten plain as a snack. Can also be served with a sprinkle of salt or a dollop of roasted groundnut (peanut) paste for a more substantial treat. Pairs well with a cold soda or a cup of tea.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 220,
+      "carbohydrates_g": 57,
+      "protein_g": 2,
+      "fat_g": 0.5,
+      "cholesterol_mg": 0,
+      "sodium_mg": 5
+    },
+    "health_benefits": ["high_in_potassium", "rich_in_vitamin_a_c", "good_source_of_fiber", "energy_boosting", "naturally_fat_free"]
+  },
+  "tags": ["snack", "street_food", "vegan", "gluten_free", "quick", "grilled", "comfort_food"],
+  "source": "traditional_street_food_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

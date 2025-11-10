@@ -1,0 +1,110 @@
+{
+  "recipe_id": "ug_recipe_ekitobero_057",
+  "name": {
+    "en": "Ekitobero",
+    "local_name": "Ekitobero"
+  },
+  "description": "A traditional fermented Ugandan millet bread or snack, slightly sour in taste and rich in nutrients.",
+  "origin_region": "Central Uganda",
+  "cultural_significance": {
+    "importance": "traditional_snack",
+    "occasions": ["breakfast", "market_snack", "cultural_events"],
+    "cultural_notes": "Ekitobero is commonly prepared at home or sold in local markets as a healthy, fermented snack."
+  },
+  "type": "snack",
+  "difficulty": "medium",
+  "servings": {
+    "min": 2,
+    "max": 5
+  },
+  "prep_time_mins": 60,
+  "cook_time_mins": 30,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_millet_flour",
+      "name": "Millet Flour",
+      "local_name": "Oburo bwe Biira",
+      "quantity": 500,
+      "unit": "grams"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 1,
+      "unit": "liter"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Munyu",
+      "quantity": "to taste",
+      "unit": "optional"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_bowl",
+      "name": "Mixing Bowl",
+      "local_name": "Ekibinja"
+    },
+    {
+      "utensil_id": "utn_steaming_pot",
+      "name": "Steaming Pot",
+      "local_name": "Ekisafuriya"
+    },
+    {
+      "utensil_id": "utn_spoon",
+      "name": "Spoon",
+      "local_name": "Omusuni"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Mix millet flour with water to form a smooth batter.",
+      "action": "mixing",
+      "ingredients": ["ing_millet_flour", "ing_water"],
+      "utensils": ["utn_large_bowl"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Cover and leave the batter to ferment for 24 hours.",
+      "action": "fermenting"
+    },
+    {
+      "step_number": 3,
+      "instruction": "Add salt to taste, pour the batter into a greased steaming pot, and steam for 30 minutes.",
+      "action": "steaming",
+      "ingredients": ["ing_salt"],
+      "utensils": ["utn_steaming_pot", "utn_spoon"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Allow to cool slightly, slice, and serve as a snack or with meals.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "fermentation_and_steaming",
+  "heat_level": "moderate",
+  "cooking_indicators": {
+    "visual": "bread becomes firm and slightly golden",
+    "time": "30 minutes steaming",
+    "texture": "soft but slightly dense"
+  },
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 180,
+      "carbohydrates_g": 35,
+      "protein_g": 6,
+      "fat_g": 1,
+      "cholesterol_mg": 0,
+      "sodium_mg": 50
+    },
+    "health_benefits": ["high_fiber", "probiotic", "energy_providing"]
+  },
+  "tags": ["snack", "traditional", "fermented", "healthy"],
+  "source": "traditional_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

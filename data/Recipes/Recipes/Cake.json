@@ -1,0 +1,221 @@
+{
+  "recipe_id": "ug_recipe_sand_cake_054",
+  "name": {
+    "en": "Traditional Sand-Baked Cake",
+    "local_name": "Keki ya Mchanga"
+  },
+  "description": "A unique and traditional method of baking where a cake batter is cooked in a pot buried in preheated sand, creating a gentle, even heat that results in a moist, perfectly baked cake with a distinctive aroma.",
+  "origin_region": "Various regions across Africa (method also found in other ancient cultures)",
+  "cultural_significance": {
+    "importance": "traditional_cooking_technique",
+    "occasions": ["village_gatherings", "outdoor_cooking", "cultural_demonstrations", "when_ovens_are_unavailable"],
+    "cultural_notes": "This is an ancient baking technique born from ingenuity in the absence of modern ovens. It demonstrates a profound understanding of heat conduction and is often used in rural areas or for creating a unique flavor profile that modern ovens cannot replicate."
+  },
+  "type": "dessert",
+  "difficulty": "medium",
+  "servings": {
+    "min": 6,
+    "max": 8
+  },
+  "prep_time_mins": 30,
+  "cook_time_mins": 60,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_flour",
+      "name": "All-Purpose Flour",
+      "local_name": "Fulawa",
+      "quantity": 2,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_sugar",
+      "name": "Sugar",
+      "local_name": "Sukaali",
+      "quantity": 1,
+      "unit": "cup"
+    },
+    {
+      "ingredient_id": "ing_eggs",
+      "name": "Eggs",
+      "local_name": "Magi",
+      "quantity": 3,
+      "unit": "pieces"
+    },
+    {
+      "ingredient_id": "ing_butter",
+      "name": "Butter or Margarine",
+      "local_name": "Siagi",
+      "quantity": 1,
+      "unit": "cup",
+      "notes": "Softened"
+    },
+    {
+      "ingredient_id": "ing_milk",
+      "name": "Milk",
+      "local_name": "Mata",
+      "quantity": 1,
+      "unit": "cup"
+    },
+    {
+      "ingredient_id": "ing_baking_powder",
+      "name": "Baking Powder",
+      "local_name": "Dawa ya kufuria keki",
+      "quantity": 2,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_vanilla",
+      "name": "Vanilla Extract",
+      "local_name": "Vanilla",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Chumvi",
+      "quantity": 0.5,
+      "unit": "tsp"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_metal_pot",
+      "name": "Large, Heavy Metal Pot (Sufuria)",
+      "local_name": "Sufuria Kubwa"
+    },
+    {
+      "utensil_id": "utn_cake_tin",
+      "name": "Cake Tin or Heatproof Bowl",
+      "local_name": "Sufuria ndogo ya Keki"
+    },
+    {
+      "utensil_id": "utn_sand",
+      "name": "Clean, Dry Sand",
+      "local_name": "Mchanga",
+      "notes": "Fine-grained river sand is ideal. Must be sifted and cleaned."
+    },
+    {
+      "utensil_id": "utn_charcoal_brazier",
+      "name": "Charcoal Brazier (Sigiri) or Open Fire",
+      "local_name": "Sigiri / Moto"
+    },
+    {
+      "utensil_id": "utn_aluminum_foil",
+      "name": "Aluminum Foil or Banana Leaves",
+      "local_name": "Karatasi ya Boha / Emiyembe"
+    },
+    {
+      "utensil_id": "utn_mixing_bowls",
+      "name": "Mixing Bowls",
+      "local_name": "Orupapura"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Prepare the sand by sifting it to remove stones and debris. Place the clean, dry sand in the large metal pot, filling it about halfway.",
+      "action": "preparing",
+      "utensils": ["utn_large_metal_pot", "utn_sand"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Place the pot of sand on the charcoal brazier or over the open fire. Heat the sand for 20-30 minutes, stirring occasionally, until it is very hot. You should feel intense heat radiating from it.",
+      "action": "heating_sand",
+      "utensils": ["utn_charcoal_brazier"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "While the sand is heating, prepare the cake batter. In a mixing bowl, cream together the softened butter and sugar until light and fluffy.",
+      "action": "mixing",
+      "ingredients": ["ing_butter", "ing_sugar"],
+      "utensils": ["utn_mixing_bowls"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Beat in the eggs one at a time, then stir in the vanilla extract.",
+      "action": "mixing",
+      "ingredients": ["ing_eggs", "ing_vanilla"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "In a separate bowl, whisk together the flour, baking powder, and salt.",
+      "action": "combining_dry",
+      "ingredients": ["ing_flour", "ing_baking_powder", "ing_salt"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Gradually add the dry ingredients to the wet ingredients, alternating with the milk, and mix until just combined. Do not overmix.",
+      "action": "combining",
+      "ingredients": ["ing_milk"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Grease your cake tin or heatproof bowl. Pour the batter into the tin and cover the top tightly with aluminum foil or several layers of banana leaves to prevent sand from getting in.",
+      "action": "preparing_tin",
+      "utensils": ["utn_cake_tin", "utn_aluminum_foil"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Once the sand is hot, use a ladle or a smaller pot to remove about one-third of the sand from the center of the large pot, creating a well.",
+      "action": "creating_well",
+      "utensils": []
+    },
+    {
+      "step_number": 9,
+      "instruction": "Carefully place the covered cake tin into the well in the hot sand.",
+      "action": "burying",
+      "utensils": []
+    },
+    {
+      "step_number": 10,
+      "instruction": "Quickly and carefully shovel the hot sand back over the cake tin, completely burying it. Ensure the cake tin is surrounded by hot sand on all sides and on top.",
+      "action": "covering",
+      "utensils": []
+    },
+    {
+      "step_number": 11,
+      "instruction": "Cover the large pot with its lid. Place a few more hot coals on top of the lid to create an oven-like environment with heat from all sides.",
+      "action": "creating_oven",
+      "utensils": ["utn_charcoal_brazier"]
+    },
+    {
+      "step_number": 12,
+      "instruction": "Bake for 45-60 minutes. Avoid opening the pot to check too soon, as this will release the heat.",
+      "action": "baking",
+      "cooking_indicators": {
+        "visual": "After 45 min, carefully unearth and check. The cake is done when a skewer inserted into the center comes out clean.",
+        "time": "45-60 minutes",
+        "texture": "The cake will be golden, firm to the touch, and will have pulled away slightly from the sides of the tin."
+      }
+    },
+    {
+      "step_number": 13,
+      "instruction": "Once baked, carefully remove the cake tin from the sand using tongs or heatproof gloves. Let it cool for 10 minutes before turning it out onto a wire rack.",
+      "action": "cooling"
+    },
+    {
+      "step_number": 14,
+      "instruction": "Allow the cake to cool completely before slicing and serving.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "sand_baking",
+  "heat_level": "medium",
+  "serving_suggestions": "Serve as a dessert or with tea. Can be enjoyed plain or with a simple glaze or fresh fruit.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 380,
+      "carbohydrates_g": 50,
+      "protein_g": 6,
+      "fat_g": 18,
+      "cholesterol_mg": 95,
+      "sodium_mg": 320
+    },
+    "health_benefits": ["energy_boosting", "source_of_carbohydrates"]
+  },
+  "tags": ["dessert", "traditional", "outdoor_cooking", "unique_technique", "festive"],
+  "source": "traditional_cooking_method",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

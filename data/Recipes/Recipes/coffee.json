@@ -1,0 +1,109 @@
+{
+  "recipe_id": "ug_recipe_coffee_brew_054",
+  "name": {
+    "en": "Ugandan Coffee Brew",
+    "local_name": "Kaffi ya Uganda"
+  },
+  "description": "A rich and aromatic coffee beverage made from roasted Ugandan coffee beans, water, and optionally sugar or milk.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "daily_beverage",
+    "occasions": ["breakfast", "afternoon_break", "social_gatherings"],
+    "cultural_notes": "Coffee is a major part of Ugandan culture, often enjoyed at home, in local cafes, or during community gatherings."
+  },
+  "type": "beverage",
+  "difficulty": "easy",
+  "servings": {
+    "min": 1,
+    "max": 2
+  },
+  "prep_time_mins": 5,
+  "cook_time_mins": 10,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_coffee_beans",
+      "name": "Roasted Coffee Beans",
+      "local_name": "Kaffi",
+      "quantity": 2,
+      "unit": "tablespoons"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 2,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_sugar",
+      "name": "Sugar",
+      "local_name": "Sukaali",
+      "quantity": "to taste",
+      "unit": "optional"
+    },
+    {
+      "ingredient_id": "ing_milk",
+      "name": "Milk",
+      "local_name": "Amata",
+      "quantity": 0.5,
+      "unit": "cup",
+      "optional": true
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_coffee_pot",
+      "name": "Coffee Pot",
+      "local_name": "Ekikapu kya Kaffi"
+    },
+    {
+      "utensil_id": "utn_cup",
+      "name": "Coffee Cup",
+      "local_name": "Ekikapu"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Grind roasted coffee beans to medium-coarse consistency.",
+      "action": "grinding",
+      "ingredients": ["ing_coffee_beans"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Boil water and add ground coffee. Simmer for 5 minutes.",
+      "action": "brewing",
+      "ingredients": ["ing_water", "ing_coffee_beans"],
+      "utensils": ["utn_coffee_pot"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Strain the coffee into cups, add sugar and milk if desired.",
+      "action": "serving",
+      "ingredients": ["ing_sugar", "ing_milk"],
+      "utensils": ["utn_cup"]
+    }
+  ],
+  "cooking_method": "brewing",
+  "heat_level": "moderate",
+  "cooking_indicators": {
+    "visual": "dark brown liquid with aromatic steam",
+    "time": "10 minutes",
+    "texture": "smooth and strong"
+  },
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 50,
+      "carbohydrates_g": 2,
+      "protein_g": 1,
+      "fat_g": 1,
+      "cholesterol_mg": 5,
+      "sodium_mg": 5
+    },
+    "health_benefits": ["energizing", "rich_in_antioxidants", "mood_boosting"]
+  },
+  "tags": ["beverage", "traditional", "hot_drink", "daily_use"],
+  "source": "household_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

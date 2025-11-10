@@ -1,0 +1,187 @@
+{
+  "recipe_id": "ug_recipe_obumonde_135",
+  "name": {
+    "en": "Obumonde (Savory Boiled Irish Potatoes)",
+    "local_name": "Obumonde"
+  },
+  "description": "A flavorful and comforting dish of Irish potatoes boiled with onions, tomatoes, and basic seasonings until tender and infused with savory goodness. Unlike plain boiled potatoes, Obumonde creates its own light, flavorful broth during cooking, making it a complete and satisfying one-pot meal. The potatoes absorb the flavors of the aromatics, resulting in a deliciously seasoned dish that stands well on its own.",
+  "origin_region": "Western Uganda",
+  "cultural_significance": {
+    "importance": "traditional_comfort_food",
+    "occasions": ["daily_meals", "breakfast", "lunch", "dinner", "quick_meals", "student_meals"],
+    "cultural_notes": "Obumonde is a beloved dish in Western Uganda, particularly among the Banyankole and Bakiga people. It represents simple, home-style cooking that is both economical and nutritious. The dish is often prepared by students and young people living alone because it requires minimal ingredients and cooking skills. It's also a common breakfast item, providing sustained energy for the day. The name 'Obumonde' specifically refers to this savory preparation, distinguishing it from plain boiled potatoes."
+  },
+  "type": "main_dish_side_dish",
+  "difficulty": "easy",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 10,
+  "cook_time_mins": 30,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_potatoes",
+      "name": "Fresh Irish Potatoes",
+      "local_name": "Engyenyi",
+      "quantity": 1,
+      "unit": "kg",
+      "notes": "Medium-sized, peeled and cut into chunks"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion, sliced",
+      "local_name": "Tungurusumu",
+      "quantity": 1,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_tomatoes",
+      "name": "Tomatoes, chopped",
+      "local_name": "Enyanya",
+      "quantity": 2,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 2,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_cooking_oil",
+      "name": "Cooking Oil (optional)",
+      "local_name": "Mafuta",
+      "quantity": 1,
+      "unit": "tbsp",
+      "notes": "Traditional version may omit oil for a lighter dish"
+    },
+    {
+      "ingredient_id": "ing_green_pepper",
+      "name": "Green Bell Pepper, sliced (optional)",
+      "local_name": "Bibbo",
+      "quantity": 0.5,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_curry_powder",
+      "name": "Curry Powder (optional)",
+      "local_name": "Curry",
+      "quantity": 0.5,
+      "unit": "tsp"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_medium_pot",
+      "name": "Medium Pot with Lid",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Knife",
+      "local_name": "Mumo"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Mwiko"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Peel the potatoes and cut them into medium-sized chunks, about 2-inch pieces. Try to keep them uniform for even cooking.",
+      "action": "preparing_potatoes",
+      "ingredients": ["ing_potatoes"],
+      "utensils": ["utn_knife"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "If using oil, heat it in a medium pot over medium heat. Add the sliced onions and sauté until they begin to soften, about 2-3 minutes. If not using oil, proceed to step 3.",
+      "action": "sauteing_onions",
+      "ingredients": ["ing_cooking_oil", "ing_onion"],
+      "utensils": ["utn_medium_pot"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Add the chopped tomatoes to the pot. If not using oil, add the tomatoes and onions together with 1/4 cup of water and cook until softened.",
+      "action": "adding_tomatoes",
+      "ingredients": ["ing_tomatoes"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Cook the tomatoes for 3-4 minutes until they begin to break down and form a light sauce.",
+      "action": "cooking_tomato_base"
+    },
+    {
+      "step_number": 5,
+      "instruction": "Add the potato chunks to the pot and stir gently to coat them with the tomato-onion mixture.",
+      "action": "adding_potatoes"
+    },
+    {
+      "step_number": 6,
+      "instruction": "Add the salt, curry powder (if using), and green pepper (if using). Pour in the 2 cups of water - it should come about halfway up the potatoes.",
+      "action": "adding_seasonings_water",
+      "ingredients": ["ing_salt", "ing_curry_powder", "ing_green_pepper", "ing_water"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Bring to a boil, then reduce the heat to medium-low. Cover the pot and let it simmer for 20-25 minutes.",
+      "action": "simmering",
+      "cooking_indicators": {
+        "olfactory": "A savory, comforting aroma will develop",
+        "time": "20-25 minutes"
+      }
+    },
+    {
+      "step_number": 8,
+      "instruction": "Check occasionally to ensure there is enough liquid. The potatoes should be cooking in a light broth. If it looks dry, add a little more water.",
+      "action": "monitoring_cooking"
+    },
+    {
+      "step_number": 9,
+      "instruction": "After 20 minutes, test the potatoes for doneness by piercing with a fork. They should be tender but still hold their shape.",
+      "action": "testing_doneness",
+      "cooking_indicators": {
+        "texture": "Potatoes should be soft but not mushy"
+      }
+    },
+    {
+      "step_number": 10,
+      "instruction": "Once the potatoes are cooked, there should be a small amount of flavorful broth remaining. If there's too much liquid, you can simmer uncovered for a few more minutes to reduce it.",
+      "action": "adjusting_consistency"
+    },
+    {
+      "step_number": 11,
+      "instruction": "Serve the Obumonde hot in bowls with the flavorful broth.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "boiling_stewing",
+  "heat_level": "medium_low",
+  "serving_suggestions": "Obumonde is often eaten as a complete meal on its own, served in a bowl with its light broth. It can also be served as a side dish with grilled meat, fish, or chicken. Some people enjoy it with a slice of avocado on the side. It's commonly eaten for breakfast or lunch, providing sustained energy throughout the day.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 180,
+      "carbohydrates_g": 38,
+      "protein_g": 4,
+      "fat_g": 2,
+      "cholesterol_mg": 0,
+      "sodium_mg": 400
+    },
+    "health_benefits": ["excellent_source_of_carbohydrates", "good_source_of_vitamin_c", "high_in_potassium", "contains_lycopene_from_tomatoes", "low_fat", "cholesterol_free", "vegan", "gluten_free"]
+  },
+  "tags": ["main_dish", "side_dish", "potatoes", "obumonde", "savory", "one_pot", "western_uganda", "comfort_food", "vegan", "gluten_free", "student_food"],
+  "source": "traditional_western_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

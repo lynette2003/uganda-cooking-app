@@ -1,0 +1,220 @@
+{
+  "recipe_id": "ug_recipe_black_bean_sprout_082",
+  "name": {
+    "en": "Stir-Fried Black Bean Sprouts",
+    "local_name": "Maharage Meize Meize"
+  },
+  "description": "A quick, crunchy, and highly nutritious stir-fry featuring fresh black bean sprouts, tossed with vibrant vegetables and a savory sauce. This dish highlights the fresh, earthy flavor and crisp texture of the sprouts.",
+  "origin_region": "Nationwide (Modern & Health-Conscious)",
+  "cultural_significance": {
+    "importance": "modern_health_dish",
+    "occasions": ["quick_meals", "healthy_lunches", "side_dish", "vegetarian_meals"],
+    "cultural_notes": "While bean sprouts are used in various cuisines worldwide, this stir-fry is a modern Ugandan take that incorporates local flavors and ingredients. It represents a growing interest in fresh, plant-based, and quick-cooking meals, especially in urban areas. It's a great way to enjoy the nutritional benefits of sprouts in a familiar, flavorful format."
+  },
+  "type": "side_dish_main_course",
+  "difficulty": "very_easy",
+  "servings": {
+    "min": 2,
+    "max": 3
+  },
+  "prep_time_mins": 10,
+  "cook_time_mins": 5,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_black_bean_sprouts",
+      "name": "Fresh Black Bean Sprouts",
+      "local_name": "Maharage Meize Meize",
+      "quantity": 4,
+      "unit": "cups",
+      "notes": "Rinsed and drained well"
+    },
+    {
+      "ingredient_id": "ing_red_bell_pepper",
+      "name": "Red Bell Pepper",
+      "local_name": "Pilipili Hoho Nyekundu",
+      "quantity": 1,
+      "unit": "medium",
+      "notes": "Thinly sliced"
+    },
+    {
+      "ingredient_id": "ing_carrot",
+      "name": "Carrot",
+      "local_name": "Karoti",
+      "quantity": 1,
+      "unit": "medium",
+      "notes": "Julienned or thinly sliced"
+    },
+    {
+      "ingredient_id": "ing_spring_onions",
+      "name": "Spring Onions",
+      "local_name": "Kitunguu Maji",
+      "quantity": 3,
+      "unit": "stalks",
+      "notes": "Chopped, white and green parts separated"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic",
+      "local_name": "Vitungulu Saumuni",
+      "quantity": 2,
+      "unit": "cloves",
+      "notes": "Minced"
+    },
+    {
+      "ingredient_id": "ing_fresh_ginger",
+      "name": "Fresh Ginger",
+      "local_name": "Tangawizi",
+      "quantity": 1,
+      "unit": "inch piece",
+      "notes": "Grated"
+    },
+    {
+      "ingredient_id": "ing_vegetable_oil",
+      "name": "Vegetable Oil",
+      "local_name": "Mafuta",
+      "quantity": 2,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_soy_sauce",
+      "name": "Soy Sauce",
+      "local_name": "Mchuzi wa Soy",
+      "quantity": 1.5,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_sesame_oil",
+      "name": "Sesame Oil",
+      "local_name": "Mafuta ya Sim Sim",
+      "quantity": 1,
+      "unit": "tsp",
+      "notes": "For flavor (optional but recommended)"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Chumvi",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "notes": "To taste, be mindful of soy sauce saltiness"
+    },
+    {
+      "ingredient_id": "ing_black_pepper",
+      "name": "Black Pepper",
+      "local_name": "Pilipili Mweusi",
+      "quantity": 0.25,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_sesame_seeds",
+      "name": "Toasted Sesame Seeds",
+      "local_name": "Sim Sim",
+      "quantity": 1,
+      "unit": "tsp",
+      "notes": "For garnish"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_wok_large_skillet",
+      "name": "Wok or Large Skillet",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon_spatula",
+      "name": "Wooden Spoon or Spatula",
+      "local_name": "Mwiko"
+    },
+    {
+      "utensil_id": "utn_colander",
+      "name": "Colander",
+      "local_name": "Kikomulo"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Rinse the black bean sprouts thoroughly in a colander and drain them well. Excess water will make the stir-fry soggy.",
+      "action": "preparing_sprouts",
+      "ingredients": ["ing_black_bean_sprouts"],
+      "utensils": ["utn_colander"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Prepare all vegetables: thinly slice the bell pepper, julienne the carrot, chop the spring onions (keeping white and green parts separate), mince the garlic, and grate the ginger.",
+      "action": "prepping_vegetables"
+    },
+    {
+      "step_number": 3,
+      "instruction": "Heat the vegetable oil in a wok or large skillet over high heat until very hot.",
+      "action": "heating_wok",
+      "ingredients": ["ing_vegetable_oil"],
+      "utensils": ["utn_wok_large_skillet"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Add the white parts of the spring onions, minced garlic, and grated ginger. Stir-fry for 30 seconds until very fragrant.",
+      "action": "sautéing_aromatics",
+      "ingredients": ["ing_spring_onions", "ing_garlic", "ing_ginger"],
+      "utensils": ["utn_wooden_spoon_spatula"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Add the sliced carrot and bell pepper. Stir-fry for 1-2 minutes until they just begin to soften but are still crisp.",
+      "action": "cooking_vegetables",
+      "ingredients": ["ing_carrot", "ing_red_bell_pepper"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Add the well-drained black bean sprouts to the wok. Toss everything together quickly.",
+      "action": "adding_sprouts",
+      "ingredients": ["ing_black_bean_sprouts"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Pour the soy sauce and sesame oil over the sprouts. Season with salt and black pepper. Toss vigorously for 1-2 minutes only, until the sprouts are heated through but still very crisp and crunchy.",
+      "action": "stir_frying",
+      "ingredients": ["ing_soy_sauce", "ing_sesame_oil", "ing_salt", "ing_black_pepper"],
+      "cooking_indicators": {
+        "visual": "Sprouts will be glossy and slightly wilted but still retain their shape and crunch.",
+        "time": "1-2 minutes",
+        "texture": "Crisp and crunchy."
+      }
+    },
+    {
+      "step_number": 8,
+      "instruction": "Remove from heat immediately. Stir in the green parts of the spring onions.",
+      "action": "finishing",
+      "ingredients": ["ing_spring_onions"]
+    },
+    {
+      "step_number": 9,
+      "instruction": "Transfer to a serving plate and garnish with toasted sesame seeds.",
+      "action": "garnishing",
+      "ingredients": ["ing_sesame_seeds"]
+    },
+    {
+      "step_number": 10,
+      "instruction": "Serve immediately while hot and crisp.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "stir_frying",
+  "heat_level": "high",
+  "serving_suggestions": "Serve as a light main course over steamed rice or noodles. It also makes an excellent side dish for grilled fish, chicken, or tofu.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 120,
+      "carbohydrates_g": 15,
+      "protein_g": 6,
+      "fat_g": 5,
+      "cholesterol_mg": 0,
+      "sodium_mg": 600
+    },
+    "health_benefits": ["high_in_vitamin_c", "rich_in_fiber", "plant_based_protein", "low_in_calories", "rich_in_antioxidants"]
+  },
+  "tags": ["side_dish", "main_course", "vegetarian", "vegan", "healthy", "quick", "crunchy", "gluten_free_option"],
+  "source": "modern_fusion_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

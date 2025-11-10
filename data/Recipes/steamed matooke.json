@@ -1,0 +1,217 @@
+{
+  "recipe_id": "ug_recipe_matooke_steamed_001",
+  "name": {
+    "en": "Steamed Matooke",
+    "local_name": "Amatooke Amanyige"
+  },
+  "description": "A traditional Ugandan dish made from green bananas steamed in banana leaves, considered the most important staple food in the Buganda region.",
+  "origin_region": "Central",
+  "cultural_significance": {
+    "importance": "staple_food",
+    "occasions": ["kwanjula", "important_ceremonies", "daily_meal"],
+    "cultural_notes": "A meal in Buganda would be incomplete without matooke; the word 'emere' (food) means matooke"
+  },
+  "type": "main_dish",
+  "difficulty": "medium",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 30,
+  "cook_time_mins": 120,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_matooke_green",
+      "name": "Green Matooke (mature but not ripe)",
+      "local_name": "Amatooke",
+      "quantity": 35,
+      "unit": "fingers",
+      "local_measurement": "30 to 40 fingers",
+      "standardized_quantity_g": 3500,
+      "varieties": ["nandigobe", "mussakala", "kibuzzi", "nakyinkyike", "nakitembe"]
+    },
+    {
+      "ingredient_id": "ing_banana_leaves",
+      "name": "Banana Leaves",
+      "local_name": "Endagala",
+      "quantity": 5,
+      "unit": "leaves",
+      "purpose": "wrapping and steaming"
+    },
+    {
+      "ingredient_id": "ing_banana_stalks",
+      "name": "Banana Leaf Stalks",
+      "local_name": "Ebikolokomba",
+      "quantity": 4,
+      "unit": "pieces",
+      "purpose": "base for steaming pot",
+      "preparation": "cut to 3-4 inches to fit saucepan"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 2,
+      "unit": "cups",
+      "purpose": "steaming"
+    },
+    {
+      "ingredient_id": "ing_banana_fibers",
+      "name": "Banana Fibers",
+      "local_name": "Ebyayi",
+      "quantity": 6,
+      "unit": "strands",
+      "purpose": "securing wrapped matooke"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_saucepan",
+      "name": "Saucepan",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_charcoal_stove",
+      "name": "Charcoal Stove",
+      "local_name": "Sigiri",
+      "alternative": "gas_cooker"
+    },
+    {
+      "utensil_id": "utn_mashing_basket",
+      "name": "Mashing Basket",
+      "local_name": "Kibo"
+    },
+    {
+      "utensil_id": "utn_mingling_stick",
+      "name": "Mingling Stick",
+      "local_name": "Mulawo",
+      "purpose": "pouring water without direct contact"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Peel matooke and wash with plain clean water",
+      "action": "peeling",
+      "utensils": ["hands"],
+      "ingredients": ["ing_matooke_green"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Prepare the banana leaf stalks proportional to the size of the sauce pan",
+      "action": "preparing",
+      "utensils": ["knife"],
+      "ingredients": ["ing_banana_stalks"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Add enough water to the level of the stalks",
+      "action": "adding",
+      "utensils": ["utn_saucepan"],
+      "ingredients": ["ing_water"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Prepare banana leaves by removing the stalk",
+      "action": "preparing",
+      "utensils": ["hands"],
+      "ingredients": ["ing_banana_leaves"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Neatly arrange and wrap the matooke with banana leaves and secure them with banana fibers",
+      "action": "wrapping",
+      "utensils": ["hands"],
+      "ingredients": ["ing_matooke_green", "ing_banana_leaves", "ing_banana_fibers"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Carry the well-packed matooke in the prepared saucepan",
+      "action": "transferring",
+      "utensils": ["hands", "utn_saucepan"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Tuck the banana leaves on top of the other until they fit snugly",
+      "action": "arranging",
+      "utensils": ["hands"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Place the matooke on moderate fire for 45 minutes to 1 hour",
+      "action": "cooking",
+      "utensils": ["utn_charcoal_stove"],
+      "time_min": 45,
+      "time_max": 60
+    },
+    {
+      "step_number": 9,
+      "instruction": "Regularly check the matooke to ensure it doesn't run out of water",
+      "action": "monitoring",
+      "importance": "critical"
+    },
+    {
+      "step_number": 10,
+      "instruction": "When banana leaves turn brown, remove from fire - this indicates it's ready for mashing",
+      "action": "checking_doneness",
+      "visual_cue": "banana_leaves_turned_brown"
+    },
+    {
+      "step_number": 11,
+      "instruction": "Place matooke in a basket for mashing using hands with banana leaf or clean wet cloth",
+      "action": "mashing",
+      "utensils": ["utn_mashing_basket"]
+    },
+    {
+      "step_number": 12,
+      "instruction": "Wrap the mashed matooke neatly in banana leaves and return to saucepan",
+      "action": "rewrapping",
+      "ingredients": ["ing_banana_leaves"]
+    },
+    {
+      "step_number": 13,
+      "instruction": "Add more water underneath using a mingling stick, ensuring water doesn't contact the matooke",
+      "action": "adding_water",
+      "utensils": ["utn_mingling_stick"],
+      "ingredients": ["ing_water"]
+    },
+    {
+      "step_number": 14,
+      "instruction": "Simmer for at least another hour on reduced heat",
+      "action": "simmering",
+      "time_min": 60,
+      "note": "The longer the better for best results"
+    },
+    {
+      "step_number": 15,
+      "instruction": "Serve hot in a local basket wrapped in banana leaves",
+      "action": "serving",
+      "utensils": ["utn_mashing_basket"],
+      "serving_temperature": "hot",
+      "serving_suggestions": ["groundnut_stew", "meat_stew", "chicken_stew", "fish_stew"]
+    }
+  ],
+  "cooking_method": "steaming",
+  "heat_level": "moderate",
+  "cooking_indicators": {
+    "visual": "banana_leaves_turned_brown",
+    "time": "45_minutes_to_1_hour_initial",
+    "texture": "ready_to_mash"
+  },
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 110,
+      "carbohydrates_g": 30,
+      "protein_g": 1,
+      "fat_g": 0,
+      "cholesterol_mg": 0,
+      "sodium_mg": 0,
+      "vitamin_b6_mg": 0.5
+    },
+    "health_benefits": ["fat_free", "cholesterol_free", "sodium_free", "vitamin_rich"]
+  },
+  "tags": ["traditional", "staple_food", "buganda_specialty", "ceremonial", "vegetarian"],
+  "source": "traditional_recipe",
+  "version": "1.1",
+  "last_updated": "2023-11-15"
+}

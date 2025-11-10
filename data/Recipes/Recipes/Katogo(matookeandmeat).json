@@ -1,0 +1,292 @@
+{
+  "recipe_id": "ug_recipe_katogo_matooke_meat_155",
+  "name": {
+    "en": "Katogo - Matooke and Meat",
+    "local_name": "Katogo y'Matooke n'Nyama"
+  },
+  "description": "A rich, hearty one-pot dish where tender green bananas (matooke) are steamed and cooked in a flavorful meat stew until both are melt-in-your-mouth tender. The matooke absorbs the savory meat juices and spices, creating a harmonious blend of textures and flavors that is the ultimate Ugandan comfort food. This katogo is particularly special due to the luxurious addition of meat.",
+  "origin_region": "Central Uganda",
+  "cultural_significance": {
+    "importance": "special_occasion_comfort_food",
+    "occasions": ["weekend_breakfast", "special_occasions", "family_gatherings", "sunday_meals", "festive_breakfast"],
+    "cultural_notes": "Matooke and meat katogo is considered a 'special' version of the classic dish, often prepared for weekend breakfasts or when hosting important guests. The addition of meat elevates it from everyday fare to celebratory food. In many households, this is the ultimate Sunday morning treat that brings the family together. The long, slow cooking process allows flavors to develop deeply, and the aroma filling the home is synonymous with special family moments and hospitality."
+  },
+  "type": "main_dish",
+  "difficulty": "medium",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 30,
+  "cook_time_mins": 150,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_matooke",
+      "name": "Green Bananas (Matooke)",
+      "local_name": "Matooke",
+      "quantity": 12,
+      "unit": "fingers",
+      "notes": "Peeled and kept in salted water to prevent browning"
+    },
+    {
+      "ingredient_id": "ing_beef",
+      "name": "Beef, cubed",
+      "local_name": "Nyama",
+      "quantity": 500,
+      "unit": "grams",
+      "notes": "With some bone for flavor, cut into bite-sized pieces"
+    },
+    {
+      "ingredient_id": "ing_onions",
+      "name": "Onions, chopped",
+      "local_name": "Tungurusumu",
+      "quantity": 2,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_tomatoes",
+      "name": "Tomatoes, chopped",
+      "local_name": "Enyanya",
+      "quantity": 3,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_tomato_paste",
+      "name": "Tomato Paste",
+      "local_name": "Dodo",
+      "quantity": 2,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_cooking_oil",
+      "name": "Cooking Oil",
+      "local_name": "Mafuta",
+      "quantity": 3,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 4,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic, minced",
+      "local_name": "Tungurusumu Omuzungu",
+      "quantity": 4,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "ing_ginger",
+      "name": "Ginger, grated",
+      "local_name": "Tangawizi",
+      "quantity": 1,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 1.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_curry_powder",
+      "name": "Curry Powder",
+      "local_name": "Curry",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_beef_seasoning",
+      "name": "Beef Seasoning Powder",
+      "local_name": "Royco",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_chili_pepper",
+      "name": "Fresh Chili Pepper, chopped (optional)",
+      "local_name": "Pilipili",
+      "quantity": 1,
+      "unit": "piece"
+    },
+    {
+      "ingredient_id": "ing_green_pepper",
+      "name": "Green Bell Pepper, sliced (optional)",
+      "local_name": "Bibbo",
+      "quantity": 1,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_carrot",
+      "name": "Carrot, sliced (optional)",
+      "local_name": "N/A",
+      "quantity": 1,
+      "unit": "medium",
+      "notes": "Adds sweetness and color"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_pot",
+      "name": "Large Heavy-bottomed Pot",
+      "local_name": "Sufuria Nzito"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Mwiko"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Knife",
+      "local_name": "Mumo"
+    },
+    {
+      "utensil_id": "utn_plastic_bags",
+      "name": "Plastic Bags or Banana Leaves",
+      "local_name": "Bifuko",
+      "notes": "Traditional for peeling matooke"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Peel the matooke using plastic bags or banana leaves (traditional method) to protect your hands from staining. Cut into large chunks and keep in salted water.",
+      "action": "preparing_matooke",
+      "ingredients": ["ing_matooke"],
+      "utensils": ["utn_plastic_bags", "utn_knife"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Cut the beef into bite-sized cubes, keeping some bone-in pieces for added flavor.",
+      "action": "preparing_meat",
+      "ingredients": ["ing_beef"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Heat cooking oil in a large heavy-bottomed pot over medium-high heat.",
+      "action": "heating_oil",
+      "ingredients": ["ing_cooking_oil"],
+      "utensils": ["utn_large_pot"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Add the beef cubes and brown on all sides for about 5-7 minutes. Work in batches if necessary to avoid overcrowding.",
+      "action": "browning_meat",
+      "ingredients": ["ing_beef"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Remove the browned meat and set aside. In the same pot, add chopped onions and sauté until soft and translucent.",
+      "action": "sauteing_onions",
+      "ingredients": ["ing_onions"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Add minced garlic and grated ginger. Cook for 1 minute until fragrant.",
+      "action": "adding_aromatics",
+      "ingredients": ["ing_garlic", "ing_ginger"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Add tomato paste and stir for 1 minute to cook out the raw flavor.",
+      "action": "cooking_tomato_paste",
+      "ingredients": ["ing_tomato_paste"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Return the browned meat to the pot. Add chopped tomatoes, curry powder, beef seasoning, and chili pepper (if using).",
+      "action": "combining_meat_sauce",
+      "ingredients": ["ing_tomatoes", "ing_curry_powder", "ing_beef_seasoning", "ing_chili_pepper"]
+    },
+    {
+      "step_number": 9,
+      "instruction": "Cook for 5-7 minutes until the tomatoes break down and form a thick sauce around the meat.",
+      "action": "developing_sauce"
+    },
+    {
+      "step_number": 10,
+      "instruction": "Add 3 cups of water and salt. Bring to a boil, then reduce heat to low, cover, and simmer for 45-60 minutes until the meat is tender.",
+      "action": "simmering_meat",
+      "ingredients": ["ing_water", "ing_salt"],
+      "cooking_indicators": {
+        "texture": "Meat should be tender but not falling apart"
+      }
+    },
+    {
+      "step_number": 11,
+      "instruction": "If using optional vegetables, add sliced carrot and green pepper at this stage.",
+      "action": "adding_vegetables",
+      "ingredients": ["ing_green_pepper", "ing_carrot"]
+    },
+    {
+      "step_number": 12,
+      "instruction": "Drain the matooke and add them to the pot, nestling them into the meat stew. Spoon some sauce over the matooke.",
+      "action": "adding_matooke",
+      "ingredients": ["ing_matooke"]
+    },
+    {
+      "step_number": 13,
+      "instruction": "Add the remaining 1 cup of water if needed. The liquid should come about halfway up the matooke.",
+      "action": "adjusting_liquid",
+      "ingredients": ["ing_water"]
+    },
+    {
+      "step_number": 14,
+      "instruction": "Cover the pot tightly and simmer on very low heat for 45-60 minutes. Do not stir vigorously - instead, gently shake the pot occasionally.",
+      "action": "slow_cooking_katogo",
+      "cooking_indicators": {
+        "olfactory": "A rich, meaty aroma will fill the kitchen",
+        "time": "45-60 minutes"
+      }
+    },
+    {
+      "step_number": 15,
+      "instruction": "After 45 minutes, check for doneness. The matooke should be very tender and easily mashable, and the meat should be falling-off-the-bone tender.",
+      "action": "testing_doneness",
+      "cooking_indicators": {
+        "texture": "Matooke should mash easily with a fork"
+      }
+    },
+    {
+      "step_number": 16,
+      "instruction": "Once cooked, gently mash some of the matooke into the sauce to thicken it. The katogo should have a thick, stew-like consistency.",
+      "action": "thickening_katogo",
+      "utensils": ["utn_wooden_spoon"]
+    },
+    {
+      "step_number": 17,
+      "instruction": "Taste and adjust seasoning if needed. The katogo should be rich and savory.",
+      "action": "final_seasoning"
+    },
+    {
+      "step_number": 18,
+      "instruction": "Serve hot in bowls, ensuring each portion has both matooke and meat with plenty of the flavorful sauce.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "one_pot_stewing",
+  "heat_level": "low",
+  "serving_suggestions": "Serve as a complete meal on its own, traditionally for a special breakfast or Sunday lunch. Katogo is often eaten with a spoon directly from the bowl. It pairs wonderfully with a side of steamed greens like sukuma wiki or dodo. Some people enjoy it with a wedge of avocado or a fresh tomato and onion salad. Perfect with a cup of black tea or fresh juice.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 420,
+      "carbohydrates_g": 60,
+      "protein_g": 25,
+      "fat_g": 12,
+      "cholesterol_mg": 60,
+      "sodium_mg": 700,
+      "fiber_g": 8,
+      "iron_mg": 4
+    },
+    "health_benefits": ["excellent_source_of_complex_carbs", "high_quality_protein", "rich_in_potassium", "good_source_of_iron", "contains_b_vitamins", "sustained_energy_release", "supports_muscle_health"]
+  },
+  "tags": ["main_dish", "katogo", "matooke", "meat", "beef", "one_pot", "comfort_food", "special_occasion", "hearty", "traditional", "central_uganda", "sunday_meal"],
+  "source": "traditional_ugandan_home_cooking",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

@@ -1,0 +1,131 @@
+{
+  "recipe_id": "ug_recipe_boiled_groundnuts_115",
+  "name": {
+    "en": "Boiled Fresh Groundnuts",
+    "local_name": "Binyebwa Eby'omumazzi"
+  },
+  "description": "A simple, wholesome, and incredibly popular snack of fresh, immature groundnuts (peanuts) boiled in their shells with salt. The result is a uniquely soft, juicy, and savory nut with a texture and flavor entirely different from roasted peanuts. The act of cracking the warm, wet shells to get to the tender nuts inside is a quintessential Ugandan experience.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "iconic_street_food_seasonal_snack",
+    "occasions": ["snack", "street_food", "rainy_season", "social_gatherings"],
+    "cultural_notes": "Boiled groundnuts are the taste of the rainy season when fresh groundnuts are harvested. They are sold in heaps on woven trays (obutala) by roadside vendors, in markets, and at bus parks. They are a social snack, often shared among friends and family while chatting. The piles of shells left behind are a common sight. For many, the smell of boiling groundnuts is a powerful reminder of home and season."
+  },
+  "type": "snack",
+  "difficulty": "very_easy",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 5,
+  "cook_time_mins": 60,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_fresh_groundnuts",
+      "name": "Fresh Groundnuts in Shells",
+      "local_name": "Binyebwa Empya",
+      "quantity": 1,
+      "unit": "kg",
+      "notes": "Must be fresh, not dried. The shells should be pale and moist, not brittle."
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 8,
+      "unit": "cups",
+      "notes": "Enough to fully submerge the groundnuts"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 2,
+      "unit": "tbsp",
+      "notes": "A generous amount is needed to season the nuts through the shells"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_pot",
+      "name": "Large Pot with Lid",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_colander",
+      "name": "Colander",
+      "local_name": "N/A"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Thoroughly wash the fresh groundnuts in their shells under running water, scrubbing them with your hands to remove any dirt and mud from the crevices.",
+      "action": "cleaning"
+    },
+    {
+      "step_number": 2,
+      "instruction": "Place the cleaned groundnuts in a large pot. Add enough water to completely submerge them by at least an inch.",
+      "action": "pot_setup",
+      "ingredients": ["ing_fresh_groundnuts", "ing_water"],
+      "utensils": ["utn_large_pot"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Add the salt to the pot and stir to dissolve.",
+      "action": "seasoning",
+      "ingredients": ["ing_salt"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Cover the pot with a lid and bring to a rolling boil over high heat.",
+      "action": "bringing_to_boil"
+    },
+    {
+      "step_number": 5,
+      "instruction": "Once boiling, reduce the heat to medium-low to maintain a steady, gentle boil. Cover and let them cook for 45 minutes to 1 hour.",
+      "action": "simmering",
+      "cooking_indicators": {
+        "olfactory": "A warm, earthy, and nutty aroma will fill the kitchen.",
+        "time": "45-60 minutes"
+      }
+    },
+    {
+      "step_number": 6,
+      "instruction": "To check for doneness, carefully remove one groundnut, let it cool slightly, and open it. The nut inside should be soft and tender, not crunchy, and the texture should be similar to a cooked bean. The shell will also become darkened and waterlogged.",
+      "action": "testing_doneness",
+      "cooking_indicators": {
+        "texture": "The nut is soft and moist, not hard or crunchy."
+      }
+    },
+    {
+      "step_number": 7,
+      "instruction": "Once cooked, drain the groundnuts in a colander, discarding the salty water.",
+      "action": "draining",
+      "utensils": ["utn_colander"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Serve the boiled groundnuts warm, piled high in a bowl or basket. Provide a separate bowl for the discarded shells.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "boiling",
+  "heat_level": "medium_high",
+  "serving_suggestions": "Served warm as a snack. Pile them in a large bowl or basket in the center of the table for everyone to share. They are often enjoyed with a cold drink. The only way to eat them is to crack the soft shell with your teeth or fingers and pop the soft, salty nut into your mouth.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 180,
+      "carbohydrates_g": 10,
+      "protein_g": 8,
+      "fat_g": 14,
+      "cholesterol_mg": 0,
+      "sodium_mg": 800
+    },
+    "health_benefits": ["good_source_of_plant_protein", "rich_in_healthy_fats", "high_in_fiber", "source_of_antioxidants", "vegan", "gluten_free"]
+  },
+  "tags": ["snack", "street_food", "seasonal", "vegan", "gluten_free", "boiled", "social_food", "comfort_food"],
+  "source": "traditional_street_food_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

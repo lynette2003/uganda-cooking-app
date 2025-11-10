@@ -1,0 +1,112 @@
+{
+  "recipe_id": "ug_recipe_sweetpotatochips_032",
+  "name": {
+    "en": "Sweet Potato Chips",
+    "local_name": "Fried Sweet Potato"
+  },
+  "description": "Crispy and golden fried sweet potato slices, a beloved snack in Uganda often sold by street vendors.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "street_food_snack",
+    "occasions": ["snack", "market_food", "school_snack"],
+    "cultural_notes": "Sweet potato chips are commonly enjoyed by children and adults alike, frequently paired with spicy sauces or eaten plain."
+  },
+  "type": "snack",
+  "difficulty": "easy",
+  "servings": {
+    "min": 2,
+    "max": 4
+  },
+  "prep_time_mins": 5,
+  "cook_time_mins": 15,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_sweetpotato",
+      "name": "Sweet Potatoes",
+      "local_name": "Emibikiro",
+      "quantity": 3,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_oil",
+      "name": "Cooking Oil",
+      "local_name": "Amafuta",
+      "quantity": 3,
+      "unit": "tablespoons"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Munyu",
+      "quantity": "to taste",
+      "unit": "optional"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_fryingpan",
+      "name": "Frying Pan",
+      "local_name": "Sufuria ya Kukaanga"
+    },
+    {
+      "utensil_id": "utn_spatula",
+      "name": "Spatula",
+      "local_name": "Omwengeja"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Peel the sweet potatoes and cut them into thin slices.",
+      "action": "preparing",
+      "ingredients": ["ing_sweetpotato"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Heat oil in a frying pan over medium heat.",
+      "action": "heating",
+      "ingredients": ["ing_oil"],
+      "utensils": ["utn_fryingpan"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Fry sweet potato slices until golden brown and crispy.",
+      "action": "frying",
+      "ingredients": ["ing_sweetpotato"],
+      "utensils": ["utn_fryingpan", "utn_spatula"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Remove from oil and drain excess oil. Sprinkle with salt if desired.",
+      "action": "seasoning",
+      "ingredients": ["ing_salt"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Serve warm as a snack.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "frying",
+  "heat_level": "medium",
+  "cooking_indicators": {
+    "visual": "slices are golden brown",
+    "time": "15 minutes",
+    "texture": "crispy outside, tender inside"
+  },
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 200,
+      "carbohydrates_g": 45,
+      "protein_g": 1,
+      "fat_g": 5,
+      "cholesterol_mg": 0,
+      "sodium_mg": 15
+    },
+    "health_benefits": ["energy_source", "vitamin_rich", "fiber_rich"]
+  },
+  "tags": ["street_food", "snack", "vegetarian"],
+  "source": "traditional_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

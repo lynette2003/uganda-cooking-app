@@ -1,0 +1,183 @@
+{
+  "recipe_id": "ug_recipe_boiled_goat_meat_132",
+  "name": {
+    "en": "Boiled Goat Meat",
+    "local_name": "Nyama y'Embuzi eyokubikka"
+  },
+  "description": "A simple, healthy, and deeply satisfying dish where goat meat is boiled with basic aromatics until incredibly tender. Prepared without any oil, this method allows the natural, slightly gamey flavor of the goat to shine through, resulting in tender, flavorful meat and a rich, savory broth. It's a pure and traditional way to enjoy one of Uganda's most popular meats.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "traditional_hearty_meal",
+    "occasions": ["daily_meals", "family_gatherings", "weekend_meals", "special_occasions", "mens_gatherings"],
+    "cultural_notes": "Boiled goat meat is a staple in many Ugandan households, particularly appreciated for its simplicity and robust flavor. It is often prepared for family gatherings and is especially popular among men. The dish represents traditional, no-fuss cooking that focuses on the quality of the main ingredient. The ability to cook goat meat until perfectly tender is considered a basic but important culinary skill. The rich broth is never wasted and is often enjoyed as a nutritious drink or used in other dishes."
+  },
+  "type": "main_dish",
+  "difficulty": "easy",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 10,
+  "cook_time_mins": 120,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_goat_meat",
+      "name": "Goat Meat, with bone",
+      "local_name": "Nyama y'Embuzi",
+      "quantity": 1.5,
+      "unit": "kg",
+      "notes": "Use a mix of cuts - ribs, shoulder, leg - for best flavor. Cut into medium chunks."
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 10,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion, quartered",
+      "local_name": "Tungurusumu",
+      "quantity": 1,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic cloves, crushed",
+      "local_name": "Tungurusumu Omuzungu",
+      "quantity": 5,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "ing_ginger",
+      "name": "Ginger, sliced",
+      "local_name": "Tangawizi",
+      "quantity": 2,
+      "unit": "inch_piece"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 1.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_green_bananas",
+      "name": "Green Bananas (optional)",
+      "local_name": "Matoke",
+      "quantity": 6,
+      "unit": "fingers",
+      "notes": "Peeled and added to cook with the meat for a complete meal"
+    },
+    {
+      "ingredient_id": "ing_chili_peppers",
+      "name": "Fresh Chili Peppers (optional)",
+      "local_name": "Pilipili",
+      "quantity": 2,
+      "unit": "pieces",
+      "notes": "Whole, for subtle heat in the broth"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_pot",
+      "name": "Large Pot with Lid",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_slotted_spoon",
+      "name": "Slotted Spoon",
+      "local_name": "N/A"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Knife",
+      "local_name": "Mumo"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Rinse the goat meat pieces under cold running water to remove any bone fragments or impurities.",
+      "action": "cleaning_meat",
+      "ingredients": ["ing_goat_meat"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Place the goat meat chunks in a large pot. Add the quartered onion, crushed garlic, sliced ginger, salt, and whole chili peppers if using.",
+      "action": "combining_ingredients",
+      "ingredients": ["ing_onion", "ing_garlic", "ing_ginger", "ing_salt", "ing_chili_peppers"],
+      "utensils": ["utn_large_pot"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Pour the 10 cups of water over the meat and aromatics. The water should completely cover the meat by at least an inch.",
+      "action": "adding_water",
+      "ingredients": ["ing_water"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Cover the pot and bring to a rolling boil over high heat.",
+      "action": "bringing_to_boil"
+    },
+    {
+      "step_number": 5,
+      "instruction": "Once boiling, reduce the heat to low to maintain a gentle simmer. Cover and let it cook for 1.5 to 2 hours.",
+      "action": "simmering",
+      "cooking_indicators": {
+        "olfactory": "A rich, meaty, and savory aroma will develop.",
+        "time": "90-120 minutes"
+      }
+    },
+    {
+      "step_number": 6,
+      "instruction": "If using green bananas (matoke), add the peeled bananas to the pot after the meat has been cooking for about 1 hour. They will cook in the flavorful broth and absorb the meaty flavors.",
+      "action": "adding_matoke",
+      "ingredients": ["ing_green_bananas"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "After 1.5 hours, check the meat for tenderness. Goat meat can be tough and may require the full 2 hours. The meat should be fork-tender and easily pull away from the bone.",
+      "action": "testing_doneness",
+      "cooking_indicators": {
+        "texture": "The meat should be very tender but not disintegrating."
+      }
+    },
+    {
+      "step_number": 8,
+      "instruction": "Once cooked, use a slotted spoon to remove the meat (and matoke) from the broth and place them on a serving platter.",
+      "action": "removing_solids",
+      "utensils": ["utn_slotted_spoon"]
+    },
+    {
+      "step_number": 9,
+      "instruction": "Reserve the rich, flavorful broth. It makes a nutritious soup or can be used as a base for cooking other dishes like rice or vegetables.",
+      "action": "reserving_broth"
+    },
+    {
+      "step_number": 10,
+      "instruction": "Serve the boiled goat meat hot with the matoke if used.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "boiling_simmering",
+  "heat_level": "low",
+  "serving_suggestions": "Serve the tender goat meat and matoke (if used) with a staple carbohydrate like Posho (Ugali), Cassava, or Sweet Potatoes. The reserved broth can be served in bowls as a light soup. A side of steamed leafy greens like Sukuma Wiki or Nakati, and a fresh tomato and onion salad (Kachumbari) complement the meat perfectly. For extra flavor, serve with a side of groundnut sauce or simsim paste.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 320,
+      "carbohydrates_g": 8,
+      "protein_g": 38,
+      "fat_g": 14,
+      "cholesterol_mg": 110,
+      "sodium_mg": 850
+    },
+    "health_benefits": ["high_quality_protein", "rich_in_iron", "excellent_source_of_b12", "good_source_of_zinc", "contains_conjugated_linoleic_acid", "low_carbohydrate", "no_added_fat", "gluten_free"]
+  },
+  "tags": ["main_dish", "goat", "boiled", "no_oil", "protein_rich", "traditional", "hearty", "healthy", "gluten_free", "comfort_food"],
+  "source": "traditional_ugandan_cooking",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

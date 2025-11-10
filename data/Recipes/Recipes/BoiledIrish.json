@@ -1,0 +1,143 @@
+{
+  "recipe_id": "ug_recipe_boiled_potatoes_134",
+  "name": {
+    "en": "Plain Boiled Irish Potatoes",
+    "local_name": "obumonde"
+  },
+  "description": "The simplest of preparations - fresh Irish potatoes boiled in nothing but water until tender. This method highlights the natural, earthy flavor and starchy goodness of the potatoes themselves. The result is soft, fluffy potatoes with a clean, comforting taste that serves as the perfect blank canvas for any meal.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "basic_staple_food",
+    "occasions": ["daily_meals", "breakfast", "lunch", "dinner", "school_meals", "quick_meals"],
+    "cultural_notes": "Plain boiled potatoes are one of the most fundamental and affordable foods in Uganda. They are a common sight in school feeding programs, hospital meals, and everyday household cooking. Their simplicity makes them incredibly versatile - they can be eaten as is, mashed with a fork, or served alongside virtually any sauce, stew, or vegetable. For many, this is the ultimate comfort food - simple, filling, and nourishing. The ability to perfectly boil potatoes without them becoming waterlogged is a basic but essential kitchen skill."
+  },
+  "type": "staple_carbohydrate",
+  "difficulty": "very_easy",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 5,
+  "cook_time_mins": 25,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_potatoes",
+      "name": "Fresh Irish Potatoes",
+      "local_name": "obumonde",
+      "quantity": 1,
+      "unit": "kg",
+      "notes": "Choose potatoes of similar size for even cooking"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 8,
+      "unit": "cups",
+      "notes": "Enough to completely cover the potatoes"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_medium_pot",
+      "name": "Medium Pot with Lid",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_colander",
+      "name": "Colander",
+      "local_name": "N/A"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Knife",
+      "local_name": "akambe"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Wash the potatoes thoroughly under running water to remove any dirt or soil from the skins. You can scrub them with a brush if needed.",
+      "action": "cleaning_potatoes",
+      "ingredients": ["ing_potatoes"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "If desired, you can peel the potatoes. However, leaving the skins on is traditional and adds extra fiber and nutrients.",
+      "action": "optional_peeling",
+      "utensils": ["utn_knife"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "If the potatoes are large, you can cut them into halves or quarters to ensure even cooking. Small potatoes can be left whole.",
+      "action": "cutting_potatoes"
+    },
+    {
+      "step_number": 4,
+      "instruction": "Place the prepared potatoes in a medium pot.",
+      "action": "pot_setup",
+      "utensils": ["utn_medium_pot"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Add enough cold water to completely cover the potatoes by about an inch (approximately 8 cups).",
+      "action": "adding_water",
+      "ingredients": ["ing_water"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Cover the pot with a lid and bring to a rolling boil over high heat.",
+      "action": "bringing_to_boil"
+    },
+    {
+      "step_number": 7,
+      "instruction": "Once boiling, reduce the heat to medium to maintain a gentle boil. Cover and cook for 15-25 minutes.",
+      "action": "boiling",
+      "cooking_indicators": {
+        "time": "5-10 minutes depending on potato size"
+      }
+    },
+    {
+      "step_number": 8,
+      "instruction": "Test for doneness by piercing a potato piece with a knife or fork. It should slide in and out easily with little resistance.",
+      "action": "testing_doneness",
+      "cooking_indicators": {
+        "texture": "The potatoes should be tender and fluffy throughout"
+      }
+    },
+    {
+      "step_number": 9,
+      "instruction": "Once cooked, carefully drain the hot water using a colander.",
+      "action": "draining",
+      "utensils": ["utn_colander"]
+    },
+    {
+      "step_number": 10,
+      "instruction": "Return the drained potatoes to the empty pot and place it back on the warm (but turned off) stove for a minute. This helps any residual moisture evaporate, making the potatoes fluffier.",
+      "action": "drying_potatoes"
+    },
+    {
+      "step_number": 11,
+      "instruction": "Serve the plain boiled potatoes immediately while hot.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "boiling",
+  "heat_level": "medium",
+  "serving_suggestions": "Serve as a staple carbohydrate alongside any main dish. They are perfect with stews, sauces, grilled meat, or fried fish. The plain potatoes can be broken up with a fork and used to scoop up sauces. They can also be mashed roughly with a little of the cooking water for a creamier texture. Some people enjoy them with a sprinkle of salt at the table.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 160,
+      "carbohydrates_g": 37,
+      "protein_g": 4,
+      "fat_g": 0,
+      "cholesterol_mg": 0,
+      "sodium_mg": 10
+    },
+    "health_benefits": ["excellent_source_of_carbohydrates", "good_source_of_vitamin_c", "high_in_potassium", "contains_dietary_fiber", "fat_free", "cholesterol_free", "naturally_gluten_free", "vegan"]
+  },
+  "tags": ["staple", "carbohydrate", "potatoes", "simple", "vegan", "gluten_free", "fat_free", "comfort_food", "everyday", "basic"],
+  "source": "traditional_staple_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

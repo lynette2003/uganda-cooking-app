@@ -1,0 +1,236 @@
+{
+  "recipe_id": "ug_recipe_beef_pilau_062",
+  "name": {
+    "en": "Beef Pilau",
+    "local_name": "Pilau"
+  },
+  "description": "A fragrant, spiced rice dish where beef is slow-cooked with a blend of Pilau Masala, then rice is added to absorb the rich, flavorful stock. Known for its distinctive brown color and aromatic depth.",
+  "origin_region": "Coastal & Urban Influences (Nationwide popularity)",
+  "cultural_significance": {
+    "importance": "celebratory_feast_dish",
+    "occasions": ["Eid_ul_Fitr", "Eid_ul_Adha", "Christmas", "weddings", "birthdays", "family_gatherings"],
+    "cultural_notes": "Pilau is the centerpiece of celebration in Uganda, especially within Muslim communities and coastal cultural influences. It's a dish that signifies generosity and special occasions. The complex spice blend (Pilau Masala) is what sets it apart, and every family often has their own secret mix."
+  },
+  "type": "main_course",
+  "difficulty": "medium",
+  "servings": {
+    "min": 6,
+    "max": 8
+  },
+  "prep_time_mins": 30,
+  "cook_time_mins": 60,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_beef",
+      "name": "Beef Stew Meat",
+      "local_name": "Nyama ya Ng'ombe",
+      "quantity": 500,
+      "unit": "grams",
+      "notes": "Cut into bite-sized cubes"
+    },
+    {
+      "ingredient_id": "ing_basmati_rice",
+      "name": "Basmati Rice",
+      "local_name": "Mchele",
+      "quantity": 3,
+      "unit": "cups",
+      "notes": "Thoroughly washed and soaked for 20-30 minutes"
+    },
+    {
+      "ingredient_id": "ing_onions",
+      "name": "Onions",
+      "local_name": "Kitungulu",
+      "quantity": 3,
+      "unit": "large",
+      "notes": "2 thinly sliced, 1 roughly chopped"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic",
+      "local_name": "Vitungulu Saumuni",
+      "quantity": 6,
+      "unit": "cloves",
+      "notes": "Minced"
+    },
+    {
+      "ingredient_id": "ing_ginger",
+      "name": "Fresh Ginger",
+      "local_name": "Tangawizi",
+      "quantity": 2,
+      "unit": "inch piece",
+      "notes": "Grated"
+    },
+    {
+      "ingredient_id": "ing_vegetable_oil",
+      "name": "Vegetable Oil",
+      "local_name": "Mafuta",
+      "quantity": 0.5,
+      "unit": "cup"
+    },
+    {
+      "ingredient_id": "ing_pilau_masala",
+      "name": "Pilau Masala",
+      "local_name": "Pilau Masala",
+      "quantity": 2,
+      "unit": "tbsp",
+      "notes": "A blend of cumin, coriander, cardamom, black pepper, cinnamon, and cloves"
+    },
+    {
+      "ingredient_id": "ing_beef_stock_water",
+      "name": "Beef Stock or Water",
+      "local_name": "Maji ya Nyama / Maji",
+      "quantity": 5,
+      "unit": "cups",
+      "notes": "Hot"
+    },
+    {
+      "ingredient_id": "ing_potatoes",
+      "name": "Potatoes",
+      "local_name": "Viazi",
+      "quantity": 2,
+      "unit": "large",
+      "notes": "Peeled and quartered (optional)"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Chumvi",
+      "quantity": 2,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_bay_leaves",
+      "name": "Bay Leaves",
+      "local_name": "Majani ya Bay",
+      "quantity": 2,
+      "unit": "pieces"
+    },
+    {
+      "ingredient_id": "ing_cilantro",
+      "name": "Fresh Cilantro",
+      "local_name": "Dhania",
+      "quantity": 0.25,
+      "unit": "cup",
+      "notes": "Chopped, for garnish"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_pot",
+      "name": "Large, Heavy-Bottomed Pot",
+      "local_name": "Sufuria Kubwa"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Mwiko"
+    },
+    {
+      "utensil_id": "utn_colander",
+      "name": "Colander",
+      "local_name": "Kikomulo"
+    },
+    {
+      "utensil_id": "utn_plate",
+      "name": "Large Plate",
+      "local_name": "Sahani",
+      "notes": "For covering the rice while steaming"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Wash the rice thoroughly until the water runs clear. Soak it in water for 20-30 minutes, then drain completely. This helps achieve fluffier rice.",
+      "action": "preparing_rice",
+      "ingredients": ["ing_basmati_rice"],
+      "utensils": ["utn_colander"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "In a large, heavy-bottomed pot, heat the vegetable oil over medium-high heat. Add the thinly sliced onions and fry, stirring constantly, until they turn dark brown and crispy. This creates the 'birista' which gives the pilau its color and flavor. Remove half of the fried onions and set aside for garnish.",
+      "action": "frying_onions",
+      "ingredients": ["ing_onions", "ing_vegetable_oil"],
+      "utensils": ["utn_large_pot", "utn_wooden_spoon"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "To the remaining onions and oil in the pot, add the minced garlic and grated ginger. Sauté for 1 minute until fragrant.",
+      "action": "sautéing",
+      "ingredients": ["ing_garlic", "ing_ginger"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Add the beef cubes and the roughly chopped onion. Cook, stirring occasionally, until the beef is browned on all sides.",
+      "action": "browning_meat",
+      "ingredients": ["ing_beef", "ing_onions"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Add the Pilau Masala and salt to the pot. Stir vigorously for 1-2 minutes to coat the beef and toast the spices. This is the most critical step for developing flavor.",
+      "action": "toasting_spices",
+      "ingredients": ["ing_pilau_masala", "ing_salt"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Pour in the hot beef stock or water. Add the bay leaves and the optional potatoes. Bring to a boil, then reduce heat, cover, and simmer for 25-30 minutes, or until the beef is almost tender.",
+      "action": "cooking_meat",
+      "ingredients": ["ing_beef_stock_water", "ing_bay_leaves", "ing_potatoes"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Gently add the drained rice over the beef and stock. Do not stir. Use the back of the spoon to spread the rice into an even layer. The stock should be about 1-2 cm above the rice level.",
+      "action": "adding_rice",
+      "ingredients": ["ing_basmati_rice"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Bring the pot to a gentle simmer, then reduce the heat to the absolute lowest setting. Cover the pot tightly with a lid. For best results, you can place a clean kitchen cloth or a large plate under the lid to trap the steam.",
+      "action": "steaming_rice",
+      "utensils": ["utn_plate"]
+    },
+    {
+      "step_number": 9,
+      "instruction": "Let the rice cook undisturbed for 20-25 minutes. Do not open the lid during this time.",
+      "action": "cooking_undisturbed",
+      "cooking_indicators": {
+        "visual": "The rice will be fluffy and have absorbed all the stock.",
+        "time": "20-25 minutes",
+        "texture": "Grains are separate and tender. A 'crust' may form at the bottom (this is a delicacy)."
+      }
+    },
+    {
+      "step_number": 10,
+      "instruction": "Turn off the heat. Let the pilau rest, still covered, for another 10 minutes.",
+      "action": "resting"
+    },
+    {
+      "step_number": 11,
+      "instruction": "Remove the lid. Use a fork to fluff the rice, gently mixing the beef and rice from the bottom.",
+      "action": "fluffing"
+    },
+    {
+      "step_number": 12,
+      "instruction": "Garnish with the reserved fried onions and fresh cilantro. Serve hot.",
+      "action": "garnishing_serving",
+      "ingredients": ["ing_cilantro"]
+    }
+  ],
+  "cooking_method": "steaming_absorption",
+  "heat_level": "medium_low",
+  "serving_suggestions": "Traditionally served with Kachumbari (a fresh tomato, onion, and cilantro salad) and a side of plain yogurt or a simple tomato and chili sauce.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 450,
+      "carbohydrates_g": 60,
+      "protein_g": 20,
+      "fat_g": 15,
+      "cholesterol_mg": 40,
+      "sodium_mg": 700
+    },
+    "health_benefits": ["energy_boosting", "good_source_of_iron", "protein_packed", "anti_inflammatory_spices"]
+  },
+  "tags": ["main_course", "celebratory", "spiced", "rice_dish", "festive", "family_feast"],
+  "source": "traditional_recipe_swahili_coast",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

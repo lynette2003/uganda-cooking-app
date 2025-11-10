@@ -1,0 +1,167 @@
+{
+  "recipe_id": "ug_recipe_boiled_beans_141",
+  "name": {
+    "en": "Boiled Beans",
+    "local_name": "Ebijanjaalo"
+  },
+  "description": "A simple, nutritious, and comforting dish of beans slowly boiled until tender and creamy. This fundamental staple is a cornerstone of the Ugandan diet, providing affordable, plant-based protein to millions. The slow cooking process transforms hard beans into a soft, savory dish with a rich, creamy texture that perfectly complements other foods.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "foundational_staple_food",
+    "occasions": ["daily_meals", "breakfast", "lunch", "dinner", "school_feeding", "every_occasion"],
+    "cultural_notes": "Boiled beans are the bedrock of protein consumption for most Ugandan families. Their affordability and nutritional value make them essential in household budgets. They are served in virtually every school feeding program, most local restaurants ('kafunda'), and are a daily feature in home cooking. The ability to cook beans to perfect tenderness without burning is a basic but vital culinary skill. Beans are often cooked in large batches to last for several meals, representing practicality and resourcefulness in everyday Ugandan life."
+  },
+  "type": "main_dish_side_dish",
+  "difficulty": "easy",
+  "servings": {
+    "min": 6,
+    "max": 8
+  },
+  "prep_time_mins": 10,
+  "cook_time_mins": 120,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_dry_beans",
+      "name": "Dry Beans (Nambale, Mwitemania, or Red Kidney Beans)",
+      "local_name": "Ebijanjaalo",
+      "quantity": 2,
+      "unit": "cups",
+      "notes": "Sorted and cleaned to remove stones and debris"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 8,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion, chopped (optional)",
+      "local_name": "Tungurusumu",
+      "quantity": 1,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_cooking_soda",
+      "name": "Cooking Soda (optional)",
+      "local_name": "Soda",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "notes": "A tiny pinch to help soften beans faster"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_pot",
+      "name": "Large Pot with Lid",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Mwiko"
+    },
+    {
+      "utensil_id": "utn_colander",
+      "name": "Colander",
+      "local_name": "N/A"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Sort through the dry beans carefully to remove any stones, debris, or damaged beans. Rinse thoroughly under cold running water.",
+      "action": "cleaning_beans",
+      "ingredients": ["ing_dry_beans"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Place the cleaned beans in a large pot and cover with about 6 cups of water. The water should be about 2 inches above the beans.",
+      "action": "soaking_beans",
+      "ingredients": ["ing_water"],
+      "utensils": ["utn_large_pot"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Optional: For faster cooking, you can soak the beans overnight or for at least 4 hours. Drain the soaking water before cooking.",
+      "action": "optional_soaking",
+      "utensils": ["utn_colander"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "If not soaking, add the pinch of cooking soda to help soften the beans. Add the chopped onion if using.",
+      "action": "adding_softening_agents",
+      "ingredients": ["ing_cooking_soda", "ing_onion"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Bring to a rolling boil over high heat, then reduce the heat to low to maintain a gentle simmer.",
+      "action": "bringing_to_boil"
+    },
+    {
+      "step_number": 6,
+      "instruction": "Cover the pot and let the beans simmer for 1.5 to 2 hours. Check occasionally and add more hot water if needed to keep the beans covered.",
+      "action": "simmering",
+      "cooking_indicators": {
+        "time": "90-120 minutes",
+        "olfactory": "A warm, earthy, and comforting aroma will develop"
+      }
+    },
+    {
+      "step_number": 7,
+      "instruction": "After about 1 hour, check the beans for tenderness. They should be soft but not mushy. Add salt only when the beans are almost tender, as adding it too early can harden them.",
+      "action": "testing_tenderness",
+      "ingredients": ["ing_salt"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Continue cooking until the beans are very tender and the cooking liquid has thickened slightly to a creamy consistency. The beans should mash easily between your fingers.",
+      "action": "final_cooking",
+      "cooking_indicators": {
+        "texture": "Beans are soft and creamy, with a thick cooking liquid"
+      }
+    },
+    {
+      "step_number": 9,
+      "instruction": "If there is too much liquid, you can simmer uncovered for the last 10-15 minutes to reduce it to your desired consistency.",
+      "action": "adjusting_consistency"
+    },
+    {
+      "step_number": 10,
+      "instruction": "Taste and adjust salt if needed. The beans should be savory and well-seasoned.",
+      "action": "final_seasoning"
+    },
+    {
+      "step_number": 11,
+      "instruction": "Serve the boiled beans hot as a main dish or side.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "boiling_simmering",
+  "heat_level": "low",
+  "serving_suggestions": "Serve as a main protein source with Posho (Ugali), Matoke, or Rice. Boiled beans are often accompanied by steamed greens like Sukuma Wiki or Dodo. They can also be served with Chapati for a complete meal. Some people enjoy beans with a slice of avocado or a side of fried plantains. The creamy bean broth is particularly enjoyed when poured over the starch.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 220,
+      "carbohydrates_g": 40,
+      "protein_g": 14,
+      "fat_g": 1,
+      "cholesterol_mg": 0,
+      "sodium_mg": 300,
+      "fiber_g": 13
+    },
+    "health_benefits": ["excellent_plant_based_protein", "high_in_dietary_fiber", "rich_in_iron", "good_source_of_folate", "low_fat", "cholesterol_free", "vegan", "gluten_free", "supports_heart_health", "aids_digestion"]
+  },
+  "tags": ["main_dish", "side_dish", "beans", "staple", "protein", "vegan", "gluten_free", "comfort_food", "affordable", "nutritious", "everyday"],
+  "source": "traditional_staple_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

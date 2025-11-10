@@ -1,0 +1,202 @@
+{
+  "recipe_id": "ug_recipe_boiled_blood_meat_133",
+  "name": {
+    "en": "Boiled Blood with Meat (Mala)",
+    "local_name": "Mala"
+  },
+  "description": "A rich, dark, and intensely flavorful traditional dish where fresh animal blood is carefully cooked with meat, creating a thick, savory, and nutritious stew. The blood coagulates during cooking, giving the dish a unique, firm texture and a deep, mineral-rich flavor that is highly valued in traditional cuisine. This is a dish of cultural significance, representing the utilization of every part of the animal.",
+  "origin_region": "Northern and Eastern Uganda",
+  "cultural_significance": {
+    "importance": "traditional_nose_to_tail_delicacy",
+    "occasions": ["special_occasions", "slaughtering_days", "cultural_ceremonies", "elders_meals"],
+    "cultural_notes": "Mala is considered a delicacy and is typically prepared immediately after animal slaughter when fresh blood is available. It is highly valued for its nutritional properties and is often given to new mothers, the elderly, or those recovering from illness for its high iron content. The dish represents the principle of zero waste in traditional animal husbandry, where every part of the animal is utilized. Preparing and eating Mala connects communities to ancestral foodways and traditional knowledge about the nutritional use of animal parts."
+  },
+  "type": "main_dish_stew",
+  "difficulty": "medium",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 30,
+  "cook_time_mins": 90,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_fresh_blood",
+      "name": "Fresh Animal Blood",
+      "local_name": "Mazzi g'Omusaayi",
+      "quantity": 2,
+      "unit": "cups",
+      "notes": "Typically goat or cow blood, collected with a pinch of salt to prevent coagulation"
+    },
+    {
+      "ingredient_id": "ing_meat",
+      "name": "Goat or Beef Meat",
+      "local_name": "Nyama",
+      "quantity": 500,
+      "unit": "grams",
+      "notes": "With some bone for flavor, cut into small chunks"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 4,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion, finely chopped",
+      "local_name": "Tungurusumu",
+      "quantity": 1,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic, minced",
+      "local_name": "Tungurusumu Omuzungu",
+      "quantity": 3,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "ing_ginger",
+      "name": "Ginger, grated",
+      "local_name": "Tangawizi",
+      "quantity": 1,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_chili_peppers",
+      "name": "Fresh Chili Peppers, chopped",
+      "local_name": "Pilipili",
+      "quantity": 2,
+      "unit": "pieces",
+      "notes": "Adjust to taste"
+    },
+    {
+      "ingredient_id": "ing_vinegar",
+      "name": "Vinegar or Lemon Juice",
+      "local_name": "Siriya",
+      "quantity": 1,
+      "unit": "tbsp",
+      "notes": "To help stabilize the blood and prevent over-coagulation"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_heavy_pot",
+      "name": "Heavy-bottomed Pot",
+      "local_name": "Sufuria Nzito"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Mwiko"
+    },
+    {
+      "utensil_id": "utn_whisk",
+      "name": "Whisk",
+      "local_name": "N/A"
+    },
+    {
+      "utensil_id": "utn_strainer",
+      "name": "Fine Strainer",
+      "local_name": "N/A"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "If the blood has coagulated, strain it through a fine strainer to remove any lumps and achieve a smooth liquid consistency.",
+      "action": "preparing_blood",
+      "ingredients": ["ing_fresh_blood"],
+      "utensils": ["utn_strainer"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Add the vinegar or lemon juice to the blood and whisk gently. This helps stabilize the blood and creates a better texture when cooked.",
+      "action": "stabilizing_blood",
+      "ingredients": ["ing_vinegar"],
+      "utensils": ["utn_whisk"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "In a heavy-bottomed pot, combine the meat chunks, chopped onion, minced garlic, grated ginger, and salt.",
+      "action": "combining_meat_aromatics",
+      "ingredients": ["ing_meat", "ing_onion", "ing_garlic", "ing_ginger", "ing_salt"],
+      "utensils": ["utn_heavy_pot"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Add 3 cups of water to the pot, cover, and bring to a boil over medium heat.",
+      "action": "initial_boiling",
+      "ingredients": ["ing_water"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Reduce heat to low, cover, and simmer for 45-60 minutes until the meat is tender.",
+      "action": "simmering_meat",
+      "cooking_indicators": {
+        "texture": "Meat should be tender but not falling apart"
+      }
+    },
+    {
+      "step_number": 6,
+      "instruction": "Once the meat is tender, reduce the heat to the lowest setting. Slowly pour the prepared blood into the pot in a thin stream, stirring constantly with a wooden spoon.",
+      "action": "adding_blood",
+      "utensils": ["utn_wooden_spoon"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Continue to stir gently as the blood begins to coagulate and cook. It will gradually thicken and turn dark brown.",
+      "action": "cooking_blood",
+      "cooking_indicators": {
+        "visual": "The mixture will darken and thicken to a pudding-like consistency"
+      }
+    },
+    {
+      "step_number": 8,
+      "instruction": "Add the remaining 1 cup of water and chopped chili peppers. Stir gently to combine.",
+      "action": "adding_water_peppers",
+      "ingredients": ["ing_chili_peppers"]
+    },
+    {
+      "step_number": 9,
+      "instruction": "Cover and let it cook on very low heat for another 15-20 minutes, stirring occasionally to prevent sticking.",
+      "action": "final_cooking",
+      "cooking_indicators": {
+        "texture": "The blood should be fully cooked and firm, but still moist"
+      }
+    },
+    {
+      "step_number": 10,
+      "instruction": "The dish is ready when the blood is completely cooked through and has a firm but tender texture. Serve hot.",
+      "action": "testing_doneness"
+    }
+  ],
+  "cooking_method": "boiling_stewing",
+  "heat_level": "low",
+  "serving_suggestions": "Serve this rich, iron-packed dish with staple carbohydrates like Posho (Ugali), Cassava, or Matoke to balance its intense flavor. The starchy sides help complement the strong, mineral taste of the blood. A side of steamed bitter greens like Nakati or Dodo provides a good contrast. Often served with a cold traditional beverage.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 280,
+      "carbohydrates_g": 5,
+      "protein_g": 35,
+      "fat_g": 12,
+      "cholesterol_mg": 180,
+      "sodium_mg": 700,
+      "iron_mg": 8
+    },
+    "health_benefits": ["extremely_high_in_iron", "excellent_protein_source", "rich_in_zinc", "high_in_vitamin_b12", "contains_essential_amino_acids", "supports_blood_health"]
+  },
+  "tags": ["main_dish", "blood", "offal", "traditional", "iron_rich", "protein_packed", "nose_to_tail", "delicacy", "northern_uganda", "eastern_uganda", "gluten_free"],
+  "source": "traditional_ugandan_cuisine",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

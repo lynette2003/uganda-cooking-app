@@ -1,0 +1,224 @@
+{
+  "recipe_id": "ug_recipe_spiced_herbal_tea_158",
+  "name": {
+    "en": "Spiced Herbal Tea",
+    "local_name": "Chai Ey'Ennyoogera n'Ebiribwa"
+  },
+  "description": "A fragrant, warming tea infused with a blend of traditional spices and fresh herbs that create a complex, aromatic beverage. This spiced herbal tea combines the warmth of ginger and cinnamon with the freshness of mint and lemongrass, resulting in a soothing drink that comforts both body and soul. The natural sweetness of the spices means less sugar is needed, making it a healthier alternative to regular tea.",
+  "origin_region": "Nationwide (Urban and Rural Households)",
+  "cultural_significance": {
+    "importance": "traditional_medicinal_beverage",
+    "occasions": ["morning_ritual", "evening_relaxation", "cold_weather", "medicinal_use", "guest_hospitality", "after_meals"],
+    "cultural_notes": "Spiced herbal tea represents the intersection of traditional medicine and daily beverage consumption in Uganda. Many of the herbs and spices used have been valued for generations for their medicinal properties. This tea is often prepared for guests as a sign of warm hospitality, for family members feeling unwell, or as a comforting evening drink. The knowledge of which herbs to use for specific ailments is often passed down through generations, making this tea both a beverage and a form of traditional healthcare."
+  },
+  "type": "beverage",
+  "difficulty": "easy",
+  "servings": {
+    "min": 2,
+    "max": 4
+  },
+  "prep_time_mins": 5,
+  "cook_time_mins": 10,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 4,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_fresh_ginger",
+      "name": "Fresh Ginger, sliced",
+      "local_name": "Tangawizi",
+      "quantity": 1,
+      "unit": "inch_piece",
+      "notes": "Adds warmth and aids digestion"
+    },
+    {
+      "ingredient_id": "ing_cinnamon",
+      "name": "Cinnamon Stick",
+      "local_name": "N/A",
+      "quantity": 1,
+      "unit": "piece",
+      "notes": "2-3 inches long, or 1/2 tsp ground cinnamon"
+    },
+    {
+      "ingredient_id": "ing_fresh_mint",
+      "name": "Fresh Mint Leaves",
+      "local_name": "N/A",
+      "quantity": 0.25,
+      "unit": "cup",
+      "notes": "Adds freshness and aids digestion"
+    },
+    {
+      "ingredient_id": "ing_lemongrass",
+      "name": "Fresh Lemongrass",
+      "local_name": "N/A",
+      "quantity": 1,
+      "unit": "stalk",
+      "notes": "Bruised to release flavor"
+    },
+    {
+      "ingredient_id": "ing_cloves",
+      "name": "Cloves",
+      "local_name": "N/A",
+      "quantity": 4,
+      "unit": "pieces",
+      "notes": "Adds warmth and aroma"
+    },
+    {
+      "ingredient_id": "ing_cardamom",
+      "name": "Cardamom Pods",
+      "local_name": "N/A",
+      "quantity": 3,
+      "unit": "pods",
+      "notes": "Lightly crushed"
+    },
+    {
+      "ingredient_id": "ing_black_tea",
+      "name": "Black Tea Leaves or Tea Bags",
+      "local_name": "Chai",
+      "quantity": 2,
+      "unit": "tsp",
+      "notes": "Optional, for caffeine version"
+    },
+    {
+      "ingredient_id": "ing_honey",
+      "name": "Honey or Sugar",
+      "local_name": "Obutiizi",
+      "quantity": 2,
+      "unit": "tbsp",
+      "notes": "Adjust to taste"
+    },
+    {
+      "ingredient_id": "ing_lemon",
+      "name": "Lemon Slices",
+      "local_name": "Ndimu",
+      "quantity": 4,
+      "unit": "slices",
+      "notes": "For serving"
+    },
+    {
+      "ingredient_id": "ing_fresh_thyme",
+      "name": "Fresh Thyme (optional)",
+      "local_name": "N/A",
+      "quantity": 2,
+      "unit": "sprigs",
+      "notes": "Adds earthy flavor"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_saucepan",
+      "name": "Small Saucepan",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Knife",
+      "local_name": "Mumo"
+    },
+    {
+      "utensil_id": "utn_cutting_board",
+      "name": "Cutting Board",
+      "local_name": "Ebbaawo"
+    },
+    {
+      "utensil_id": "utn_teapot",
+      "name": "Teapot or Heatproof Jug",
+      "local_name": "N/A"
+    },
+    {
+      "utensil_id": "utn_strainer",
+      "name": "Fine Mesh Strainer",
+      "local_name": "N/A"
+    },
+    {
+      "utensil_id": "utn_mortar_pestle",
+      "name": "Mortar and Pestle (optional)",
+      "local_name": "Ebiyondo n'Okubaaza"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Prepare all herbs and spices: slice ginger, bruise lemongrass by hitting with the back of a knife, lightly crush cardamom pods, and wash mint and thyme.",
+      "action": "preparing_ingredients",
+      "ingredients": ["ing_fresh_ginger", "ing_lemongrass", "ing_cardamom", "ing_fresh_mint", "ing_fresh_thyme"],
+      "utensils": ["utn_knife", "utn_cutting_board", "utn_mortar_pestle"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Pour water into a saucepan and add all the spices: ginger, cinnamon, cloves, cardamom, and lemongrass.",
+      "action": "combining_spices_water",
+      "ingredients": ["ing_water", "ing_fresh_ginger", "ing_cinnamon", "ing_cloves", "ing_cardamom", "ing_lemongrass"],
+      "utensils": ["utn_saucepan"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Bring to a boil over medium-high heat, then reduce heat and simmer for 5-7 minutes to allow the spices to infuse the water.",
+      "action": "simmering_spices",
+      "cooking_indicators": {
+        "olfactory": "A warm, spicy aroma will fill the kitchen",
+        "visual": "The water will turn light brown from the spices"
+      }
+    },
+    {
+      "step_number": 4,
+      "instruction": "If using black tea, add it now and simmer for 2-3 minutes more. For caffeine-free version, skip this step.",
+      "action": "adding_tea",
+      "ingredients": ["ing_black_tea"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Remove from heat and add the fresh herbs: mint and thyme. Stir gently.",
+      "action": "adding_herbs",
+      "ingredients": ["ing_fresh_mint", "ing_fresh_thyme"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Cover and let steep for 3-5 minutes to allow the herbs to infuse their flavors.",
+      "action": "steeping",
+      "cooking_indicators": {
+        "time": "3-5 minutes"
+      }
+    },
+    {
+      "step_number": 7,
+      "instruction": "Strain the tea through a fine mesh strainer into a teapot or directly into cups.",
+      "action": "straining",
+      "utensils": ["utn_strainer", "utn_teapot"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Add honey or sugar to taste, stirring until dissolved.",
+      "action": "sweetening",
+      "ingredients": ["ing_honey"]
+    },
+    {
+      "step_number": 9,
+      "instruction": "Pour into cups and serve hot with a slice of lemon on the side.",
+      "action": "serving",
+      "ingredients": ["ing_lemon"]
+    }
+  ],
+  "cooking_method": "simmering_infusing",
+  "heat_level": "medium",
+  "serving_suggestions": "Serve hot in mugs or traditional cups. The tea is excellent on its own but can be accompanied by biscuits, mandazi, or chapati. Perfect for morning meditation, afternoon breaks, or evening relaxation. Can be served with a sprig of fresh mint as garnish.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 30,
+      "carbohydrates_g": 8,
+      "protein_g": 0,
+      "fat_g": 0,
+      "cholesterol_mg": 0,
+      "sodium_mg": 5
+    },
+    "health_benefits": ["aids_digestion", "anti_inflammatory_properties", "rich_in_antioxidants", "supports_immune_system", "soothing_for_cold_symptoms", "stress_relieving", "caffeine_free_option", "vegan", "gluten_free"]
+  },
+  "tags": ["beverage", "tea", "herbal", "spiced", "medicinal", "warming", "comforting", "vegan", "gluten_free", "digestive_aid", "traditional"],
+  "source": "traditional_ugandan_herbal_wisdom",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

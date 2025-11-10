@@ -1,0 +1,93 @@
+{
+  "recipe_id": "ug_recipe_nswaa_056",
+  "name": {
+    "en": "Nswaa",
+    "local_name": "Nswaa"
+  },
+  "description": "A traditional Ugandan snack made from roasted termites, rich in protein and commonly eaten as a delicacy.",
+  "origin_region": "Eastern Uganda",
+  "cultural_significance": {
+    "importance": "seasonal_delicacy",
+    "occasions": ["harvest_season", "festivals"],
+    "cultural_notes": "Nswaa is often collected during rainy seasons and shared among communities as a high-protein snack."
+  },
+  "type": "snack",
+  "difficulty": "easy",
+  "servings": {
+    "min": 2,
+    "max": 4
+  },
+  "prep_time_mins": 10,
+  "cook_time_mins": 15,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_termites",
+      "name": "Termites",
+      "local_name": "Nswaa",
+      "quantity": 200,
+      "unit": "grams"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Munyu",
+      "quantity": "to taste",
+      "unit": "optional"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_pan",
+      "name": "Pan",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_spatula",
+      "name": "Spatula",
+      "local_name": "Omwengeja"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Heat the pan over moderate heat.",
+      "action": "heating",
+      "utensils": ["utn_pan"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Add termites and roast while stirring until golden brown.",
+      "action": "roasting",
+      "ingredients": ["ing_termites"],
+      "utensils": ["utn_spatula"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Add salt to taste and serve warm as a snack.",
+      "action": "seasoning",
+      "ingredients": ["ing_salt"]
+    }
+  ],
+  "cooking_method": "roasting",
+  "heat_level": "moderate",
+  "cooking_indicators": {
+    "visual": "termites turn golden brown",
+    "time": "10–15 minutes",
+    "texture": "crunchy"
+  },
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 180,
+      "carbohydrates_g": 2,
+      "protein_g": 40,
+      "fat_g": 3,
+      "cholesterol_mg": 0,
+      "sodium_mg": 50
+    },
+    "health_benefits": ["high_protein", "low_carb", "energy_boosting"]
+  },
+  "tags": ["snack", "protein_rich", "traditional", "seasonal"],
+  "source": "traditional_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

@@ -1,0 +1,161 @@
+{
+  "recipe_id": "ug_recipe_chai_097",
+  "name": {
+    "en": "Ugandan Chai (Spiced Tea)",
+    "local_name": "Chai"
+  },
+  "description": "A rich, creamy, and aromatic spiced tea made by boiling black tea leaves with fresh ginger and sometimes other spices in a mixture of water and milk. It's a deeply comforting and essential daily beverage across Uganda.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "everyday_staple_beverage",
+    "occasions": ["breakfast", "teatime", "welcoming_guests", "morning_ritual", "any_time_of_day"],
+    "cultural_notes": "Chai is the lifeblood of Ugandan mornings and social interactions. It is the standard way to prepare tea, far more common than plain black tea. The preparation is a familiar ritual in homes, roadside stalls, and offices. Offering a visitor a cup of chai is a fundamental act of hospitality. It's commonly enjoyed with a snack like mandazi, chapati, or bread."
+  },
+  "type": "beverage",
+  "difficulty": "easy",
+  "servings": {
+    "min": 2,
+    "max": 4
+  },
+  "prep_time_mins": 2,
+  "cook_time_mins": 10,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 2,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_milk",
+      "name": "Milk",
+      "local_name": "Mata",
+      "quantity": 2,
+      "unit": "cups",
+      "notes": "Full-fat cow's milk is traditional"
+    },
+    {
+      "ingredient_id": "ing_black_tea_leaves",
+      "name": "Black Tea Leaves",
+      "local_name": "Majani ya Chai",
+      "quantity": 2,
+      "unit": "heaped tsp",
+      "notes": "Ceylon or other strong black tea. Tea bags can be used (3-4 bags)."
+    },
+    {
+      "ingredient_id": "ing_fresh_ginger",
+      "name": "Fresh Ginger",
+      "local_name": "Tangawizi",
+      "quantity": 1,
+      "unit": "inch piece",
+      "notes": "Crushed or thinly sliced"
+    },
+    {
+      "ingredient_id": "ing_sugar",
+      "name": "Sugar",
+      "local_name": "Sukari",
+      "quantity": 2,
+      "unit": "tbsp",
+      "notes": "Or to taste"
+    },
+    {
+      "ingredient_id": "ing_cardamom_pods",
+      "name": "Cardamom Pods (Optional)",
+      "local_name": "Iliki",
+      "quantity": 2,
+      "unit": "pods",
+      "notes": "Lightly crushed"
+    },
+    {
+      "ingredient_id": "ing_cinnamon_stick",
+      "name": "Cinnamon Stick (Optional)",
+      "local_name": "Dalasini",
+      "quantity": 1,
+      "unit": "small piece"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_saucepan",
+      "name": "Saucepan or Tea Pot (Sufuria)",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_spoon",
+      "name": "Spoon",
+      "local_name": "Kijiko"
+    },
+    {
+      "utensil_id": "utn_strainer",
+      "name": "Strainer (Optional)",
+      "local_name": "Kichujio"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Combine the water, milk, crushed ginger, and optional cardamom and cinnamon in a saucepan.",
+      "action": "combining_liquids_spices",
+      "ingredients": ["ing_water", "ing_milk", "ing_fresh_ginger", "ing_cardamom_pods", "ing_cinnamon_stick"],
+      "utensils": ["utn_saucepan"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Place the saucepan over medium-high heat and bring the mixture to a boil. Watch carefully to prevent it from boiling over.",
+      "action": "heating"
+    },
+    {
+      "step_number": 3,
+      "instruction": "Once it begins to boil, reduce the heat to low and add the black tea leaves (or tea bags).",
+      "action": "adding_tea",
+      "ingredients": ["ing_black_tea_leaves"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Let the tea simmer gently for 3-5 minutes, depending on how strong you like it. Stir occasionally.",
+      "action": "simmering",
+      "cooking_indicators": {
+        "visual": "The tea will turn a rich, caramel-brown color.",
+        "time": "3-5 minutes",
+        "aroma": "The kitchen will fill with the fragrant smell of ginger and spiced tea."
+      }
+    },
+    {
+      "step_number": 5,
+      "instruction": "Add the sugar and stir until it is completely dissolved.",
+      "action": "sweetening",
+      "ingredients": ["ing_sugar"],
+      "utensils": ["utn_spoon"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Turn off the heat. If you used loose tea leaves and whole spices, pour the chai through a strainer into cups or a teapot. If you used tea bags, you can simply remove them.",
+      "action": "straining",
+      "utensils": ["utn_strainer"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Pour the chai into mugs and serve immediately while hot.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "boiling_simmering",
+  "heat_level": "medium",
+  "serving_suggestions": "Serve hot in mugs. Traditionally enjoyed with breakfast foods like Mandazi (doughnuts), Chapati, or plain bread with peanuts. It's the perfect drink to start the day or for an afternoon break.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 120,
+      "carbohydrates_g": 18,
+      "protein_g": 4,
+      "fat_g": 4,
+      "cholesterol_mg": 15,
+      "sodium_mg": 60
+    },
+    "health_benefits": ["antioxidants_from_tea", "ginger_aids_digestion", "energy_boost", "comforting_and_hydrating"]
+  },
+  "tags": ["beverage", "non_alcoholic", "breakfast", "comfort_drink", "spiced", "traditional", "easy"],
+  "source": "traditional_recipe_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

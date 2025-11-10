@@ -1,0 +1,217 @@
+{
+  "recipe_id": "ug_recipe_fried_entula_silverfish_086",
+  "name": {
+    "en": "Fried Garden Eggs with Silver Fish Powder",
+    "local_name": "Biringanya ey'Kukaanga ne Mfumufumu wa Mukene"
+  },
+  "description": "A crispy, savory, and highly nutritious dish where slices of garden egg (eggplant) are coated in a flavorful powder made from dried silver fish and spices, then pan-fried to perfection. It's a powerhouse of flavor, calcium, and protein.",
+  "origin_region": "Nationwide (Ingenious Home Cooking)",
+  "cultural_significance": {
+    "importance": "nutritious_homestyle_dish",
+    "occasions": ["daily_meals", "quick_dinners", "childrens_food", "high_protein_meal"],
+    "cultural_notes": "This recipe is a brilliant example of Ugandan culinary ingenuity, creating a delicious and nutrient-dense coating from affordable, locally available ingredients. Silver fish (mukene) are a traditional source of calcium and protein, especially for children and pregnant women. Grinding them into a powder is a clever way to incorporate their nutritional benefits into a vegetable dish, making it both tasty and incredibly healthy."
+  },
+  "type": "main_course_side_dish",
+  "difficulty": "easy",
+  "servings": {
+    "min": 3,
+    "max": 4
+  },
+  "prep_time_mins": 15,
+  "cook_time_mins": 15,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_garden_eggs",
+      "name": "Garden Eggs (Eggplant/Aubergine)",
+      "local_name": "Biringanya / Entula",
+      "quantity": 2,
+      "unit": "large",
+      "notes": "Sliced into 1/2-inch rounds"
+    },
+    {
+      "ingredient_id": "ing_dried_silver_fish",
+      "name": "Dried Silver Fish (Mukene)",
+      "local_name": "Mukene",
+      "quantity": 0.5,
+      "unit": "cup",
+      "notes": "Clean, rinsed, and thoroughly dried"
+    },
+    {
+      "ingredient_id": "ing_all_purpose_flour",
+      "name": "All-Purpose Flour",
+      "local_name": "Unga wa Ngano",
+      "quantity": 0.5,
+      "unit": "cup"
+    },
+    {
+      "ingredient_id": "ing_cornstarch",
+      "name": "Cornstarch or Rice Flour",
+      "local_name": "Unga wa Starch",
+      "quantity": 2,
+      "unit": "tbsp",
+      "notes": "For extra crispiness"
+    },
+    {
+      "ingredient_id": "ing_garlic_powder",
+      "name": "Garlic Powder",
+      "local_name": "Dawa ya Vitungulu Saumuni",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_onion_powder",
+      "name": "Onion Powder",
+      "local_name": "Dawa ya Kitungulu",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_paprika",
+      "name": "Paprika or Chili Powder",
+      "local_name": "Pilipili Manga",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Chumvi",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "notes": "Use sparingly, as silver fish is salty"
+    },
+    {
+      "ingredient_id": "ing_black_pepper",
+      "name": "Black Pepper",
+      "local_name": "Pilipili Mweusi",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_vegetable_oil",
+      "name": "Vegetable Oil",
+      "local_name": "Mafuta",
+      "quantity": 4,
+      "unit": "tbsp",
+      "notes": "For pan-frying"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Maji",
+      "quantity": 0.5,
+      "unit": "cup",
+      "notes": "For the batter"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_blender_spice_grinder",
+      "name": "Blender or Spice Grinder",
+      "local_name": "Blenda"
+    },
+    {
+      "utensil_id": "utn_shallow_bowls",
+      "name": "Shallow Bowls (2-3)",
+      "local_name": "Bakuli"
+    },
+    {
+      "utensil_id": "utn_large_skillet",
+      "name": "Large Skillet",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_tongs",
+      "name": "Tongs",
+      "local_name": "Koleko"
+    },
+    {
+      "utensil_id": "utn_plate_paper_towels",
+      "name": "Plate with Paper Towels",
+      "local_name": "Sahani na Karatasi",
+      "notes": "For draining"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Make the silver fish powder: Ensure the dried silver fish are clean and dry. Grind them in a blender or spice grinder until they form a fine powder.",
+      "action": "making_powder",
+      "ingredients": ["ing_dried_silver_fish"],
+      "utensils": ["utn_blender_spice_grinder"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Prepare the coating: In a shallow bowl, mix the silver fish powder, all-purpose flour, cornstarch, garlic powder, onion powder, paprika, salt, and black pepper until well combined.",
+      "action": "mixing_dry_coating",
+      "ingredients": ["ing_all_purpose_flour", "ing_cornstarch", "ing_garlic_powder", "ing_onion_powder", "ing_paprika", "ing_salt", "ing_black_pepper"],
+      "utensils": ["utn_shallow_bowls"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Prepare the batter: In a separate bowl, gradually add water to about half of the dry coating mixture, whisking until you get a smooth, thick batter with a consistency similar to pancake batter.",
+      "action": "making_batter",
+      "ingredients": ["ing_water"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Slice the garden eggs into 1/2-inch thick rounds. Lightly salt them and set aside for 5 minutes to draw out excess moisture, then pat them dry with a paper towel.",
+      "action": "preparing_entula",
+      "ingredients": ["ing_garden_eggs"],
+      "utensils": ["utn_plate_paper_towels"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Coat the garden eggs: First, dip each slice into the dry coating mixture, shaking off the excess. Then, dip it into the batter, allowing any excess to drip off. Finally, dip it back into the dry mixture, pressing gently to ensure a good, even coating.",
+      "action": "coating",
+      "utensils": ["utn_shallow_bowls"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Heat the vegetable oil in a large skillet over medium heat until hot.",
+      "action": "heating_oil",
+      "ingredients": ["ing_vegetable_oil"],
+      "utensils": ["utn_large_skillet"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Carefully place the coated garden egg slices in the hot oil. Do not overcrowd the pan. Fry for 3-4 minutes on each side until golden brown, crispy, and the garden egg is tender.",
+      "action": "frying",
+      "cooking_indicators": {
+        "visual": "Coating is golden brown and crispy.",
+        "time": "6-8 minutes total",
+        "texture": "Crispy outside, soft and cooked inside."
+      },
+      "utensils": ["utn_tongs"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Remove the fried slices with tongs and place them on a plate lined with paper towels to drain excess oil.",
+      "action": "draining",
+      "utensils": ["utn_plate_paper_towels", "utn_tongs"]
+    },
+    {
+      "step_number": 9,
+      "instruction": "Serve the fried entula immediately while hot and crispy.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "pan_frying",
+  "heat_level": "medium",
+  "serving_suggestions": "Serve as a main course with a side of steamed rice, Matoke, or Posho (Ugali) and a fresh tomato and onion salad (Kachumbari). It also makes a fantastic protein-rich snack on its own.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 220,
+      "carbohydrates_g": 25,
+      "protein_g": 12,
+      "fat_g": 8,
+      "cholesterol_mg": 50,
+      "sodium_mg": 500
+    },
+    "health_benefits": ["extremely_high_in_calcium", "rich_in_protein", "good_source_of_iron", "high_in_fiber", "energy_boosting"]
+  },
+  "tags": ["main_course", "side_dish", "high_protein", "calcium_rich", "crispy", "nutritious", "homestyle"],
+  "source": "ingenious_homestyle_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

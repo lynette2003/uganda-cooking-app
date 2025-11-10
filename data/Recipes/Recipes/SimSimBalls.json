@@ -1,0 +1,180 @@
+{
+  "recipe_id": "ug_recipe_simsim_balls_066",
+  "name": {
+    "en": "Sim Sim Balls (Sesame Balls)",
+    "local_name": "Nkate Balls / Sim Sim Kongolo"
+  },
+  "description": "A crunchy, sweet, and highly nutritious energy snack made from toasted sesame seeds (sim sim) bound together with sugar or honey. These dense, brittle-like balls are a powerhouse of energy and a traditional treat.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "traditional_energy_snack",
+    "occasions": ["snacking", "childrens_treat", "energy_boost", "travel_food", "outdoor_activities"],
+    "cultural_notes": "Sim sim balls are a classic, old-school snack found in local markets and made in homes across Uganda. They are valued for their long shelf life and high energy content, making them ideal for long journeys, farming work, or as a quick snack for children. They represent a simple, no-waste way of preserving and enjoying the nutritional benefits of sesame seeds."
+  },
+  "type": "snack_dessert",
+  "difficulty": "medium",
+  "servings": {
+    "min": 8,
+    "max": 10,
+    "yield": "~15-20 balls"
+  },
+  "prep_time_mins": 15,
+  "cook_time_mins": 20,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_sesame_seeds",
+      "name": "Sesame Seeds (Sim Sim)",
+      "local_name": "Sim Sim",
+      "quantity": 2,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_sugar",
+      "name": "Sugar",
+      "local_name": "Sukari",
+      "quantity": 1,
+      "unit": "cup",
+      "notes": "Can substitute with jaggery or brown sugar for a deeper flavor"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Maji",
+      "quantity": 0.25,
+      "unit": "cup"
+    },
+    {
+      "ingredient_id": "ing_lemon_juice",
+      "name": "Lemon Juice",
+      "local_name": "Maji ya Limau",
+      "quantity": 1,
+      "unit": "tsp",
+      "notes": "Optional, to prevent sugar from crystallizing"
+    },
+    {
+      "ingredient_id": "ing_peanuts",
+      "name": "Roasted Peanuts (Optional)",
+      "local_name": "Njugu",
+      "quantity": 0.5,
+      "unit": "cup",
+      "notes": "Coarsely chopped, for added texture and flavor"
+    },
+    {
+      "ingredient_id": "ing_vanilla",
+      "name": "Vanilla Extract (Optional)",
+      "local_name": "Vanilla",
+      "quantity": 0.5,
+      "unit": "tsp"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_heavy_saucepan",
+      "name": "Heavy-Bottomed Saucepan",
+      "local_name": "Sufuria Nzito"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Mwiko"
+    },
+    {
+      "utensil_id": "utn_baking_sheet",
+      "name": "Baking Sheet or Tray",
+      "local_name": "Ubao wa Kupikia"
+    },
+    {
+      "utensil_id": "utn_parchment_paper",
+      "name": "Parchment Paper or Banana Leaf",
+      "local_name": "Karatasi / Emiyembe"
+    },
+    {
+      "utensil_id": "utn_frying_pan",
+      "name": "Frying Pan or Sufuria",
+      "local_name": "Sufuria"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Toast the sesame seeds in a dry frying pan over medium-low heat for 3-5 minutes, stirring constantly, until they are fragrant, lightly golden, and make a popping sound. Be careful not to burn them. Transfer to a bowl and set aside.",
+      "action": "toasting_seeds",
+      "ingredients": ["ing_sesame_seeds"],
+      "utensils": ["utn_frying_pan"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "If using peanuts, lightly roast them in the same pan if they are not already roasted. Chop them coarsely and mix with the toasted sesame seeds.",
+      "action": "preparing_nuts",
+      "ingredients": ["ing_peanuts"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "In a heavy-bottomed saucepan, combine the sugar and water. Heat over medium heat, stirring continuously until the sugar dissolves completely.",
+      "action": "dissolving_sugar",
+      "ingredients": ["ing_sugar", "ing_water"],
+      "utensils": ["utn_heavy_saucepan", "utn_wooden_spoon"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Once the sugar has dissolved, stop stirring. Add the lemon juice (if using) to prevent crystallization. Let the syrup boil without stirring until it reaches the hard crack stage (approx. 150°C / 300°F). Alternatively, test by dropping a small amount into a cup of cold water; it should form hard, brittle threads that snap.",
+      "action": "making_syrup",
+      "ingredients": ["ing_lemon_juice"],
+      "cooking_indicators": {
+        "visual": "The syrup will become clear and thick, with large, rolling bubbles.",
+        "temperature": "150°C / 300°F",
+        "texture": "Hard and brittle when tested in water."
+      }
+    },
+    {
+      "step_number": 5,
+      "instruction": "Immediately remove the syrup from the heat. Quickly stir in the vanilla extract (if using), then immediately pour the hot syrup over the toasted sesame seeds and peanuts.",
+      "action": "combining",
+      "ingredients": ["ing_vanilla"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Working very quickly while the mixture is still hot and pliable, stir vigorously with a wooden spoon until all the seeds are thoroughly coated with the sugar syrup.",
+      "action": "mixing",
+      "utensils": ["utn_wooden_spoon"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Lightly grease your hands with oil or water. Take small handfuls of the hot mixture and press firmly into tight, compact balls, about the size of a golf ball. Act quickly as the mixture will harden as it cools.",
+      "action": "shaping",
+      "cooking_indicators": {
+        "visual": "The mixture will be glossy and sticky.",
+        "texture": "Firm and moldable when hot."
+      }
+    },
+    {
+      "step_number": 8,
+      "instruction": "Place the shaped balls on a baking sheet or tray lined with parchment paper or a banana leaf. Allow them to cool completely and harden at room temperature.",
+      "action": "cooling",
+      "utensils": ["utn_baking_sheet", "utn_parchment_paper"]
+    },
+    {
+      "step_number": 9,
+      "instruction": "Once completely cooled and hardened, the sim sim balls are ready to eat. Store in an airtight container at room temperature.",
+      "action": "storing_serving"
+    }
+  ],
+  "cooking_method": "candy_making",
+  "heat_level": "medium_high",
+  "serving_suggestions": "Enjoy as a standalone energy snack. Pairs wonderfully with a cup of tea or coffee. Can be crumbled over porridge or yogurt.",
+  "nutritional_info": {
+    "per_ball": {
+      "calories": 180,
+      "carbohydrates_g": 20,
+      "protein_g": 4,
+      "fat_g": 10,
+      "cholesterol_mg": 0,
+      "sodium_mg": 5
+    },
+    "health_benefits": ["high_in_calcium", "rich_in_healthy_fats", "energy_dense", "good_source_of_fiber", "rich_in_antioxidants"]
+  },
+  "tags": ["snack", "dessert", "vegetarian", "vegan", "energy_boost", "traditional", "no_bake", "gluten_free"],
+  "source": "traditional_recipe_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

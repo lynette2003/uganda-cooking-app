@@ -1,0 +1,123 @@
+{
+  "recipe_id": "ug_recipe_nyamachoma_027",
+  "name": {
+    "en": "Nyama Choma",
+    "local_name": "Nyama Choma"
+  },
+  "description": "A traditional East African dish of roasted meat, usually goat or beef, cooked over an open flame and served with sides like vegetables or ugali.",
+  "origin_region": "Nationwide (popular in rural and urban areas)",
+  "cultural_significance": {
+    "importance": "social_food",
+    "occasions": ["barbecue", "social_gatherings", "celebrations"],
+    "cultural_notes": "Nyama Choma is often enjoyed during communal events and celebrations, symbolizing hospitality and sharing."
+  },
+  "type": "main_dish",
+  "difficulty": "medium",
+  "servings": {
+    "min": 2,
+    "max": 5
+  },
+  "prep_time_mins": 20,
+  "cook_time_mins": 40,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_goatmeat",
+      "name": "Goat meat or beef, cut into chunks",
+      "local_name": "Ennyama",
+      "quantity": 1.5,
+      "unit": "kg"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Munyu",
+      "quantity": "to taste",
+      "unit": "optional"
+    },
+    {
+      "ingredient_id": "ing_blackpepper",
+      "name": "Black Pepper",
+      "local_name": "Kamulali",
+      "quantity": 1,
+      "unit": "teaspoon"
+    },
+    {
+      "ingredient_id": "ing_oil",
+      "name": "Cooking Oil",
+      "local_name": "Amafuta",
+      "quantity": 2,
+      "unit": "tablespoons",
+      "optional": true
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_grill",
+      "name": "Charcoal Grill",
+      "local_name": "Sigiri"
+    },
+    {
+      "utensil_id": "utn_skewers",
+      "name": "Skewers (optional)",
+      "local_name": "Ebisasiro"
+    },
+    {
+      "utensil_id": "utn_brush",
+      "name": "Basting Brush",
+      "local_name": "Akabrashi"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Season meat chunks with salt, black pepper, and optional oil.",
+      "action": "seasoning",
+      "ingredients": ["ing_goatmeat", "ing_salt", "ing_blackpepper", "ing_oil"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Thread meat onto skewers if desired, or place directly on the grill.",
+      "action": "preparing",
+      "utensils": ["utn_skewers", "utn_grill"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Grill over medium-high heat, turning occasionally to ensure even cooking.",
+      "action": "grilling",
+      "utensils": ["utn_grill"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Baste occasionally with oil or meat juices to keep meat tender and juicy.",
+      "action": "basting",
+      "utensils": ["utn_brush"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Cook until meat is browned outside and cooked through. Serve hot with sides like vegetables or ugali.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "grilling",
+  "heat_level": "high",
+  "cooking_indicators": {
+    "visual": "meat is golden brown and slightly charred on edges",
+    "time": "40 minutes",
+    "texture": "tender inside with a smoky exterior"
+  },
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 400,
+      "carbohydrates_g": 0,
+      "protein_g": 35,
+      "fat_g": 25,
+      "cholesterol_mg": 95,
+      "sodium_mg": 180
+    },
+    "health_benefits": ["protein_rich", "iron_source", "energy_boosting"]
+  },
+  "tags": ["barbecue", "social_food", "meat_dish"],
+  "source": "traditional_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

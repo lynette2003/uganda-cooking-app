@@ -1,0 +1,134 @@
+{
+  "recipe_id": "ug_recipe_dodo_no_oil_113",
+  "name": {
+    "en": "Dodo (Amaranthus) without Oil",
+    "local_name": "Dodo"
+  },
+  "description": "A simple, healthy, and quick side dish of boiled amaranthus leaves, a highly nutritious green vegetable. Cooked without any oil, this method relies on a technique called 'water frying' to create a flavorful, tender, and vibrant green dish that is a perfect, light accompaniment to starchy staples.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "common_everyday_side_dish",
+    "occasions": ["daily_meals", "lunch", "dinner"],
+    "cultural_notes": "Dodo is one of the most common and affordable leafy greens in Uganda. Cooking it without oil is a standard, healthy practice in many homes, making it a vital source of vitamins and minerals. It is a quick 'relish' prepared to balance out a meal centered around Posho, Matoke, or Rice. Its quick cooking time makes it a go-to vegetable for busy families."
+  },
+  "type": "side_dish_vegetable",
+  "difficulty": "easy",
+  "servings": {
+    "min": 3,
+    "max": 4
+  },
+  "prep_time_mins": 10,
+  "cook_time_mins": 10,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_dodo",
+      "name": "Fresh Dodo (Amaranthus) Leaves",
+      "local_name": "Dodo",
+      "quantity": 1,
+      "unit": "large_bunch",
+      "notes": "About 8-10 cups, washed thoroughly and chopped"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 0.25,
+      "unit": "cup"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion, sliced",
+      "local_name": "Tungurusumu",
+      "quantity": 0.5,
+      "unit": "medium",
+      "notes": "Adds natural sweetness and flavor"
+    },
+    
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "notes": "To taste"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_saucepan",
+      "name": "Saucepan with Lid",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Mwiko"
+    }
+  ],
+  "steps": [
+    {
+        "step_number": 1,
+      "instruction": "Add the chopped dodo leaves to the pot. It will seem like a lot, but it will wilt down significantly.",
+      "action": "adding_greens",
+      "ingredients": ["ing_dodo"]
+      },
+      {
+      "step_number": 2,
+      "instruction": ". Bring to a simmer over medium heat.",
+      "action": "softening_dodo",
+      "ingredients": ["ing_dodo" ],
+      "utensils": ["utn_charcoalstove"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Add some cut onions into the greens.",
+      "action": "water_frying"
+    },
+    
+    {
+      "step_number": 4,
+      "instruction": "Sprinkle the salt over the leaves. Cover the pot with a lid and let it cook for 2-3 minutes.",
+      "action": "steaming",
+      "ingredients": ["ing_salt"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Uncover and stir the dodo. It will have wilted and released its own water, creating a natural cooking liquid.",
+      "action": "stirring",
+      "cooking_indicators": {
+        "visual": "The leaves have reduced in volume by about 70% and turned a vibrant, dark green."
+      }
+    },
+    {
+      "step_number": 6,
+      "instruction": "Continue to cook uncovered, stirring occasionally, for another 3-5 minutes until the dodo is tender and the excess liquid has reduced. Be careful not to overcook it into mush.",
+      "action": "reducing_liquid",
+      "cooking_indicators": {
+        "texture": "The stems should be tender, and the leaves should be soft but not slimy."
+      }
+    },
+    {
+      "step_number": 7,
+      "instruction": "Taste and adjust salt if needed. Serve immediately.",
+      "action": "seasoning_serving"
+    }
+  ],
+  "cooking_method": "water_frying_boiling",
+  "heat_level": "medium",
+  "serving_suggestions": "Served as a side dish alongside a staple carbohydrate like Posho (Ugali), Matoke, or Rice, and a source of protein like beans, groundnut sauce, or meat stew. It adds a fresh, green element to the meal.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 35,
+      "carbohydrates_g": 6,
+      "protein_g": 3,
+      "fat_g": 0,
+      "cholesterol_mg": 0,
+      "sodium_mg": 300
+    },
+    "health_benefits": ["rich_in_iron", "high_in_vitamin_a", "high_in_vitamin_c", "excellent_source_of_fiber", "low_calorie", "fat_free", "vegan", "gluten_free"]
+  },
+  "tags": ["side_dish", "vegetable", "leafy_greens", "vegan", "gluten_free", "fat_free", "healthy", "quick", "everyday"],
+  "source": "traditional_staple_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

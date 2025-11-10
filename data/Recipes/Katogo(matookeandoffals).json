@@ -1,0 +1,320 @@
+{
+  "recipe_id": "ug_recipe_katogo_matooke_offals_156",
+  "name": {
+    "en": "Katogo - Matooke and Offals",
+    "local_name": "Katogo y'Matooke n'Ebikokiro"
+  },
+  "description": "A deeply flavorful and nutritious one-pot dish where tender green bananas (matooke) are cooked with a variety of organ meats (offals) in a rich, spiced tomato sauce. The matooke absorbs the robust flavors of the offals while becoming soft and creamy, creating a hearty meal that showcases nose-to-tail eating at its finest. This katogo is prized for its complex flavors and nutritional density.",
+  "origin_region": "Central and Western Uganda",
+  "cultural_significance": {
+    "importance": "traditional_nutritious_comfort_food",
+    "occasions": ["special_breakfast", "men_gatherings", "elders_meals", "after_slaughter", "nutrient_dense_meals"],
+    "cultural_notes": "Matooke and offals katogo is considered a particularly nutritious and strengthening dish, often prepared after animal slaughter when fresh offals are available. It's highly valued by elders and those needing extra nutrition, as offals are packed with essential vitamins and minerals. This dish represents the traditional wisdom of utilizing every part of the animal. It's often associated with male gatherings and is believed to provide vitality and strength. The strong flavors and nutritional benefits make it a cherished, though occasional, comfort food."
+  },
+  "type": "main_dish",
+  "difficulty": "medium",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 45,
+  "cook_time_mins": 120,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_matooke",
+      "name": "Green Bananas (Matooke)",
+      "local_name": "Matooke",
+      "quantity": 12,
+      "unit": "fingers",
+      "notes": "Peeled and kept in salted water to prevent browning"
+    },
+    {
+      "ingredient_id": "ing_liver",
+      "name": "Beef or Goat Liver",
+      "local_name": "Ebipere",
+      "quantity": 200,
+      "unit": "grams",
+      "notes": "Cleaned and cut into chunks"
+    },
+    {
+      "ingredient_id": "ing_heart",
+      "name": "Beef or Goat Heart",
+      "local_name": "Omuṭima",
+      "quantity": 1,
+      "unit": "whole",
+      "notes": "Cleaned and cubed"
+    },
+    {
+      "ingredient_id": "ing_kidneys",
+      "name": "Beef or Goat Kidneys",
+      "local_name": "Ebizigo",
+      "quantity": 2,
+      "unit": "pieces",
+      "notes": "Cleaned and sliced"
+    },
+    {
+      "ingredient_id": "ing_tripe",
+      "name": "Tripe (optional)",
+      "local_name": "Ebyenda",
+      "quantity": 200,
+      "unit": "grams",
+      "notes": "Well-cleaned and pre-boiled until tender"
+    },
+    {
+      "ingredient_id": "ing_onions",
+      "name": "Onions, chopped",
+      "local_name": "Tungurusumu",
+      "quantity": 2,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_tomatoes",
+      "name": "Tomatoes, chopped",
+      "local_name": "Enyanya",
+      "quantity": 3,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_tomato_paste",
+      "name": "Tomato Paste",
+      "local_name": "Dodo",
+      "quantity": 2,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_cooking_oil",
+      "name": "Cooking Oil",
+      "local_name": "Mafuta",
+      "quantity": 4,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 5,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic, minced",
+      "local_name": "Tungurusumu Omuzungu",
+      "quantity": 4,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "ing_ginger",
+      "name": "Ginger, grated",
+      "local_name": "Tangawizi",
+      "quantity": 1,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 1.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_curry_powder",
+      "name": "Curry Powder",
+      "local_name": "Curry",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_beef_seasoning",
+      "name": "Beef Seasoning Powder",
+      "local_name": "Royco",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_chili_pepper",
+      "name": "Fresh Chili Pepper, chopped",
+      "local_name": "Pilipili",
+      "quantity": 1,
+      "unit": "piece"
+    },
+    {
+      "ingredient_id": "ing_green_pepper",
+      "name": "Green Bell Pepper, sliced",
+      "local_name": "Bibbo",
+      "quantity": 1,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_lemon_juice",
+      "name": "Lemon Juice",
+      "local_name": "Maji ya Ndimu",
+      "quantity": 2,
+      "unit": "tbsp",
+      "notes": "For cleaning and tenderizing offals"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_pot",
+      "name": "Large Heavy-bottomed Pot",
+      "local_name": "Sufuria Nzito"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Mwiko"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Sharp Knife",
+      "local_name": "Mumo"
+    },
+    {
+      "utensil_id": "utn_plastic_bags",
+      "name": "Plastic Bags or Banana Leaves",
+      "local_name": "Bifuko",
+      "notes": "Traditional for peeling matooke"
+    },
+    {
+      "utensil_id": "utn_mixing_bowl",
+      "name": "Mixing Bowl",
+      "local_name": "Sahani"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Thoroughly clean all offals. Remove any membranes, fat, or blood vessels. Rinse with lemon juice and water to remove any strong odors.",
+      "action": "cleaning_offals",
+      "ingredients": ["ing_liver", "ing_heart", "ing_kidneys", "ing_tripe", "ing_lemon_juice"],
+      "utensils": ["utn_mixing_bowl"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Cut heart into cubes, slice kidneys, cut liver into chunks, and if using tripe, cut into strips.",
+      "action": "cutting_offals",
+      "utensils": ["utn_knife"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Peel the matooke using plastic bags or banana leaves. Cut into large chunks and keep in salted water.",
+      "action": "preparing_matooke",
+      "ingredients": ["ing_matooke"],
+      "utensils": ["utn_plastic_bags", "utn_knife"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Heat cooking oil in a large heavy-bottomed pot over medium heat.",
+      "action": "heating_oil",
+      "ingredients": ["ing_cooking_oil"],
+      "utensils": ["utn_large_pot"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Add chopped onions and sauté until soft and translucent.",
+      "action": "sauteing_onions",
+      "ingredients": ["ing_onions"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Add minced garlic and grated ginger. Cook for 1 minute until fragrant.",
+      "action": "adding_aromatics",
+      "ingredients": ["ing_garlic", "ing_ginger"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Add tomato paste and stir for 1 minute to cook out the raw flavor.",
+      "action": "cooking_tomato_paste",
+      "ingredients": ["ing_tomato_paste"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Add the tougher offals first: heart, kidneys, and tripe (if using). Brown for 5 minutes.",
+      "action": "browning_tough_offals",
+      "ingredients": ["ing_heart", "ing_kidneys", "ing_tripe"]
+    },
+    {
+      "step_number": 9,
+      "instruction": "Add chopped tomatoes, curry powder, beef seasoning, and chili pepper. Cook for 5-7 minutes until tomatoes break down.",
+      "action": "making_sauce",
+      "ingredients": ["ing_tomatoes", "ing_curry_powder", "ing_beef_seasoning", "ing_chili_pepper"]
+    },
+    {
+      "step_number": 10,
+      "instruction": "Add 3 cups of water and salt. Bring to a boil, then reduce heat, cover, and simmer for 30 minutes.",
+      "action": "simmering_tough_offals",
+      "ingredients": ["ing_water", "ing_salt"]
+    },
+    {
+      "step_number": 11,
+      "instruction": "Add the liver and green pepper. Continue simmering for another 15 minutes.",
+      "action": "adding_liver_vegetables",
+      "ingredients": ["ing_liver", "ing_green_pepper"]
+    },
+    {
+      "step_number": 12,
+      "instruction": "Drain the matooke and add them to the pot, nestling them into the offal stew. Spoon sauce over the matooke.",
+      "action": "adding_matooke",
+      "ingredients": ["ing_matooke"]
+    },
+    {
+      "step_number": 13,
+      "instruction": "Add the remaining 2 cups of water. The liquid should come about halfway up the matooke.",
+      "action": "adding_remaining_water",
+      "ingredients": ["ing_water"]
+    },
+    {
+      "step_number": 14,
+      "instruction": "Cover tightly and simmer on very low heat for 45-60 minutes. Do not stir vigorously - gently shake the pot occasionally.",
+      "action": "slow_cooking_katogo",
+      "cooking_indicators": {
+        "olfactory": "A rich, complex aroma will develop",
+        "time": "45-60 minutes"
+      }
+    },
+    {
+      "step_number": 15,
+      "instruction": "After 45 minutes, check for doneness. The matooke should be very tender and the offals should be cooked through.",
+      "action": "testing_doneness",
+      "cooking_indicators": {
+        "texture": "Matooke should mash easily, offals should be tender"
+      }
+    },
+    {
+      "step_number": 16,
+      "instruction": "Gently mash some of the matooke into the sauce to thicken it. The katogo should have a thick, rich consistency.",
+      "action": "thickening_katogo",
+      "utensils": ["utn_wooden_spoon"]
+    },
+    {
+      "step_number": 17,
+      "instruction": "Taste and adjust seasoning if needed. The flavors should be rich and well-balanced.",
+      "action": "final_seasoning"
+    },
+    {
+      "step_number": 18,
+      "instruction": "Serve hot in bowls, ensuring each portion has both matooke and a variety of offals with the flavorful sauce.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "one_pot_stewing",
+  "heat_level": "low",
+  "serving_suggestions": "Serve as a complete, nutrient-dense meal, traditionally for a strengthening breakfast. This katogo is often enjoyed with a side of steamed bitter greens like nakati or dodo to balance the rich flavors. Some people like it with a wedge of lime or lemon for extra freshness. Perfect with a cup of black tea or fresh passion fruit juice.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 380,
+      "carbohydrates_g": 55,
+      "protein_g": 28,
+      "fat_g": 10,
+      "cholesterol_mg": 400,
+      "sodium_mg": 650,
+      "iron_mg": 8,
+      "vitamin_b12_mcg": 10
+    },
+    "health_benefits": ["extremely_high_in_iron", "excellent_source_of_vitamin_b12", "rich_in_protein", "high_in_zinc", "contains_essential_minerals", "supports_blood_health", "nutrient_dense", "sustained_energy"]
+  },
+  "tags": ["main_dish", "katogo", "matooke", "offals", "organ_meats", "nutrient_dense", "traditional", "one_pot", "comfort_food", "nose_to_tail", "strengthening_food"],
+  "source": "traditional_ugandan_home_cooking",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

@@ -1,0 +1,210 @@
+{
+  "recipe_id": "ug_recipe_dodo_rice_081",
+  "name": {
+    "en": "Stir-Fried Dodo Rice",
+    "local_name": "Mchele wa Dodo"
+  },
+  "description": "A quick, nutritious, and delicious one-pan meal where leftover rice is stir-fried with tender amaranth greens (dodo), vegetables, and aromatic spices. It's a fantastic way to create a complete and flavorful dish from simple ingredients.",
+  "origin_region": "Nationwide (Modern Home-Style)",
+  "cultural_significance": {
+    "importance": "modern_homestyle_meal",
+    "occasions": ["quick_lunch", "dinner", "using_leftovers", "student_meals", "busy_weekdays"],
+    "cultural_notes": "This dish is a modern Ugandan home-cooking creation that combines the staple carbohydrate (rice) with a beloved and highly nutritious local green (dodo). It reflects the adaptability of Ugandan cuisine, creating quick, satisfying meals that reduce food waste by using leftover rice. It's a common solution for a fast, healthy family meal during busy weekdays."
+  },
+  "type": "main_course",
+  "difficulty": "easy",
+  "servings": {
+    "min": 3,
+    "max": 4
+  },
+  "prep_time_mins": 15,
+  "cook_time_mins": 10,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_cooked_rice",
+      "name": "Cooked Rice",
+      "local_name": "Mchele",
+      "quantity": 3,
+      "unit": "cups",
+      "notes": "Preferably leftover and cooled, for best texture"
+    },
+    {
+      "ingredient_id": "ing_dodo_leaves",
+      "name": "Fresh Dodo (Amaranth) Leaves",
+      "local_name": "Dodo",
+      "quantity": 2,
+      "unit": "cups",
+      "notes": "Washed, drained, and roughly chopped"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion",
+      "local_name": "Katungulu",
+      "quantity": 1,
+      "unit": "medium",
+      "notes": "Finely chopped"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic",
+      "local_name": "Katungulu omukadde",
+      "quantity": 2,
+      "unit": "cloves",
+      "notes": "Minced"
+    },
+    {
+      "ingredient_id": "ing_carrot",
+      "name": "Carrot",
+      "local_name": "Karoti",
+      "quantity": 1,
+      "unit": "medium",
+      "notes": "Finely diced"
+    },
+    {
+      "ingredient_id": "ing_vegetable_oil",
+      "name": "Vegetable Oil",
+      "local_name": "Mafuta",
+      "quantity": 3,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_soy_sauce",
+      "name": "Soy Sauce",
+      "local_name": "Mchuzi wa Soy",
+      "quantity": 2,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "notes": "To taste, be mindful of soy sauce saltiness"
+    },
+    {
+      "ingredient_id": "ing_black_pepper",
+      "name": "Black Pepper",
+      "local_name": "Pilipili Mweusi",
+      "quantity": 0.25,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_egg",
+      "name": "Egg (Optional)",
+      "local_name": "Yai",
+      "quantity": 1,
+      "unit": "large",
+      "notes": "Beaten, for scrambling into the rice"
+    },
+    {
+      "ingredient_id": "ing_spring_onion",
+      "name": "Spring Onion",
+      "local_name": "Kitunguu Maji",
+      "quantity": 2,
+      "unit": "stalks",
+      "notes": "Chopped, for garnish"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_wok_large_skillet",
+      "name": "Wok or Large Skillet",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon_spatula",
+      "name": "Wooden Spoon or Spatula",
+      "local_name": "Mwiko"
+    },
+    {
+      "utensil_id": "utn_knife_cutting_board",
+      "name": "Knife and Cutting Board",
+      "local_name": "Kisu na Ubao"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Ensure your rice is cooked, cooled, and grains are separated. Leftover rice from the previous day is ideal. Prepare all vegetables: chop the onion, mince the garlic, dice the carrot, and roughly chop the dodo leaves.",
+      "action": "preparation",
+      "ingredients": ["ing_cooked_rice", "ing_dodo_leaves", "ing_onion", "ing_garlic", "ing_carrot"],
+      "utensils": ["utn_knife_cutting_board"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Heat the vegetable oil in a wok or large skillet over medium-high heat. Add the chopped onion and sauté for 2-3 minutes until softened.",
+      "action": "sautéing",
+      "ingredients": ["ing_vegetable_oil", "ing_onion"],
+      "utensils": ["utn_wok_large_skillet", "utn_wooden_spoon_spatula"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Add the minced garlic and diced carrot. Stir-fry for 2 minutes until the garlic is fragrant and the carrot begins to soften.",
+      "action": "cooking_aromatics",
+      "ingredients": ["ing_garlic", "ing_carrot"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "If using the egg, push the vegetables to one side of the wok. Pour the beaten egg into the empty space and scramble it until fully cooked, then mix it with the vegetables.",
+      "action": "adding_egg",
+      "ingredients": ["ing_egg"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Add the chopped dodo leaves to the wok. Stir-fry for 1-2 minutes until the leaves are wilted.",
+      "action": "wilting_greens",
+      "ingredients": ["ing_dodo_leaves"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Increase the heat to high. Add the cooled rice to the wok. Pour the soy sauce over the rice and add the salt and black pepper.",
+      "action": "adding_rice",
+      "ingredients": ["ing_cooked_rice", "ing_soy_sauce", "ing_salt", "ing_black_pepper"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Stir-fry everything together for 3-4 minutes, tossing constantly and breaking up any clumps of rice, until the rice is heated through and evenly coated with the seasonings.",
+      "action": "stir_frying",
+      "cooking_indicators": {
+        "visual": "Rice is hot and grains are separate, vegetables are tender-crisp.",
+        "time": "3-4 minutes",
+        "texture": "Fluffy rice with wilted but vibrant green dodo."
+      }
+    },
+    {
+      "step_number": 8,
+      "instruction": "Taste and adjust seasoning with more soy sauce or salt if needed.",
+      "action": "seasoning"
+    },
+    {
+      "step_number": 9,
+      "instruction": "Remove from heat and garnish with chopped spring onions.",
+      "action": "garnishing",
+      "ingredients": ["ing_spring_onion"]
+    },
+    {
+      "step_number": 10,
+      "instruction": "Serve the stir-fried dodo rice immediately while hot.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "stir_frying",
+  "heat_level": "medium_high",
+  "serving_suggestions": "Serve as a complete meal on its own. It can also be accompanied by a simple tomato and onion salad (Kachumbari) or a wedge of lime for squeezing over the top.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 280,
+      "carbohydrates_g": 45,
+      "protein_g": 7,
+      "fat_g": 9,
+      "cholesterol_mg": 45,
+      "sodium_mg": 700
+    },
+    "health_benefits": ["high_in_iron", "good_source_of_fiber", "energy_boosting", "rich_in_vitamin_a", "complete_meal"]
+  },
+  "tags": ["main_course", "quick_meal", "one_pan", "leftover_friendly", "vegetarian_option", "healthy", "modern"],
+  "source": "modern_homestyle_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

@@ -1,0 +1,234 @@
+{
+  "recipe_id": "ug_recipe_goat_head_soup_129",
+  "name": {
+    "en": "Goat Head Soup",
+    "local_name": "Mere Ow'Entama"
+  },
+  "description": "A rich, gelatinous, and intensely flavorful soup made from a whole goat head, slow-simmered for hours with traditional herbs and spices. This delicacy is prized for its deep, savory broth, tender meat (especially the cheeks, tongue, and brain), and collagen-rich texture. It is a communal dish that showcases nose-to-tail eating at its finest.",
+  "origin_region": "Northern and Eastern Uganda",
+  "cultural_significance": {
+    "importance": "traditional_delicacy_communal_food",
+    "occasions": ["special_occasions", "male_gatherings", "cultural_events", "weekend_meals", "elders_meals"],
+    "cultural_notes": "Goat head soup is considered a delicacy and is often reserved for special gatherings, particularly among men and elders. The preparation and sharing of the head is a significant cultural practice, with different parts of the head often given to specific people as a sign of respect. It is a dish that symbolizes communal sharing and the value of utilizing every part of the animal. The process of breaking down and eating the head is a social event in itself, requiring skill and patience."
+  },
+  "type": "main_dish_soup",
+  "difficulty": "hard",
+  "servings": {
+    "min": 6,
+    "max": 8
+  },
+  "prep_time_mins": 90,
+  "cook_time_mins": 240,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_goat_head",
+      "name": "Whole Goat Head",
+      "local_name": "Entama",
+      "quantity": 1,
+      "unit": "whole",
+      "notes": "Thoroughly cleaned, singed to remove hair, and split open"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 10,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_onions",
+      "name": "Onions, quartered",
+      "local_name": "Tungurusumu",
+      "quantity": 2,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic cloves, crushed",
+      "local_name": "Tungurusumu Omuzungu",
+      "quantity": 6,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "ing_ginger",
+      "name": "Ginger, sliced",
+      "local_name": "Tangawizi",
+      "quantity": 2,
+      "unit": "inch_piece"
+    },
+    {
+      "ingredient_id": "ing_celery",
+      "name": "Celery stalks, chopped",
+      "local_name": "N/A",
+      "quantity": 3,
+      "unit": "stalks"
+    },
+    {
+      "ingredient_id": "ing_carrots",
+      "name": "Carrots, chopped",
+      "local_name": "N/A",
+      "quantity": 2,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 2,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_black_pepper",
+      "name": "Black Peppercorns",
+      "local_name": "Kamulali",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_chili_peppers",
+      "name": "Fresh Chili Peppers",
+      "local_name": "Pilipili",
+      "quantity": 2,
+      "unit": "pieces",
+      "notes": "Adjust to taste"
+    },
+    {
+      "ingredient_id": "ing_traditional_herbs",
+      "name": "Traditional Herbs (e.g., Omujaja)",
+      "local_name": "Omujaja",
+      "quantity": 1,
+      "unit": "bunch",
+      "notes": "Optional, for authentic flavor"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_very_large_pot",
+      "name": "Very Large Stock Pot",
+      "local_name": "Sufuria Enene"
+    },
+    {
+      "utensil_id": "utn_cleaning_brush",
+      "name": "Stiff Cleaning Brush",
+      "local_name": "N/A"
+    },
+    {
+      "utensil_id": "utn_tongs",
+      "name": "Heavy-duty Tongs",
+      "local_name": "N/A"
+    },
+    {
+      "utensil_id": "utn_strainer",
+      "name": "Large Strainer",
+      "local_name": "N/A"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Sharp Heavy Knife",
+      "local_name": "Mumo"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Thoroughly clean the goat head. Singe any remaining hair over an open flame, then scrub vigorously with a stiff brush and water. Pay special attention to the ears, nostrils, and mouth.",
+      "action": "cleaning_head",
+      "ingredients": ["ing_goat_head"],
+      "utensils": ["utn_cleaning_brush"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Using a heavy knife or having the butcher do it, split the goat head in half or into manageable pieces to fit in the pot.",
+      "action": "splitting_head",
+      "utensils": ["utn_knife"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Remove the brain and set aside (it will be added later). The tongue can be left in or removed and cleaned separately.",
+      "action": "removing_delicate_parts"
+    },
+    {
+      "step_number": 4,
+      "instruction": "Place the goat head pieces in a very large stock pot. Add enough cold water to completely submerge the head (about 10 cups).",
+      "action": "pot_setup",
+      "ingredients": ["ing_water"],
+      "utensils": ["utn_very_large_pot"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Bring to a rolling boil over high heat. Let it boil for 10-15 minutes, then skim off the scum that rises to the surface.",
+      "action": "initial_boil_skimming"
+    },
+    {
+      "step_number": 6,
+      "instruction": "Drain the water and rinse the head pieces again. This first blanching ensures a cleaner, clearer broth.",
+      "action": "blanching_rinsing",
+      "utensils": ["utn_strainer"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Return the cleaned head pieces to the pot. Cover with fresh cold water (about 10 cups again). Add the quartered onions, crushed garlic, sliced ginger, celery, carrots, salt, peppercorns, and chili peppers.",
+      "action": "adding_aromatics",
+      "ingredients": ["ing_onions", "ing_garlic", "ing_ginger", "ing_celery", "ing_carrots", "ing_salt", "ing_black_pepper", "ing_chili_peppers"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Bring to a boil, then reduce the heat to the lowest possible setting. Cover and let it simmer very gently for 3-4 hours.",
+      "action": "slow_simmering",
+      "cooking_indicators": {
+        "olfactory": "A rich, meaty, and deeply savory aroma will develop.",
+        "visual": "The broth will become slightly milky and gelatinous."
+      }
+    },
+    {
+      "step_number": 9,
+      "instruction": "After about 3 hours, check for tenderness. The meat should be falling off the bone. Add the reserved brain in the last 20-30 minutes of cooking.",
+      "action": "adding_brain"
+    },
+    {
+      "step_number": 10,
+      "instruction": "Once the meat is extremely tender, carefully remove the head pieces from the broth. Let them cool slightly until they can be handled.",
+      "action": "removing_meat",
+      "utensils": ["utn_tongs"]
+    },
+    {
+      "step_number": 11,
+      "instruction": "Strain the broth through a fine-mesh strainer into a clean pot. Discard the solids. You should have a rich, flavorful, and slightly thick broth.",
+      "action": "straining_broth",
+      "utensils": ["utn_strainer"]
+    },
+    {
+      "step_number": 12,
+      "instruction": "Pick all the meat from the goat head, including the cheeks, tongue, and any other tender parts. Return this meat to the strained broth.",
+      "action": "picking_meat"
+    },
+    {
+      "step_number": 13,
+      "instruction": "Reheat the soup gently. Adjust seasoning with more salt if needed. The soup should be served very hot.",
+      "action": "final_seasoning"
+    },
+    {
+      "step_number": 14,
+      "instruction": "Serve the soup in large bowls, ensuring each portion has plenty of meat and broth.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "slow_simmering",
+  "heat_level": "low",
+  "serving_suggestions": "Traditionally served as a main course with a staple carbohydrate to soak up the rich broth. It is excellent with Posho (Ugali), Chapati, or boiled potatoes and sweet potatoes. Sliced raw onions with chili on the side are a common accompaniment. The soup is often eaten communally from a large shared pot.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 380,
+      "carbohydrates_g": 8,
+      "protein_g": 35,
+      "fat_g": 22,
+      "cholesterol_mg": 150,
+      "sodium_mg": 1200
+    },
+    "health_benefits": ["extremely_high_in_collagen", "rich_in_gelatin", "excellent_source_of_protein", "high_in_minerals", "supports_joint_health", "gut_healing_properties"]
+  },
+  "tags": ["main_dish", "soup", "goat", "offal", "traditional", "delicacy", "gelatinous", "protein_rich", "communal", "slow_cooked", "northern_uganda", "eastern_uganda"],
+  "source": "traditional_ugandan_delicacy",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

@@ -1,0 +1,292 @@
+{
+  "recipe_id": "ug_recipe_golden_vegetable_rice_149",
+  "name": {
+    "en": "Golden Vegetable Rice",
+    "local_name": "Muceere ogwavegetabo Ogwa Turmeric"
+  },
+  "description": "A stunning, vibrant rice dish where white rice is transformed into a beautiful golden color with turmeric and cooked with a colorful medley of fresh vegetables. The turmeric not only gives the rice its warm, sunny hue but also adds earthy flavor and health benefits. The vegetables provide contrasting colors, textures, and nutrients, creating a feast for both the eyes and the palate.",
+  "origin_region": "Urban Centers and Health-Conscious Households",
+  "cultural_significance": {
+    "importance": "modern_health_fusion_dish",
+    "occasions": ["special_meals", "health_conscious_dining", "guest_entertaining", "family_gatherings", "festive_occasions"],
+    "cultural_notes": "Golden vegetable rice represents the intersection of traditional Ugandan ingredients with global health trends. The use of turmeric reflects both its Ayurvedic heritage and growing awareness of its anti-inflammatory properties. This dish is particularly popular in urban households where cooks are experimenting with colorful, Instagram-worthy meals that are both beautiful and nutritious. It's often served when entertaining guests to showcase culinary creativity and health consciousness."
+  },
+  "type": "main_dish_side_dish",
+  "difficulty": "easy",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 15,
+  "cook_time_mins": 25,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_white_rice",
+      "name": "White Rice (long grain)",
+      "local_name": "Muceere",
+      "quantity": 2,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 4,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_turmeric",
+      "name": "Turmeric Powder",
+      "local_name": "N/A",
+      "quantity": 1.5,
+      "unit": "tsp",
+      "notes": "For color and health benefits"
+    },
+    {
+      "ingredient_id": "ing_carrots",
+      "name": "Carrots, diced",
+      "local_name": "N/A",
+      "quantity": 2,
+      "unit": "medium",
+      "notes": "Orange contrast against golden rice"
+    },
+    {
+      "ingredient_id": "ing_green_peas",
+      "name": "Green Peas",
+      "local_name": "N/A",
+      "quantity": 0.5,
+      "unit": "cup"
+    },
+    {
+      "ingredient_id": "ing_red_bell_pepper",
+      "name": "Red Bell Pepper, diced",
+      "local_name": "Bibbo",
+      "quantity": 1,
+      "unit": "medium",
+      "notes": "Adds vibrant red color"
+    },
+    {
+      "ingredient_id": "ing_green_beans",
+      "name": "Green Beans, chopped",
+      "local_name": "N/A",
+      "quantity": 0.5,
+      "unit": "cup"
+    },
+    {
+      "ingredient_id": "ing_sweet_corn",
+      "name": "Sweet Corn Kernels",
+      "local_name": "N/A",
+      "quantity": 0.5,
+      "unit": "cup"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion, finely chopped",
+      "local_name": "Tungurusumu",
+      "quantity": 1,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic, minced",
+      "local_name": "Tungurusumu Omuzungu",
+      "quantity": 2,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "ing_cooking_oil",
+      "name": "Cooking Oil",
+      "local_name": "Mafuta",
+      "quantity": 3,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_black_pepper",
+      "name": "Black Pepper",
+      "local_name": "Kamulali",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_cumin_seeds",
+      "name": "Cumin Seeds",
+      "local_name": "N/A",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_chicken_vegetable_stock",
+      "name": "Vegetable or Chicken Stock",
+      "local_name": "N/A",
+      "quantity": 4,
+      "unit": "cups",
+      "notes": "For enhanced flavor"
+    },
+    {
+      "ingredient_id": "ing_fresh_cilantro",
+      "name": "Fresh Cilantro or Parsley, chopped",
+      "local_name": "N/A",
+      "quantity": 0.25,
+      "unit": "cup",
+      "notes": "For garnish and freshness"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_medium_pot",
+      "name": "Medium Pot with Lid",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Knife",
+      "local_name": "Mumo"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Mwiko"
+    },
+    {
+      "utensil_id": "utn_cutting_board",
+      "name": "Cutting Board",
+      "local_name": "Ebbaawo"
+    },
+    {
+      "utensil_id": "utn_measuring_spoons",
+      "name": "Measuring Spoons",
+      "local_name": "N/A"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Rinse the white rice thoroughly under cold water until the water runs clear. Drain well.",
+      "action": "rinsing_rice",
+      "ingredients": ["ing_white_rice"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Prepare all vegetables: dice carrots and red bell pepper, chop green beans, chop onion, and mince garlic.",
+      "action": "preparing_vegetables",
+      "ingredients": ["ing_carrots", "ing_red_bell_pepper", "ing_green_beans", "ing_onion", "ing_garlic"],
+      "utensils": ["utn_knife", "utn_cutting_board"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Heat cooking oil in a medium pot over medium heat.",
+      "action": "heating_oil",
+      "ingredients": ["ing_cooking_oil"],
+      "utensils": ["utn_medium_pot"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Add cumin seeds and let them sizzle for 30 seconds until fragrant.",
+      "action": "tempering_cumin",
+      "ingredients": ["ing_cumin_seeds"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Add chopped onion and sauté for 2-3 minutes until translucent.",
+      "action": "sauteing_onion",
+      "ingredients": ["ing_onion"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Add minced garlic and cook for 30 seconds until fragrant.",
+      "action": "adding_garlic",
+      "ingredients": ["ing_garlic"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Add turmeric powder and stir for 30 seconds to release its color and flavor. The oil will turn golden yellow.",
+      "action": "adding_turmeric",
+      "ingredients": ["ing_turmeric"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Add the harder vegetables: diced carrots and green beans. Stir-fry for 2-3 minutes until slightly tender.",
+      "action": "cooking_hard_vegetables",
+      "ingredients": ["ing_carrots", "ing_green_beans"]
+    },
+    {
+      "step_number": 9,
+      "instruction": "Add the rinsed rice to the pot and stir to coat each grain with the golden turmeric oil. The rice will start to turn yellow.",
+      "action": "coating_rice"
+    },
+    {
+      "step_number": 10,
+      "instruction": "Pour in stock or water, then add salt and black pepper. Stir gently to combine.",
+      "action": "adding_liquid_seasoning",
+      "ingredients": ["ing_water", "ing_salt", "ing_black_pepper", "ing_chicken_vegetable_stock"]
+    },
+    {
+      "step_number": 11,
+      "instruction": "Bring to a boil, then reduce heat to low. Cover and simmer for 10 minutes.",
+      "action": "initial_simmering"
+    },
+    {
+      "step_number": 12,
+      "instruction": "After 10 minutes, quickly add the remaining vegetables: green peas, sweet corn, and diced red bell pepper. Spread them evenly over the top without stirring too much.",
+      "action": "adding_soft_vegetables",
+      "ingredients": ["ing_green_peas", "ing_sweet_corn", "ing_red_bell_pepper"]
+    },
+    {
+      "step_number": 13,
+      "instruction": "Cover again and continue simmering for another 8-10 minutes until the rice is cooked and the liquid is absorbed. The rice will deepen to a golden color.",
+      "action": "final_simmering",
+      "cooking_indicators": {
+        "visual": "Rice turns golden and vegetables become bright and vibrant",
+        "olfactory": "Warm, earthy aroma from turmeric develops"
+      }
+    },
+    {
+      "step_number": 14,
+      "instruction": "Remove from heat and let it stand covered for 5 minutes to allow the flavors to meld.",
+      "action": "resting"
+    },
+    {
+      "step_number": 15,
+      "instruction": "Gently fluff the rice with a fork, mixing the colorful vegetables throughout the golden rice.",
+      "action": "fluffing",
+      "utensils": ["utn_wooden_spoon"]
+    },
+    {
+      "step_number": 16,
+      "instruction": "Stir in most of the fresh cilantro or parsley, reserving some for garnish.",
+      "action": "adding_herbs",
+      "ingredients": ["ing_fresh_cilantro"]
+    },
+    {
+      "step_number": 17,
+      "instruction": "Serve the golden vegetable rice hot, garnished with remaining herbs. The colorful vegetables will create a beautiful contrast against the golden rice.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "sauteing_steaming",
+  "heat_level": "medium_low",
+  "serving_suggestions": "Serve as a stunning main dish or side. It pairs beautifully with grilled chicken, fish, or tofu. The golden rice makes an excellent base for curries and stews. For a complete meal, serve with a simple cucumber salad or steamed greens. The vibrant colors make it perfect for special occasions and festive meals.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 250,
+      "carbohydrates_g": 46,
+      "protein_g": 5,
+      "fat_g": 6,
+      "cholesterol_mg": 0,
+      "sodium_mg": 450,
+      "fiber_g": 4
+    },
+    "health_benefits": ["anti_inflammatory_properties", "rich_in_antioxidants", "high_in_vitamins", "supports_immune_function", "aids_digestion", "good_source_of_fiber", "vegan_option", "gluten_free", "supports_joint_health"]
+  },
+  "tags": ["main_dish", "side_dish", "golden_rice", "vegetable_rice", "turmeric", "colorful", "healthy", "anti_inflammatory", "vegan_option", "gluten_free", "festive", "modern"],
+  "source": "modern_ugandan_fusion_cuisine",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

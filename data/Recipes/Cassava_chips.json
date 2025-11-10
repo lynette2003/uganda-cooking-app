@@ -1,0 +1,117 @@
+{
+  "recipe_id": "ug_recipe_cassava_chips_045",
+  "name": {
+    "en": "Cassava Chips",
+    "local_name": "Obuwangwa bwa Kasava"
+  },
+  "description": "Crispy fried slices of cassava, seasoned lightly with salt. A popular Ugandan snack often enjoyed with drinks or as a side dish.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "street_food",
+    "occasions": ["snack", "social_gatherings", "market_food"],
+    "cultural_notes": "Cassava chips are a common snack sold by street vendors and enjoyed by both children and adults. They are often served during social events or casual gatherings."
+  },
+  "type": "snack",
+  "difficulty": "easy",
+  "servings": {
+    "min": 2,
+    "max": 4
+  },
+  "prep_time_mins": 15,
+  "cook_time_mins": 20,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_cassava",
+      "name": "Cassava roots, peeled",
+      "local_name": "Kasava",
+      "quantity": 500,
+      "unit": "g"
+    },
+    {
+      "ingredient_id": "ing_oil",
+      "name": "Cooking Oil",
+      "local_name": "Amafuta",
+      "quantity": 3,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Munyu",
+      "quantity": "to taste",
+      "unit": "optional"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_fryingpan",
+      "name": "Deep Frying Pan",
+      "local_name": "Sufuria ya Kukaanga"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Knife",
+      "local_name": "Akambe"
+    },
+    {
+      "utensil_id": "utn_spatula",
+      "name": "Spatula",
+      "local_name": "Omwengeja"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Peel the cassava roots and cut into thin slices.",
+      "action": "slicing",
+      "ingredients": ["ing_cassava"],
+      "utensils": ["utn_knife"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Heat oil in a deep frying pan over medium-high heat.",
+      "action": "heating",
+      "utensils": ["utn_fryingpan"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Fry cassava slices in batches until golden and crispy.",
+      "action": "frying",
+      "ingredients": ["ing_cassava"],
+      "utensils": ["utn_spatula"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Drain excess oil and season with salt to taste.",
+      "action": "seasoning",
+      "ingredients": ["ing_salt"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Serve hot as a snack or side dish.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "deep_frying",
+  "heat_level": "medium-high",
+  "cooking_indicators": {
+    "visual": "chips are golden brown",
+    "time": "15–20 minutes",
+    "texture": "crispy outside, tender inside"
+  },
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 250,
+      "carbohydrates_g": 40,
+      "protein_g": 2,
+      "fat_g": 12,
+      "cholesterol_mg": 0,
+      "sodium_mg": 150
+    },
+    "health_benefits": ["energy_rich", "gluten_free", "vegetarian_friendly"]
+  },
+  "tags": ["snack", "street_food", "crispy", "vegetarian"],
+  "source": "traditional_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

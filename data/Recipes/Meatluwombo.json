@@ -1,0 +1,214 @@
+{
+  "recipe_id": "ug_recipe_meat_luwombo_128",
+  "name": {
+    "en": "Meat Luwombo",
+    "local_name": "Luwombo y'Nyama"
+  },
+  "description": "A majestic and deeply flavorful dish where chunks of beef are slow-steamed for hours in a sealed banana leaf pouch with a rich groundnut paste and aromatic vegetables. This traditional cooking method transforms tough cuts of meat into incredibly tender, fall-apart morsels bathing in a thick, nutty, and intensely savory sauce. The banana leaf imparts a unique earthy aroma that defines this royal dish.",
+  "origin_region": "Buganda Kingdom",
+  "cultural_significance": {
+    "importance": "royal_ceremonial_dish",
+    "occasions": ["weddings", "introduction_ceremonies", "cultural_festivals", "christmas", "easter", "special_guests"],
+    "cultural_notes": "Meat Luwombo is one of the original and most revered versions of this royal Buganda dish. The long, slow cooking process reflects the patience and care invested in honoring guests and celebrating important life events. It is traditionally prepared by experienced cooks who have mastered the art of wrapping the banana leaves to create a perfect seal. Serving Meat Luwombo signifies that the occasion is of the highest importance and that the guests are deeply valued."
+  },
+  "type": "main_dish",
+  "difficulty": "hard",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 50,
+  "cook_time_mins": 180,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_beef",
+      "name": "Beef, with bone",
+      "local_name": "Nyama",
+      "quantity": 1.5,
+      "unit": "kg",
+      "notes": "Use tough, flavorful cuts like chuck, short ribs, or brisket, cut into large chunks"
+    },
+    {
+      "ingredient_id": "ing_banana_leaves",
+      "name": "Fresh Banana Leaves",
+      "local_name": "Ebikoola",
+      "quantity": 6,
+      "unit": "large_sheets",
+      "notes": "Softened over a flame to make pliable"
+    },
+    {
+      "ingredient_id": "ing_groundnut_paste",
+      "name": "Raw Groundnut Paste",
+      "local_name": "Binyebwa",
+      "quantity": 1,
+      "unit": "cup",
+      "notes": "Freshly ground from raw nuts for authentic flavor and texture"
+    },
+    {
+      "ingredient_id": "ing_onions",
+      "name": "Onions, sliced",
+      "local_name": "Tungurusumu",
+      "quantity": 2,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_tomatoes",
+      "name": "Tomatoes, sliced",
+      "local_name": "Enyanya",
+      "quantity": 2,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_smoked_meat",
+      "name": "Smoked Meat or Fish (Mikene)",
+      "local_name": "Mikene",
+      "quantity": 100,
+      "unit": "grams",
+      "notes": "For added umami depth (traditional)"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 0.5,
+      "unit": "cup",
+      "notes": "For grinding the groundnut paste"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 2,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic, minced",
+      "local_name": "Tungurusumu Omuzungu",
+      "quantity": 4,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "ing_ginger",
+      "name": "Ginger, grated",
+      "local_name": "Tangawizi",
+      "quantity": 1,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_meat_seasoning",
+      "name": "Meat Seasoning Powder",
+      "local_name": "Curry",
+      "quantity": 1,
+      "unit": "tsp"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_pot",
+      "name": "Large, Wide Pot with Lid",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_grinding_stone",
+      "name": "Grinding Stone or Food Processor",
+      "local_name": "Ebiyondo n'Okubaaza"
+    },
+    {
+      "utensil_id": "utn_kitchen_string",
+      "name": "Kitchen String or Banana Leaf Strips",
+      "local_name": "N/A"
+    },
+    {
+      "utensil_id": "utn_steaming_rack",
+      "name": "Steaming Rack or Banana Leaf Stems",
+      "local_name": "N/A"
+    },
+    {
+      "utensil_id": "utn_mixing_bowl",
+      "name": "Large Mixing Bowl",
+      "local_name": "Sahani"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Prepare the groundnut paste by grinding raw, shelled groundnuts with a small amount of water until a very smooth, thick paste forms. This can take 15-20 minutes by hand.",
+      "action": "making_groundnut_paste",
+      "ingredients": ["ing_groundnut_paste", "ing_water"],
+      "utensils": ["utn_grinding_stone"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "In a large bowl, combine the beef chunks with minced garlic, grated ginger, salt, and meat seasoning powder. Mix thoroughly, ensuring the meat is well-coated. Let it marinate for at least 30 minutes.",
+      "action": "marinating_meat",
+      "ingredients": ["ing_beef", "ing_garlic", "ing_ginger", "ing_salt", "ing_meat_seasoning"],
+      "utensils": ["utn_mixing_bowl"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Prepare the banana leaves by passing them over a low flame for a few seconds until they become soft, glossy, and pliable. Be careful not to burn them. Wipe clean with a damp cloth.",
+      "action": "preparing_leaves"
+    },
+    {
+      "step_number": 4,
+      "instruction": "Lay a softened banana leaf flat. Place a portion of the marinated beef in the center. Top with sliced onion, tomato, a piece of smoked meat/fish, and a generous spoonful of the raw groundnut paste.",
+      "action": "assembling_bundle",
+      "ingredients": ["ing_onions", "ing_tomatoes", "ing_smoked_meat"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Fold the banana leaf over the filling to create a neat, sealed bundle. Tie it securely with kitchen string or a thin strip of banana leaf. Repeat for all portions.",
+      "action": "wrapping_bundles",
+      "utensils": ["utn_kitchen_string"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Place a steaming rack or a bed of banana leaf stems at the bottom of a large pot. Add about an inch of water, ensuring it doesn't touch the rack.",
+      "action": "preparing_steaming_pot",
+      "utensils": ["utn_large_pot", "utn_steaming_rack"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Arrange the Luwombo bundles on the rack, seam-side up. Cover the pot with a tight-fitting lid.",
+      "action": "loading_bundles"
+    },
+    {
+      "step_number": 8,
+      "instruction": "Steam the bundles over low heat for 2.5 to 3 hours. Check occasionally and add more boiling water if needed to prevent the pot from drying out.",
+      "action": "steaming",
+      "cooking_indicators": {
+        "olfactory": "A deep, rich, and savory aroma will fill the kitchen.",
+        "time": "2.5-3 hours"
+      }
+    },
+    {
+      "step_number": 9,
+      "instruction": "Carefully remove one bundle to check for doneness. The meat should be extremely tender and easily pull apart with a fork, and the sauce should be thick and richly flavored.",
+      "action": "testing_doneness"
+    },
+    {
+      "step_number": 10,
+      "instruction": "Once done, carefully remove the bundles from the pot. Serve each bundle on a plate, allowing diners to open their own pouch at the table to release the aromatic steam.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "steaming_bundles",
+  "heat_level": "low",
+  "serving_suggestions": "Serve as the majestic centerpiece of a festive meal. Each person gets their own bundle. It is traditionally accompanied by Matoke (steamed green bananas) or Posho (Ugali), which are used to scoop up the tender meat and rich sauce. A side of steamed leafy greens like Nakati or Dodo provides a fresh contrast.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 520,
+      "carbohydrates_g": 12,
+      "protein_g": 45,
+      "fat_g": 32,
+      "cholesterol_mg": 130,
+      "sodium_mg": 900
+    },
+    "health_benefits": ["high_quality_protein", "rich_in_iron", "excellent_source_of_zinc", "high_in_b_vitamins", "contains_healthy_fats"]
+  },
+  "tags": ["main_dish", "ceremonial", "beef", "steamed", "banana_leaf", "luwombo", "festive", "buganda", "special_occasion", "protein_rich", "slow_cooked"],
+  "source": "traditional_royal_buganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

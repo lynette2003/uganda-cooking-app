@@ -1,0 +1,114 @@
+{
+  "recipe_id": "ug_recipe_roasted_sweet_potatoes_089",
+  "name": {
+    "en": "Roasted Sweet Potatoes",
+    "local_names": [
+      "Lumonde omyokye",
+      "Sweet potatoes (local varieties)"
+    ]
+  },
+  "description": "Crisp-edged, tender-roasted sweet potatoes seasoned simply with oil, salt and warm spices — served as a snack, side dish, or part of a meal.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "cultural_notes": "Sweet potatoes are a common, affordable staple across Uganda. Roasting brings out their natural sweetness and is a popular street-food and home-cooked preparation."
+  },
+  "type": "side_dish",
+  "difficulty": "easy",
+  "servings": {
+    "yield": 4
+  },
+  "prep_time_mins": 10,
+  "cook_time_mins": 35,
+  "ingredients": [
+    {
+      "item": "sweet potatoes",
+      "quantity": "1 kg (medium-sized), scrubbed"
+    },
+    {
+      "item": "vegetable oil or sunflower oil",
+      "quantity": "2 tbsp"
+    },
+    {
+      "item": "salt",
+      "quantity": "1 tsp, or to taste"
+    },
+    {
+      "item": "ground black pepper",
+      "quantity": "1/2 tsp"
+    },
+    {
+      "item": "paprika or mild chili powder (optional)",
+      "quantity": "1/2 tsp"
+    },
+    {
+      "item": "fresh lime or lemon (optional, for serving)",
+      "quantity": "1"
+    },
+    {
+      "item": "butter or ghee (optional)",
+      "quantity": "1 tbsp"
+    },
+    {
+      "item": "honey or brown sugar (optional, for glaze)",
+      "quantity": "1 tsp"
+    }
+  ],
+  "utensils": [
+    "oven or charcoal grill",
+    "baking tray",
+    "baking/parchment paper or foil (optional)",
+    "knife",
+    "mixing bowl",
+    "tongs or spatula"
+  ],
+  "steps": [
+    {
+      "step": 1,
+      "instruction": "Preheat oven to 200°C (400°F). Line a baking tray with parchment paper or lightly oil it."
+    },
+    {
+      "step": 2,
+      "instruction": "Scrub sweet potatoes thoroughly. Leave skins on for texture and nutrients, or peel if preferred. Cut into wedges or 2 cm-thick slices for even roasting."
+    },
+    {
+      "step": 3,
+      "instruction": "In a mixing bowl, toss sweet potato pieces with oil, salt, pepper and paprika (if using) until evenly coated."
+    },
+    {
+      "step": 4,
+      "instruction": "Arrange pieces in a single layer on the tray, leaving space between pieces so they roast rather than steam."
+    },
+    {
+      "step": 5,
+      "instruction": "Roast for 30–40 minutes, turning once halfway through, until edges are golden and centers are tender when pierced with a fork."
+    },
+    {
+      "step": 6,
+      "instruction": "If using, toss the hot potatoes with a small knob of butter or a drizzle of honey to glaze. Squeeze fresh lime or lemon over before serving for brightness."
+    },
+    {
+      "step": 7,
+      "instruction": "Serve hot as a snack or side with stews, grilled meats, or salads."
+    }
+  ],
+  "cooking_method": "roasting",
+  "heat_level": "medium_high",
+  "serving_suggestions": "Serve with a dollop of spiced yogurt, grilled fish or stews, or enjoy plain as a filling snack.",
+  "nutritional_info": {
+    "health_benefits": [
+      "rich_in_vitamin_A",
+      "good_source_of_complex_carbohydrates",
+      "high_in_fiber"
+    ]
+  },
+  "tags": [
+    "side_dish",
+    "snack",
+    "vegetarian",
+    "gluten_free",
+    "easy"
+  ],
+  "source": "traditional_home_cooking",
+  "version": "1.0",
+  "last_updated": "2025-10-13"
+}

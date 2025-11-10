@@ -1,0 +1,203 @@
+{
+  "recipe_id": "ug_recipe_musu_076",
+  "name": {
+    "en": "Grilled Cane Rat (Musu)",
+    "local_name": "Musu / Emmese"
+  },
+  "description": "A traditional and highly prized game meat, where cane rats are carefully prepared, marinated with local spices, and grilled over charcoal until the skin is crispy and the meat is tender and flavorful.",
+  "origin_region": "Rural areas nationwide (especially Western and Central Uganda)",
+  "cultural_significance": {
+    "importance": "traditional_bushmeat_delicacy",
+    "occasions": ["special_occasions", "rural_feasts", "hunting_success", "cultural_ceremonies"],
+    "cultural_notes": "Musu (cane rats/grasscutters) are considered a delicacy in many rural Ugandan communities. They are wild animals that feed on grasses and sugarcane, resulting in lean, flavorful meat. Hunting and preparing musu is a traditional skill, and the meat is often shared communally, signifying a successful hunt. It's more common in rural settings than urban centers."
+  },
+  "type": "main_course",
+  "difficulty": "medium",
+  "servings": {
+    "min": 2,
+    "max": 4
+  },
+  "prep_time_mins": 60,
+  "cook_time_mins": 30,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_dressed_cane_rat",
+      "name": "Dressed Cane Rat (Musu)",
+      "local_name": "Musu",
+      "quantity": 2,
+      "unit": "whole",
+      "notes": "Properly gutted, skinned, and cleaned. Soaked in water with lemon/vinegar."
+    },
+    {
+      "ingredient_id": "ing_lemon_juice_vinegar",
+      "name": "Lemon Juice or Vinegar",
+      "local_name": "Maji ya Ndimu / Siri",
+      "quantity": 0.5,
+      "unit": "cup",
+      "notes": "For initial cleaning and deodorizing"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion",
+      "local_name": "Katungulu",
+      "quantity": 1,
+      "unit": "large",
+      "notes": "Grated"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic",
+      "local_name": "Katungulu omukadde",
+      "quantity": 4,
+      "unit": "cloves",
+      "notes": "Minced"
+    },
+    {
+      "ingredient_id": "ing_ginger",
+      "name": "Fresh Ginger",
+      "local_name": "Tangawizi",
+      "quantity": 2,
+      "unit": "inch piece",
+      "notes": "Grated"
+    },
+    {
+      "ingredient_id": "ing_chili_pepper",
+      "name": "Fresh Chili Pepper",
+      "local_name": "Pilipili",
+      "quantity": 2,
+      "unit": "pieces",
+      "notes": "Finely chopped"
+    },
+    {
+      "ingredient_id": "ing_vegetable_oil",
+      "name": "Vegetable Oil",
+      "local_name": "Mafuta",
+      "quantity": 3,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_curry_powder",
+      "name": "Curry Powder",
+      "local_name": "Kali powuda",
+      "quantity": 1,
+      "unit": "tsp"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_bowl",
+      "name": "Large Bowl",
+      "local_name": "Orupapura"
+    },
+    {
+      "utensil_id": "utn_sharp_knife",
+      "name": "Sharp Knife",
+      "local_name": "Kisu"
+    },
+    {
+      "utensil_id": "utn_charcoal_grill",
+      "name": "Charcoal Grill (Sigiri)",
+      "local_name": "Sigiri"
+    },
+    {
+      "utensil_id": "utn_grilling_skewers",
+      "name": "Grilling Skewers or Rack",
+      "local_name": "Mishumaa ya Kuchomoa"
+    },
+    {
+      "utensil_id": "utn_basting_brush",
+      "name": "Basting Brush",
+      "local_name": "Burashi"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Thoroughly clean the dressed cane rats. Rub them inside and out with lemon juice or vinegar and rinse well. This helps remove any gamey odor. Pat them dry with paper towels.",
+      "action": "cleaning",
+      "ingredients": ["ing_dressed_cane_rat", "ing_lemon_juice_vinegar"],
+      "utensils": ["utn_large_bowl"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Make several shallow cuts across the meat on both sides. This helps the marinade penetrate and allows for even cooking.",
+      "action": "scoring",
+      "utensils": ["utn_sharp_knife"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Prepare the marinade by mixing grated onion, minced garlic, grated ginger, chopped chili, vegetable oil, salt, and curry powder in a bowl.",
+      "action": "making_marinade",
+      "ingredients": ["ing_onion", "ing_garlic", "ing_ginger", "ing_chili_pepper", "ing_vegetable_oil", "ing_salt", "ing_curry_powder"],
+      "utensils": ["utn_large_bowl"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Rub the marinade mixture all over the cane rats, ensuring it gets into the cuts and the cavity. Cover and let it marinate for at least 30 minutes (or several hours in the refrigerator for deeper flavor).",
+      "action": "marinating"
+    },
+    {
+      "step_number": 5,
+      "instruction": "Light the charcoal grill (sigiri) and let the flames die down until you have hot embers for a medium heat.",
+      "action": "preparing_grill",
+      "utensils": ["utn_charcoal_grill"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Place the marinated cane rats on the grill rack or skewer them. Grill over medium-hot coals.",
+      "action": "grilling",
+      "utensils": ["utn_grilling_skewers"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Grill for 20-30 minutes, turning frequently and basting occasionally with any remaining marinade or oil, until the meat is cooked through and the skin is crispy and charred in spots.",
+      "action": "cooking",
+      "cooking_indicators": {
+        "visual": "The skin will be crispy and browned, and the meat will shrink from the bones.",
+        "time": "20-30 minutes",
+        "texture": "Juices should run clear when the thickest part of the meat is pierced."
+      },
+      "utensils": ["utn_basting_brush"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Ensure the meat is fully cooked. The internal temperature should reach at least 75°C (165°F) if you have a meat thermometer.",
+      "action": "checking_doneness"
+    },
+    {
+      "step_number": 9,
+      "instruction": "Remove the grilled musu from the heat and let it rest for a few minutes.",
+      "action": "resting"
+    },
+    {
+      "step_number": 10,
+      "instruction": "Serve the grilled musu whole or chopped into pieces.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "grilling",
+  "heat_level": "medium",
+  "serving_suggestions": "Traditionally served with steamed Matoke, Posho (Ugali), or boiled sweet potatoes and cassava. A side of steamed greens like Sukuma Wiki or a fresh tomato and onion salad (Kachumbari) complements it well.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 250,
+      "protein_g": 30,
+      "fat_g": 14,
+      "carbohydrates_g": 2,
+      "cholesterol_mg": 90,
+      "sodium_mg": 650
+    },
+    "health_benefits": ["high_quality_lean_protein", "rich_in_iron", "good_source_of_b_vitamins", "low_carbohydrate"]
+  },
+  "tags": ["main_course", "game_meat", "traditional", "rural", "grilled", "protein_rich"],
+  "source": "traditional_bushmeat_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

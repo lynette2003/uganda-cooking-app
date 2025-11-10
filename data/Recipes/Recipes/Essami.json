@@ -1,0 +1,215 @@
+{
+  "recipe_id": "ug_recipe_essami_075",
+  "name": {
+    "en": "Essami (Pounded Cassava Leaves Stew)",
+    "local_name": "Essami"
+  },
+  "description": "A rich, thick, and deeply flavorful stew from Northern Uganda made from finely pounded fresh cassava leaves, slow-cooked with groundnuts (peanuts), and often enriched with fish or meat. It has a distinctive dark green color and a unique, slightly bitter, earthy taste.",
+  "origin_region": "Northern Uganda (Acholi, Lango sub-regions)",
+  "cultural_significance": {
+    "importance": "traditional_staple_dish",
+    "occasions": ["daily_meals", "family_gatherings", "cultural_events", "communal_feasts"],
+    "cultural_notes": "Essami is a cornerstone of Acholi and Lango cuisine. The process of pounding the leaves is a communal and labor-intensive activity, often done by women using a large mortar and pestle. It is a dish that signifies patience, tradition, and community. It's a nutritious and filling meal, central to the food culture of Northern Uganda."
+  },
+  "type": "main_course",
+  "difficulty": "medium",
+  "servings": {
+    "min": 6,
+    "max": 8
+  },
+  "prep_time_mins": 60,
+  "cook_time_mins": 120,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_fresh_cassava_leaves",
+      "name": "Fresh Cassava Leaves",
+      "local_name": "Lapena ya Mwogo",
+      "quantity": 4,
+      "unit": "large bunches",
+      "notes": "Young, tender leaves are best. Thoroughly washed."
+    },
+    {
+      "ingredient_id": "ing_groundnut_paste",
+      "name": "Groundnut Paste (Peanut Butter)",
+      "local_name": "Binyebwa",
+      "quantity": 1,
+      "unit": "cup",
+      "notes": "Unsweetened, smooth or slightly coarse"
+    },
+    {
+      "ingredient_id": "ing_smoked_fish_meat",
+      "name": "Smoked Fish or Meat (Optional)",
+      "local_name": "Mbuta eyokuwuka / Nyama eyokuwuka",
+      "quantity": 200,
+      "unit": "grams",
+      "notes": "Deboned and flaked (fish) or cut into pieces (meat)"
+    },
+    {
+      "ingredient_id": "ing_onions",
+      "name": "Onions",
+      "local_name": "Cak Tula",
+      "quantity": 2,
+      "unit": "large",
+      "notes": "Finely chopped"
+    },
+    {
+      "ingredient_id": "ing_tomatoes",
+      "name": "Ripe Tomatoes",
+      "local_name": "Nyanya",
+      "quantity": 2,
+      "unit": "medium",
+      "notes": "Chopped"
+    },
+    {
+      "ingredient_id": "ing_palm_oil",
+      "name": "Palm Oil",
+      "local_name": "Mafuta ya Mchikichi",
+      "quantity": 3,
+      "unit": "tbsp",
+      "notes": "For authentic flavor and color"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Pii",
+      "quantity": 4,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_soda_ash_potash",
+      "name": "Potash (Potassium Carbonate) or Baking Soda",
+      "local_name": "Laro / Lajudongo",
+      "quantity": 1,
+      "unit": "tsp",
+      "notes": "A tiny amount to tenderize the leaves and preserve color (traditional but optional)"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Lac",
+      "quantity": 1,
+      "unit": "tbsp",
+      "notes": "To taste"
+    },
+    {
+      "ingredient_id": "ing_chili_pepper",
+      "name": "Scotch Bonnet Chili",
+      "local_name": "Lacweny",
+      "quantity": 1,
+      "unit": "piece",
+      "notes": "Whole, pierced (adjust to taste)"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_mortar_pestle",
+      "name": "Large Mortar and Pestle",
+      "local_name": "Odo ki Odero"
+    },
+    {
+      "utensil_id": "utn_large_pot",
+      "name": "Large, Heavy Pot",
+      "local_name": "Agulu"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Lwak"
+    },
+    {
+      "utensil_id": "utn_grinding_stone",
+      "name": "Grinding Stone (Modern Alternative: Blender)",
+      "local_name": "Atoo",
+      "notes": "A blender can be used as a modern alternative to pounding, though the texture will differ."
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Wash the cassava leaves thoroughly in several changes of water to remove all dirt and sand. Drain.",
+      "action": "cleaning_leaves",
+      "ingredients": ["ing_fresh_cassava_leaves"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Using a large mortar and pestle (or a blender in batches), pound/blend the cassava leaves until they become a fine, dark green paste. This is the most crucial and labor-intensive step. Add a very small amount of water if using a blender to facilitate the process.",
+      "action": "pounding_leaves",
+      "ingredients": ["ing_fresh_cassava_leaves"],
+      "utensils": ["utn_mortar_pestle"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "In a large, heavy pot, heat the palm oil over medium heat. Add the chopped onions and sauté until soft.",
+      "action": "sautéing",
+      "ingredients": ["ing_palm_oil", "ing_onions"],
+      "utensils": ["utn_large_pot", "utn_wooden_spoon"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Add the chopped tomatoes and cook until they break down and soften.",
+      "action": "cooking_base",
+      "ingredients": ["ing_tomatoes"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Add the pounded cassava leaves to the pot. Stir well to combine with the onion and tomato base.",
+      "action": "adding_leaves"
+    },
+    {
+      "step_number": 6,
+      "instruction": "Dissolve the groundnut paste in about 2 cups of water to create a smooth, creamy liquid. Pour this into the pot with the leaves.",
+      "action": "adding_groundnuts",
+      "ingredients": ["ing_groundnut_paste", "ing_water"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Add the remaining water, salt, the whole pierced chili pepper, and the optional potash or baking soda. Stir everything thoroughly.",
+      "action": "combining",
+      "ingredients": ["ing_water", "ing_salt", "ing_chili_pepper", "ing_soda_ash_potash"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Bring the stew to a boil, then reduce the heat to very low. Cover the pot and let it simmer gently for at least 1.5 to 2 hours. Stir occasionally to prevent sticking at the bottom. The long, slow cooking is essential for developing the flavor and tenderizing the leaves.",
+      "action": "slow_simmering",
+      "cooking_indicators": {
+        "visual": "The stew will darken significantly, thicken to a paste-like consistency, and the oil will start to separate and rise to the top.",
+        "time": "90-120 minutes",
+        "texture": "Very thick, smooth, and creamy."
+      }
+    },
+    {
+      "step_number": 9,
+      "instruction": "If using smoked fish or meat, add it in the last 30 minutes of cooking to heat through and infuse its flavor.",
+      "action": "adding_protein",
+      "ingredients": ["ing_smoked_fish_meat"]
+    },
+    {
+      "step_number": 10,
+      "instruction": "Once the stew has reached a thick, rich consistency and the raw taste of the leaves has completely cooked out, it is ready. Adjust salt to taste.",
+      "action": "finishing"
+    },
+    {
+      "step_number": 11,
+      "instruction": "Serve the Essami hot in a bowl.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "slow_simmering",
+  "heat_level": "low",
+  "serving_suggestions": "Traditionally served with Atap (Millet Bread), Boiled Sweet Potatoes, Cassava (Mwogo), or Posho (Ugali).",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 280,
+      "carbohydrates_g": 15,
+      "protein_g": 12,
+      "fat_g": 20,
+      "cholesterol_mg": 5,
+      "sodium_mg": 800
+    },
+    "health_benefits": ["extremely_high_in_iron", "rich_in_protein", "high_in_fiber", "rich_in_vitamin_a_c", "good_source_of_healthy_fats"]
+  },
+  "tags": ["main_course", "traditional", "northern_uganda", "leafy_greens", "protein_rich", "slow_cooked", "gluten_free"],
+  "source": "traditional_recipe_acholi_lango",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

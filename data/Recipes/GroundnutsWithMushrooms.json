@@ -1,0 +1,222 @@
+{
+  "recipe_id": "ug_recipe_luwombo_051",
+  "name": {
+    "en": "Groundnuts with Mushroom Luwombo",
+    "local_name": "Luwombo lwa Ntuntunu ne Butiko"
+  },
+  "description": "A rich and aromatic traditional Ugandan dish where a groundnut and mushroom stew is slow-steamed in a banana leaf pouch, infusing it with a unique smoky flavor.",
+  "origin_region": "Buganda Kingdom",
+  "cultural_significance": {
+    "importance": "royal_feast_dish",
+    "occasions": ["weddings", "festivals", "important_guests", "family_gatherings"],
+    "cultural_notes": "Luwombo was created for the Kabaka (King) of Buganda in the late 19th century. Cooking in banana leaves is a revered technique that tenderizes the ingredients and locks in moisture and flavor, making it a dish for special occasions."
+  },
+  "type": "main_course",
+  "difficulty": "medium",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 40,
+  "cook_time_mins": 90,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_groundnut_paste",
+      "name": "Groundnut Paste (Peanut Butter)",
+      "local_name": "Binyebwa",
+      "quantity": 1.5,
+      "unit": "cups",
+      "notes": "Unsweetened, smooth or slightly coarse"
+    },
+    {
+      "ingredient_id": "ing_mushrooms",
+      "name": "Fresh Mushrooms",
+      "local_name": "Butiko",
+      "quantity": 500,
+      "unit": "grams",
+      "notes": "Cleaned and sliced (wild mushrooms are traditional)"
+    },
+    {
+      "ingredient_id": "ing_banana_leaves",
+      "name": "Fresh Banana Leaves",
+      "local_name": "Emiyembe",
+      "quantity": 4,
+      "unit": "large pieces",
+      "notes": "Wilted over a flame to make pliable"
+    },
+    {
+      "ingredient_id": "ing_onions",
+      "name": "Onions",
+      "local_name": "Katungulu",
+      "quantity": 2,
+      "unit": "medium",
+      "notes": "Finely chopped"
+    },
+    {
+      "ingredient_id": "ing_tomatoes",
+      "name": "Ripe Tomatoes",
+      "local_name": "Enyanya",
+      "quantity": 2,
+      "unit": "medium",
+      "notes": "Blended or finely grated"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic",
+      "local_name": "Katungulu omukadde",
+      "quantity": 4,
+      "unit": "cloves",
+      "notes": "Minced"
+    },
+    {
+      "ingredient_id": "ing_ginger",
+      "name": "Fresh Ginger",
+      "local_name": "Tangawizi",
+      "quantity": 1,
+      "unit": "inch piece",
+      "notes": "Grated"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 2,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 1,
+      "unit": "tsp",
+      "notes": "To taste"
+    },
+    {
+      "ingredient_id": "ing_vegetable_oil",
+      "name": "Vegetable Oil",
+      "local_name": "Mafuta",
+      "quantity": 2,
+      "unit": "tbsp"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_pot",
+      "name": "Large Cooking Pot",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_banana_stems",
+      "name": "Banana Leaf Stems",
+      "local_name": "Emikeeka",
+      "notes": "Used to create a trivet in the pot (optional but traditional)"
+    },
+    {
+      "utensil_id": "utn_kitchen_string",
+      "name": "Kitchen String",
+      "local_name": "Waya"
+    },
+    {
+      "utensil_id": "utn_mixing_bowl",
+      "name": "Mixing Bowl",
+      "local_name": "Orupapura"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Prepare the banana leaves by passing them over a low flame for a few seconds until they become soft and glossy. This makes them pliable and prevents tearing. Cut into about 12x12 inch squares.",
+      "action": "preparing",
+      "utensils": []
+    },
+    {
+      "step_number": 2,
+      "instruction": "In a large pot, heat the vegetable oil over medium heat. Sauté the chopped onions until soft and translucent, about 5 minutes.",
+      "action": "sautéing",
+      "ingredients": ["ing_onions", "ing_vegetable_oil"],
+      "utensils": ["utn_large_pot"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Add the minced garlic and grated ginger to the pot. Sauté for another minute until fragrant.",
+      "action": "sautéing",
+      "ingredients": ["ing_garlic", "ing_ginger"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Stir in the blended tomatoes and cook for 5-7 minutes, until the mixture thickens and the oil begins to separate.",
+      "action": "cooking",
+      "ingredients": ["ing_tomatoes"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Add the sliced mushrooms and salt. Cook for 5 minutes, stirring occasionally, until the mushrooms begin to release their water.",
+      "action": "cooking",
+      "ingredients": ["ing_mushrooms", "ing_salt"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "In a separate bowl, gradually mix the groundnut paste with water until you achieve a smooth, creamy, and pourable consistency.",
+      "action": "mixing",
+      "ingredients": ["ing_groundnut_paste", "ing_water"],
+      "utensils": ["utn_mixing_bowl"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Pour the groundnut sauce into the pot with the mushroom mixture. Stir well to combine. Bring to a gentle simmer for 5 minutes, then remove from heat. This is your luwombo filling.",
+      "action": "simmering"
+    },
+    {
+      "step_number": 8,
+      "instruction": "Place a prepared banana leaf square on a flat surface. Spoon a generous portion of the groundnut and mushroom filling into the center of the leaf.",
+      "action": "assembling",
+      "ingredients": [],
+      "utensils": []
+    },
+    {
+      "step_number": 9,
+      "instruction": "Gather the edges of the banana leaf up around the filling to form a pouch. Tie the top securely with kitchen string. Repeat with the remaining leaves and filling.",
+      "action": "wrapping",
+      "utensils": ["utn_kitchen_string"]
+    },
+    {
+      "step_number": 10,
+      "instruction": "Place banana stems or a trivet at the bottom of a large, clean pot. Add about 2 cups of water, ensuring it doesn't reach the trivet. Carefully place the luwombo parcels on the trivet, seam-side up. Cover the pot tightly.",
+      "action": "steaming_setup",
+      "utensils": ["utn_large_pot", "utn_banana_stems"]
+    },
+    {
+      "step_number": 11,
+      "instruction": "Steam the luwombo over low-medium heat for 60-90 minutes. Check periodically and add more boiling water if needed to prevent the pot from drying out.",
+      "action": "steaming",
+      "cooking_indicators": {
+        "visual": "banana leaves will darken and become fragrant",
+        "time": "60-90 minutes",
+        "texture": "sauce thickens and mushrooms become very tender"
+      }
+    },
+    {
+      "step_number": 12,
+      "instruction": "Carefully remove the parcels from the pot. Serve each luwombo pouch on a plate, allowing guests to open them at the table to release the aromatic steam.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "steaming",
+  "heat_level": "low",
+  "serving_suggestions": "Best served hot with steamed Matoke (green bananas), Posho (Ugali), or Rice.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 320,
+      "carbohydrates_g": 18,
+      "protein_g": 14,
+      "fat_g": 24,
+      "cholesterol_mg": 0,
+      "sodium_mg": 400
+    },
+    "health_benefits": ["rich_in_protein", "high_in_healthy_fats", "good_source_of_fiber", "rich_in_antioxidants"]
+  },
+  "tags": ["main_course", "traditional", "festive", "vegetarian", "steamed"],
+  "source": "traditional_recipe_buganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

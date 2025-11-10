@@ -1,0 +1,150 @@
+{
+  "recipe_id": "ug_recipe_jobyo_no_oil_122",
+  "name": {
+    "en": "Jobyo (Acanthus) without Oil",
+    "local_name": "Jobyo"
+  },
+  "description": "A simple, healthy, and traditional preparation of Jobyo leaves, a wild vegetable with a distinct, slightly bitter and earthy flavor. Cooked without oil using the 'water frying' method, this dish highlights the natural taste of the vegetable, resulting in a tender, nutritious, and flavorful side dish that is a staple in many households in Northern Uganda.",
+  "origin_region": "Northern Uganda",
+  "cultural_significance": {
+    "importance": "traditional_wild_vegetable",
+    "occasions": ["daily_meals", "lunch", "dinner", "seasonal_harvest"],
+    "cultural_notes": "Jobyo is a highly valued wild leafy green, especially among the Acholi and Langi people. It is foraged from the wild and is known for its resilience and nutritional value. Cooking it without oil is a common, healthy practice that allows its authentic, robust flavor to shine. Preparing Jobyo connects people to the land and traditional foraging knowledge, representing a sustainable and cost-effective way to obtain essential nutrients. It is a vegetable of resilience, often available even in dry seasons."
+  },
+  "type": "side_dish_vegetable",
+  "difficulty": "easy",
+  "servings": {
+    "min": 3,
+    "max": 4
+  },
+  "prep_time_mins": 15,
+  "cook_time_mins": 20,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_jobyo_leaves",
+      "name": "Fresh Jobyo Leaves (Acanthus)",
+      "local_name": "Jobyo",
+      "quantity": 1,
+      "unit": "large_bunch",
+      "notes": "About 8-10 cups, young tender leaves are best. Washed thoroughly and chopped."
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 0.5,
+      "unit": "cup"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion, sliced",
+      "local_name": "Tungurusumu",
+      "quantity": 1,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_tomato",
+      "name": "Tomato, chopped (optional)",
+      "local_name": "Enyanya",
+      "quantity": 1,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "notes": "To taste"
+    },
+    {
+      "ingredient_id": "ing_baking_soda",
+      "name": "Baking Soda",
+      "local_name": "Soda",
+      "quantity": 0.25,
+      "unit": "tsp",
+      "notes": "A tiny pinch to help soften the leaves and reduce bitterness."
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_saucepan",
+      "name": "Saucepan with Lid",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Mwiko"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Place the sliced onion and 1/2 cup of water in a saucepan. Bring to a simmer over medium heat.",
+      "action": "water_frying_onion",
+      "ingredients": ["ing_onion", "ing_water"],
+      "utensils": ["utn_saucepan"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Let the onion cook in the water for 3-4 minutes until it becomes soft and translucent and the water has mostly evaporated.",
+      "action": "softening_onion"
+    },
+    {
+      "step_number": 3,
+      "instruction": "If using, add the chopped tomato and cook for another 2-3 minutes until it begins to soften.",
+      "action": "adding_tomato",
+      "ingredients": ["ing_tomato"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Add the chopped jobyo leaves and the tiny pinch of baking soda to the pot. The baking soda will help soften the leaves and reduce their inherent bitterness.",
+      "action": "adding_greens",
+      "ingredients": ["ing_jobyo_leaves", "ing_baking_soda"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Stir the leaves into the onion and tomato mixture. Cover the pot with a lid and let it cook for 5-7 minutes. The leaves will wilt down and release their own water.",
+      "action": "wilting_greens"
+    },
+    {
+      "step_number": 6,
+      "instruction": "Uncover, add the salt, and stir well. Continue to cook uncovered for another 5-7 minutes, stirring occasionally, until the jobyo is tender and any excess liquid has reduced. Be careful not to overcook it.",
+      "action": "finishing_cooking",
+      "ingredients": ["ing_salt"],
+      "cooking_indicators": {
+        "visual": "The leaves are dark green, tender, and the mixture is moist but not watery.",
+        "texture": "The leaves should be soft but still hold their structure."
+      }
+    },
+    {
+      "step_number": 7,
+      "instruction": "Taste and adjust salt if needed. The bitterness should be mild and pleasant.",
+      "action": "seasoning"
+    },
+    {
+      "step_number": 8,
+      "instruction": "Serve the jobyo hot as a nutritious side dish.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "water_frying_boiling",
+  "heat_level": "medium",
+  "serving_suggestions": "Serve as a side dish alongside a staple carbohydrate like Posho (Ugali), Millet Bread (Kalo), or Cassava. It pairs wonderfully with a protein source like beans, groundnut sauce, or simsim paste. Its robust flavor stands up well to hearty main dishes.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 35,
+      "carbohydrates_g": 7,
+      "protein_g": 3,
+      "fat_g": 0.5,
+      "cholesterol_mg": 0,
+      "sodium_mg": 320
+    },
+    "health_benefits": ["rich_in_iron", "high_in_calcium", "excellent_source_of_vitamins_a_and_c", "high_in_antioxidants", "aids_digestion", "low_calorie", "fat_free", "vegan", "gluten_free"]
+  },
+  "tags": ["side_dish", "vegetable", "leafy_greens", "wild_vegetable", "northern_uganda", "bitter_greens", "vegan", "gluten_free", "fat_free", "healthy"],
+  "source": "traditional_northern_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

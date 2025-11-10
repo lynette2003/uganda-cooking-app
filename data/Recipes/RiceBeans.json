@@ -1,0 +1,231 @@
+{
+  "recipe_id": "ug_recipe_rice_beans_091",
+  "name": {
+    "en": "Rice and Beans (One-Pot)",
+    "local_name": "Mchele na Maharage"
+  },
+  "description": "A hearty, nutritious, and comforting one-pot dish where rice and beans are cooked together with aromatic spices, creating a complete protein and a staple meal found in households across Uganda.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "everyday_staple_meal",
+    "occasions": ["daily_meals", "student_food", "budget_friendly_meals", "family_dinners", "quick_lunch"],
+    "cultural_notes": "Rice and Beans is a fundamental, no-fuss meal that provides affordable and complete nutrition. It's a common dish for students, busy families, and anyone needing a quick, filling meal. While simple, it's a canvas for flavor and can be found in various forms, from plain and simple to richly spiced, in homes and local eateries (canteens) all over the country."
+  },
+  "type": "main_course",
+  "difficulty": "easy",
+  "servings": {
+    "min": 6,
+    "max": 8
+  },
+  "prep_time_mins": 15,
+  "cook_time_mins": 60,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_rice",
+      "name": "Long Grain Rice",
+      "local_name": "Mchele",
+      "quantity": 2,
+      "unit": "cups",
+      "notes": "Washed thoroughly"
+    },
+    {
+      "ingredient_id": "ing_dried_beans",
+      "name": "Dried Beans (Red Kidney or Pinto)",
+      "local_name": "Maharage",
+      "quantity": 1.5,
+      "unit": "cups",
+      "notes": "Soaked overnight, or for at least 8 hours"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion",
+      "local_name": "Kitungulu",
+      "quantity": 1,
+      "unit": "large",
+      "notes": "Finely chopped"
+    },
+    {
+      "ingredient_id": "ing_tomatoes",
+      "name": "Ripe Tomatoes",
+      "local_name": "Nyanya",
+      "quantity": 2,
+      "unit": "medium",
+      "notes": "Chopped"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic",
+      "local_name": "Vitungulu Saumuni",
+      "quantity": 3,
+      "unit": "cloves",
+      "notes": "Minced"
+    },
+    {
+      "ingredient_id": "ing_ginger",
+      "name": "Fresh Ginger",
+      "local_name": "Tangawizi",
+      "quantity": 1,
+      "unit": "inch piece",
+      "notes": "Grated (optional)"
+    },
+    {
+      "ingredient_id": "ing_vegetable_oil",
+      "name": "Vegetable Oil",
+      "local_name": "Mafuta",
+      "quantity": 3,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Maji",
+      "quantity": 5,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_curry_powder",
+      "name": "Curry Powder",
+      "local_name": "Bizari",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Chumvi",
+      "quantity": 1.5,
+      "unit": "tsp",
+      "notes": "To taste"
+    },
+    {
+      "ingredient_id": "ing_beef_chicken_stock",
+      "name": "Beef or Chicken Stock Cube (Optional)",
+      "local_name": "Magi Cube",
+      "quantity": 1,
+      "unit": "piece"
+    },
+    {
+      "ingredient_id": "ing_scotch_bonnet",
+      "name": "Scotch Bonnet Chili (Optional)",
+      "local_name": "Pilipili",
+      "quantity": 1,
+      "unit": "piece",
+      "notes": "Whole, pierced"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_pot",
+      "name": "Large Pot with Lid",
+      "local_name": "Sufuria Kubwa"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Mwiko"
+    },
+    {
+      "utensil_id": "utn_colander",
+      "name": "Colander",
+      "local_name": "Kikomulo"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Drain and rinse the beans that were soaked overnight.",
+      "action": "preparing_beans",
+      "ingredients": ["ing_dried_beans"],
+      "utensils": ["utn_colander"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "In a large pot, heat the vegetable oil over medium heat. Add the chopped onion and sauté until soft and translucent, about 5 minutes.",
+      "action": "sautéing",
+      "ingredients": ["ing_vegetable_oil", "ing_onion"],
+      "utensils": ["utn_large_pot", "utn_wooden_spoon"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Add the minced garlic and grated ginger. Sauté for another minute until fragrant.",
+      "action": "cooking_aromatics",
+      "ingredients": ["ing_garlic", "ing_ginger"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Add the chopped tomatoes and curry powder. Cook for 5-7 minutes, mashing the tomatoes with the spoon, until they break down and form a thick sauce.",
+      "action": "making_sauce",
+      "ingredients": ["ing_tomatoes", "ing_curry_powder"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Add the drained beans to the pot and stir to coat them in the tomato mixture.",
+      "action": "adding_beans",
+      "ingredients": ["ing_dried_beans"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Pour in the 5 cups of water. Add the salt and the optional stock cube and whole chili pepper. Bring to a boil.",
+      "action": "adding_liquid",
+      "ingredients": ["ing_water", "ing_salt", "ing_beef_chicken_stock", "ing_scotch_bonnet"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Once boiling, reduce the heat to low, cover the pot, and let it simmer for 30 minutes. This allows the beans to start becoming tender.",
+      "action": "simmering_beans",
+      "cooking_indicators": {
+        "visual": "Beans will begin to soften but will not be fully cooked.",
+        "time": "30 minutes"
+      }
+    },
+    {
+      "step_number": 8,
+      "instruction": "Add the washed rice to the pot with the partially cooked beans. Stir gently to combine.",
+      "action": "adding_rice",
+      "ingredients": ["ing_rice"]
+    },
+    {
+      "step_number": 9,
+      "instruction": "Bring the mixture back to a gentle simmer. Then, reduce the heat to the lowest setting, cover the pot tightly, and let it cook for 20-25 minutes. Do not open the lid during this time.",
+      "action": "cooking_rice",
+      "cooking_indicators": {
+        "visual": "The rice will be fluffy and have absorbed the liquid.",
+        "time": "20-25 minutes",
+        "texture": "Both rice and beans should be tender."
+      }
+    },
+    {
+      "step_number": 10,
+      "instruction": "After 25 minutes, turn off the heat and let the pot sit, covered, for another 10 minutes to steam fully.",
+      "action": "resting"
+    },
+    {
+      "step_number": 11,
+      "instruction": "Remove the lid and fluff the rice and beans with a fork. Remove the whole chili pepper if used.",
+      "action": "fluffing"
+    },
+    {
+      "step_number": 12,
+      "instruction": "Serve the rice and beans hot.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "boiling_absorption",
+  "heat_level": "low",
+  "serving_suggestions": "Serve as a complete meal on its own, or with a side of avocado, a simple tomato and onion salad (Kachumbari), or steamed greens like Sukuma Wiki. A dollop of plain yogurt also pairs well.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 320,
+      "carbohydrates_g": 60,
+      "protein_g": 12,
+      "fat_g": 5,
+      "cholesterol_mg": 0,
+      "sodium_mg": 600
+    },
+    "health_benefits": ["complete_plant_based_protein", "high_in_fiber", "energy_boosting", "heart_healthy", "vegan"]
+  },
+  "tags": ["main_course", "one_pot", "vegan", "budget_friendly", "comfort_food", "protein_rich", "gluten_free"],
+  "source": "traditional_staple_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

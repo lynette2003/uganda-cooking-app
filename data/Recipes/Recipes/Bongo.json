@@ -1,0 +1,127 @@
+{
+  "recipe_id": "ug_recipe_bongo_milk_120",
+  "name": {
+    "en": "Bongo (Fermented Milk)",
+    "local_name": "Bongo"
+  },
+  "description": "A thick, tangy, and slightly effervescent fermented milk, traditionally prepared in long, dried gourds. Bongo is a staple for the Ankole, Banyoro, and Batooro people of Western Uganda. It has a complex, sour flavor profile, similar to a very strong, natural yogurt or kefir, and is valued for its refreshing qualities and long shelf life without refrigeration.",
+  "origin_region": "Western Uganda (Ankole, Bunyoro, Toro)",
+  "cultural_significance": {
+    "importance": "cultural_staple_dairy",
+    "occasions": ["daily_consumption", "breakfast", "refreshment", "welcoming_guests", "after_meals"],
+    "cultural_notes": "Bongo is deeply intertwined with the culture of the cattle-keeping communities in Western Uganda. The long-horned Ankole cattle are a symbol of status and wealth, and their milk is a primary food source. Preparing Bongo in a special gourd (ekyano) is a traditional skill passed down through generations. It is a sign of hospitality to offer a visitor Bongo. The distinct taste and method of production are a proud marker of cultural identity for the people of this region."
+  },
+  "type": "beverage_dairy",
+  "difficulty": "easy",
+  "servings": {
+    "min": 1,
+    "max": 1
+  },
+  "prep_time_mins": 10,
+  "ferment_time_days": 2,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_fresh_milk",
+      "name": "Fresh Raw Milk",
+      "local_name": "Amata Ahagire",
+      "quantity": 1,
+      "unit": "litre",
+      "notes": "Traditionally from the long-horned Ankole cow. Pasteurized milk can be used but may require a starter culture."
+    },
+    {
+      "ingredient_id": "ing_starter_culture",
+      "name": "Existing Bongo or Natural Culture",
+      "local_name": "Bongo ey'okwihira",
+      "quantity": 2,
+      "unit": "tbsp",
+      "notes": "A small amount from a previous batch to inoculate the new milk. Essential for consistent fermentation."
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_fermentation_gourd",
+      "name": "Dried, Cleaned Gourd (Ekyano)",
+      "local_name": "Ekyano",
+      "notes": "The traditional vessel, believed to contribute to the unique flavor. A clean glass jar is a modern alternative."
+    },
+    {
+      "utensil_id": "utn_grass_stopper",
+      "name": "Grass or Banana Fiber Stopper",
+      "local_name": "Oruhuura",
+      "notes": "Used to cover the gourd opening, allowing gases to escape while keeping contaminants out."
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "If using a traditional gourd (ekyano), ensure it is perfectly clean and dry. Traditional cleaning involves smoking the gourd over a fire and rinsing with special herbs.",
+      "action": "preparing_vessel"
+    },
+    {
+      "step_number": 2,
+      "instruction": "If using raw milk, it can be used directly. If using pasteurized milk, allow it to cool to room temperature after boiling.",
+      "action": "preparing_milk",
+      "ingredients": ["ing_fresh_milk"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Pour the fresh milk into the fermentation gourd or jar.",
+      "action": "transferring_milk"
+    },
+    {
+      "step_number": 4,
+      "instruction": "Add the 2 tablespoons of existing Bongo (starter culture) to the fresh milk. This introduces the live bacteria necessary for fermentation.",
+      "action": "adding_starter",
+      "ingredients": ["ing_starter_culture"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Close the gourd or jar with a loose-fitting lid or a plug of clean grass (oruhuura). Do not seal it airtight, as gases need to escape during fermentation.",
+      "action": "covering_vessel",
+      "utensils": ["utn_grass_stopper"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Place the gourd in a warm, dark place, such as a kitchen corner or inside a granary, for 1 to 3 days. The fermentation time depends on the ambient temperature.",
+      "action": "fermenting",
+      "cooking_indicators": {
+        "time": "1-3 days",
+        "olfactory": "A clean, tangy, and slightly yeasty aroma will develop.",
+        "visual": "The milk will thicken and may separate slightly, with a clearer whey at the bottom."
+      }
+    },
+    {
+      "step_number": 7,
+      "instruction": "To check for doneness, gently shake the gourd. The contents should be thick and jiggle slightly. It should taste distinctly sour and tangy.",
+      "action": "testing_doneness"
+    },
+    {
+      "step_number": 8,
+      "instruction": "Once fermented to your liking, the Bongo is ready to drink. It can be consumed immediately or stored in a cool place for several days.",
+      "action": "ready_to_serve"
+    },
+    {
+      "step_number": 9,
+      "instruction": "To serve, the Bongo is often gently shaken or stirred and then poured directly from the gourd into a small serving calabash or cup.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "natural_fermentation",
+  "heat_level": "none",
+  "serving_suggestions": "Bongo is typically drunk on its own as a refreshing and filling beverage. It is commonly consumed for breakfast, as a midday refreshment, or after a meal to aid digestion. It is sometimes served with millet bread (kalo) or roasted maize.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 150,
+      "carbohydrates_g": 12,
+      "protein_g": 8,
+      "fat_g": 8,
+      "cholesterol_mg": 30,
+      "sodium_mg": 120
+    },
+    "health_benefits": ["rich_in_probiotics", "aids_digestion", "boosts_immune_system", "good_source_of_protein", "high_in_calcium", "lactose_intolerant_friendly"]
+  },
+  "tags": ["beverage", "dairy", "fermented", "probiotic", "traditional", "western_uganda", "ankole", "refreshing", "gluten_free"],
+  "source": "traditional_western_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

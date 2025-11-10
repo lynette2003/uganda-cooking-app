@@ -1,0 +1,213 @@
+{
+  "recipe_id": "ug_recipe_bean_maize_061",
+  "name": {
+    "en": "Beans and Maize (Corn) Stew",
+    "local_name": "Kande / Kando"
+  },
+  "description": "A hearty, wholesome, and nutritious one-pot stew of slow-cooked beans and maize (dried corn kernels), creating a complete protein and a foundational dish in Ugandan cuisine.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "everyday_staple",
+    "occasions": ["daily_meals", "school_feeding", "family_lunch_dinner", "large_gatherings"],
+    "cultural_notes": "Kande is the ultimate comfort food for many Ugandans. It is affordable, filling, and highly nutritious. It's a common dish in homes, school feeding programs, and at roadside food stalls. The combination of beans and maize provides a complete protein, making it a vital part of the local diet."
+  },
+  "type": "main_course",
+  "difficulty": "easy",
+  "servings": {
+    "min": 6,
+    "max": 8
+  },
+  "prep_time_mins": 1440,
+  "cook_time_mins": 120,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_beans",
+      "name": "Dried Beans",
+      "local_name": "Maharage",
+      "quantity": 2,
+      "unit": "cups",
+      "notes": "Red kidney beans or any local variety, soaked overnight"
+    },
+    {
+      "ingredient_id": "ing_maize",
+      "name": "Dried Maize (Corn Kernels)",
+      "local_name": "Mahindi",
+      "quantity": 1.5,
+      "unit": "cups",
+      "notes": "Also called 'githeri maize', soaked overnight"
+    },
+    {
+      "ingredient_id": "ing_onions",
+      "name": "Onions",
+      "local_name": "Kitungulu",
+      "quantity": 2,
+      "unit": "large",
+      "notes": "Finely chopped"
+    },
+    {
+      "ingredient_id": "ing_tomatoes",
+      "name": "Ripe Tomatoes",
+      "local_name": "Nyanya",
+      "quantity": 3,
+      "unit": "medium",
+      "notes": "Chopped"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic",
+      "local_name": "Vitungulu Saumuni",
+      "quantity": 3,
+      "unit": "cloves",
+      "notes": "Minced"
+    },
+    {
+      "ingredient_id": "ing_ginger",
+      "name": "Fresh Ginger",
+      "local_name": "Tangawizi",
+      "quantity": 1,
+      "unit": "inch piece",
+      "notes": "Grated (optional)"
+    },
+    {
+      "ingredient_id": "ing_vegetable_oil",
+      "name": "Vegetable Oil",
+      "local_name": "Mafuta",
+      "quantity": 3,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Maji",
+      "quantity": 6,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Chumvi",
+      "quantity": 2,
+      "unit": "tsp",
+      "notes": "To taste"
+    },
+    {
+      "ingredient_id": "ing_curry_powder",
+      "name": "Curry Powder",
+      "local_name": "Bizari",
+      "quantity": 1,
+      "unit": "tsp"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_pot",
+      "name": "Large Heavy Pot",
+      "local_name": "Sufuria Kubwa"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Mwiko"
+    },
+    {
+      "utensil_id": "utn_colander",
+      "name": "Colander",
+      "local_name": "Kikomulo"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Drain the beans and maize that were soaked overnight. Rinse them thoroughly under cold running water.",
+      "action": "preparing",
+      "ingredients": ["ing_beans", "ing_maize"],
+      "utensils": ["utn_colander"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "In a large, heavy pot, combine the rinsed beans and maize. Add 6 cups of water.",
+      "action": "combining",
+      "ingredients": ["ing_beans", "ing_maize", "ing_water"],
+      "utensils": ["utn_large_pot"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Bring to a boil over high heat. Then reduce the heat to low, cover the pot, and let it simmer for 60-90 minutes, or until both the beans and maize are tender. Skim off any foam that forms on the surface.",
+      "action": "boiling",
+      "cooking_indicators": {
+        "visual": "The beans will split open slightly, and the maize will puff up and become soft.",
+        "time": "60-90 minutes",
+        "texture": "Both beans and maize should be soft enough to eat easily."
+      }
+    },
+    {
+      "step_number": 4,
+      "instruction": "While the beans and maize are cooking, heat the vegetable oil in a separate pan over medium heat. Sauté the chopped onions until soft and translucent.",
+      "action": "sautéing",
+      "ingredients": ["ing_onions", "ing_vegetable_oil"],
+      "utensils": []
+    },
+    {
+      "step_number": 5,
+      "instruction": "Add the minced garlic and grated ginger (if using). Sauté for another 2 minutes until fragrant.",
+      "action": "sautéing",
+      "ingredients": ["ing_garlic", "ing_ginger"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Stir in the curry powder and cook for 30 seconds.",
+      "action": "toasting_spices",
+      "ingredients": ["ing_curry_powder"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Add the chopped tomatoes and cook for 5-7 minutes, mashing them with the spoon until they form a thick paste.",
+      "action": "cooking_base",
+      "ingredients": ["ing_tomatoes"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Once the beans and maize are tender, pour this cooked tomato and onion mixture (the 'mchuzi') into the large pot with them. Add salt and stir everything together thoroughly.",
+      "action": "combining_stew",
+      "ingredients": ["ing_salt"]
+    },
+    {
+      "step_number": 9,
+      "instruction": "Let the combined stew simmer uncovered for another 15-20 minutes over low heat. This allows the flavors to meld and the stew to thicken to your desired consistency. Stir occasionally to prevent sticking.",
+      "action": "simmering",
+      "cooking_indicators": {
+        "visual": "The stew will thicken and the colors will blend together.",
+        "time": "15-20 minutes",
+        "texture": "Creamy and thick, with tender beans and maize."
+      }
+    },
+    {
+      "step_number": 10,
+      "instruction": "Taste and adjust the salt if needed. Serve hot.",
+      "action": "seasoning"
+    },
+    {
+      "step_number": 11,
+      "instruction": "Serve the Kande hot in a bowl.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "boiling_simmering",
+  "heat_level": "low",
+  "serving_suggestions": "Traditionally served on its own as a complete meal. Can also be accompanied by a slice of avocado, a side of leafy greens like Sukuma Wiki, or with Chapati or Ugali for a more filling meal.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 320,
+      "carbohydrates_g": 55,
+      "protein_g": 15,
+      "fat_g": 7,
+      "cholesterol_mg": 0,
+      "sodium_mg": 600
+    },
+    "health_benefits": ["complete_protein", "high_fiber", "rich_in_iron", "energy_boosting", "heart_healthy", "plant_based"]
+  },
+  "tags": ["main_course", "staple_food", "vegetarian", "vegan", "nutritious", "affordable", "comfort_food"],
+  "source": "traditional_recipe_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

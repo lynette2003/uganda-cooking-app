@@ -1,0 +1,173 @@
+{
+  "recipe_id": "ug_recipe_dodo_groundnut_paste_116",
+  "name": {
+    "en": "Dodo in Groundnut Paste",
+    "local_name": "Dodo mu Binyebwa"
+  },
+  "description": "A creamy, hearty, and deeply flavorful dish where tender Dodo (amaranth leaves) are simmered in a thick, rich sauce made from groundnut paste. The slight bitterness of the greens is perfectly balanced by the nutty, savory creaminess of the groundnuts, creating a luxurious vegetable stew that is both nutritious and deeply satisfying.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "nutritious_comfort_food",
+    "occasions": ["daily_meals", "lunch", "dinner", "special_family_meals"],
+    "cultural_notes": "This dish is a celebration of two Ugandan staples: the ubiquitous leafy green and the beloved groundnut. It transforms a simple vegetable into a main attraction, making a meal feel more substantial and special. It's a common way to ensure children eat their greens, as the creamy, flavorful sauce is very appealing. It represents the ingenuity of Ugandan cuisine in creating delicious, nutrient-dense meals from readily available ingredients."
+  },
+  "type": "main_dish_vegetable_stew",
+  "difficulty": "easy",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 15,
+  "cook_time_mins": 25,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_dodo",
+      "name": "Fresh Dodo (Amaranthus) Leaves",
+      "local_name": "Dodo",
+      "quantity": 1,
+      "unit": "large_bunch",
+      "notes": "About 10-12 cups, washed thoroughly and chopped"
+    },
+    {
+      "ingredient_id": "ing_groundnut_paste",
+      "name": "Pure Groundnut Paste (Peanut Butter)",
+      "local_name": "Binyebwa",
+      "quantity": 0.75,
+      "unit": "cup"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 3,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion, finely chopped",
+      "local_name": "Tungurusumu",
+      "quantity": 1,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_tomato",
+      "name": "Tomato, chopped",
+      "local_name": "Enyanya",
+      "quantity": 1,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_cooking_oil",
+      "name": "Cooking Oil (optional)",
+      "local_name": "Mafuta",
+      "quantity": 1,
+      "unit": "tbsp",
+      "notes": "Traditional for frying the base, but can be omitted for an oil-free version"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_saucepan",
+      "name": "Medium Saucepan or Pot",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Mwiko"
+    },
+    {
+      "utensil_id": "utn_whisk",
+      "name": "Whisk or Fork",
+      "local_name": "N/A"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "If using oil, heat it in a saucepan over medium heat. Sauté the chopped onion until soft and translucent. If not using oil, use 2 tablespoons of water to 'water-fry' the onion until soft.",
+      "action": "frying_base",
+      "ingredients": ["ing_onion", "ing_cooking_oil"],
+      "utensils": ["utn_saucepan"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Add the chopped tomato to the pot and cook for 3-4 minutes until it softens and breaks down into a sauce.",
+      "action": "adding_tomato",
+      "ingredients": ["ing_tomato"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "In a separate bowl, gradually whisk the groundnut paste with about 2 cups of water until you have a smooth, lump-free, creamy liquid.",
+      "action": "dissolving_paste",
+      "ingredients": ["ing_groundnut_paste", "ing_water"],
+      "utensils": ["utn_whisk"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Pour the smooth groundnut mixture into the pot with the onions and tomatoes. Add the remaining 1 cup of water and stir to combine.",
+      "action": "combining_sauce"
+    },
+    {
+      "step_number": 5,
+      "instruction": "Bring the sauce to a gentle simmer. Let it cook for 5-7 minutes, stirring occasionally to prevent sticking.",
+      "action": "simmering_sauce"
+    },
+    {
+      "step_number": 6,
+      "instruction": "Add the chopped dodo leaves to the simmering groundnut sauce. The pot will be full, but the leaves will wilt down.",
+      "action": "adding_greens",
+      "ingredients": ["ing_dodo"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Stir the dodo into the sauce, cover the pot, and let it cook for 5 minutes. The leaves will wilt and release water.",
+      "action": "wilting_greens"
+    },
+    {
+      "step_number": 8,
+      "instruction": "Uncover, add the salt, and stir well. Continue to simmer uncovered for another 5-10 minutes, stirring occasionally, until the dodo is tender and the sauce has thickened to a creamy consistency that coats the leaves.",
+      "action": "finishing_cooking",
+      "ingredients": ["ing_salt"],
+      "cooking_indicators": {
+        "visual": "The sauce is thick and creamy, and the leaves are dark green and tender.",
+        "texture": "The greens should be soft but not mushy."
+      }
+    },
+    {
+      "step_number": 9,
+      "instruction": "Taste and adjust seasoning if necessary. If the stew is too thick, add a little hot water to reach your desired consistency.",
+      "action": "adjusting_consistency"
+    },
+    {
+      "step_number": 10,
+      "instruction": "Serve hot as a main dish or a very substantial side.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "stewing_simmering",
+  "heat_level": "medium_low",
+  "serving_suggestions": "This is a rich and hearty dish that can be a main course when served with a staple like Posho (Ugali), Matoke, or Rice. It is so flavorful and protein-rich that it often doesn't need any other accompaniment, though it can be served with a side of avocado.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 280,
+      "carbohydrates_g": 15,
+      "protein_g": 12,
+      "fat_g": 20,
+      "cholesterol_mg": 0,
+      "sodium_mg": 450
+    },
+    "health_benefits": ["high_in_plant_protein", "rich_in_iron", "high_in_healthy_fats", "excellent_source_of_fiber", "rich_in_vitamins_a_and_c", "vegan", "gluten_free"]
+  },
+  "tags": ["main_dish", "stew", "vegetable", "creamy", "nutty", "vegan", "gluten_free", "comfort_food", "nutritious"],
+  "source": "traditional_staple_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

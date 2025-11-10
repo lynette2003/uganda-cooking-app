@@ -1,0 +1,187 @@
+{
+  "recipe_id": "ug_recipe_matooke_kaveera_157",
+  "name": {
+    "en": "Matooke Boiled in Kaveera (Black Polythene Bag)",
+    "local_name": "Matooke Eyokubikka mu Kaveera"
+  },
+  "description": "A modern, convenient method of cooking matooke where peeled green bananas are tightly wrapped in a black polythene bag (kaveera) and boiled until tender. This technique steams the matooke in its own moisture, resulting in exceptionally soft, fluffy, and perfectly cooked bananas with a unique texture that many prefer over traditional methods. The kaveera acts as a steaming pouch that locks in flavor and nutrients.",
+  "origin_region": "Urban and Peri-urban Uganda",
+  "cultural_significance": {
+    "importance": "modern_convenience_cooking",
+    "occasions": ["quick_meals", "student_cooking", "urban_households", "single_serve_meals", "emergency_cooking"],
+    "cultural_notes": "Cooking matooke in kaveera represents the adaptation of traditional food to modern urban life. This method has gained popularity particularly among students, young professionals, and those living alone who need quick, convenient ways to prepare traditional foods. While purists may prefer traditional methods, the kaveera technique is valued for its speed, minimal cleanup, and consistent results. It's often used when banana leaves are unavailable or when cooking small quantities. The method has sparked some environmental concerns, leading to debates about sustainable alternatives."
+  },
+  "type": "staple_carbohydrate",
+  "difficulty": "easy",
+  "servings": {
+    "min": 2,
+    "max": 4
+  },
+  "prep_time_mins": 10,
+  "cook_time_mins": 45,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_matooke",
+      "name": "Green Bananas (Matooke)",
+      "local_name": "Matooke",
+      "quantity": 8,
+      "unit": "fingers",
+      "notes": "Medium-sized, firm green bananas"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 8,
+      "unit": "cups",
+      "notes": "Enough to cover the kaveera in the pot"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 1,
+      "unit": "tsp",
+      "notes": "Optional, can be added after cooking"
+    },
+    {
+      "ingredient_id": "ing_black_polythene_bag",
+      "name": "Black Polythene Bag (Kaveera)",
+      "local_name": "Kaveera",
+      "quantity": 1,
+      "unit": "large_bag",
+      "notes": "Food-grade, thick quality recommended"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_pot",
+      "name": "Large Pot with Lid",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Knife",
+      "local_name": "Mumo"
+    },
+    {
+      "utensil_id": "utn_kitchen_string",
+      "name": "Kitchen String or Rubber Band",
+      "local_name": "N/A"
+    },
+    {
+      "utensil_id": "utn_tongs",
+      "name": "Tongs",
+      "local_name": "N/A"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Select firm, green matooke fingers. Avoid any with yellow spots or soft areas.",
+      "action": "selecting_matooke",
+      "ingredients": ["ing_matooke"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Peel the matooke using a knife. You can use plastic bags on your hands to prevent staining if desired.",
+      "action": "peeling_matooke",
+      "utensils": ["utn_knife"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Place the peeled matooke in a large, food-grade black polythene bag (kaveera). Arrange them neatly in a single layer if possible.",
+      "action": "placing_in_kaveera",
+      "ingredients": ["ing_black_polythene_bag"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "If using salt, sprinkle it over the matooke in the bag.",
+      "action": "seasoning",
+      "ingredients": ["ing_salt"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Tie the top of the kaveera tightly with kitchen string or a rubber band, leaving some air inside to allow for expansion during cooking.",
+      "action": "sealing_kaveera",
+      "utensils": ["utn_kitchen_string"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Place the tied kaveera in a large pot.",
+      "action": "placing_in_pot",
+      "utensils": ["utn_large_pot"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Add enough water to completely cover the kaveera with at least 2 inches of water above it.",
+      "action": "adding_water",
+      "ingredients": ["ing_water"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Cover the pot with a tight-fitting lid and bring to a rolling boil over high heat.",
+      "action": "bringing_to_boil"
+    },
+    {
+      "step_number": 9,
+      "instruction": "Once boiling, reduce heat to medium and maintain a steady boil. Cook for 35-45 minutes.",
+      "action": "boiling",
+      "cooking_indicators": {
+        "time": "35-45 minutes",
+        "visual": "The kaveera will puff up with steam"
+      }
+    },
+    {
+      "step_number": 10,
+      "instruction": "After 35 minutes, carefully remove the kaveera from the boiling water using tongs. Be cautious of the hot steam.",
+      "action": "removing_from_water",
+      "utensils": ["utn_tongs"]
+    },
+    {
+      "step_number": 11,
+      "instruction": "Place the hot kaveera on a plate or in a bowl and carefully cut it open. Beware of the hot steam that will escape.",
+      "action": "opening_kaveera",
+      "utensils": ["utn_knife"]
+    },
+    {
+      "step_number": 12,
+      "instruction": "Check the matooke for doneness. They should be very tender and easily mashable with a fork.",
+      "action": "testing_doneness",
+      "cooking_indicators": {
+        "texture": "Matooke should be soft throughout and mash easily"
+      }
+    },
+    {
+      "step_number": 13,
+      "instruction": "If not fully cooked, reseal the kaveera and return to boiling water for another 10-15 minutes.",
+      "action": "additional_cooking_if_needed"
+    },
+    {
+      "step_number": 14,
+      "instruction": "Once cooked, transfer the matooke to a serving bowl. They will be very soft and may need careful handling.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "boiling_in_plastic",
+  "heat_level": "medium",
+  "serving_suggestions": "Serve the soft matooke with your favorite stews, sauces, or curries. They pair excellently with bean stew, groundnut sauce, meat stews, or fish. The exceptionally soft texture makes them perfect for mashing and mixing with sauces. Can also be served with steamed greens and a protein of choice.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 180,
+      "carbohydrates_g": 45,
+      "protein_g": 2,
+      "fat_g": 0.5,
+      "cholesterol_mg": 0,
+      "sodium_mg": 300,
+      "potassium_mg": 500
+    },
+    "health_benefits": ["excellent_source_of_complex_carbs", "high_in_potassium", "good_source_of_vitamin_b6", "low_fat", "cholesterol_free", "vegan", "gluten_free", "sustained_energy_release"],
+    "safety_notes": ["Ensure food-grade plastic is used", "Do not let plastic touch the pot walls directly", "Avoid overheating beyond recommended time", "Consider environmental impact of single-use plastic"]
+  },
+  "tags": ["staple", "carbohydrate", "matooke", "kaveera", "modern_method", "convenience", "urban", "quick", "steamed", "vegan", "gluten_free"],
+  "special_notes": ["SAFETY WARNING: Use only food-grade plastic bags rated for high temperatures. Avoid letting the plastic touch the sides of the hot pot. Consider more traditional methods like banana leaves for regular use to reduce plastic consumption."],
+  "source": "modern_ugandan_cooking_methods",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

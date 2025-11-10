@@ -1,0 +1,12 @@
+# Ignore Python virtual environments
+venv/
+
+# Ignore cache and temp files
+__pycache__/
+*.pyc
+
+# Ignore model checkpoints or large data
+*.pt
+*.bin
+*.pkl
+*.h5

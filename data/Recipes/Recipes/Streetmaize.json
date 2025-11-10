@@ -1,0 +1,108 @@
+{
+  "recipe_id": "ug_recipe_streetcorn_025",
+  "name": {
+    "en": "Street Corn",
+    "local_name": "Emikate y’Amaize"
+  },
+  "description": "Fresh maize cobs roasted or boiled and seasoned with salt, butter, or local spices. A popular street food snack enjoyed across Uganda.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "street_food",
+    "occasions": ["snack", "breakfast", "market_food"],
+    "cultural_notes": "Street corn is a cheap, filling, and nutritious snack widely sold by vendors along roadsides and in markets."
+  },
+  "type": "snack",
+  "difficulty": "easy",
+  "servings": {
+    "min": 1,
+    "max": 2
+  },
+  "prep_time_mins": 5,
+  "cook_time_mins": 15,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_maize_cob",
+      "name": "Maize cobs",
+      "local_name": "Emikate",
+      "quantity": 2,
+      "unit": "pieces"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Munyu",
+      "quantity": "to taste",
+      "unit": "optional"
+    },
+    {
+      "ingredient_id": "ing_butter",
+      "name": "Butter",
+      "local_name": "Amanteesi",
+      "quantity": 1,
+      "unit": "tablespoon",
+      "optional": true
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_grill",
+      "name": "Charcoal Grill",
+      "local_name": "Sigiri"
+    },
+    {
+      "utensil_id": "utn_pot",
+      "name": "Cooking Pot",
+      "local_name": "Sufuria",
+      "alternative": "for boiling"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "If roasting, place maize cobs on hot charcoal and turn occasionally until lightly charred.",
+      "action": "roasting",
+      "ingredients": ["ing_maize_cob"],
+      "utensils": ["utn_grill"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "If boiling, place maize cobs in boiling water and cook until tender (about 10–15 minutes).",
+      "action": "boiling",
+      "ingredients": ["ing_maize_cob"],
+      "utensils": ["utn_pot"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Season with salt and optionally spread butter before serving.",
+      "action": "seasoning",
+      "ingredients": ["ing_salt", "ing_butter"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Serve hot as a snack or light meal.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "roasting_or_boiling",
+  "heat_level": "medium",
+  "cooking_indicators": {
+    "visual": "maize kernels are tender and lightly browned if roasted",
+    "time": "10–15 minutes",
+    "texture": "soft, juicy, slightly charred if roasted"
+  },
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 200,
+      "carbohydrates_g": 45,
+      "protein_g": 5,
+      "fat_g": 2,
+      "cholesterol_mg": 0,
+      "sodium_mg": 50
+    },
+    "health_benefits": ["high_fiber", "energy_boosting", "vegetarian_friendly"]
+  },
+  "tags": ["street_food", "snack", "vegetarian"],
+  "source": "street_vendor_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

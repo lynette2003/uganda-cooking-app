@@ -1,0 +1,188 @@
+{
+  "recipe_id": "ug_recipe_potato_wedges_092",
+  "name": {
+    "en": "Crispy Potato Wedges",
+    "local_name": "Viazi vya Kukaanga"
+  },
+  "description": "Potato wedges seasoned with aromatic spices and oven-baked or deep-fried until the outside is golden and crispy while the inside remains fluffy and tender. A universally loved snack or side dish.",
+  "origin_region": "Nationwide (Modern & Global Influence)",
+  "cultural_significance": {
+    "importance": "popular_modern_snack",
+    "occasions": ["snacks", "parties", "movie_nights", "side_dish", "childrens_meals"],
+    "cultural_notes": "While potatoes ('viazi') are a common vegetable in Uganda, the preparation of 'wedges' is a more modern, globally influenced dish. They have become very popular in urban areas, at casual eateries, and as a home-cooked treat, especially for younger generations. They represent the adaptation of international fast-food styles using locally available ingredients."
+  },
+  "type": "snack_side_dish",
+  "difficulty": "easy",
+  "servings": {
+    "min": 3,
+    "max": 4
+  },
+  "prep_time_mins": 10,
+  "cook_time_mins": 30,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_potatoes",
+      "name": "Large Potatoes",
+      "local_name": "Viazi",
+      "quantity": 4,
+      "unit": "large",
+      "notes": "Russet or any starchy variety, scrubbed clean"
+    },
+    {
+      "ingredient_id": "ing_vegetable_oil",
+      "name": "Vegetable Oil",
+      "local_name": "Mafuta",
+      "quantity": 3,
+      "unit": "tbsp",
+      "notes": "For baking. For frying, use 4 cups."
+    },
+    {
+      "ingredient_id": "ing_paprika",
+      "name": "Paprika",
+      "local_name": "Pilipili Manga",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_garlic_powder",
+      "name": "Garlic Powder",
+      "local_name": "Dawa ya Vitungulu Saumuni",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_onion_powder",
+      "name": "Onion Powder",
+      "local_name": "Dawa ya Kitungulu",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_dried_thyme_oregano",
+      "name": "Dried Thyme or Oregano",
+      "local_name": "Thyme",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Chumvi",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_black_pepper",
+      "name": "Black Pepper",
+      "local_name": "Pilipili Mweusi",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_cornstarch",
+      "name": "Cornstarch (Optional)",
+      "local_name": "Unga wa Starch",
+      "quantity": 1,
+      "unit": "tbsp",
+      "notes": "For extra crispiness when baking"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_baking_sheet",
+      "name": "Large Baking Sheet",
+      "local_name": "Sahani ya Kukoroga"
+    },
+    {
+      "utensil_id": "utn_mixing_bowl",
+      "name": "Large Mixing Bowl",
+      "local_name": "Bakuli Kubwa"
+    },
+    {
+      "utensil_id": "utn_knife_cutting_board",
+      "name": "Knife and Cutting Board",
+      "local_name": "Kisu na Ubao"
+    },
+    {
+      "utensil_id": "utn_deep_pot",
+      "name": "Deep Pot (for frying method)",
+      "local_name": "Sufuria"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Preheat your oven to 220°C (425°F).",
+      "action": "preheating"
+    },
+    {
+      "step_number": 2,
+      "instruction": "Scrub the potatoes clean. You can peel them or leave the skin on for extra texture and nutrients. Cut each potato in half lengthwise, then cut each half into 3-4 wedges, depending on the size of the potato.",
+      "action": "cutting_wedges",
+      "ingredients": ["ing_potatoes"],
+      "utensils": ["utn_knife_cutting_board"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Place the potato wedges in a large mixing bowl. Add the vegetable oil, paprika, garlic powder, onion powder, thyme/oregano, salt, black pepper, and optional cornstarch.",
+      "action": "seasoning",
+      "ingredients": ["ing_vegetable_oil", "ing_paprika", "ing_garlic_powder", "ing_onion_powder", "ing_dried_thyme_oregano", "ing_salt", "ing_black_pepper", "ing_cornstarch"],
+      "utensils": ["utn_mixing_bowl"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Toss the wedges thoroughly until they are evenly coated with the oil and spice mixture.",
+      "action": "coating"
+    },
+    {
+      "step_number": 5,
+      "instruction": "Arrange the wedges in a single layer on a large baking sheet, ensuring they are not touching. This allows them to crisp up instead of steam.",
+      "action": "arranging",
+      "utensils": ["utn_baking_sheet"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Bake for 25-35 minutes, flipping the wedges halfway through, until they are golden brown, crispy on the outside, and tender on the inside.",
+      "action": "baking",
+      "cooking_indicators": {
+        "visual": "Golden brown and crispy edges.",
+        "time": "25-35 minutes",
+        "texture": "Crispy exterior, soft and fluffy interior."
+      }
+    },
+    {
+      "step_number": 7,
+      "instruction": "Remove from the oven and let them cool for a few minutes before serving.",
+      "action": "cooling"
+    },
+    {
+      "step_number": 8,
+      "instruction": "Serve the potato wedges hot.",
+      "action": "serving"
+    }
+  ],
+  "alternative_methods": [
+    {
+      "name": "Deep Frying Method",
+      "description": "For a more traditional 'kukaanga' (frying) approach. Heat 4 cups of vegetable oil in a deep pot to 180°C (350°F). Fry the seasoned wedges in batches for 5-7 minutes until golden and crispy. Drain on paper towels."
+    }
+  ],
+  "cooking_method": "baking_frying",
+  "heat_level": "high",
+  "serving_suggestions": "Serve as a snack with tomato ketchup, chili sauce, or a garlic mayo dip. They also make a fantastic side dish for grilled chicken, beef burgers, or fish.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 250,
+      "carbohydrates_g": 40,
+      "protein_g": 4,
+      "fat_g": 9,
+      "cholesterol_mg": 0,
+      "sodium_mg": 600
+    },
+    "health_benefits": ["good_source_of_potassium", "energy_boosting", "source_of_vitamin_c", "dietary_fiber"]
+  },
+  "tags": ["snack", "side_dish", "vegetarian", "vegan", "baked", "crispy", "modern", "family_friendly"],
+  "source": "modern_global_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

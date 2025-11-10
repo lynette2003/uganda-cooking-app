@@ -1,0 +1,201 @@
+{
+  "recipe_id": "ug_recipe_chicken_groundnuts_125",
+  "name": {
+    "en": "Chicken in Groundnut Sauce",
+    "local_name": "Nkoko mu Binyebwa"
+  },
+  "description": "A luxurious and deeply comforting stew where tender chicken pieces are simmered in a thick, creamy, and richly flavored sauce made from groundnut paste. The nutty, savory sauce perfectly complements the chicken, creating a hearty and satisfying dish that is a favorite for family meals and special occasions alike.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "celebratory_comfort_food",
+    "occasions": ["family_dinners", "weekend_meals", "special_guests", "holidays", "festive_occasions"],
+    "cultural_notes": "Chicken in groundnut sauce is considered a 'special' meal in many Ugandan households. It is a dish prepared to show care and hospitality, often for visiting relatives or during celebrations. The richness of the groundnuts elevates the chicken, making it feel festive. It is a common dish for Sunday family lunches, bringing everyone together around a pot of this flavorful, communal stew."
+  },
+  "type": "main_dish_stew",
+  "difficulty": "medium",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 20,
+  "cook_time_mins": 50,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_chicken",
+      "name": "Chicken, cut into pieces",
+      "local_name": "Nkoko",
+      "quantity": 1,
+      "unit": "whole",
+      "notes": "About 1.5kg, can use a mix of thighs, drumsticks, and breasts"
+    },
+    {
+      "ingredient_id": "ing_groundnut_paste",
+      "name": "Pure Groundnut Paste (Peanut Butter)",
+      "local_name": "Binyebwa",
+      "quantity": 1,
+      "unit": "cup"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 4,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion, finely chopped",
+      "local_name": "Tungurusumu",
+      "quantity": 1,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_tomatoes",
+      "name": "Tomatoes, chopped",
+      "local_name": "Enyanya",
+      "quantity": 2,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_tomato_paste",
+      "name": "Tomato Paste",
+      "local_name": "Dodo",
+      "quantity": 1,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic, minced",
+      "local_name": "Tungurusumu Omuzungu",
+      "quantity": 3,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "ing_ginger",
+      "name": "Ginger, grated",
+      "local_name": "Tangawizi",
+      "quantity": 1,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_cooking_oil",
+      "name": "Cooking Oil",
+      "local_name": "Mafuta",
+      "quantity": 2,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 1.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_chicken_seasoning",
+      "name": "Chicken Seasoning Powder",
+      "local_name": "Curry",
+      "quantity": 1,
+      "unit": "tsp"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_heavy_pot",
+      "name": "Heavy-Bottomed Pot or Dutch Oven",
+      "local_name": "Sufuria Nzito"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Mwiko"
+    },
+    {
+      "utensil_id": "utn_whisk",
+      "name": "Whisk",
+      "local_name": "N/A"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Heat the cooking oil in a heavy-bottomed pot over medium-high heat. Add the chicken pieces and brown them on all sides for about 5-7 minutes. You may need to do this in batches. Remove the chicken and set aside.",
+      "action": "browning_chicken",
+      "ingredients": ["ing_cooking_oil", "ing_chicken"],
+      "utensils": ["utn_heavy_pot"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "In the same pot, reduce the heat to medium. Add the chopped onion and sauté until soft and translucent, about 3-4 minutes.",
+      "action": "sauteing_onion",
+      "ingredients": ["ing_onion"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Add the minced garlic and grated ginger. Stir for 1 minute until fragrant.",
+      "action": "adding_aromatics",
+      "ingredients": ["ing_garlic", "ing_ginger"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Add the tomato paste and stir for 1 minute to cook out its raw flavor.",
+      "action": "cooking_tomato_paste",
+      "ingredients": ["ing_tomato_paste"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Add the chopped tomatoes, salt, and chicken seasoning. Cook for 5-7 minutes, stirring occasionally, until the tomatoes have broken down and formed a thick sauce.",
+      "action": "making_tomato_base",
+      "ingredients": ["ing_tomatoes", "ing_salt", "ing_chicken_seasoning"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Return the browned chicken pieces to the pot along with any accumulated juices. Add 2 cups of water. Bring to a boil, then reduce the heat to low, cover, and simmer for 20-25 minutes, or until the chicken is cooked through and tender.",
+      "action": "simmering_chicken",
+      "ingredients": ["ing_water"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "While the chicken is simmering, in a separate bowl, gradually whisk the groundnut paste with the remaining 2 cups of water until you have a very smooth, lump-free, creamy liquid.",
+      "action": "preparing_groundnut_sauce",
+      "ingredients": ["ing_groundnut_paste", "ing_water"],
+      "utensils": ["utn_whisk"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Once the chicken is tender, pour the smooth groundnut mixture into the pot. Stir gently to combine with the tomato base and chicken.",
+      "action": "adding_groundnut_sauce"
+    },
+    {
+      "step_number": 9,
+      "instruction": "Bring the stew back to a gentle simmer. Cook uncovered for 10-15 minutes, stirring frequently to prevent the groundnuts from sticking to the bottom, until the sauce has thickened to a rich, creamy gravy consistency.",
+      "action": "thickening_sauce",
+      "cooking_indicators": {
+        "visual": "The sauce will be thick, creamy, and coat the back of a spoon. Oil may shimmer on the surface."
+      }
+    },
+    {
+      "step_number": 10,
+      "instruction": "Taste and adjust salt if needed. If the sauce is too thick, add a little hot water. Serve hot.",
+      "action": "final_seasoning_serving"
+    }
+  ],
+  "cooking_method": "stewing_simmering",
+  "heat_level": "medium_low",
+  "serving_suggestions": "Serve this rich stew with a staple carbohydrate to soak up the delicious sauce. It is perfect with Posho (Ugali), White Rice, or Matoke. A side of steamed greens like Sukuma Wiki or Dodo provides a fresh contrast.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 480,
+      "carbohydrates_g": 12,
+      "protein_g": 40,
+      "fat_g": 30,
+      "cholesterol_mg": 100,
+      "sodium_mg": 900
+    },
+    "health_benefits": ["high_in_protein", "rich_in_healthy_fats", "good_source_of_niacin", "supports_muscle_repair", "energy_boosting"]
+  },
+  "tags": ["main_dish", "stew", "chicken", "groundnut_sauce", "creamy", "rich", "comfort_food", "protein_rich", "celebratory"],
+  "source": "traditional_ugandan_home_cooking",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

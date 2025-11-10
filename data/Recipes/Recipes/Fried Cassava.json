@@ -1,0 +1,73 @@
+{
+  "recipe_id": "ug_recipe_cassava_fried_001",
+  "name": {
+    "en": "Fried Cassava",
+    "local_name": "Kasawa Ekitokose"
+  },
+  "description": "Cassava peeled, sliced into strips, and deep-fried until golden brown. Seasoned with aromat, pepper, or salt. Crispy outside and soft inside.",
+  "origin_region": "Central and Eastern Uganda",
+  "cultural_significance": {
+    "importance": "snack_food",
+    "occasions": ["snack", "street_food", "family_meal"],
+    "cultural_notes": "A popular snack or side dish in Uganda, often enjoyed with sauces or as finger food."
+  },
+  "type": "side_dish_snack",
+  "difficulty": "medium",
+  "servings": {"min": 4, "max": 6},
+  "prep_time_mins": 20,
+  "cook_time_mins": 15,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_cassava_fried",
+      "name": "Cassava",
+      "local_name": "Kasawa",
+      "quantity": 3000,
+      "unit": "g",
+      "preparation": "peeled, washed, cut into thin strips, membrane removed"
+    },
+    {
+      "ingredient_id": "ing_vegetable_oil",
+      "name": "Vegetable Oil",
+      "local_name": "Amavuta",
+      "quantity": 500,
+      "unit": "ml",
+      "purpose": "deep frying"
+    },
+    {
+      "ingredient_id": "ing_aromat",
+      "name": "Aromat / Salt",
+      "local_name": "Munye",
+      "quantity": 2,
+      "unit": "teaspoons",
+      "optional": true,
+      "purpose": "seasoning"
+    },
+    {
+      "ingredient_id": "ing_pepper",
+      "name": "Black Pepper",
+      "local_name": "Pipiri",
+      "quantity": 1,
+      "unit": "teaspoon",
+      "optional": true,
+      "purpose": "seasoning"
+    }
+  ],
+  "utensils": [
+    {"utensil_id": "utn_frying_pan", "name": "Frying Pan", "local_name": "Sufuria"},
+    {"utensil_id": "utn_spatula", "name": "Spatula", "local_name": "Sikere"},
+    {"utensil_id": "utn_knife", "name": "Knife", "local_name": "Akambe"}
+  ],
+  "steps": [
+    {"step_number": 1, "instruction": "Wash, peel, and cut cassava into thin strips. Remove the membrane and dry.", "action": "preparing", "ingredients": ["ing_cassava_fried"], "utensils": ["utn_knife"]},
+    {"step_number": 2, "instruction": "Heat oil until almost smoking.", "action": "heating", "utensils": ["utn_frying_pan"]},
+    {"step_number": 3, "instruction": "Fry cassava strips in batches until golden brown, crispy outside and soft inside.", "action": "frying", "utensils": ["utn_frying_pan", "utn_spatula"], "ingredients": ["ing_vegetable_oil"]},
+    {"step_number": 4, "instruction": "Remove from oil, drain, and season with aromat, pepper, or salt. Serve hot.", "action": "serving", "ingredients": ["ing_aromat", "ing_pepper"], "serving_temperature": "hot"}
+  ],
+  "cooking_method": "deep_frying",
+  "heat_level": "high",
+  "cooking_indicators": {"visual": "golden brown exterior", "texture": "crispy outside, tender inside"},
+  "tags": ["traditional", "cassava", "fried", "snack", "vegetarian"],
+  "source": "traditional_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-16"
+}

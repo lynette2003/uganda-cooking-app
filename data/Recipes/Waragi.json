@@ -1,0 +1,139 @@
+{
+  "recipe_id": "ug_recipe_waragi_096",
+  "name": {
+    "en": "Waragi (Ugandan Gin)",
+    "local_name": "Waragi"
+  },
+  "description": "A clear, potent, and traditional Ugandan spirit, often referred to as 'War Gin'. It is typically distilled from fermented bananas (musule), millet, or sugar cane. It has a strong, clean, and neutral taste, though flavor can vary by region and producer.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "traditional_spirit_social_lubricant",
+    "occasions": ["social_gatherings", "ceremonies", "celebrations", "funerals", "local_bars"],
+    "cultural_notes": "Waragi is more than a drink; it's a deep-seated part of Ugandan social life. Its name is a contraction of 'War Gin', tracing back to its consumption by soldiers. It is the most consumed spirit in Uganda, often sold in small sachets. While commercially produced brands like Uganda Waragi (made from millet) are safe and regulated, illicit local distillation is a dangerous but persistent practice in rural areas, often leading to fatal poisonings. It is a drink of the people, symbolizing both community and, at times, peril."
+  },
+  "type": "beverage_alcoholic",
+  "difficulty": "expert_dangerous",
+  "servings": {
+    "min": 0,
+    "max": 0,
+    "notes": "Varies greatly. Commercial bottles are typically 750ml. Illicit local measures are often in small sachets or plastic bottles."
+  },
+  "prep_time_mins": 10080,
+  "cook_time_mins": 0,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_base_ingredient",
+      "name": "Base Ingredient",
+      "local_name": "Varies",
+      "quantity": 0,
+      "unit": "kg/liters",
+      "notes": "Ripe bananas (for 'Kasese'/'Musule'), millet (for commercial Uganda Waragi), maize, or sugar cane juice/jaggery."
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 0,
+      "unit": "liters",
+      "notes": "For fermentation and dilution"
+    },
+    {
+      "ingredient_id": "ing_yeast",
+      "name": "Yeast (Traditional or Commercial)",
+      "local_name": "Hamira",
+      "quantity": 0,
+      "unit": "grams",
+      "notes": "To catalyze fermentation. Traditional brews may rely on wild yeast."
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_fermentation_vessel",
+      "name": "Large Fermentation Vessel (e.g., Plastic Jerrican)",
+      "local_name": "Debe / Gallon"
+    },
+    {
+      "utensil_id": "utn_distillation_apparatus",
+      "name": "Improvised Distillation Apparatus",
+      "local_name": "Kasanvu / Stove",
+      "notes": "DANGEROUS: Often involves a metal drum, a cooling pan, and plastic tubing. Prone to contamination and explosion."
+    },
+    {
+      "utensil_id": "utn_heat_source",
+      "name": "Intense Heat Source (Open Fire)",
+      "local_name": "Omuriro"
+    },
+    {
+      "utensil_id": "utn_collection_vessel",
+      "name": "Collection Vessel",
+      "local_name": "Supa / Sachet",
+      "notes": "For collecting the distilled spirit."
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "WARNING: ILLEGAL AND EXTREMELY DANGEROUS. This information is for cultural understanding only. Do not attempt. The process involves creating toxic methanol and flammable vapors. Commercial production is the only safe source.",
+      "action": "warning",
+      "details": "Home distillation is illegal in Uganda and many countries due to the high risk of methanol poisoning, which causes blindness and death, as well as the risk of fire and explosion."
+    },
+    {
+      "step_number": 2,
+      "instruction": "Prepare the wash (the liquid to be fermented). For banana waragi (musule), ripe bananas are mashed and mixed with water. For millet waragi, millet is germinated, dried, and mixed with hot water to create a mash.",
+      "action": "preparing_wash",
+      "ingredients": ["ing_base_ingredient", "ing_water"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Add yeast to the mash to begin fermentation. The vessel is covered loosely and left in a warm place for several days to over a week. Natural wild yeast can also be used.",
+      "action": "fermentation",
+      "ingredients": ["ing_yeast"],
+      "utensils": ["utn_fermentation_vessel"],
+      "cooking_indicators": {
+        "visual": "The mixture will bubble and produce a sour, alcoholic smell.",
+        "time": "5-14 days"
+      }
+    },
+    {
+      "step_number": 4,
+      "instruction": "DANGEROUS STEP: The fermented wash is transferred to a sealed metal drum over a very hot fire. A pipe or tube is attached to the drum's top, which runs through a cooling system (often a barrel of cold water) and into a collection vessel.",
+      "action": "distillation_setup",
+      "utensils": ["utn_distillation_apparatus", "utn_heat_source", "utn_collection_vessel"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "As the wash boils, alcohol vapors (which have a lower boiling point than water) rise, travel through the tube, condense back into liquid due to the cooling system, and drip into the collection vessel. The first portion of the distillate ('the heads') contains toxic methanol and is discarded by knowledgeable distillers.",
+      "action": "distillation",
+      "cooking_indicators": {
+        "visual": "A clear liquid will begin to drip from the condenser tube.",
+        "texture": "The final product is a clear, high-proof spirit."
+      }
+    },
+    {
+      "step_number": 6,
+      "instruction": "The collected spirit is often diluted with water to achieve the desired alcohol percentage before being packaged for sale, typically in used plastic bottles or small, transparent plastic sachets.",
+      "action": "dilution_packaging",
+      "ingredients": ["ing_water"]
+    }
+  ],
+  "cooking_method": "fermentation_distillation",
+  "heat_level": "very_high",
+  "serving_suggestions": "Consumed straight as a shot, often chased with a soda. It is also used as a base in cocktails. It is traditionally drunk from the bottle or sachet and shared among friends.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 65,
+      "carbohydrates_g": 0,
+      "protein_g": 0,
+      "fat_g": 0,
+      "cholesterol_mg": 0,
+      "sodium_mg": 0,
+      "notes": "Per 1 fl oz (30ml) of 40% ABV spirit. Contains no nutritional value other than calories from alcohol."
+    },
+    "health_warnings": ["highly_alcoholic", "addictive", "consumption_can_cause_health_problems", "do_not_drive_after_consumption", "RISK_OF_FATAL_METHANOL_POISONING_FROM_ILLICIT_SOURCES"]
+  },
+  "tags": ["beverage", "alcoholic", "traditional", "spirit", "potent", "DANGEROUS_TO_PRODUCE", "cultural_icon"],
+  "source": "traditional_process_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24",
+  "legal_disclaimer": "This recipe is provided for cultural and educational purposes only. The distillation of alcohol without a license is illegal in Uganda and many other jurisdictions. Consuming illicitly distilled alcohol can lead to severe poisoning, blindness, and death. Always consume legally produced and regulated alcohol responsibly."
+}

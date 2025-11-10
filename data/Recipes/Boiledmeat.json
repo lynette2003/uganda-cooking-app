@@ -1,0 +1,171 @@
+{
+  "recipe_id": "ug_recipe_smoked_boiled_beef_130",
+  "name": {
+    "en": "Smoked Boiled Beef",
+    "local_name": "Nyama eyokwoome eyokubikka"
+  },
+  "description": "A simple, hearty, and deeply flavorful dish where smoked beef is boiled with basic aromatics until fork-tender. This no-oil preparation allows the rich, smoky essence of the meat to shine, resulting in a comforting and protein-rich meal with a savory broth. It's a testament to the power of traditional preservation and simple cooking methods.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "traditional_preserved_meat_dish",
+    "occasions": ["daily_meals", "breakfast", "lunch", "dinner", "quick_meals"],
+    "cultural_notes": "Smoked boiled beef is a practical and traditional way to enjoy preserved meat. Before widespread refrigeration, smoking was a crucial method for preserving meat, and boiling was the simplest way to prepare it. This dish is common in households that have access to smoked meat, providing a quick and filling source of protein. It represents resourcefulness and the ability to create satisfying meals from preserved staples, often eaten by workers for sustained energy."
+  },
+  "type": "main_dish",
+  "difficulty": "very_easy",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 5,
+  "cook_time_mins": 90,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_smoked_beef",
+      "name": "Smoked Beef",
+      "local_name": "Nyama eyokwoome",
+      "quantity": 800,
+      "unit": "grams",
+      "notes": "Preferably with some bone for flavor. Cut into large chunks."
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 8,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion, quartered",
+      "local_name": "Tungurusumu",
+      "quantity": 1,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic cloves, crushed",
+      "local_name": "Tungurusumu Omuzungu",
+      "quantity": 4,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "ing_ginger",
+      "name": "Ginger, sliced",
+      "local_name": "Tangawizi",
+      "quantity": 1,
+      "unit": "inch_piece"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 1,
+      "unit": "tsp",
+      "notes": "Use sparingly as the smoked beef is already salty"
+    },
+    {
+      "ingredient_id": "ing_green_bananas",
+      "name": "Green Bananas (optional)",
+      "local_name": "Matoke",
+      "quantity": 4,
+      "unit": "fingers",
+      "notes": "Peeled and added to cook with the meat for a complete meal"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_pot",
+      "name": "Large Pot with Lid",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_slotted_spoon",
+      "name": "Slotted Spoon",
+      "local_name": "N/A"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "If the smoked beef is very salty, you can soak it in cold water for 20-30 minutes to remove some salt. This step is optional.",
+      "action": "soaking_meat",
+      "ingredients": ["ing_smoked_beef"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Place the smoked beef chunks in a large pot. Add the quartered onion, crushed garlic, sliced ginger, and salt.",
+      "action": "combining_ingredients",
+      "ingredients": ["ing_onion", "ing_garlic", "ing_ginger", "ing_salt"],
+      "utensils": ["utn_large_pot"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Pour the 8 cups of water over the meat and aromatics. The water should cover the meat completely.",
+      "action": "adding_water",
+      "ingredients": ["ing_water"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Cover the pot and bring to a rolling boil over high heat.",
+      "action": "bringing_to_boil"
+    },
+    {
+      "step_number": 5,
+      "instruction": "Once boiling, reduce the heat to low to maintain a gentle simmer. Cover and let it cook for 1 to 1.5 hours.",
+      "action": "simmering",
+      "cooking_indicators": {
+        "olfactory": "A rich, smoky, and savory aroma will fill the kitchen.",
+        "time": "60-90 minutes"
+      }
+    },
+    {
+      "step_number": 6,
+      "instruction": "If using green bananas (matoke), add the peeled bananas to the pot after the meat has been cooking for about 45 minutes. They will cook in the flavorful broth.",
+      "action": "adding_matoke",
+      "ingredients": ["ing_green_bananas"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "After 1 to 1.5 hours, check the meat for tenderness. It should be fork-tender and easily pull apart. The matoke (if used) should also be very soft.",
+      "action": "testing_doneness",
+      "cooking_indicators": {
+        "texture": "The meat should be soft and shred easily with a fork."
+      }
+    },
+    {
+      "step_number": 8,
+      "instruction": "Once cooked, use a slotted spoon to remove the meat (and matoke) from the broth and place them on a serving platter.",
+      "action": "removing_solids",
+      "utensils": ["utn_slotted_spoon"]
+    },
+    {
+      "step_number": 9,
+      "instruction": "Reserve the flavorful broth. It can be served as a light soup on the side or used as a base for other dishes.",
+      "action": "reserving_broth"
+    },
+    {
+      "step_number": 10,
+      "instruction": "Serve the smoked boiled beef hot with the matoke if used.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "boiling_simmering",
+  "heat_level": "low",
+  "serving_suggestions": "Serve the tender smoked beef and matoke (if used) with a staple carbohydrate like Posho (Ugali), Cassava, or Sweet Potatoes. The reserved broth can be served in mugs as a warming drink or poured over the posho. A side of steamed leafy greens like Sukuma Wiki or a fresh tomato and onion salad (Kachumbari) complements the smoky flavors perfectly.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 280,
+      "carbohydrates_g": 5,
+      "protein_g": 35,
+      "fat_g": 12,
+      "cholesterol_mg": 100,
+      "sodium_mg": 950
+    },
+    "health_benefits": ["high_quality_protein", "rich_in_iron", "good_source_of_zinc", "contains_b_vitamins", "low_carbohydrate", "no_added_fat"]
+  },
+  "tags": ["main_dish", "beef", "smoked", "boiled", "no_oil", "protein_rich", "traditional", "preserved_meat", "simple", "gluten_free"],
+  "source": "traditional_ugandan_cooking",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

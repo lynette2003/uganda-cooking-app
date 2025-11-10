@@ -1,0 +1,234 @@
+{
+  "recipe_id": "ug_recipe_mushroom_sauce_087",
+  "name": {
+    "en": "Creamy Mushroom Sauce",
+    "local_name": "Mchuzi wa Uyoga"
+  },
+  "description": "A rich, creamy, and deeply savory sauce made with fresh mushrooms sautéed with aromatics and simmered in a velvety broth and cream base. It's incredibly versatile and elevates any dish it accompanies.",
+  "origin_region": "Nationwide (Modern & Fusion Cuisine)",
+  "cultural_significance": {
+    "importance": "modern_sauce_accompaniment",
+    "occasions": ["special_dinners", "guest_meals", "holidays", "with_steak_chicken", "pasta_nights"],
+    "cultural_notes": "While not a traditional Ugandan sauce, mushroom sauce has become very popular in modern Ugandan home cooking and restaurants, especially in urban areas. It represents the fusion of local ingredients (like fresh mushrooms) with international cooking styles. It's often seen as a 'special occasion' sauce to dress up a simple piece of meat or starch."
+  },
+  "type": "sauce_accompaniment",
+  "difficulty": "easy",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 10,
+  "cook_time_mins": 20,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_fresh_mushrooms",
+      "name": "Fresh Mushrooms",
+      "local_name": "Uyoga",
+      "quantity": 500,
+      "unit": "grams",
+      "notes": "Button or cremini, sliced"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion",
+      "local_name": "Kitungulu",
+      "quantity": 1,
+      "unit": "small",
+      "notes": "Finely chopped"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic",
+      "local_name": "Vitungulu Saumuni",
+      "quantity": 3,
+      "unit": "cloves",
+      "notes": "Minced"
+    },
+    {
+      "ingredient_id": "ing_butter",
+      "name": "Butter",
+      "local_name": "Siagi",
+      "quantity": 2,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_vegetable_oil",
+      "name": "Vegetable Oil",
+      "local_name": "Mafuta",
+      "quantity": 1,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_all_purpose_flour",
+      "name": "All-Purpose Flour",
+      "local_name": "Unga wa Ngano",
+      "quantity": 2,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_beef_chicken_stock",
+      "name": "Beef or Chicken Stock",
+      "local_name": "Maji ya Nyama / Kuku",
+      "quantity": 1.5,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_heavy_cream",
+      "name": "Heavy Cream or Coconut Milk",
+      "local_name": "Cream / Maziwa ya Nazi",
+      "quantity": 0.5,
+      "unit": "cup"
+    },
+    {
+      "ingredient_id": "ing_dry_white_wine",
+      "name": "Dry White Wine (Optional)",
+      "local_name": "Mvinyo Mweupe",
+      "quantity": 0.25,
+      "unit": "cup",
+      "notes": "For deglazing, adds depth"
+    },
+    {
+      "ingredient_id": "ing_fresh_thyme",
+      "name": "Fresh Thyme or 1 tsp dried",
+      "local_name": "Thyme",
+      "quantity": 3,
+      "unit": "sprigs"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Chumvi",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "notes": "To taste"
+    },
+    {
+      "ingredient_id": "ing_black_pepper",
+      "name": "Black Pepper",
+      "local_name": "Pilipili Mweusi",
+      "quantity": 0.25,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_parsley",
+      "name": "Fresh Parsley",
+      "local_name": "Parsley",
+      "quantity": 2,
+      "unit": "tbsp",
+      "notes": "Chopped, for garnish"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_skillet",
+      "name": "Large Skillet or Saucepan",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Mwiko"
+    },
+    {
+      "utensil_id": "utn_whisk",
+      "name": "Whisk",
+      "local_name": "Kifagio cha Kupikia"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Clean the mushrooms by wiping them with a damp cloth or brushing off any dirt. Slice them evenly.",
+      "action": "preparing_mushrooms",
+      "ingredients": ["ing_fresh_mushrooms"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Heat the butter and vegetable oil in a large skillet over medium-high heat. The oil prevents the butter from burning.",
+      "action": "heating_fat",
+      "ingredients": ["ing_butter", "ing_vegetable_oil"],
+      "utensils": ["utn_large_skillet"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Add the mushrooms to the hot skillet. Sauté for 5-7 minutes, without stirring too much initially, to allow them to brown and release their water. Once browned, stir and cook until most of the liquid has evaporated.",
+      "action": "browning_mushrooms",
+      "ingredients": ["ing_fresh_mushrooms"],
+      "utensils": ["utn_wooden_spoon"],
+      "cooking_indicators": {
+        "visual": "Mushrooms will be golden brown and shrunken.",
+        "time": "5-7 minutes"
+      }
+    },
+    {
+      "step_number": 4,
+      "instruction": "Add the chopped onion and sauté for 3-4 minutes until softened. Then add the minced garlic and fresh thyme, cooking for another minute until fragrant.",
+      "action": "sautéing_aromatics",
+      "ingredients": ["ing_onion", "ing_garlic", "ing_fresh_thyme"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "If using wine, pour it into the skillet to deglaze, scraping up any browned bits from the bottom. Let it simmer for 1-2 minutes until reduced by half.",
+      "action": "deglazing",
+      "ingredients": ["ing_dry_white_wine"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Sprinkle the flour over the mushroom mixture and stir constantly for 1-2 minutes to cook out the raw flour taste. This creates a roux that will thicken the sauce.",
+      "action": "making_roux",
+      "ingredients": ["ing_all_purpose_flour"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Gradually pour in the stock while whisking continuously to prevent lumps from forming.",
+      "action": "adding_liquid",
+      "ingredients": ["ing_beef_chicken_stock"],
+      "utensils": ["utn_whisk"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Bring the sauce to a simmer, then reduce the heat to low. Let it cook for 5-7 minutes, stirring occasionally, until it has thickened nicely.",
+      "action": "simmering",
+      "cooking_indicators": {
+        "visual": "Sauce will coat the back of a spoon.",
+        "time": "5-7 minutes",
+        "texture": "Smooth and thickened"
+      }
+    },
+    {
+      "step_number": 9,
+      "instruction": "Stir in the heavy cream (or coconut milk). Season with salt and black pepper to taste. Let it heat through for 2-3 minutes, but do not boil after adding the cream.",
+      "action": "finishing_sauce",
+      "ingredients": ["ing_heavy_cream", "ing_salt", "ing_black_pepper"]
+    },
+    {
+      "step_number": 10,
+      "instruction": "Remove the thyme sprigs. Stir in half of the fresh parsley.",
+      "action": "garnishing",
+      "ingredients": ["ing_parsley"]
+    },
+    {
+      "step_number": 11,
+      "instruction": "Serve the mushroom sauce hot, garnished with the remaining parsley.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "sautéing_simmering",
+  "heat_level": "medium",
+  "serving_suggestions": "Perfect over grilled steak, chicken breasts, pork chops, or meatballs. Also excellent with pasta, mashed potatoes, rice, or as a filling for crepes and omelets.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 180,
+      "carbohydrates_g": 8,
+      "protein_g": 5,
+      "fat_g": 15,
+      "cholesterol_mg": 45,
+      "sodium_mg": 400
+    },
+    "health_benefits": ["good_source_of_vitamin_d", "rich_in_antioxidants", "boosts_immune_system"]
+  },
+  "tags": ["sauce", "vegetarian", "creamy", "versatile", "gourmet", "modern"],
+  "source": "modern_fusion_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

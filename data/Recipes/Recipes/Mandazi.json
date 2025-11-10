@@ -1,0 +1,240 @@
+{
+  "recipe_id": "ug_recipe_mandazi_065",
+  "name": {
+    "en": "Mandazi (East African Doughnuts)",
+    "local_name": "Mandazi"
+  },
+  "description": "Light, fluffy, and slightly sweet triangular doughnuts, popular throughout East Africa. They have a soft, cake-like interior and a golden-brown, lightly crisped exterior, often scented with cardamom or coconut.",
+  "origin_region": "Coastal & Nationwide (Swahili Influence)",
+  "cultural_significance": {
+    "importance": "everyday_staple_snack",
+    "occasions": ["breakfast", "teatime", "street_food", "Ramadan_Iftar", "family_gatherings"],
+    "cultural_notes": "Mandazi are the quintessential East African snack, enjoyed by people of all ages. They are a common breakfast item with tea or coffee, a popular street food, and a must-have for breaking the fast during Ramadan. Their simple, comforting taste evokes a sense of home and community."
+  },
+  "type": "snack_breakfast",
+  "difficulty": "easy",
+  "servings": {
+    "min": 6,
+    "max": 8,
+    "yield": "~20-25 pieces"
+  },
+  "prep_time_mins": 90,
+  "cook_time_mins": 30,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_all_purpose_flour",
+      "name": "All-Purpose Flour",
+      "local_name": "Unga wa Ngano",
+      "quantity": 4,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_sugar",
+      "name": "Sugar",
+      "local_name": "Sukari",
+      "quantity": 0.5,
+      "unit": "cup",
+      "notes": "Adjust to taste"
+    },
+    {
+      "ingredient_id": "ing_coconut_milk",
+      "name": "Coconut Milk",
+      "local_name": "Madafu / Maziwa ya Nazi",
+      "quantity": 1,
+      "unit": "cup",
+      "notes": "Or use warm whole milk"
+    },
+    {
+      "ingredient_id": "ing_water_milk",
+      "name": "Warm Water or Milk",
+      "local_name": "Maji / Maziwa",
+      "quantity": 0.5,
+      "unit": "cup"
+    },
+    {
+      "ingredient_id": "ing_yeast",
+      "name": "Instant Yeast",
+      "local_name": "Hamira",
+      "quantity": 2,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_egg",
+      "name": "Egg",
+      "local_name": "Yai",
+      "quantity": 1,
+      "unit": "large",
+      "notes": "Optional, but makes it richer"
+    },
+    {
+      "ingredient_id": "ing_butter_ghee",
+      "name": "Butter or Ghee (melted)",
+      "local_name": "Siagi",
+      "quantity": 2,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_cardamom",
+      "name": "Cardamom Powder",
+      "local_name": "Iliki",
+      "quantity": 1,
+      "unit": "tsp",
+      "notes": "The classic flavoring. Can substitute with cinnamon or vanilla."
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Chumvi",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_oil_frying",
+      "name": "Vegetable Oil",
+      "local_name": "Mafuta",
+      "quantity": 4,
+      "unit": "cups",
+      "notes": "For deep frying"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_mixing_bowl",
+      "name": "Large Mixing Bowl",
+      "local_name": "Bakuli Kubwa"
+    },
+    {
+      "utensil_id": "utn_rolling_pin",
+      "name": "Rolling Pin",
+      "local_name": "Pimo"
+    },
+    {
+      "utensil_id": "utn_knife_pizza_cutter",
+      "name": "Knife or Pizza Cutter",
+      "local_name": "Kisu"
+    },
+    {
+      "utensil_id": "utn_deep_fryer_pot",
+      "name": "Deep Pot or Saucepan",
+      "local_name": "Sufuria ya Kukaanga"
+    },
+    {
+      "utensil_id": "utn_slotted_spoon",
+      "name": "Slotted Spoon or Spider Skimmer",
+      "local_name": "Mwiko wa Mashimo"
+    },
+    {
+      "utensil_id": "utn_thermometer",
+      "name": "Cooking Thermometer",
+      "local_name": "Kipima Joto",
+      "notes": "Optional but helpful"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "In a large mixing bowl, combine the warm water/milk, sugar, and instant yeast. Let it sit for 5-10 minutes until it becomes frothy.",
+      "action": "activating_yeast",
+      "ingredients": ["ing_water_milk", "ing_sugar", "ing_yeast"],
+      "utensils": ["utn_large_mixing_bowl"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "To the yeast mixture, add the melted butter/ghee, coconut milk, egg (if using), and cardamom powder. Whisk until well combined.",
+      "action": "combining_wet",
+      "ingredients": ["ing_butter_ghee", "ing_coconut_milk", "ing_egg", "ing_cardamom"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Gradually add the flour and salt to the wet ingredients. Mix with a wooden spoon until a shaggy dough forms.",
+      "action": "adding_dry",
+      "ingredients": ["ing_all_purpose_flour", "ing_salt"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Turn the dough onto a lightly floured surface and knead for 8-10 minutes until it becomes smooth, soft, and elastic.",
+      "action": "kneading",
+      "cooking_indicators": {
+        "visual": "The dough is smooth and no longer sticky.",
+        "time": "8-10 minutes",
+        "texture": "Soft and springy to the touch."
+      }
+    },
+    {
+      "step_number": 5,
+      "instruction": "Place the dough in a lightly oiled bowl, turn it to coat, and cover with a damp cloth. Let it rise in a warm place for 1-1.5 hours, or until doubled in size.",
+      "action": "first_proof",
+      "cooking_indicators": {
+        "visual": "Dough has doubled in size.",
+        "time": "60-90 minutes"
+      }
+    },
+    {
+      "step_number": 6,
+      "instruction": "Punch down the risen dough to release the air. On a floured surface, roll it out into a large circle or rectangle about 1/2 inch (1.25 cm) thick.",
+      "action": "shaping",
+      "utensils": ["utn_rolling_pin"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Cut the dough into triangles, squares, or your desired shape. A pizza cutter works well for this. Traditionally, they are cut into triangles.",
+      "action": "cutting",
+      "utensils": ["utn_knife_pizza_cutter"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Place the cut mandazi on a floured tray, cover with a cloth, and let them rest for 15-20 minutes for a second, shorter rise.",
+      "action": "second_proof",
+      "cooking_indicators": {
+        "visual": "They will look slightly puffed up.",
+        "time": "15-20 minutes"
+      }
+    },
+    {
+      "step_number": 9,
+      "instruction": "Heat oil in a deep pot over medium heat to 170-180°C (340-350°F). The oil is ready when a small piece of dough sizzles and rises to the surface immediately.",
+      "action": "heating_oil",
+      "ingredients": ["ing_oil_frying"],
+      "utensils": ["utn_deep_fryer_pot"]
+    },
+    {
+      "step_number": 10,
+      "instruction": "Fry the mandazi in batches, being careful not to overcrowd the pot. Fry for 2-3 minutes on each side, turning once, until they are puffed up and golden brown on both sides.",
+      "action": "frying",
+      "cooking_indicators": {
+        "visual": "Golden brown on all sides",
+        "time": "4-6 minutes total per batch",
+        "texture": "Puffed up and light"
+      },
+      "utensils": ["utn_slotted_spoon"]
+    },
+    {
+      "step_number": 11,
+      "instruction": "Remove the mandazi with a slotted spoon and drain on a wire rack or paper towels to remove excess oil.",
+      "action": "draining"
+    },
+    {
+      "step_number": 12,
+      "instruction": "Serve the mandazi warm. They are best enjoyed fresh on the day they are made.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "deep_frying",
+  "heat_level": "medium",
+  "serving_suggestions": "Serve warm as a snack with Kenyan Chai (spiced tea), coffee, or fresh juice. They can be dusted with powdered sugar or dipped in coconut chutney. For a savory twist, serve with Bean Stew or Coconut Curry.",
+  "nutritional_info": {
+    "per_mandazi": {
+      "calories": 150,
+      "carbohydrates_g": 25,
+      "protein_g": 3,
+      "fat_g": 5,
+      "cholesterol_mg": 10,
+      "sodium_mg": 60
+    },
+    "health_benefits": ["energy_boosting", "comfort_food"]
+  },
+  "tags": ["snack", "breakfast", "vegetarian", "fried", "street_food", "sweet", "swahili"],
+  "source": "traditional_recipe_swahili_coast",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

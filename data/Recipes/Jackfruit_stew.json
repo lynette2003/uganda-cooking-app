@@ -1,0 +1,156 @@
+{
+  "recipe_id": "ug_recipe_omugoyo_065",
+  "name": {
+    "en": "Omugoyo",
+    "local_name": "Omugoyo"
+  },
+  "description": "A traditional Ugandan dish made from young jackfruit cooked with onions, tomatoes, and local spices. Often served as a main dish with staples like matooke or posho.",
+  "origin_region": "Central and Eastern Uganda",
+  "cultural_significance": {
+    "importance": "everyday_meal",
+    "occasions": ["lunch", "dinner", "family_meals"],
+    "cultural_notes": "Omugoyo is cherished for its sweet, starchy flavor and is commonly prepared during harvest season when young jackfruit is abundant."
+  },
+  "type": "main_dish",
+  "difficulty": "medium",
+  "servings": {
+    "min": 3,
+    "max": 5
+  },
+  "prep_time_mins": 15,
+  "cook_time_mins": 45,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_young_jackfruit",
+      "name": "Young Jackfruit, peeled and chopped",
+      "local_name": "Omugoyo",
+      "quantity": 1,
+      "unit": "kg"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onions, sliced",
+      "local_name": "Obutungulu",
+      "quantity": 2,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_tomato",
+      "name": "Tomatoes, chopped",
+      "local_name": "Enyaanya",
+      "quantity": 3,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic, crushed",
+      "local_name": "Kitungulu",
+      "quantity": 1,
+      "unit": "tablespoon",
+      "optional": true
+    },
+    {
+      "ingredient_id": "ing_oil",
+      "name": "Cooking Oil",
+      "local_name": "Amafuta",
+      "quantity": 3,
+      "unit": "tablespoons"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Munyu",
+      "quantity": "to taste",
+      "unit": "optional"
+    },
+    {
+      "ingredient_id": "ing_pepper",
+      "name": "Black Pepper",
+      "local_name": "Kamulali",
+      "quantity": 1,
+      "unit": "teaspoon"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 2,
+      "unit": "cups"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_saucepan",
+      "name": "Saucepan",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_stirring_spoon",
+      "name": "Stirring Spoon",
+      "local_name": "Omwengeja"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Knife",
+      "local_name": "Akambe"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Peel and chop the young jackfruit into medium-sized pieces.",
+      "action": "preparing",
+      "ingredients": ["ing_young_jackfruit"],
+      "utensils": ["utn_knife"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Heat oil in a saucepan and sauté onions and garlic until soft.",
+      "action": "sautéing",
+      "ingredients": ["ing_onion", "ing_garlic"],
+      "utensils": ["utn_saucepan", "utn_stirring_spoon"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Add chopped tomatoes and cook for 3–5 minutes until soft.",
+      "action": "cooking",
+      "ingredients": ["ing_tomato"],
+      "utensils": ["utn_stirring_spoon"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Add chopped jackfruit and water. Cover and simmer for 35–40 minutes until tender.",
+      "action": "simmering",
+      "ingredients": ["ing_young_jackfruit", "ing_water"],
+      "utensils": ["utn_saucepan"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Season with salt and black pepper. Serve hot with matooke or posho.",
+      "action": "seasoning",
+      "ingredients": ["ing_salt", "ing_pepper"]
+    }
+  ],
+  "cooking_method": "stewing",
+  "heat_level": "low",
+  "cooking_indicators": {
+    "visual": "jackfruit pieces softened and sauce thickened",
+    "time": "45 minutes",
+    "texture": "tender with slightly starchy consistency"
+  },
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 250,
+      "carbohydrates_g": 45,
+      "protein_g": 4,
+      "fat_g": 8,
+      "cholesterol_mg": 0,
+      "sodium_mg": 150
+    },
+    "health_benefits": ["fiber_rich", "vitamin_c_source", "low_cholesterol"]
+  },
+  "tags": ["vegetable", "stew", "traditional", "main_course"],
+  "source": "traditional_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

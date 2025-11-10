@@ -1,0 +1,259 @@
+{
+  "recipe_id": "ug_recipe_katogo_offals_100",
+  "name": {
+    "en": "Katogo (Sweet Potatoes and Offals Stew)",
+    "local_name": "Katogo ya Viazi Vitamu na Malengu"
+  },
+  "description": "A hearty, traditional one-pot Ugandan breakfast where sweet potatoes are slow-cooked with tender, flavorful offals (tripe and intestines) in a rich, spiced tomato and onion sauce. It's a deeply satisfying and energy-packed meal.",
+  "origin_region": "Central Uganda",
+  "cultural_significance": {
+    "importance": "traditional_breakfast_of_champions",
+    "occasions": ["breakfast", "brunch", "heavy_meal", "rural_homesteads", "local_eateries"],
+    "cultural_notes": "This version of Katogo is considered a 'breakfast of champions' for those doing hard physical labor. It's a dish that showcases the 'nose-to-tail' eating philosophy, making use of every part of the animal. It's particularly popular in central Uganda and is a common sight in local breakfast joints (canteens) and bus parks, served to give people energy for the long day ahead. The long, slow cooking is essential to tenderize the offals and meld the flavors."
+  },
+  "type": "main_course_breakfast",
+  "difficulty": "medium",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 45,
+  "cook_time_mins": 120,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_sweet_potatoes",
+      "name": "Orange-Fleshed Sweet Potatoes",
+      "local_name": "Viazi Vitamu",
+      "quantity": 1,
+      "unit": "kg",
+      "notes": "Peeled and cut into large chunks"
+    },
+    {
+      "ingredient_id": "ing_beef_tripe",
+      "name": "Beef Tripe",
+      "local_name": "Mondo",
+      "quantity": 500,
+      "unit": "grams",
+      "notes": "Thoroughly cleaned and cut into bite-sized pieces"
+    },
+    {
+      "ingredient_id": "ing_beef_intestines",
+      "name": "Beef Intestines",
+      "local_name": "Mala",
+      "quantity": 300,
+      "unit": "grams",
+      "notes": "Thoroughly cleaned and cut into pieces"
+    },
+    {
+      "ingredient_id": "ing_onions",
+      "name": "Onions",
+      "local_name": "Katungulu",
+      "quantity": 3,
+      "unit": "large",
+      "notes": "2 finely chopped, 1 roughly chopped"
+    },
+    {
+      "ingredient_id": "ing_tomatoes",
+      "name": "Ripe Tomatoes",
+      "local_name": "Enyanya",
+      "quantity": 3,
+      "unit": "medium",
+      "notes": "Chopped"
+    },
+    {
+      "ingredient_id": "ing_tomato_paste",
+      "name": "Tomato Paste",
+      "local_name": "Mchuzi wa Nyanya",
+      "quantity": 1,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_vegetable_oil",
+      "name": "Vegetable Oil",
+      "local_name": "Mafuta",
+      "quantity": 3,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 5,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_curry_powder",
+      "name": "Curry Powder",
+      "local_name": "Kali powuda",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_beef_stock_cube",
+      "name": "Beef Stock Cube",
+      "local_name": "Magi Cube",
+      "quantity": 1,
+      "unit": "piece"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 1.5,
+      "unit": "tsp",
+      "notes": "To taste"
+    },
+    {
+      "ingredient_id": "ing_scotch_bonnet",
+      "name": "Scotch Bonnet Chili",
+      "local_name": "Pilipili",
+      "quantity": 1,
+      "unit": "piece",
+      "notes": "Whole, pierced"
+    },
+    {
+      "ingredient_id": "ing_lemon_juice",
+      "name": "Lemon Juice or Vinegar",
+      "local_name": "Maji ya Ndimu",
+      "quantity": 0.25,
+      "unit": "cup",
+      "notes": "For cleaning the offals"
+    },
+    {
+      "ingredient_id": "ing_spring_onions",
+      "name": "Spring Onions",
+      "local_name": "Sukuma Wiki ya Maji",
+      "quantity": 3,
+      "unit": "stalks",
+      "notes": "Chopped, for garnish"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_heavy_pot",
+      "name": "Large, Heavy Pot",
+      "local_name": "Sufuria Kubwa"
+    },
+    {
+      "utensil_id": "utn_colander",
+      "name": "Colander",
+      "local_name": "Kikomulo"
+    },
+    {
+      "utensil_id": "utn_mixing_bowl",
+      "name": "Mixing Bowl",
+      "local_name": "Orupapura"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Lujjalira"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Thoroughly clean the offals. Rub the tripe and intestines with lemon juice/vinegar and coarse salt. Rinse under running water. Repeat until the water runs clear and the odor is minimized.",
+      "action": "cleaning_offals",
+      "ingredients": ["ing_beef_tripe", "ing_beef_intestines", "ing_lemon_juice", "ing_salt"],
+      "utensils": ["utn_mixing_bowl"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Place the cleaned offals in the large pot with the roughly chopped onion. Cover with water and bring to a boil. Boil for 10 minutes, then discard this water. This first boil removes impurities.",
+      "action": "first_boil",
+      "ingredients": ["ing_onions"],
+      "utensils": ["utn_large_heavy_pot", "utn_colander"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Rinse the offals again and return them to the clean pot. Add fresh water until the offals are covered. Bring to a boil, then reduce heat and simmer for 60-90 minutes, or until the tripe is tender but still slightly chewy. Skim off any foam.",
+      "action": "precooking_offals",
+      "ingredients": ["ing_water"],
+      "cooking_indicators": {
+        "visual": "Tripe becomes pale and tender.",
+        "time": "60-90 minutes"
+      }
+    },
+    {
+      "step_number": 4,
+      "instruction": "Drain the pre-cooked offals and cut them into bite-sized pieces. Discard the boiling water.",
+      "action": "cutting_offals",
+      "utensils": ["utn_colander"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "In the clean, large pot, heat the vegetable oil over medium heat. Add the finely chopped onions and sauté until golden brown.",
+      "action": "sautéing_onions",
+      "ingredients": ["ing_vegetable_oil", "ing_onions"],
+      "utensils": ["utn_wooden_spoon"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Add the tomato paste and curry powder. Stir and cook for 1 minute.",
+      "action": "toasting_spices",
+      "ingredients": ["ing_tomato_paste", "ing_curry_powder"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Add the chopped tomatoes and cook for 5-7 minutes until they break down and form a thick sauce.",
+      "action": "making_sauce",
+      "ingredients": ["ing_tomatoes"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Add the pre-cooked offal pieces to the pot and stir to coat in the sauce. Cook for 5 minutes.",
+      "action": "adding_offals"
+    },
+    {
+      "step_number": 9,
+      "instruction": "Add the peeled and chunked sweet potatoes to the pot. Pour in 4-5 cups of water, add the stock cube, salt, and the whole scotch bonnet chili. Stir gently to combine.",
+      "action": "combining_katogo",
+      "ingredients": ["ing_sweet_potatoes", "ing_water", "ing_beef_stock_cube", "ing_salt", "ing_scotch_bonnet"]
+    },
+    {
+      "step_number": 10,
+      "instruction": "Bring to a boil, then reduce the heat to very low. Cover the pot and let it simmer gently for 45-60 minutes, stirring occasionally, until the sweet potatoes are very tender and have started to thicken the stew.",
+      "action": "slow_cooking",
+      "cooking_indicators": {
+        "visual": "Sweet potatoes are soft and may begin to break apart, thickening the stew. The offals are very tender.",
+        "time": "45-60 minutes",
+        "texture": "The stew is thick, and the sweet potato is melt-in-the-mouth tender."
+      }
+    },
+    {
+      "step_number": 11,
+      "instruction": "Once cooked, remove the whole chili pepper. Adjust salt to taste. The stew should be thick, not soupy.",
+      "action": "finishing"
+    },
+    {
+      "step_number": 12,
+      "instruction": "Garnish with chopped spring onions.",
+      "action": "garnishing",
+      "ingredients": ["ing_spring_onions"]
+    },
+    {
+      "step_number": 13,
+      "instruction": "Serve the Katogo hot in a deep bowl.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "slow_simmering",
+  "heat_level": "low",
+  "serving_suggestions": "Traditionally served as a standalone breakfast or brunch, eaten directly from the bowl with a spoon. It is hearty enough on its own but can be accompanied by a slice of avocado.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 420,
+      "carbohydrates_g": 50,
+      "protein_g": 25,
+      "fat_g": 14,
+      "cholesterol_mg": 250,
+      "sodium_mg": 900
+    },
+    "health_benefits": ["high_in_iron", "rich_in_protein", "excellent_source_of_vitamin_a", "energy_dense", "high_in_zinc"]
+  },
+  "tags": ["main_course", "breakfast", "one_pot", "traditional", "offal", "hearty", "protein_rich", "comfort_food"],
+  "source": "traditional_recipe_central_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

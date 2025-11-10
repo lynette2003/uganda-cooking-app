@@ -1,0 +1,260 @@
+{
+  "recipe_id": "ug_recipe_spiced_bean_stew_142",
+  "name": {
+    "en": "Flavorful Spiced Bean Stew",
+    "local_name": "Ebijanjaalo Eby'Ennyoogera"
+  },
+  "description": "A rich, aromatic, and deeply satisfying bean stew where tender beans are simmered with a flavorful blend of onions, tomatoes, garlic, ginger, and traditional spices. This elevated version of boiled beans transforms the humble legume into a complex and hearty dish with layers of savory, spicy, and aromatic flavors that make it a standout meal on its own.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "elevated_traditional_dish",
+    "occasions": ["family_dinners", "weekend_meals", "special_occasions", "guest_meals", "festive_occasions"],
+    "cultural_notes": "This spiced bean stew represents the evolution of traditional Ugandan cooking, where basic staples are transformed into special dishes through the addition of spices and careful cooking techniques. It's often prepared for weekend family meals or when hosting guests, showing care and culinary skill. The use of multiple spices reflects Uganda's position on historical trade routes and the influence of various culinary traditions. This dish demonstrates how Ugandan home cooks can create extraordinary meals from ordinary ingredients."
+  },
+  "type": "main_dish_stew",
+  "difficulty": "medium",
+  "servings": {
+    "min": 6,
+    "max": 8
+  },
+  "prep_time_mins": 20,
+  "cook_time_mins": 120,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_dry_beans",
+      "name": "Dry Beans (Nambale or Red Kidney Beans)",
+      "local_name": "Ebijanjaalo",
+      "quantity": 2,
+      "unit": "cups",
+      "notes": "Sorted and cleaned"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 8,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_onions",
+      "name": "Onions, finely chopped",
+      "local_name": "Tungurusumu",
+      "quantity": 2,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_tomatoes",
+      "name": "Ripe Tomatoes, chopped",
+      "local_name": "Enyanya",
+      "quantity": 3,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_tomato_paste",
+      "name": "Tomato Paste",
+      "local_name": "Dodo",
+      "quantity": 2,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic, minced",
+      "local_name": "Tungurusumu Omuzungu",
+      "quantity": 4,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "ing_ginger",
+      "name": "Ginger, grated",
+      "local_name": "Tangawizi",
+      "quantity": 1,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_cooking_oil",
+      "name": "Cooking Oil",
+      "local_name": "Mafuta",
+      "quantity": 3,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 1.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_curry_powder",
+      "name": "Curry Powder",
+      "local_name": "Curry",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_paprika",
+      "name": "Paprika",
+      "local_name": "N/A",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_cumin",
+      "name": "Cumin Powder",
+      "local_name": "N/A",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_chili_powder",
+      "name": "Chili Powder or Flakes",
+      "local_name": "Pilipili",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_green_pepper",
+      "name": "Green Bell Pepper, diced",
+      "local_name": "Bibbo",
+      "quantity": 1,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_carrot",
+      "name": "Carrot, diced (optional)",
+      "local_name": "N/A",
+      "quantity": 1,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_coconut_milk",
+      "name": "Coconut Milk (optional)",
+      "local_name": "Maziwa ya Nazi",
+      "quantity": 0.5,
+      "unit": "cup",
+      "notes": "For a creamy, rich finish"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_large_pot",
+      "name": "Large Heavy-bottomed Pot",
+      "local_name": "Sufuria Nzito"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Mwiko"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Knife",
+      "local_name": "Mumo"
+    },
+    {
+      "utensil_id": "utn_measuring_spoons",
+      "name": "Measuring Spoons",
+      "local_name": "N/A"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Sort and rinse the beans thoroughly. Soak in water for 4-6 hours or overnight for faster cooking. Drain before using.",
+      "action": "preparing_beans",
+      "ingredients": ["ing_dry_beans", "ing_water"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Heat cooking oil in a large heavy-bottomed pot over medium heat.",
+      "action": "heating_oil",
+      "ingredients": ["ing_cooking_oil"],
+      "utensils": ["utn_large_pot"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Add chopped onions and sauté until soft and translucent, about 5 minutes.",
+      "action": "sauteing_onions",
+      "ingredients": ["ing_onions"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Add minced garlic and grated ginger. Cook for 1-2 minutes until fragrant.",
+      "action": "adding_aromatics",
+      "ingredients": ["ing_garlic", "ing_ginger"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Add tomato paste and all the spices (curry powder, paprika, cumin, chili powder). Stir for 1 minute to toast the spices and release their flavors.",
+      "action": "toasting_spices",
+      "ingredients": ["ing_tomato_paste", "ing_curry_powder", "ing_paprika", "ing_cumin", "ing_chili_powder"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Add chopped tomatoes and cook for 5-7 minutes until they break down and form a thick, fragrant sauce.",
+      "action": "cooking_tomatoes",
+      "ingredients": ["ing_tomatoes"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Add the drained beans to the pot and stir to coat them with the spiced tomato mixture.",
+      "action": "adding_beans",
+      "ingredients": ["ing_dry_beans"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Pour in 6 cups of water and bring to a boil. Then reduce heat to low, cover, and simmer for 1 hour.",
+      "action": "initial_simmering",
+      "ingredients": ["ing_water"]
+    },
+    {
+      "step_number": 9,
+      "instruction": "After 1 hour, add the diced green pepper and carrot (if using). Also add salt at this stage. Continue simmering for another 30-45 minutes.",
+      "action": "adding_vegetables_seasoning",
+      "ingredients": ["ing_green_pepper", "ing_carrot", "ing_salt"]
+    },
+    {
+      "step_number": 10,
+      "instruction": "When beans are tender and the stew has thickened, stir in coconut milk if using. Simmer for another 5 minutes.",
+      "action": "adding_creaminess",
+      "ingredients": ["ing_coconut_milk"],
+      "cooking_indicators": {
+        "texture": "Beans should be very tender and the stew should be thick and creamy"
+      }
+    },
+    {
+      "step_number": 11,
+      "instruction": "Taste and adjust seasoning if needed. The stew should be richly flavored and aromatic.",
+      "action": "final_seasoning"
+    },
+    {
+      "step_number": 12,
+      "instruction": "If the stew is too thick, add a little hot water. If too thin, simmer uncovered for a few more minutes.",
+      "action": "adjusting_consistency"
+    },
+    {
+      "step_number": 13,
+      "instruction": "Serve the flavorful spiced bean stew hot.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "stewing_simmering",
+  "heat_level": "medium",
+  "serving_suggestions": "Serve as a complete main dish with Posho (Ugali), Rice, or Chapati. The stew is rich enough to stand on its own but pairs beautifully with steamed greens like Sukuma Wiki or a fresh tomato and onion salad (Kachumbari). Garnish with fresh cilantro if desired. Also excellent with fried plantains or avocado on the side.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 280,
+      "carbohydrates_g": 42,
+      "protein_g": 15,
+      "fat_g": 8,
+      "cholesterol_mg": 0,
+      "sodium_mg": 450,
+      "fiber_g": 14
+    },
+    "health_benefits": ["excellent_plant_based_protein", "high_in_dietary_fiber", "rich_in_antioxidants", "anti-inflammatory_properties", "supports_heart_health", "aids_digestion", "vegan", "gluten_free", "low_cholesterol", "blood_sugar_regulating"]
+  },
+  "tags": ["main_dish", "stew", "beans", "spiced", "savory", "flavorful", "vegan", "gluten_free", "protein_rich", "comfort_food", "aromatic", "nutritious"],
+  "source": "traditional_ugandan_cuisine_enhanced",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

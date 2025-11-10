@@ -1,0 +1,152 @@
+{
+  "recipe_id": "ug_recipe_ndagala_062",
+  "name": {
+    "en": "Ndagala",
+    "local_name": "Ndagala"
+  },
+  "description": "A traditional Ugandan fish dish, typically made with fresh tilapia, seasoned and grilled or fried, often served with a side of vegetables or starches.",
+  "origin_region": "Eastern Uganda (Lake Victoria region)",
+  "cultural_significance": {
+    "importance": "traditional_fish_dish",
+    "occasions": ["festivals", "family_meals", "celebrations"],
+    "cultural_notes": "Tilapia from Lake Victoria is highly prized, and Ndagala is often enjoyed during special family gatherings and celebrations."
+  },
+  "type": "main_dish",
+  "difficulty": "medium",
+  "servings": {
+    "min": 2,
+    "max": 4
+  },
+  "prep_time_mins": 15,
+  "cook_time_mins": 25,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_tilapia",
+      "name": "Tilapia Fish, cleaned",
+      "local_name": "Ndagala",
+      "quantity": 1,
+      "unit": "kg"
+    },
+    {
+      "ingredient_id": "ing_lime",
+      "name": "Lime or Lemon Juice",
+      "local_name": "Obusimu",
+      "quantity": 2,
+      "unit": "tablespoons"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Munyu",
+      "quantity": "to taste",
+      "unit": "optional"
+    },
+    {
+      "ingredient_id": "ing_pepper",
+      "name": "Black Pepper",
+      "local_name": "Kamulali",
+      "quantity": 1,
+      "unit": "teaspoon"
+    },
+    {
+      "ingredient_id": "ing_tomato",
+      "name": "Tomatoes, chopped",
+      "local_name": "Enyaanya",
+      "quantity": 2,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onions, sliced",
+      "local_name": "Obutungulu",
+      "quantity": 1,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_oil",
+      "name": "Cooking Oil",
+      "local_name": "Amafuta",
+      "quantity": 2,
+      "unit": "tablespoons"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_fryingpan",
+      "name": "Frying Pan",
+      "local_name": "Sufuria ya Kukaanga"
+    },
+    {
+      "utensil_id": "utn_grill",
+      "name": "Grill",
+      "local_name": "Sigiri ya Ndagala",
+      "optional": true
+    },
+    {
+      "utensil_id": "utn_spatula",
+      "name": "Spatula",
+      "local_name": "Omwengeja"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Knife",
+      "local_name": "Akambe"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Clean and scale the tilapia. Make small slits on both sides of the fish.",
+      "action": "preparing",
+      "ingredients": ["ing_tilapia"],
+      "utensils": ["utn_knife"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Marinate the fish with lime juice, salt, and black pepper. Let it sit for 10 minutes.",
+      "action": "marinating",
+      "ingredients": ["ing_lime", "ing_salt", "ing_pepper"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Heat oil in a frying pan or prepare the grill. Fry or grill the fish until golden brown and cooked through.",
+      "action": "cooking",
+      "ingredients": ["ing_oil"],
+      "utensils": ["utn_fryingpan", "utn_grill", "utn_spatula"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Sauté onions and tomatoes in a separate pan to make a simple sauce.",
+      "action": "sautéing",
+      "ingredients": ["ing_onion", "ing_tomato"],
+      "utensils": ["utn_fryingpan", "utn_spatula"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Serve the tilapia hot with the tomato-onion sauce and a side of vegetables or starches.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "frying_or_grilling",
+  "heat_level": "moderate",
+  "cooking_indicators": {
+    "visual": "fish is golden brown and opaque inside",
+    "time": "25 minutes",
+    "texture": "crispy outside, tender inside"
+  },
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 320,
+      "carbohydrates_g": 5,
+      "protein_g": 35,
+      "fat_g": 18,
+      "cholesterol_mg": 70,
+      "sodium_mg": 200
+    },
+    "health_benefits": ["high_protein", "omega3_rich", "energy_boosting"]
+  },
+  "tags": ["traditional", "fish_dish", "main_course"],
+  "source": "traditional_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

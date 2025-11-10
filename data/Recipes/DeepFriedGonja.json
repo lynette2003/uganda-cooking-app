@@ -1,0 +1,143 @@
+{
+  "recipe_id": "ug_recipe_deepfried_gonja_068",
+  "name": {
+    "en": "Deep-Fried Gonja (Plantain Chips)",
+    "local_name": "Gonja ya Kukaanga"
+  },
+  "description": "Ripe plantains sliced and deep-fried until the edges are crispy and caramelized, while the inside remains soft and sweet. A simple, delicious, and addictive street food snack.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "popular_street_food_snack",
+    "occasions": ["snacking", "street_food", "side_dish", "accompaniment_to_meals", "childrens_treat"],
+    "cultural_notes": "While roasted gonja is more common, deep-fried gonja is a beloved treat found in markets, roadside stalls, and homes. It's a quick way to prepare plantains, resulting in a different texture—crispy on the outside and meltingly soft inside. It's often sold in paper cones and enjoyed as a quick, energy-boosting snack."
+  },
+  "type": "snack_side_dish",
+  "difficulty": "very_easy",
+  "servings": {
+    "min": 2,
+    "max": 4
+  },
+  "prep_time_mins": 5,
+  "cook_time_mins": 10,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_ripe_plantains",
+      "name": "Ripe Plantains (Gonja)",
+      "local_name": "Gonja / Bigobe",
+      "quantity": 3,
+      "unit": "large",
+      "notes": "Skin should be yellow with significant black spots for optimal sweetness. Very ripe but not mushy."
+    },
+    {
+      "ingredient_id": "ing_vegetable_oil",
+      "name": "Vegetable Oil",
+      "local_name": "Mafuta",
+      "quantity": 2,
+      "unit": "cups",
+      "notes": "For deep frying (enough for 1-2 inch depth in a pot)"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Chumvi",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "notes": "Optional, for sprinkling"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_deep_pot_skillet",
+      "name": "Deep Pot or Wok",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_slotted_spoon",
+      "name": "Slotted Spoon or Spider Skimmer",
+      "local_name": "Mwiko wa Mashimo"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Knife",
+      "local_name": "Kisu"
+    },
+    {
+      "utensil_id": "utn_paper_towels",
+      "name": "Paper Towels or Wire Rack",
+      "local_name": "Karatasi za Kupangusia"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Peel the ripe plantains. Slice them diagonally into 1/2-inch (1-1.5 cm) thick pieces. Diagonally cutting creates a larger surface area for more crispiness.",
+      "action": "preparing",
+      "ingredients": ["ing_ripe_plantains"],
+      "utensils": ["utn_knife"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Heat the vegetable oil in a deep pot or wok over medium-high heat until hot (around 175°C / 350°F). The oil is ready when a small piece of plantain sizzles vigorously upon contact.",
+      "action": "heating_oil",
+      "ingredients": ["ing_vegetable_oil"],
+      "utensils": ["utn_deep_pot_skillet"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Carefully lower a batch of plantain slices into the hot oil. Do not overcrowd the pot; fry in batches for even cooking.",
+      "action": "frying",
+      "utensils": ["utn_slotted_spoon"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Fry for 3-5 minutes, turning occasionally, until the gonja pieces are golden brown and the edges look dark and caramelized.",
+      "action": "frying",
+      "cooking_indicators": {
+        "visual": "Golden brown with darker, crispy edges.",
+        "time": "3-5 minutes per batch",
+        "texture": "Crispy exterior, soft and sweet interior."
+      }
+    },
+    {
+      "step_number": 5,
+      "instruction": "Use a slotted spoon to remove the deep-fried gonja from the oil, allowing excess oil to drip back into the pot.",
+      "action": "draining",
+      "utensils": ["utn_slotted_spoon"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Transfer them to a plate lined with paper towels or a wire rack to drain and cool slightly.",
+      "action": "cooling",
+      "utensils": ["utn_paper_towels"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "While still warm, sprinkle with a little salt if desired. The contrast between the salty exterior and sweet interior is delightful.",
+      "action": "seasoning",
+      "ingredients": ["ing_salt"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Serve the deep-fried gonja warm as a snack or side dish.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "deep_frying",
+  "heat_level": "medium_high",
+  "serving_suggestions": "Enjoy on their own as a snack. They also make an excellent side dish for grilled meats, fish, or stews. Can be served with a dipping sauce like a spicy chili sauce or a cool yogurt dip.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 250,
+      "carbohydrates_g": 45,
+      "protein_g": 1,
+      "fat_g": 9,
+      "cholesterol_mg": 0,
+      "sodium_mg": 150
+    },
+    "health_benefits": ["high_in_potassium", "rich_in_vitamin_a_c", "energy_boosting"]
+  },
+  "tags": ["snack", "street_food", "side_dish", "vegan", "quick", "fried", "comfort_food"],
+  "source": "traditional_street_food_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

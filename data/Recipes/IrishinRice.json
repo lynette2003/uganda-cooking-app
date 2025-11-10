@@ -1,0 +1,259 @@
+{
+  "recipe_id": "ug_recipe_obumonde_rice_146",
+  "name": {
+    "en": "Obumonde in Rice (Savory Potato Rice)",
+    "local_name": "Obumonde mu Muceere"
+  },
+  "description": "A comforting and flavorful one-pot dish that combines the savory goodness of Obumonde (sliced potatoes cooked with tomatoes and onions) with fluffy white rice. The potatoes and rice cook together, allowing the starches to meld and create a creamy, savory dish where each grain of rice is infused with the rich flavors of the potato-tomato mixture. It's the perfect fusion of two Ugandan staples into one satisfying meal.",
+  "origin_region": "Western Uganda and Urban Centers",
+  "cultural_significance": {
+    "importance": "fusion_comfort_food",
+    "occasions": ["family_meals", "weekend_dinners", "student_meals", "quick_meals", "budget_friendly_meals"],
+    "cultural_notes": "This dish represents the creative evolution of Ugandan home cooking, where traditional preparations are combined in new ways. It's particularly popular among students and young urbanites looking for hearty, one-pot meals that are both economical and delicious. The combination of Obumonde (a Western Ugandan favorite) with rice (a nationwide staple) shows how regional specialties can merge into new comfort foods. It's often prepared for busy weeknights when families want something satisfying but don't want to cook multiple dishes."
+  },
+  "type": "main_dish",
+  "difficulty": "easy",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 15,
+  "cook_time_mins": 30,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_white_rice",
+      "name": "White Rice",
+      "local_name": "Muceere",
+      "quantity": 2,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_potatoes",
+      "name": "Irish Potatoes",
+      "local_name": "Engyenyi",
+      "quantity": 3,
+      "unit": "medium",
+      "notes": "Peeled and sliced into thin rounds"
+    },
+    {
+      "ingredient_id": "ing_onion",
+      "name": "Onion, sliced",
+      "local_name": "Tungurusumu",
+      "quantity": 1,
+      "unit": "large"
+    },
+    {
+      "ingredient_id": "ing_tomatoes",
+      "name": "Ripe Tomatoes, chopped",
+      "local_name": "Enyanya",
+      "quantity": 2,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_tomato_paste",
+      "name": "Tomato Paste",
+      "local_name": "Dodo",
+      "quantity": 1,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 4,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_cooking_oil",
+      "name": "Cooking Oil",
+      "local_name": "Mafuta",
+      "quantity": 3,
+      "unit": "tbsp"
+    },
+    {
+      "ingredient_id": "ing_garlic",
+      "name": "Garlic, minced",
+      "local_name": "Tungurusumu Omuzungu",
+      "quantity": 2,
+      "unit": "cloves"
+    },
+    {
+      "ingredient_id": "ing_ginger",
+      "name": "Ginger, grated",
+      "local_name": "Tangawizi",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 1.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_curry_powder",
+      "name": "Curry Powder",
+      "local_name": "Curry",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_id": "ing_green_pepper",
+      "name": "Green Bell Pepper, sliced (optional)",
+      "local_name": "Bibbo",
+      "quantity": 0.5,
+      "unit": "medium"
+    },
+    {
+      "ingredient_id": "ing_spring_onions",
+      "name": "Spring Onions, chopped",
+      "local_name": "Tungurusumu Empya",
+      "quantity": 2,
+      "unit": "stalks",
+      "notes": "For garnish"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_medium_pot",
+      "name": "Medium Pot with Lid",
+      "local_name": "Sufuria"
+    },
+    {
+      "utensil_id": "utn_knife",
+      "name": "Knife",
+      "local_name": "Mumo"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Wooden Spoon",
+      "local_name": "Mwiko"
+    },
+    {
+      "utensil_id": "utn_measuring_cup",
+      "name": "Measuring Cup",
+      "local_name": "N/A"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Rinse the rice under cold water until the water runs clear. Drain and set aside.",
+      "action": "rinsing_rice",
+      "ingredients": ["ing_white_rice"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Peel the potatoes and slice them into thin rounds, about 1/4-inch thick.",
+      "action": "preparing_potatoes",
+      "ingredients": ["ing_potatoes"],
+      "utensils": ["utn_knife"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Heat cooking oil in a medium pot over medium heat.",
+      "action": "heating_oil",
+      "ingredients": ["ing_cooking_oil"],
+      "utensils": ["utn_medium_pot"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Add sliced onion and sauté until soft and translucent, about 3-4 minutes.",
+      "action": "sauteing_onion",
+      "ingredients": ["ing_onion"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Add minced garlic and grated ginger. Cook for 1 minute until fragrant.",
+      "action": "adding_aromatics",
+      "ingredients": ["ing_garlic", "ing_ginger"]
+    },
+    {
+      "step_number": 6,
+      "instruction": "Add tomato paste and curry powder. Stir for 30 seconds to cook out the raw flavor.",
+      "action": "cooking_tomato_paste",
+      "ingredients": ["ing_tomato_paste", "ing_curry_powder"]
+    },
+    {
+      "step_number": 7,
+      "instruction": "Add chopped tomatoes and green pepper (if using). Cook for 3-4 minutes until the tomatoes begin to break down.",
+      "action": "adding_tomatoes_pepper",
+      "ingredients": ["ing_tomatoes", "ing_green_pepper"]
+    },
+    {
+      "step_number": 8,
+      "instruction": "Add the sliced potatoes to the pot and stir to coat them with the tomato mixture. Cook for 2-3 minutes.",
+      "action": "adding_potatoes"
+    },
+    {
+      "step_number": 9,
+      "instruction": "Add the rinsed rice to the pot and stir gently to combine with the potato-tomato mixture.",
+      "action": "adding_rice"
+    },
+    {
+      "step_number": 10,
+      "instruction": "Pour in the water and add salt. Stir gently to combine everything.",
+      "action": "adding_water_seasoning",
+      "ingredients": ["ing_water", "ing_salt"]
+    },
+    {
+      "step_number": 11,
+      "instruction": "Bring to a boil, then reduce heat to low. Cover with a tight-fitting lid and simmer for 15-18 minutes.",
+      "action": "simmering",
+      "cooking_indicators": {
+        "olfactory": "A savory, comforting aroma will develop",
+        "time": "15-18 minutes"
+      }
+    },
+    {
+      "step_number": 12,
+      "instruction": "After 15 minutes, check if the rice and potatoes are cooked. The liquid should be absorbed, and both should be tender.",
+      "action": "checking_doneness",
+      "cooking_indicators": {
+        "texture": "Rice should be fluffy and potatoes should be tender but not mushy"
+      }
+    },
+    {
+      "step_number": 13,
+      "instruction": "If there's still too much liquid, simmer uncovered for 2-3 more minutes. If it's too dry, add 2-3 tablespoons of hot water.",
+      "action": "adjusting_consistency"
+    },
+    {
+      "step_number": 14,
+      "instruction": "Remove from heat and let it stand covered for 5 minutes to allow the flavors to meld.",
+      "action": "resting"
+    },
+    {
+      "step_number": 15,
+      "instruction": "Fluff gently with a fork, being careful not to break the potato slices. Stir in most of the spring onions, reserving some for garnish.",
+      "action": "fluffing_garnishing",
+      "ingredients": ["ing_spring_onions"],
+      "utensils": ["utn_wooden_spoon"]
+    },
+    {
+      "step_number": 16,
+      "instruction": "Serve hot, garnished with the remaining spring onions.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "one_pot_cooking",
+  "heat_level": "medium_low",
+  "serving_suggestions": "This dish is substantial enough to be served as a complete meal on its own. It can also be accompanied by a simple protein like grilled chicken, fried fish, or boiled eggs. A side of steamed greens like Sukuma Wiki or a fresh tomato and onion salad (Kachumbari) complements it well. Some people enjoy it with a dollop of plain yogurt or a slice of avocado.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 320,
+      "carbohydrates_g": 60,
+      "protein_g": 6,
+      "fat_g": 7,
+      "cholesterol_mg": 0,
+      "sodium_mg": 600,
+      "fiber_g": 4
+    },
+    "health_benefits": ["good_source_of_carbohydrates", "provides_sustained_energy", "contains_potassium_from_potatoes", "rich_in_vitamin_c", "gluten_free", "vegan", "comforting_and_satisfying"]
+  },
+  "tags": ["main_dish", "one_pot", "obumonde", "rice", "potatoes", "fusion", "comfort_food", "student_meal", "budget_friendly", "vegan", "gluten_free", "western_uganda"],
+  "source": "ugandan_fusion_cuisine",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}

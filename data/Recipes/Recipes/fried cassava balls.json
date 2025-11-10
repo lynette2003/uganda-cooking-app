@@ -1,0 +1,163 @@
+{
+  "recipe_id": "ug_recipe_cassava_fried_balls_001",
+  "name": {
+    "en": "Fried Cassava Balls",
+    "local_name": "Kasawa Ebibobo"
+  },
+  "description": "Cassava boiled, mashed, mixed with spices, shaped into balls, coated with bread crumbs, and deep-fried until golden brown. Crispy on the outside and soft inside, served as a snack or side dish.",
+  "origin_region": "Central and Eastern Uganda",
+  "cultural_significance": {
+    "importance": "snack_food",
+    "occasions": ["street_food", "family_snack", "parties"],
+    "cultural_notes": "Popular snack in Uganda, often enjoyed during gatherings or as a finger food. Combines traditional cassava with modern seasoning and frying techniques."
+  },
+  "type": "snack",
+  "difficulty": "medium",
+  "servings": {"min": 4, "max": 6},
+  "prep_time_mins": 25,
+  "cook_time_mins": 20,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_cassava_fried_balls",
+      "name": "Cassava",
+      "local_name": "Kasawa",
+      "quantity": 3000,
+      "unit": "g",
+      "preparation": "peeled, washed, cut into cubes, boiled until tender, drained and cooled"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Mazzi",
+      "quantity": 1500,
+      "unit": "ml",
+      "purpose": "for boiling cassava"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Munye",
+      "quantity": 1,
+      "unit": "tablespoon",
+      "optional": true,
+      "purpose": "seasoning"
+    },
+    {
+      "ingredient_id": "ing_pepper",
+      "name": "Black Pepper",
+      "local_name": "Pipiri",
+      "quantity": 1,
+      "unit": "teaspoon",
+      "optional": true,
+      "purpose": "seasoning"
+    },
+    {
+      "ingredient_id": "ing_onion_powder",
+      "name": "Onion Powder",
+      "local_name": "Pulover y'Anyanya",
+      "quantity": 1,
+      "unit": "teaspoon"
+    },
+    {
+      "ingredient_id": "ing_garlic_powder",
+      "name": "Garlic Powder",
+      "local_name": "Pulover y'Eggyayi",
+      "quantity": 1,
+      "unit": "tablespoon"
+    },
+    {
+      "ingredient_id": "ing_breadcrumbs",
+      "name": "Bread Crumbs",
+      "local_name": "Ebikate by'ebread",
+      "quantity": 100,
+      "unit": "g",
+      "purpose": "coating"
+    },
+    {
+      "ingredient_id": "ing_eggs",
+      "name": "Eggs",
+      "local_name": "Amagi",
+      "quantity": 2,
+      "unit": "pieces",
+      "purpose": "binding"
+    },
+    {
+      "ingredient_id": "ing_vegetable_oil",
+      "name": "Vegetable Oil",
+      "local_name": "Amavuta",
+      "quantity": 500,
+      "unit": "ml",
+      "purpose": "deep frying"
+    }
+  ],
+  "utensils": [
+    {"utensil_id": "utn_saucepan", "name": "Saucepan", "local_name": "Sufuria"},
+    {"utensil_id": "utn_masher", "name": "Masher", "local_name": "Mulawo"},
+    {"utensil_id": "utn_bowl", "name": "Mixing Bowl", "local_name": "Ekikopo"},
+    {"utensil_id": "utn_frying_pan", "name": "Frying Pan", "local_name": "Sufuria"},
+    {"utensil_id": "utn_spatula", "name": "Spatula", "local_name": "Sikere"}
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Wash, peel, and cut cassava into cubes. Boil with a little salt until tender. Drain and let cool.",
+      "action": "boiling",
+      "ingredients": ["ing_cassava_fried_balls", "ing_water", "ing_salt"],
+      "utensils": ["utn_saucepan"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Mash the cooled cassava, add onion powder, garlic powder, and pepper. Mix well until smooth.",
+      "action": "mixing",
+      "ingredients": ["ing_onion_powder", "ing_garlic_powder", "ing_pepper"],
+      "utensils": ["utn_masher", "utn_bowl"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "Shape the mashed cassava mixture into balls. Mix in the beaten eggs and roll the balls in bread crumbs.",
+      "action": "shaping_coating",
+      "ingredients": ["ing_eggs", "ing_breadcrumbs"],
+      "utensils": ["utn_bowl"]
+    },
+    {
+      "step_number": 4,
+      "instruction": "Heat vegetable oil in a frying pan until hot. Deep fry the cassava balls until golden brown.",
+      "action": "deep_frying",
+      "ingredients": ["ing_vegetable_oil"],
+      "utensils": ["utn_frying_pan", "utn_spatula"]
+    },
+    {
+      "step_number": 5,
+      "instruction": "Remove fried cassava balls from oil, drain excess oil, and serve hot.",
+      "action": "serving",
+      "serving_temperature": "hot"
+    }
+  ],
+  "cooking_method": "boiling_and_deep_frying",
+  "heat_level": "medium_high",
+  "cooking_indicators": {
+    "visual": "golden brown exterior",
+    "texture": "crispy outside, soft and smooth inside"
+  },
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 220,
+      "carbohydrates_g": 45,
+      "protein_g": 3,
+      "fat_g": 7,
+      "cholesterol_mg": 30,
+      "sodium_mg": 100,
+      "fiber_g": 4
+    },
+    "health_benefits": [
+      "source_of_energy",
+      "rich_in_carbohydrates",
+      "contains_protein",
+      "crispy_and_satisfying_snack"
+    ]
+  },
+  "tags": ["traditional", "cassava", "fried", "snack", "party_food", "vegetarian_optional"],
+  "source": "traditional_recipe",
+  "version": "1.0",
+  "last_updated": "2025-09-16"
+}

@@ -1,0 +1,132 @@
+{
+  "recipe_id": "ug_recipe_posho_106",
+  "name": {
+    "en": "Posho (Ugali)",
+    "local_name": "Posho"
+  },
+  "description": "A thick, dense, and smooth porridge made from white maize flour (cornmeal) and water. It is the most common staple carbohydrate in Uganda, serving as the foundation for almost every meal, with a neutral taste that perfectly complements flavorful stews and sauces.",
+  "origin_region": "Nationwide",
+  "cultural_significance": {
+    "importance": "foundational_staple_food",
+    "occasions": ["daily_meals", "breakfast", "lunch", "dinner", "school_feeding", "every_occasion"],
+    "cultural_notes": "Posho is the bedrock of the Ugandan diet. Its affordability and filling nature make it a vital source of energy for millions. It is served in virtually every household, school, and local restaurant. The ability to cook smooth, lump-free Posho is a fundamental culinary skill. It is always eaten with the hands, used to scoop up savory stews, beans, and greens, making it the centerpiece of a communal eating experience."
+  },
+  "type": "staple_carbohydrate",
+  "difficulty": "medium",
+  "servings": {
+    "min": 4,
+    "max": 6
+  },
+  "prep_time_mins": 2,
+  "cook_time_mins": 20,
+  "ingredients": [
+    {
+      "ingredient_id": "ing_maize_flour",
+      "name": "White Maize Flour (Cornmeal)",
+      "local_name": "Kawunga",
+      "quantity": 2,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_water",
+      "name": "Water",
+      "local_name": "Amazzi",
+      "quantity": 4,
+      "unit": "cups"
+    },
+    {
+      "ingredient_id": "ing_salt",
+      "name": "Salt",
+      "local_name": "Mmuno",
+      "quantity": 0.5,
+      "unit": "tsp",
+      "notes": "Optional, but commonly added"
+    }
+  ],
+  "utensils": [
+    {
+      "utensil_id": "utn_heavy_pot",
+      "name": "Heavy-Bottomed Pot (Sufuria)",
+      "local_name": "Sufuria Nzito"
+    },
+    {
+      "utensil_id": "utn_wooden_spoon",
+      "name": "Strong Wooden Spoon (Mwiko)",
+      "local_name": "Mwiko",
+      "notes": "Essential for stirring the thick mixture"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Bring the 4 cups of water to a rolling boil in a heavy-bottomed pot. Add salt if using.",
+      "action": "boiling_water",
+      "ingredients": ["ing_water", "ing_salt"],
+      "utensils": ["utn_heavy_pot"]
+    },
+    {
+      "step_number": 2,
+      "instruction": "Reduce the heat to medium. Begin sprinkling the maize flour into the boiling water a little at a time, letting it sink before stirring.",
+      "action": "adding_flour",
+      "ingredients": ["ing_maize_flour"],
+      "utensils": ["utn_wooden_spoon"]
+    },
+    {
+      "step_number": 3,
+      "instruction": "As you add the flour, stir continuously with a wooden spoon to prevent lumps from forming. This is the most critical step.",
+      "action": "stirring"
+    },
+    {
+      "step_number": 4,
+      "instruction": "Once all the flour is incorporated, the mixture will be very thick and start to pull away from the sides of the pot. It will also form large bubbles that can pop and burn.",
+      "action": "cooking",
+      "cooking_indicators": {
+        "visual": "The mixture becomes a thick, cohesive mass.",
+        "time": "5-10 minutes after all flour is added"
+      }
+    },
+    {
+      "step_number": 5,
+      "instruction": "Reduce the heat to low. Continue to stir and turn the posho, pressing it against the sides of the pot to cook out any raw flour taste and achieve a smooth texture. Cook for another 5-10 minutes.",
+      "action": "kneading_in_pot",
+      "cooking_indicators": {
+        "visual": "The posho becomes firm and smooth.",
+        "time": "5-10 minutes",
+        "texture": "Very thick, smooth, and holds its shape."
+      }
+    },
+    {
+      "step_number": 6,
+      "instruction": "Once the posho is smooth and no longer sticks to the sides of the pot, it is ready. It should be firm enough to hold a shape.",
+      "action": "testing_doneness"
+    },
+    {
+      "step_number": 7,
+      "instruction": "Quickly transfer the hot posho to a serving bowl. Use a wet spoon to smooth the top into a round dome shape.",
+      "action": "shaping"
+    },
+    {
+      "step_number": 8,
+      "instruction": "Serve the posho immediately while it is very hot and soft.",
+      "action": "serving"
+    }
+  ],
+  "cooking_method": "boiling_stirring",
+  "heat_level": "medium_high",
+  "serving_suggestions": "Always served as an accompaniment to a main dish. Place the bowl of posho in the center of the table alongside bowls of stew (e.g., beef, chicken, bean), sauces (e.g., groundnut, mushroom), and leafy greens (e.g., sukuma wiki, dodo). Diners break off a small piece with their right hand, roll it into a ball, and use it to scoop up the other dishes.",
+  "nutritional_info": {
+    "per_serving": {
+      "calories": 200,
+      "carbohydrates_g": 45,
+      "protein_g": 4,
+      "fat_g": 1,
+      "cholesterol_mg": 0,
+      "sodium_mg": 150
+    },
+    "health_benefits": ["energy_boosting", "gluten_free", "good_source_of_carbohydrates", "low_in_fat"]
+  },
+  "tags": ["staple", "carbohydrate", "gluten_free", "vegan", "everyday", "comfort_food", "ugali"],
+  "source": "traditional_staple_uganda",
+  "version": "1.0",
+  "last_updated": "2025-09-24"
+}
