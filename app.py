@@ -8,9 +8,6 @@ app = Flask(__name__)
 # ---------------------------
 # Load Recipes from Folder
 # ---------------------------
-# ---------------------------
-# Load Recipes from Folder
-# ---------------------------
 DATA_PATH = os.path.join("data", "Recipes")
 recipes = {}
 
@@ -18,17 +15,20 @@ if os.path.exists(DATA_PATH):
     for file in os.listdir(DATA_PATH):
         if file.endswith(".json"):
             with open(os.path.join(DATA_PATH, file), encoding="utf-8") as f:
-                data = json.load(f)
+                try:
+                    data = json.load(f)
 
-                if isinstance(data, dict):
-                    name = data.get("name", {}).get("en", file.replace(".json", ""))
-                    recipes[name] = data
+                    if isinstance(data, dict):
+                        name = data.get("name", {}).get("en", file.replace(".json", ""))
+                        recipes[name] = data
 
-                elif isinstance(data, list):
-                    for item in data:
-                        if isinstance(item, dict):
-                            recipe_name = item.get("name", {}).get("en", "Unnamed Recipe")
-                            recipes[recipe_name] = item
+                    elif isinstance(data, list):
+                        for item in data:
+                            if isinstance(item, dict):
+                                recipe_name = item.get("name", {}).get("en", "Unnamed Recipe")
+                                recipes[recipe_name] = item
+                except json.JSONDecodeError:
+                    print(f"⚠️ Failed to load JSON file: {file}")
 else:
     print("⚠️ Recipes folder not found:", DATA_PATH)
 
@@ -62,14 +62,15 @@ def ask_ai():
 
     try:
         openai.api_key = os.getenv("OPENAI_API_KEY")
-        response = openai.chat.completions.create(
+        response = openai.ChatCompletion.create(
             model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": "You are a helpful Ugandan cooking assistant."},
                 {"role": "user", "content": question}
             ]
         )
-        answer = response.choices[0].message.content
+        # Access the AI answer
+        answer = response.choices[0].message['content']
         return jsonify({"answer": answer})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
