@@ -4,8 +4,10 @@ from openai import OpenAI
 
 app = Flask(__name__)
 
-# --- Load Recipes ---
-DATA_PATH = os.path.join("data", "Recipes", "Recipes")
+# ---------------------------
+# Load Recipes from folder
+# ---------------------------
+DATA_PATH = os.path.join("data", "Recipes")
 recipes = {}
 
 if os.path.exists(DATA_PATH):
@@ -13,22 +15,27 @@ if os.path.exists(DATA_PATH):
         if file.endswith(".json"):
             with open(os.path.join(DATA_PATH, file), encoding="utf-8") as f:
                 data = json.load(f)
-                name = data.get("name", file.replace(".json", ""))
+                # Use English name as key
+                name = data.get("name", {}).get("en", file.replace(".json", ""))
                 recipes[name] = data
 else:
     print("⚠️ Recipes folder not found:", DATA_PATH)
 
-# --- Routes ---
+# ---------------------------
+# Routes
+# ---------------------------
 @app.route("/")
 def home():
     return render_template("index.html")
 
 @app.route("/api/recipes")
 def get_recipes():
+    """Return a list of recipe names."""
     return jsonify(list(recipes.keys()))
 
 @app.route("/api/recipe/<name>")
 def get_recipe(name):
+    """Return full recipe data by name."""
     recipe = recipes.get(name)
     if not recipe:
         return jsonify({"error": "Recipe not found"}), 404
@@ -36,6 +43,7 @@ def get_recipe(name):
 
 @app.route("/api/ask_ai", methods=["POST"])
 def ask_ai():
+    """Ask AI a cooking question."""
     data = request.get_json()
     question = data.get("question", "")
     if not question:
@@ -55,6 +63,9 @@ def ask_ai():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+# ---------------------------
+# Run app
+# ---------------------------
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)

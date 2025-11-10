@@ -1,138 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>🍳 Ugandan Cooking Assistant</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ugandan Cooking Assistant</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #ffe5b4, #fff7e6);
-      color: #333;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    header {
-      background-color: #f4a261;
-      color: white;
-      padding: 20px;
-      border-bottom: 5px solid #e76f51;
-    }
-    h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-    main {
-      max-width: 800px;
-      margin: 30px auto;
-      background: white;
-      padding: 20px 40px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
-    input, button {
-      padding: 10px;
-      margin: 8px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 1em;
-    }
-    button {
-      background-color: #2a9d8f;
-      color: white;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    button:hover {
-      background-color: #21867a;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      background: #f1faee;
-      margin: 8px 0;
-      padding: 10px;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    li:hover {
-      background: #a8dadc;
-    }
-    #ai-response {
-      font-style: italic;
-      margin-top: 10px;
-      color: #264653;
-    }
-    h2 {
-      color: #e76f51;
-    }
+    * {margin:0;padding:0;box-sizing:border-box;}
+    body {font-family: 'Segoe UI', sans-serif; background-color:#f5f5f5; color:#333; line-height:1.6;}
+    #root {max-width: 800px; margin:20px auto; padding:20px;}
+    .app-header {text-align:center; margin-bottom:30px; padding-bottom:20px; border-bottom:2px solid #e67e22;}
+    .app-header h1 {color:#2c3e50; font-size:2.5rem; margin-bottom:10px;}
+    .app-header p {color:#7f8c8d; font-size:1.1rem;}
+    .recipe-section, .controls-section, .chat-section {background:white; border-radius:10px; padding:25px; margin-bottom:20px; box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+    .recipe-header {display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; flex-wrap:wrap; gap:10px;}
+    .recipe-header h2 {color:#2c3e50; font-size:1.8rem;}
+    .recipe-actions {display:flex; gap:10px; flex-wrap:wrap;}
+    .btn-primary, .btn-secondary {padding:10px 20px; border:none; border-radius:5px; cursor:pointer; font-weight:600; transition:all 0.3s ease;}
+    .btn-primary {background:#e67e22; color:white;}
+    .btn-secondary {background:#ecf0f1; color:#2c3e50;}
+    .btn-primary:hover {background:#d35400;}
+    .btn-secondary:hover {background:#bdc3c7;}
+    .recipe-content h3 {color:#2c3e50; margin-bottom:15px; font-size:1.5rem;}
+    .recipe-content p {color:#7f8c8d; margin-bottom:20px;}
+    .ingredients-list {list-style:none; padding-left:0;}
+    .ingredients-list li {padding:8px 0; border-bottom:1px solid #ecf0f1; color:#2c3e50;}
+    .ingredients-list li:last-child {border-bottom:none;}
+    .controls {display:flex; gap:10px; flex-wrap:wrap;}
+    .control-btn {padding:12px 20px; border:2px solid #3498db; background:white; color:#3498db; border-radius:5px; cursor:pointer; font-weight:600; transition:all 0.3s ease;}
+    .control-btn:hover {background:#3498db; color:white;}
+    .control-btn.cancel {border-color:#e74c3c; color:#e74c3c;}
+    .control-btn.cancel:hover {background:#e74c3c; color:white;}
+    .chat-input {display:flex; gap:10px; margin-bottom:20px;}
+    .chat-input input {flex:1; padding:12px; border:2px solid #bdc3c7; border-radius:5px; font-size:1rem;}
+    .chat-input button {padding:12px 25px; background:#27ae60; color:white; border:none; border-radius:5px; cursor:pointer; font-weight:600; transition: background 0.3s ease;}
+    .chat-input button:hover {background:#219a52;}
+    .chat-answer {background:#f8f9fa; padding:15px; border-radius:5px; border-left:4px solid #27ae60; display:none;}
+    .chat-answer strong {color:#2c3e50;}
+    @media (max-width:768px){#root{padding:10px;}.recipe-header{flex-direction:column; align-items:flex-start;}.controls{flex-direction:column;}.chat-input{flex-direction:column;}}
   </style>
 </head>
 <body>
-  <header>
-    <h1>🍳 Ugandan Cooking Assistant</h1>
+<div id="root">
+  <div class="app-header">
+    <h1>Ugandan Cooking Assistant</h1>
     <p>Your AI-powered guide to authentic Ugandan cuisine</p>
-  </header>
+  </div>
 
-  <main>
-    <h2>Search Recipes</h2>
-    <input id="search" placeholder="Type to search..." />
-    <button onclick="searchRecipes()">Show All Recipes</button>
-    <ul id="recipes"></ul>
+  <div class="recipe-section">
+    <div class="recipe-header">
+      <h2 id="recipeTitle">Loading...</h2>
+      <div class="recipe-actions">
+        <button class="btn-secondary" id="showAllRecipesBtn">Show All Recipes</button>
+        <button class="btn-primary" id="startCookingBtn">Start Cooking</button>
+        <button class="btn-secondary" id="debugBtn">Debug Info</button>
+      </div>
+    </div>
 
-    <h2>Start Cooking</h2>
-    <div id="recipe-details"></div>
+    <div class="recipe-content">
+      <h3 id="recipeName"></h3>
+      <p id="recipeDescription"></p>
 
-    <h2>🧠 Ask the AI Chef</h2>
-    <input id="question" placeholder="e.g. How long does luwombo take to cook?" />
-    <button onclick="askAI()">Ask</button>
-    <p id="ai-response"></p>
-  </main>
+      <h4>Ingredients:</h4>
+      <ul class="ingredients-list" id="ingredientsList"></ul>
+    </div>
+  </div>
 
-  <script>
-    async function searchRecipes() {
-      const res = await fetch("/api/recipes");
-      const data = await res.json();
-      const list = document.getElementById("recipes");
-      list.innerHTML = "";
-      data.forEach((name) => {
-        const li = document.createElement("li");
-        li.textContent = name;
-        li.onclick = () => loadRecipe(name);
-        list.appendChild(li);
+  <div class="controls-section">
+    <h3>Cooking Controls</h3>
+    <div class="controls">
+      <button class="control-btn" id="ingredientsReadyBtn">Ingredients Ready</button>
+      <button class="control-btn" id="prevStepBtn">Previous Step</button>
+      <button class="control-btn" id="nextStepBtn">Next Step</button>
+      <button class="control-btn cancel" id="cancelCookingBtn">Cancel Cooking</button>
+    </div>
+    <p id="currentStepText" style="margin-top:15px;"></p>
+  </div>
+
+  <div class="chat-section">
+    <h3>Ask Cooking Questions</h3>
+    <p>Ask about ingredients, substitutions, techniques, or anything about Ugandan cooking!</p>
+    <div class="chat-input">
+      <input type="text" placeholder="What to substitute for tomatoes?" id="questionInput">
+      <button onclick="handleAskQuestion()">Ask AI</button>
+    </div>
+    <div id="chatAnswer" class="chat-answer"></div>
+  </div>
+</div>
+
+<script>
+let recipesList = [];
+let currentRecipe = null;
+let currentStep = 0;
+
+// ---------------------------
+// Load all recipes
+// ---------------------------
+async function loadRecipes() {
+  const res = await fetch('/api/recipes');
+  recipesList = await res.json();
+  if (recipesList.length > 0) loadRecipe(recipesList[0]);
+}
+
+// ---------------------------
+// Load a single recipe
+// ---------------------------
+async function loadRecipe(name) {
+  const res = await fetch(`/api/recipe/${encodeURIComponent(name)}`);
+  currentRecipe = await res.json();
+
+  document.getElementById('recipeTitle').textContent = currentRecipe.name.en;
+  document.getElementById('recipeName').textContent = currentRecipe.name.en;
+  document.getElementById('recipeDescription').textContent = currentRecipe.description;
+
+  // Load ingredients (salad + dressing)
+  const ingredientsList = document.getElementById('ingredientsList');
+  ingredientsList.innerHTML = '';
+
+  ['salad','dressing'].forEach(section => {
+    if(currentRecipe.ingredients[section]) {
+      currentRecipe.ingredients[section].forEach(ing => {
+        const li = document.createElement('li');
+        li.textContent = `${ing.quantity} ${ing.unit} ${ing.name} ${ing.notes ? `(${ing.notes})` : ''}`;
+        ingredientsList.appendChild(li);
       });
     }
+  });
 
-    async function loadRecipe(name) {
-      const res = await fetch("/api/recipe/" + encodeURIComponent(name));
-      const recipe = await res.json();
-      const div = document.getElementById("recipe-details");
-      if (recipe.error) {
-        div.textContent = recipe.error;
-        return;
-      }
-      div.innerHTML = `
-        <h3>${recipe.name}</h3>
-        <p><strong>Ingredients:</strong></p>
-        <ul>${recipe.ingredients.map(i => `<li>${i}</li>`).join("")}</ul>
-        <p><strong>Steps:</strong></p>
-        <ol>${recipe.steps.map(s => `<li>${s}</li>`).join("")}</ol>
-      `;
-    }
+  // Reset steps
+  currentStep = 0;
+  showStep();
+}
 
-    async function askAI() {
-      const question = document.getElementById("question").value;
-      const res = await fetch("/api/ask_ai", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ question }),
-      });
-      const data = await res.json();
-      document.getElementById("ai-response").textContent = data.answer || data.error;
-    }
-  </script>
+// ---------------------------
+// Cooking steps
+// ---------------------------
+function showStep() {
+  const stepText = document.getElementById('currentStepText');
+  if(!currentRecipe || !currentRecipe.steps) return;
+  if(currentStep >= 0 && currentStep < currentRecipe.steps.length){
+    stepText.textContent = `Step ${currentStep+1}: ${currentRecipe.steps[currentStep].instruction}`;
+  } else {
+    stepText.textContent = '';
+  }
+}
+
+document.getElementById('nextStepBtn').onclick = () => {
+  if(currentRecipe && currentStep < currentRecipe.steps.length-1){
+    currentStep++;
+    showStep();
+  }
+}
+document.getElementById('prevStepBtn').onclick = () => {
+  if(currentRecipe && currentStep > 0){
+    currentStep--;
+    showStep();
+  }
+}
+document.getElementById('cancelCookingBtn').onclick = () => {
+  currentStep = 0;
+  showStep();
+}
+document.getElementById('ingredientsReadyBtn').onclick = () => {
+  alert('Ingredients are ready! You can start cooking.');
+}
+
+// ---------------------------
+// Ask AI
+// ---------------------------
+async function handleAskQuestion(){
+  const input = document.getElementById('questionInput');
+  const question = input.value.trim();
+  if(!question) return alert('Please ask a question!');
+
+  try {
+    const res = await fetch('/api/ask_ai',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({question})
+    });
+    const data = await res.json();
+    const answerDiv = document.getElementById('chatAnswer');
+    answerDiv.innerHTML = `<strong>Question:</strong> "${question}"<br/><strong>AI Answer:</strong> ${data.answer || data.error}`;
+    answerDiv.style.display = 'block';
+  } catch(e){
+    console.error(e);
+  }
+  input.value='';
+}
+
+// ---------------------------
+// Initialize
+// ---------------------------
+window.addEventListener('DOMContentLoaded', loadRecipes);
+document.getElementById('questionInput').addEventListener('keypress', function(e){
+  if(e.key==='Enter') handleAskQuestion();
+});
+</script>
 </body>
 </html>
