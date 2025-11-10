@@ -1,11 +1,12 @@
 from flask import Flask, jsonify, render_template, request
-import os, json
-from openai import OpenAI
+import os
+import json
+import openai
 
 app = Flask(__name__)
 
 # ---------------------------
-# Load Recipes from folder
+# Load Recipes from Folder
 # ---------------------------
 DATA_PATH = os.path.join("data", "Recipes")
 recipes = {}
@@ -35,7 +36,7 @@ def get_recipes():
 
 @app.route("/api/recipe/<name>")
 def get_recipe(name):
-    """Return full recipe data by name."""
+    """Return the full recipe JSON for a given recipe name."""
     recipe = recipes.get(name)
     if not recipe:
         return jsonify({"error": "Recipe not found"}), 404
@@ -43,15 +44,15 @@ def get_recipe(name):
 
 @app.route("/api/ask_ai", methods=["POST"])
 def ask_ai():
-    """Ask AI a cooking question."""
+    """Ask a question to the AI cooking assistant."""
     data = request.get_json()
     question = data.get("question", "")
     if not question:
         return jsonify({"error": "No question provided"}), 400
 
     try:
-        client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-        response = client.chat.completions.create(
+        openai.api_key = os.getenv("OPENAI_API_KEY")
+        response = openai.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": "You are a helpful Ugandan cooking assistant."},
@@ -64,7 +65,7 @@ def ask_ai():
         return jsonify({"error": str(e)}), 500
 
 # ---------------------------
-# Run app
+# Run App
 # ---------------------------
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
