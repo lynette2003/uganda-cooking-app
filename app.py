@@ -1,27 +1,23 @@
-from flask import Flask, jsonify, render_template, request
-import os
-import json
-import openai
+from flask import Flask, jsonify, send_from_directory, request
+import os, json, openai
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="static", static_url_path="")
 
-# ---------------------------
-# Load Recipes from Folder
-# ---------------------------
 DATA_PATH = os.path.join("data", "Recipes")
 recipes = {}
 
+# ---------------------------
+# Load Recipes
+# ---------------------------
 if os.path.exists(DATA_PATH):
     for file in os.listdir(DATA_PATH):
         if file.endswith(".json"):
             with open(os.path.join(DATA_PATH, file), encoding="utf-8") as f:
                 try:
                     data = json.load(f)
-
                     if isinstance(data, dict):
                         name = data.get("name", {}).get("en", file.replace(".json", ""))
                         recipes[name] = data
-
                     elif isinstance(data, list):
                         for item in data:
                             if isinstance(item, dict):
@@ -37,16 +33,14 @@ else:
 # ---------------------------
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return send_from_directory(app.static_folder, "index.html")
 
 @app.route("/api/recipes")
 def get_recipes():
-    """Return a list of recipe names."""
     return jsonify(list(recipes.keys()))
 
 @app.route("/api/recipe/<name>")
 def get_recipe(name):
-    """Return the full recipe JSON for a given recipe name."""
     recipe = recipes.get(name)
     if not recipe:
         return jsonify({"error": "Recipe not found"}), 404
@@ -54,7 +48,6 @@ def get_recipe(name):
 
 @app.route("/api/ask_ai", methods=["POST"])
 def ask_ai():
-    """Ask a question to the AI cooking assistant."""
     data = request.get_json()
     question = data.get("question", "")
     if not question:
@@ -69,15 +62,11 @@ def ask_ai():
                 {"role": "user", "content": question}
             ]
         )
-        # Access the AI answer
         answer = response.choices[0].message['content']
         return jsonify({"answer": answer})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-# ---------------------------
-# Run App
-# ---------------------------
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port)
