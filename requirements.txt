@@ -1,4 +1,5 @@
 # PyTorch and HuggingFace (if you use LLMs locally)
+# PyTorch and HuggingFace (if you use LLMs locally)
 torch>=2.0.0
 transformers>=4.30.0
 datasets>=2.12.0
@@ -11,7 +12,8 @@ numpy>=1.24.0
 
 # Flask backend
 Flask==2.3.3
-gunicorn==20.1.0
+gunicorn>=21.2.0
+setuptools>=68.0.0
 
 # OpenAI API
 openai==0.28
