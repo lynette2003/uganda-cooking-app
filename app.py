@@ -2,7 +2,6 @@ from flask import Flask, jsonify, send_from_directory, request
 import os, json, openai
 
 app = Flask(__name__, static_folder="static", static_url_path="")
-
 DATA_PATH = os.path.join("data", "Recipes")
 recipes = {}
 
@@ -46,6 +45,38 @@ def get_recipe(name):
         return jsonify({"error": "Recipe not found"}), 404
     return jsonify(recipe)
 
+def find_relevant_recipes(question, max_results=3):
+    """
+    Simple keyword-based search over the loaded recipes.
+    Matches if any word in the question appears in the recipe name
+    or in the recipe's ingredient list (if present).
+    """
+    q_words = set(question.lower().split())
+    scored = []
+
+    for name, recipe in recipes.items():
+        score = 0
+        name_lower = name.lower()
+
+        # Match against recipe name
+        for word in q_words:
+            if word in name_lower:
+                score += 2  # name matches count more
+
+        # Match against ingredients if the field exists
+        ingredients = recipe.get("ingredients", [])
+        ingredients_text = json.dumps(ingredients).lower()
+        for word in q_words:
+            if word in ingredients_text:
+                score += 1
+
+        if score > 0:
+            scored.append((score, name, recipe))
+
+    # Sort by best match first
+    scored.sort(key=lambda x: x[0], reverse=True)
+    return [r[2] for r in scored[:max_results]]
+
 @app.route("/api/ask_ai", methods=["POST"])
 def ask_ai():
     data = request.get_json()
@@ -53,17 +84,29 @@ def ask_ai():
     if not question:
         return jsonify({"error": "No question provided"}), 400
 
+    # Step 1: pull relevant recipes from OUR OWN data
+    relevant = find_relevant_recipes(question)
+    context = json.dumps(relevant, ensure_ascii=False) if relevant else "No matching recipes found in the database."
+
     try:
         openai.api_key = os.getenv("OPENAI_API_KEY")
         response = openai.ChatCompletion.create(
             model="gpt-4o-mini",
             messages=[
-                {"role": "system", "content": "You are a helpful Ugandan cooking assistant."},
+                {
+                    "role": "system",
+                    "content": (
+                        "You are a helpful Ugandan cooking assistant. "
+                        "Use the following recipe data from our database to answer the user's question. "
+                        "If the data doesn't contain what's needed, say so honestly rather than making things up.\n\n"
+                        f"Relevant recipe data:\n{context}"
+                    )
+                },
                 {"role": "user", "content": question}
             ]
         )
         answer = response.choices[0].message['content']
-        return jsonify({"answer": answer})
+        return jsonify({"answer": answer, "sources_used": [r.get("name", {}).get("en", "Unknown") for r in relevant]})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
