@@ -16,4 +16,4 @@ gunicorn>=21.2.0
 setuptools>=68.0.0
 
 # OpenAI API
-openai==0.28
+openai>=1.0.0
