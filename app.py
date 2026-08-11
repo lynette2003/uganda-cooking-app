@@ -1,9 +1,12 @@
 from flask import Flask, jsonify, send_from_directory, request
-import os, json, openai
+import os, json
+from openai import OpenAI
 
 app = Flask(__name__, static_folder="static", static_url_path="")
 DATA_PATH = os.path.join("data", "Recipes")
 recipes = {}
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # ---------------------------
 # Load Recipes
@@ -89,9 +92,8 @@ def ask_ai():
     context = json.dumps(relevant, ensure_ascii=False) if relevant else "No matching recipes found in the database."
 
     try:
-        openai.api_key = os.getenv("OPENAI_API_KEY")
-        response = openai.ChatCompletion.create(
-            model="gpt-4o-mini",
+        response = client.chat.completions.create(
+            model="gpt-5.6-luna",
             messages=[
                 {
                     "role": "system",
@@ -105,7 +107,7 @@ def ask_ai():
                 {"role": "user", "content": question}
             ]
         )
-        answer = response.choices[0].message['content']
+        answer = response.choices[0].message.content
         return jsonify({"answer": answer, "sources_used": [r.get("name", {}).get("en", "Unknown") for r in relevant]})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
