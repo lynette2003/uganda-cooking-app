@@ -1,159 +1,422 @@
 from flask import Flask, jsonify, send_from_directory, request
-import os, json, re
-from openai import OpenAI
+import os
+import json
 
-app = Flask(__name__, static_folder="static", static_url_path="")
+from llm_integration import get_cooking_assistant
+
+app = Flask(
+    __name__,
+    static_folder="static",
+    static_url_path=""
+)
+
 DATA_PATH = os.path.join("data", "Recipes")
+
 recipes = {}
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
+# ==================================================
+# RECIPE HELPERS
+# ==================================================
 
 def extract_name(name_field, fallback):
     """
-    Recipe 'name' fields aren't consistent across your JSON files —
-    sometimes it's {"en": "..."} , sometimes it's a plain string,
-    sometimes it's missing entirely. This handles all three.
+    Extract a recipe name from different possible formats.
+
+    Supported formats:
+    {"en": "Matooke"}
+    "Matooke"
+    missing/empty value
     """
+
     if isinstance(name_field, dict):
         return name_field.get("en", fallback)
+
     if isinstance(name_field, str) and name_field.strip():
-        return name_field
+        return name_field.strip()
+
     return fallback
 
 
 def unwrap_recipe(data):
     """
-    Some recipe files wrap the actual recipe in a single named key, e.g.:
-    {"bananaJuiceRecipe": {"name": "...", "ingredients": [...]}}
-    instead of the flat format:
-    {"name": "...", "ingredients": [...]}
-    This detects and unwraps that pattern.
+    Some recipe JSON files wrap the actual recipe inside
+    a single named key.
+
+    Example:
+    {
+        "bananaJuiceRecipe": {
+            "name": "...",
+            "ingredients": [...]
+        }
+    }
+
+    This function extracts the inner recipe.
     """
-    if isinstance(data, dict) and "name" not in data and "ingredients" not in data and len(data) == 1:
-        inner = list(data.values())[0]
+
+    if (
+        isinstance(data, dict)
+        and "name" not in data
+        and "ingredients" not in data
+        and len(data) == 1
+    ):
+        inner = next(iter(data.values()))
+
         if isinstance(inner, dict):
             return inner
+
     return data
 
 
-# ---------------------------
-# Load Recipes
-# ---------------------------
-if os.path.exists(DATA_PATH):
-    for file in os.listdir(DATA_PATH):
-        if file.endswith(".json"):
-            with open(os.path.join(DATA_PATH, file), encoding="utf-8") as f:
-                try:
-                    raw = json.load(f)
+# ==================================================
+# LOAD RECIPES
+# ==================================================
 
-                    if isinstance(raw, dict):
-                        data = unwrap_recipe(raw)
-                        name = extract_name(data.get("name"), file.replace(".json", ""))
-                        recipes[name] = data
+def load_recipes():
+    """
+    Load all recipe JSON files from data/Recipes.
+    """
 
-                    elif isinstance(raw, list):
-                        for item in raw:
-                            if isinstance(item, dict):
-                                item = unwrap_recipe(item)
-                                recipe_name = extract_name(item.get("name"), "Unnamed Recipe")
-                                recipes[recipe_name] = item
+    loaded_recipes = {}
 
-                except json.JSONDecodeError:
-                    print(f"⚠️ Failed to load JSON file: {file}")
-else:
-    print("⚠️ Recipes folder not found:", DATA_PATH)
+    if not os.path.isdir(DATA_PATH):
+        print(
+            f"WARNING: Recipes folder not found: {DATA_PATH}"
+        )
+        return loaded_recipes
 
-print(f"✅ Loaded {len(recipes)} recipes")
+    for filename in os.listdir(DATA_PATH):
 
-# ---------------------------
-# Routes
-# ---------------------------
+        if not filename.lower().endswith(".json"):
+            continue
+
+        file_path = os.path.join(
+            DATA_PATH,
+            filename
+        )
+
+        try:
+
+            with open(
+                file_path,
+                "r",
+                encoding="utf-8"
+            ) as file:
+
+                raw = json.load(file)
+
+            # ------------------------------------------
+            # SINGLE RECIPE FILE
+            # ------------------------------------------
+
+            if isinstance(raw, dict):
+
+                recipe = unwrap_recipe(raw)
+
+                if not isinstance(recipe, dict):
+                    print(
+                        f"WARNING: Invalid recipe format: {filename}"
+                    )
+                    continue
+
+                recipe_name = extract_name(
+                    recipe.get("name"),
+                    os.path.splitext(filename)[0]
+                )
+
+                loaded_recipes[recipe_name] = recipe
+
+            # ------------------------------------------
+            # MULTIPLE RECIPES IN ONE FILE
+            # ------------------------------------------
+
+            elif isinstance(raw, list):
+
+                for item in raw:
+
+                    if not isinstance(item, dict):
+                        continue
+
+                    recipe = unwrap_recipe(item)
+
+                    if not isinstance(recipe, dict):
+                        continue
+
+                    recipe_name = extract_name(
+                        recipe.get("name"),
+                        "Unnamed Recipe"
+                    )
+
+                    loaded_recipes[recipe_name] = recipe
+
+            else:
+
+                print(
+                    f"WARNING: Unsupported JSON format: {filename}"
+                )
+
+        except json.JSONDecodeError as error:
+
+            print(
+                f"WARNING: Failed to parse {filename}: {error}"
+            )
+
+        except OSError as error:
+
+            print(
+                f"WARNING: Could not read {filename}: {error}"
+            )
+
+    return loaded_recipes
+
+
+# ==================================================
+# LOAD RECIPES INTO MEMORY
+# ==================================================
+
+# ==================================================
+# LOAD RECIPES
+# ==================================================
+
+recipes = load_recipes()
+
+print(
+    f"Loaded {len(recipes)} recipes"
+)
+
+
+# ==================================================
+# INITIALIZE RAG ASSISTANT
+# ==================================================
+
+cooking_assistant = None
+
+try:
+
+    cooking_assistant = get_cooking_assistant()
+
+    print(
+        "RAG cooking assistant initialized successfully."
+    )
+
+except Exception as error:
+
+    print(
+        f"WARNING: RAG assistant could not be initialized: {error}"
+    )
+
+
+# ==================================================
+# ROUTES
+# ==================================================
+
 @app.route("/")
 def home():
-    return send_from_directory(app.static_folder, "index.html")
+    """
+    Serve the main frontend page.
+    """
 
-@app.route("/api/recipes")
+    return send_from_directory(
+        app.static_folder,
+        "index.html"
+    )
+
+
+@app.route("/api/recipes", methods=["GET"])
 def get_recipes():
-    return jsonify(list(recipes.keys()))
+    """
+    Return a list of available recipe names.
+    """
 
-@app.route("/api/recipe/<name>")
+    return jsonify(
+        list(recipes.keys())
+    )
+
+
+@app.route("/api/recipe/<path:name>", methods=["GET"])
 def get_recipe(name):
+    """
+    Return a single recipe by name.
+    """
+
     recipe = recipes.get(name)
-    if not recipe:
-        return jsonify({"error": "Recipe not found"}), 404
+
+    if recipe is None:
+
+        return jsonify({
+            "error": "Recipe not found"
+        }), 404
+
     return jsonify(recipe)
 
 
-def find_relevant_recipes(question, max_results=3):
-    """
-    Simple keyword-based search over the loaded recipes.
-    Matches if any word in the question appears in the recipe name
-    or in the recipe's ingredient list (if present).
-    """
-    q_words = set(re.findall(r'\w+', question.lower()))  # strips punctuation cleanly
-    scored = []
-
-    for name, recipe in recipes.items():
-        score = 0
-        name_lower = name.lower()
-
-        # Match against recipe name
-        for word in q_words:
-            if word in name_lower:
-                score += 2  # name matches count more
-
-        # Match against ingredients if the field exists
-        ingredients = recipe.get("ingredients", [])
-        ingredients_text = json.dumps(ingredients).lower()
-        for word in q_words:
-            if word in ingredients_text:
-                score += 1
-
-        if score > 0:
-            scored.append((score, name, recipe))
-
-    # Sort by best match first
-    scored.sort(key=lambda x: x[0], reverse=True)
-    return [(name, recipe) for score, name, recipe in scored[:max_results]]
-
+# ==================================================
+# AI COOKING ASSISTANT
+# ==================================================
 
 @app.route("/api/ask_ai", methods=["POST"])
 def ask_ai():
-    data = request.get_json()
-    question = data.get("question", "")
-    if not question:
-        return jsonify({"error": "No question provided"}), 400
+    """
+    Send a cooking question to the RAG assistant.
 
-    # Step 1: pull relevant recipes from OUR OWN data
-    relevant = find_relevant_recipes(question)
-    relevant_data = [recipe for name, recipe in relevant]
-    context = json.dumps(relevant_data, ensure_ascii=False) if relevant_data else "No matching recipes found in the database."
+    Request:
+        {
+            "question": "How do I prepare matooke?"
+        }
+
+    Response:
+        {
+            "answer": "...",
+            "sources_used": [...],
+            "recipes": [...]
+        }
+    """
+
+    data = request.get_json(silent=True)
+
+    if not isinstance(data, dict):
+
+        return jsonify({
+            "error": "Request body must contain valid JSON."
+        }), 400
+
+    question = data.get("question", "")
+
+    if not isinstance(question, str):
+
+        return jsonify({
+            "error": "Question must be a string."
+        }), 400
+
+    question = question.strip()
+
+    if not question:
+
+        return jsonify({
+            "error": "No question provided."
+        }), 400
+
+# ----------------------------------------------
+# CHECK RAG SYSTEM
+# ----------------------------------------------
+
+    if cooking_assistant is None:
+
+        return jsonify({
+            "error": (
+                "The AI cooking assistant is not available. "
+                "Check the RAG model, knowledge base, "
+                "and recipe embeddings."
+            )
+        }), 503
+
+
+    # ----------------------------------------------
+    # ASK RAG ASSISTANT
+    # ----------------------------------------------
 
     try:
-        response = client.chat.completions.create(
-            model="gpt-5.6-luna",
-            messages=[
-                {
-                    "role": "system",
-                    "content": (
-                        "You are a helpful Ugandan cooking assistant. "
-                        "Use the following recipe data from our database to answer the user's question. "
-                        "If the data doesn't contain what's needed, say so honestly rather than making things up.\n\n"
-                        f"Relevant recipe data:\n{context}"
-                    )
-                },
-                {"role": "user", "content": question}
-            ]
-        )
-        answer = response.choices[0].message.content
-        return jsonify({
-            "answer": answer,
-            "sources_used": [name for name, recipe in relevant]
-        })
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
 
-#if __name__ == "__main__":
-   # port = int(os.environ.get("PORT", 10000))
-  #  app.run(host="0.0.0.0", port=port)
+        result = cooking_assistant.answer_cooking_question(
+            question,
+            top_k=3
+        )
+
+        if not isinstance(result, dict):
+
+            return jsonify({
+                "error": "The AI returned an invalid response."
+            }), 500
+
+        answer = result.get(
+            "answer",
+            "I was unable to generate an answer."
+        )
+
+        retrieved_recipes = result.get(
+            "recipes",
+            []
+        )
+
+        # ------------------------------------------
+        # FORMAT SOURCES
+        # ------------------------------------------
+
+        sources_used = []
+
+        for recipe in retrieved_recipes:
+
+            if not isinstance(recipe, dict):
+                continue
+
+            recipe_name = recipe.get("name")
+
+            if recipe_name:
+                sources_used.append(recipe_name)
+
+        return jsonify({
+
+            "answer": answer,
+
+            "sources_used": sources_used,
+
+            "recipes": retrieved_recipes
+
+        }), 200
+
+    except Exception as error:
+
+        print(
+            f"ERROR: AI request failed: {error}"
+        )
+
+        return jsonify({
+            "error": (
+                "An error occurred while processing "
+                "your cooking question."
+            )
+        }), 500
+
+
+# ==================================================
+# HEALTH CHECK
+# ==================================================
+
+@app.route("/api/health", methods=["GET"])
+def health_check():
+    """
+    Check whether the Flask application and RAG
+    assistant are available.
+    """
+
+    return jsonify({
+
+        "status": "ok",
+
+        "recipes_loaded": len(recipes),
+
+        "rag_available": (
+            cooking_assistant is not None
+        )
+
+    }), 200
+
+
+# ==================================================
+# APPLICATION START
+# ==================================================
+
+if __name__ == "__main__":
+
+    port = int(
+        os.environ.get(
+            "PORT",
+            10000
+        )
+    )
+
+    app.run(
+        host="0.0.0.0",
+        port=port,
+        debug=True
+    )

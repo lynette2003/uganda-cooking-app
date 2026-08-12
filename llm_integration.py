@@ -6,18 +6,30 @@ RAG-based Ugandan Cooking Assistant.
 Pipeline:
 
 User question
-      ↓
+↓
 Sentence Transformer embedding
-      ↓
+↓
 Semantic recipe retrieval
-      ↓
+↓
 Relevant recipe context
-      ↓
-GPT-2 response generation
+↓
+Answer built directly from retrieved recipes
+   (optional GPT-2 rewrite, off by default)
 
 The recipe knowledge base is the source of truth.
+
+GPT-2 (the small, non-instruction-tuned base model) does not follow
+instructions reliably and can hallucinate ingredients, steps, and
+even sources when used for free-text generation. Because the
+knowledge base already contains clean, structured recipes, the
+default behaviour is to build the answer directly from the
+retrieved recipes rather than asking GPT-2 to generate free text.
+GPT-2 generation is still available (see `use_llm_generation`) for
+experimentation, but it is opt-in and not recommended for
+production use with this model.
 """
 
+# ============================================================
 import json
 import logging
 from pathlib import Path
@@ -29,15 +41,21 @@ import torch
 from sentence_transformers import SentenceTransformer
 from sentence_transformers.util import semantic_search
 
-from transformers import (
-    GPT2LMHeadModel,
-    GPT2Tokenizer
-)
+from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
+
+# ============================================================
+# LOGGING
+# ============================================================
 
 logging.basicConfig(level=logging.INFO)
+
 logger = logging.getLogger(__name__)
 
+
+# ============================================================
+# PATHS AND MODELS
+# ============================================================
 
 KNOWLEDGE_BASE = Path(
     "data/processed/recipe_knowledge_base.json"
@@ -53,6 +71,9 @@ EMBEDDING_MODEL = (
 
 DEFAULT_LLM = "gpt2"
 
+# ============================================================
+# RAG CLASS
+# ============================================================
 
 class UgandanCookingRAG:
 
@@ -60,10 +81,27 @@ class UgandanCookingRAG:
         self,
         llm_model_name: str = DEFAULT_LLM,
         embedding_model_name: str = EMBEDDING_MODEL,
-        load_llm: bool = True
+        load_llm: bool = False,
+        use_llm_generation: bool = False
     ):
-        self.embedding_model = None
+        """
+        load_llm:
+            Whether to load the GPT-2 model at all. Defaults to
+            False because the default answering strategy does not
+            need it.
 
+        use_llm_generation:
+            Whether answer_cooking_question() should actually use
+            GPT-2 to generate the answer text. Defaults to False:
+            answers are built directly from the retrieved recipes,
+            which is faster and does not risk hallucinated content.
+            Set this to True only if you specifically want to
+            experiment with free-text generation, and note that
+            load_llm must also be True (or set automatically, see
+            below) for this to have any effect.
+        """
+
+        self.embedding_model = None
         self.llm_model = None
         self.tokenizer = None
 
@@ -71,28 +109,28 @@ class UgandanCookingRAG:
         self.recipe_embeddings = None
 
         self.llm_loaded = False
+        self.use_llm_generation = use_llm_generation
 
-        self.embedding_model_name = (
-            embedding_model_name
-        )
-
+        self.embedding_model_name = embedding_model_name
         self.llm_model_name = llm_model_name
 
         self._load_knowledge_base()
         self._load_embeddings()
         self._load_embedding_model()
 
-        if load_llm:
+        # If the caller asked for LLM generation but didn't
+        # explicitly request loading the model, load it anyway -
+        # otherwise use_llm_generation would silently do nothing.
+        if load_llm or use_llm_generation:
             self._load_llm()
 
-    # --------------------------------------------------
+    # ========================================================
     # KNOWLEDGE BASE
-    # --------------------------------------------------
+    # ========================================================
 
     def _load_knowledge_base(self):
 
         if not KNOWLEDGE_BASE.exists():
-
             raise FileNotFoundError(
                 f"Knowledge base not found: "
                 f"{KNOWLEDGE_BASE}. "
@@ -107,19 +145,24 @@ class UgandanCookingRAG:
 
             self.recipes = json.load(file)
 
+        if not isinstance(self.recipes, list):
+            raise ValueError(
+                "Recipe knowledge base must contain "
+                "a list of recipes."
+            )
+
         logger.info(
             "Loaded %d recipes.",
             len(self.recipes)
         )
 
-    # --------------------------------------------------
+    # ========================================================
     # EMBEDDINGS
-    # --------------------------------------------------
+    # ========================================================
 
     def _load_embeddings(self):
 
         if not EMBEDDINGS_FILE.exists():
-
             raise FileNotFoundError(
                 f"Recipe embeddings not found: "
                 f"{EMBEDDINGS_FILE}. "
@@ -130,19 +173,27 @@ class UgandanCookingRAG:
             EMBEDDINGS_FILE
         )
 
+        if len(self.recipe_embeddings) != len(self.recipes):
+            raise ValueError(
+                "The number of recipe embeddings does not "
+                "match the number of recipes in the "
+                "knowledge base."
+            )
+
         logger.info(
             "Loaded recipe embeddings: %s",
             self.recipe_embeddings.shape
         )
 
-    # --------------------------------------------------
+    # ========================================================
     # EMBEDDING MODEL
-    # --------------------------------------------------
+    # ========================================================
 
     def _load_embedding_model(self):
 
         logger.info(
-            "Loading embedding model..."
+            "Loading embedding model: %s",
+            self.embedding_model_name
         )
 
         self.embedding_model = SentenceTransformer(
@@ -150,12 +201,12 @@ class UgandanCookingRAG:
         )
 
         logger.info(
-            "Embedding model loaded."
+            "Embedding model loaded successfully."
         )
 
-    # --------------------------------------------------
+    # ========================================================
     # GPT-2
-    # --------------------------------------------------
+    # ========================================================
 
     def _load_llm(self):
 
@@ -166,16 +217,12 @@ class UgandanCookingRAG:
                 self.llm_model_name
             )
 
-            self.tokenizer = (
-                GPT2Tokenizer.from_pretrained(
-                    self.llm_model_name
-                )
+            self.tokenizer = GPT2Tokenizer.from_pretrained(
+                self.llm_model_name
             )
 
-            self.llm_model = (
-                GPT2LMHeadModel.from_pretrained(
-                    self.llm_model_name
-                )
+            self.llm_model = GPT2LMHeadModel.from_pretrained(
+                self.llm_model_name
             )
 
             self.tokenizer.pad_token = (
@@ -197,9 +244,9 @@ class UgandanCookingRAG:
 
             self.llm_loaded = False
 
-    # --------------------------------------------------
+    # ========================================================
     # RETRIEVAL
-    # --------------------------------------------------
+    # ========================================================
 
     def retrieve_recipes(
         self,
@@ -207,7 +254,6 @@ class UgandanCookingRAG:
         top_k: int = 3,
         min_score: float = 0.25
     ) -> List[Dict]:
-
         """
         Retrieve recipes semantically related to a question.
         """
@@ -217,12 +263,10 @@ class UgandanCookingRAG:
 
         query = query.strip()
 
-        query_embedding = (
-            self.embedding_model.encode(
-                [query],
-                convert_to_tensor=True,
-                normalize_embeddings=True
-            )
+        query_embedding = self.embedding_model.encode(
+            [query],
+            convert_to_tensor=True,
+            normalize_embeddings=True
         )
 
         corpus_embeddings = torch.tensor(
@@ -243,7 +287,9 @@ class UgandanCookingRAG:
 
         for hit in hits:
 
-            score = float(hit["score"])
+            score = float(
+                hit["score"]
+            )
 
             if score < min_score:
                 continue
@@ -269,14 +315,11 @@ class UgandanCookingRAG:
 
         return results
 
-    # --------------------------------------------------
+    # ========================================================
     # CONTEXT CREATION
-    # --------------------------------------------------
+    # ========================================================
 
-    def _format_recipe_context(
-        self,
-        recipes: List[Dict]
-    ) -> str:
+    def _format_recipe_context(self, recipes: List[Dict]) -> str:
 
         if not recipes:
             return (
@@ -286,64 +329,186 @@ class UgandanCookingRAG:
 
         context_parts = []
 
-        for index, recipe in enumerate(
-            recipes,
-            start=1
-        ):
+        for index, recipe in enumerate(recipes, start=1):
 
-            ingredients = "\n".join(
-                f"- {ingredient}"
-                for ingredient
-                in recipe.get(
-                    "ingredients",
-                    []
+            name = recipe.get("name", "")
+
+            local_name = ""
+
+            if isinstance(name, dict):
+                local_name = name.get("local_name", "")
+                name = name.get("en", local_name)
+
+            elif not isinstance(name, str):
+                name = str(name)
+
+            if not name:
+                name = "Unnamed Recipe"
+
+            description = recipe.get("description", "")
+
+            if isinstance(description, dict):
+                description = description.get("en", "")
+
+            ingredients = recipe.get("ingredients", [])
+
+            ingredient_lines = []
+
+            if isinstance(ingredients, list):
+
+                for ingredient in ingredients:
+
+                    if isinstance(ingredient, dict):
+
+                        ingredient_name = ingredient.get(
+                            "name",
+                            ingredient.get("ingredient", "")
+                        )
+
+                        quantity = ingredient.get(
+                            "quantity",
+                            ""
+                        )
+
+                        unit = ingredient.get(
+                            "unit",
+                            ""
+                        )
+
+                        ingredient_text = str(
+                            ingredient_name
+                        )
+
+                        if quantity:
+                            ingredient_text += (
+                                f": {quantity}"
+                            )
+
+                        if unit:
+                            ingredient_text += (
+                                f" {unit}"
+                            )
+
+                    else:
+                        ingredient_text = str(
+                            ingredient
+                        )
+
+                    if ingredient_text.strip():
+                        ingredient_lines.append(
+                            f"- {ingredient_text}"
+                        )
+
+            else:
+
+                ingredient_lines.append(
+                    f"- {ingredients}"
                 )
+
+            ingredients_text = "\n".join(
+                ingredient_lines
             )
 
-            instructions = "\n".join(
-                f"{i + 1}. {step}"
-                for i, step
-                in enumerate(
-                    recipe.get(
-                        "instructions",
-                        []
-                    )
-                )
+            instructions = recipe.get(
+                "instructions",
+                []
             )
 
-            context = f"""
-RECIPE {index}
-Name: {recipe.get('name', '')}
+            instruction_lines = []
+
+            if isinstance(instructions, list):
+
+                for i, step in enumerate(
+                    instructions,
+                    start=1
+                ):
+
+                    if isinstance(step, dict):
+
+                        instruction = step.get(
+                            "instruction",
+                            ""
+                        )
+
+                    else:
+
+                        instruction = str(step)
+
+                    if instruction:
+                        instruction_lines.append(
+                            f"{i}. {instruction}"
+                        )
+
+            elif isinstance(instructions, str):
+
+                instruction_lines.append(
+                    instructions
+                )
+
+            instructions_text = "\n".join(
+                instruction_lines
+            )
+
+            cooking_method = recipe.get(
+                "cooking_method",
+                ""
+            )
+
+            meal_type = recipe.get(
+                "meal_type",
+                ""
+            )
+
+            region = recipe.get(
+                "region",
+                ""
+            )
+
+            dietary_information = recipe.get(
+                "dietary_information",
+                ""
+            )
+
+            context = f"""RECIPE {index}
+
+Name:
+{name}
+
+Local name:
+{local_name}
 
 Description:
-{recipe.get('description', '')}
+{description}
 
 Ingredients:
-{ingredients}
+{ingredients_text}
 
 Instructions:
-{instructions}
+{instructions_text}
 
 Cooking method:
-{recipe.get('cooking_method', '')}
+{cooking_method}
 
 Meal type:
-{recipe.get('meal_type', '')}
+{meal_type}
 
 Region:
-{recipe.get('region', '')}
+{region}
 
 Dietary information:
-{recipe.get('dietary_information', '')}
-""".strip()
+{dietary_information}"""
 
-            context_parts.append(context)
+            context_parts.append(
+                context.strip()
+            )
 
-        return "\n\n".join(context_parts)
+        return "\n\n".join(
+            context_parts
+        )
 
-    # --------------------------------------------------
+    # ========================================================
     # PROMPT
-    # --------------------------------------------------
+    # ========================================================
 
     def _create_prompt(
         self,
@@ -355,8 +520,7 @@ Dietary information:
             recipes
         )
 
-        return f"""
-You are a helpful Ugandan cooking assistant.
+        return f"""You are a helpful Ugandan cooking assistant.
 
 Use the recipe information provided below as your
 main source of information.
@@ -373,17 +537,19 @@ IMPORTANT RULES:
    as suggestions rather than facts from the recipe.
 
 RECIPE KNOWLEDGE BASE:
+
 {context}
 
 USER QUESTION:
+
 {question}
 
 ANSWER:
 """.strip()
 
-    # --------------------------------------------------
+    # ========================================================
     # GENERATION
-    # --------------------------------------------------
+    # ========================================================
 
     def _generate_with_gpt2(
         self,
@@ -401,7 +567,7 @@ ANSWER:
                 prompt,
                 return_tensors="pt",
                 truncation=True,
-                max_length=900
+                max_length=800
             )
 
             with torch.no_grad():
@@ -427,7 +593,6 @@ ANSWER:
                 )
             )
 
-            # Return only text generated after ANSWER:
             if "ANSWER:" in generated_text:
 
                 generated_text = (
@@ -447,72 +612,153 @@ ANSWER:
 
             return None
 
-    # --------------------------------------------------
-    # FALLBACK ANSWER
-    # --------------------------------------------------
+    # ========================================================
+    # RETRIEVAL-BASED ANSWER (default, no LLM generation)
+    # ========================================================
 
-    def _create_fallback_answer(
+    @staticmethod
+    def _get_recipe_name(recipe: Dict) -> str:
+
+        name = recipe.get("name", "")
+
+        if isinstance(name, dict):
+            name = name.get("en") or name.get("local_name") or ""
+
+        elif not isinstance(name, str):
+            name = str(name)
+
+        return name.strip() or "Unnamed Recipe"
+
+    @staticmethod
+    def _format_ingredient_line(ingredient) -> str:
+
+        if isinstance(ingredient, dict):
+
+            name = ingredient.get(
+                "name",
+                ingredient.get("ingredient", "")
+            )
+
+            quantity = ingredient.get("quantity", "")
+            unit = ingredient.get("unit", "")
+
+            text = str(name)
+
+            if quantity:
+                text += f": {quantity}"
+
+            if unit:
+                text += f" {unit}"
+
+            return text.strip()
+
+        return str(ingredient).strip()
+
+    @staticmethod
+    def _format_instruction_line(step) -> str:
+
+        if isinstance(step, dict):
+            return str(step.get("instruction", "")).strip()
+
+        return str(step).strip()
+
+    def _format_single_recipe_answer(self, recipe: Dict) -> str:
+        """
+        Build a clean, human-readable answer for one recipe,
+        using only the fields present in the knowledge base.
+        """
+
+        recipe_name = self._get_recipe_name(recipe)
+
+        description = recipe.get("description", "")
+
+        if isinstance(description, dict):
+            description = description.get("en", "")
+
+        ingredients = recipe.get("ingredients", [])
+        instructions = recipe.get("instructions", [])
+
+        lines = [f"**{recipe_name}**"]
+
+        if description:
+            lines.append(str(description).strip())
+
+        if ingredients:
+
+            lines.append("\nIngredients:")
+
+            for ingredient in ingredients:
+
+                text = self._format_ingredient_line(ingredient)
+
+                if text:
+                    lines.append(f"- {text}")
+
+        if instructions:
+
+            lines.append("\nInstructions:")
+
+            for index, step in enumerate(instructions, start=1):
+
+                text = self._format_instruction_line(step)
+
+                if text:
+                    lines.append(f"{index}. {text}")
+
+        if not ingredients and not instructions:
+
+            lines.append(
+                "\nThe knowledge base doesn't have full "
+                "ingredients or steps for this recipe yet."
+            )
+
+        return "\n".join(lines).strip()
+
+    def _create_answer_from_recipes(
         self,
         question: str,
         recipes: List[Dict]
     ) -> str:
+        """
+        Build the answer directly from the retrieved recipes,
+        without any free-text LLM generation. This is the default
+        way answers are produced, since it guarantees the answer
+        only contains ingredients and steps that actually exist
+        in the knowledge base.
+        """
 
         if not recipes:
 
             return (
-                "I couldn't find a matching recipe in "
-                "the Ugandan cooking knowledge base. "
-                "Try asking about a specific dish or "
-                "ingredient."
+                "I couldn't find a matching recipe in the "
+                "Ugandan cooking knowledge base. Try asking "
+                "about a specific dish (e.g. 'How do I make "
+                "matooke?') or a specific ingredient."
             )
 
-        recipe = recipes[0]
+        if len(recipes) == 1:
 
-        ingredients = recipe.get(
-            "ingredients",
-            []
+            intro = "Here's what I found in the recipe knowledge base:\n\n"
+
+            return intro + self._format_single_recipe_answer(
+                recipes[0]
+            )
+
+        intro = (
+            "I found a few recipes in the knowledge base that "
+            "might match what you're looking for:\n\n"
         )
 
-        instructions = recipe.get(
-            "instructions",
-            []
-        )
+        sections = [
+            self._format_single_recipe_answer(recipe)
+            for recipe in recipes
+        ]
 
-        answer = (
-            f"Based on the recipe knowledge base, "
-            f"you could make {recipe['name']}.\n\n"
-        )
+        return intro + "\n\n---\n\n".join(sections)
 
-        if ingredients:
-
-            answer += "Ingredients:\n"
-
-            for ingredient in ingredients:
-
-                answer += (
-                    f"• {ingredient}\n"
-                )
-
-            answer += "\n"
-
-        if instructions:
-
-            answer += "Preparation:\n"
-
-            for index, step in enumerate(
-                instructions,
-                start=1
-            ):
-
-                answer += (
-                    f"{index}. {step}\n"
-                )
-
-        return answer.strip()
-
-    # --------------------------------------------------
+    # ========================================================
     # MAIN RAG FUNCTION
-    # --------------------------------------------------
+    # ========================================================
 
     def answer_cooking_question(
         self,
@@ -529,26 +775,27 @@ ANSWER:
                 "recipes": []
             }
 
-        retrieved_recipes = (
-            self.retrieve_recipes(
-                question,
-                top_k=top_k
-            )
-        )
-
-        prompt = self._create_prompt(
+        retrieved_recipes = self.retrieve_recipes(
             question,
-            retrieved_recipes
+            top_k=top_k
         )
 
-        answer = self._generate_with_gpt2(
-            prompt
-        )
+        answer = None
 
-        # GPT-2 fallback
+        if self.use_llm_generation and self.llm_loaded:
+
+            prompt = self._create_prompt(
+                question,
+                retrieved_recipes
+            )
+
+            answer = self._generate_with_gpt2(
+                prompt
+            )
+
         if not answer:
 
-            answer = self._create_fallback_answer(
+            answer = self._create_answer_from_recipes(
                 question,
                 retrieved_recipes
             )
@@ -568,33 +815,38 @@ ANSWER:
         }
 
 
-# ------------------------------------------------------
-# SIMPLE API FOR YOUR EXISTING APP
-# ------------------------------------------------------
+# ============================================================
+# SINGLE RAG INSTANCE
+# ============================================================
 
 _rag_instance = None
 
 
 def get_cooking_assistant():
+    """
+    Return a single shared RAG assistant instance.
+    """
 
     global _rag_instance
 
     if _rag_instance is None:
-
         _rag_instance = UgandanCookingRAG()
 
     return _rag_instance
 
 
+# ============================================================
+# BACKWARDS-COMPATIBLE API
+# ============================================================
+
 def answer_cooking_question(
     question: str,
     context: str = ""
 ) -> Optional[str]:
-
     """
-    Backwards-compatible function.
+    Backwards-compatible helper.
 
-    Existing code can continue calling:
+    Existing code can call:
 
         answer_cooking_question(question)
     """
@@ -608,17 +860,18 @@ def answer_cooking_question(
     return result["answer"]
 
 
-# ------------------------------------------------------
+# ============================================================
 # TEST
-# ------------------------------------------------------
+# ============================================================
 
 if __name__ == "__main__":
 
+    # Default: answers come straight from the retrieved recipes,
+    # no GPT-2 loaded or used. Pass use_llm_generation=True to
+    # experiment with free-text GPT-2 generation instead.
     assistant = UgandanCookingRAG()
 
-    question = (
-        "How do I prepare matooke?"
-    )
+    question = "How do I prepare matooke?"
 
     result = assistant.answer_cooking_question(
         question
@@ -638,3 +891,10 @@ if __name__ == "__main__":
             f"- {recipe['name']} "
             f"({recipe['similarity_score']})"
         )
+
+    print("\nMethods in UgandanCookingRAG:")
+    print([
+        method
+        for method in dir(UgandanCookingRAG)
+        if "answer" in method.lower()
+    ])

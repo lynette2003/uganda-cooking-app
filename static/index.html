@@ -1,214 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ugandan Cooking Assistant</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f7f7f7;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fumba AI — Ugandan Cooking Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --charcoal:#241E1A;
+    --leaf:#3F6634;
+    --leaf-dark:#2C4823;
+    --posho:#E8A93B;
+    --clay:#A34A2A;
+    --parchment:#FBF3E7;
+    --parchment-dim:#F1E6D4;
+    --ink:#2B2420;
+    --line: rgba(43,36,32,0.14);
+  }
 
-    header {
-      text-align: center;
-      background: #e67e22;
-      color: white;
-      padding: 20px 10px;
-    }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--parchment);
+    color:var(--ink);
+    font-family:'Work Sans', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
 
-    main {
-      max-width: 800px;
-      margin: 20px auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    margin:0;
+    letter-spacing:-0.01em;
+  }
 
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
+  .eyebrow{
+    font-family:'Space Mono', monospace;
+    text-transform:uppercase;
+    letter-spacing:0.14em;
+    font-size:0.72rem;
+    color:var(--posho);
+  }
 
-    button {
-      padding: 10px 20px;
-      background: #e67e22;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-    }
+  /* ---------- Hero ---------- */
+  header.hero{
+    background:
+      radial-gradient(circle at 15% 20%, rgba(232,169,59,0.16), transparent 45%),
+      radial-gradient(circle at 85% 0%, rgba(163,74,42,0.18), transparent 40%),
+      var(--charcoal);
+    color:var(--parchment);
+    padding:64px 24px 56px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+  header.hero::after{
+    content:"";
+    position:absolute;
+    left:0; right:0; bottom:0;
+    height:6px;
+    background:repeating-linear-gradient(90deg,
+      var(--leaf) 0 24px, var(--posho) 24px 48px, var(--clay) 48px 72px);
+  }
+  header.hero .eyebrow{margin-bottom:14px;}
+  header.hero h1{
+    font-size:clamp(2.4rem, 5vw, 3.6rem);
+    font-weight:600;
+    color:var(--parchment);
+  }
+  header.hero p{
+    max-width:520px;
+    margin:16px auto 0;
+    color:rgba(251,243,231,0.72);
+    font-size:1.05rem;
+    line-height:1.5;
+  }
 
-    button:hover {
-      background: #d35400;
-    }
+  main{
+    max-width:960px;
+    margin:0 auto;
+    padding:48px 24px 96px;
+  }
 
-    #recipeList button {
-      background: #3498db;
-      margin: 5px;
-    }
+  section{margin-bottom:56px;}
+  section > h2{
+    font-size:1.7rem;
+    font-weight:600;
+    margin-bottom:6px;
+  }
+  section > .section-sub{
+    color:rgba(43,36,32,0.6);
+    font-size:0.95rem;
+    margin-bottom:24px;
+  }
 
-    #recipeList button:hover {
-      background: #2980b9;
-    }
+  /* ---------- Recipe grid ---------- */
+  #recipeList{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(210px, 1fr));
+    gap:12px;
+  }
+  .recipe-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:16px 16px 18px;
+    text-align:left;
+    cursor:pointer;
+    font-family:'Work Sans', sans-serif;
+    font-size:0.95rem;
+    font-weight:500;
+    color:var(--ink);
+    position:relative;
+    transition:transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+  .recipe-card::before{
+    content:"";
+    position:absolute;
+    left:0; top:14px; bottom:14px;
+    width:3px;
+    background:var(--leaf);
+    border-radius:2px;
+    opacity:0;
+    transition:opacity 0.15s ease;
+  }
+  .recipe-card:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(43,36,32,0.08);
+    border-color:transparent;
+  }
+  .recipe-card:hover::before{opacity:1;}
 
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
+  .loading-msg{
+    font-family:'Space Mono', monospace;
+    color:rgba(43,36,32,0.5);
+    font-size:0.9rem;
+  }
 
-    li {
-      padding: 6px 0;
-      border-bottom: 1px solid #eee;
-    }
+  /* ---------- Recipe detail ---------- */
+  #recipeDetails{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:32px;
+  }
+  .back-link{
+    font-family:'Space Mono', monospace;
+    font-size:0.8rem;
+    text-transform:uppercase;
+    letter-spacing:0.08em;
+    color:var(--leaf);
+    cursor:pointer;
+    display:inline-block;
+    margin-bottom:18px;
+  }
+  .back-link:hover{text-decoration:underline;}
 
-    .chat-box {
-      margin-top: 20px;
-      border-top: 2px solid #e67e22;
-      padding-top: 20px;
-    }
+  #recipeName{
+    font-size:1.9rem;
+    font-weight:700;
+    margin-bottom:8px;
+  }
+  #recipeDescription{
+    color:rgba(43,36,32,0.68);
+    line-height:1.6;
+    margin-bottom:28px;
+  }
 
-    input {
-      width: 70%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
+  h3.subhead{
+    font-family:'Space Mono', monospace;
+    font-size:0.78rem;
+    text-transform:uppercase;
+    letter-spacing:0.12em;
+    color:var(--clay);
+    margin-bottom:12px;
+  }
 
-    .ai-answer {
-      background: #f0f0f0;
-      border-left: 4px solid #27ae60;
-      padding: 10px;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-  </style>
+  #ingredientsList{
+    list-style:none;
+    padding:0;
+    margin:0 0 32px;
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));
+    gap:2px 24px;
+  }
+  #ingredientsList li{
+    padding:9px 0;
+    border-bottom:1px dashed var(--line);
+    font-size:0.94rem;
+  }
+
+  /* step tracker — beads */
+  .step-tracker{
+    display:flex;
+    gap:6px;
+    margin-bottom:18px;
+    flex-wrap:wrap;
+  }
+  .bead{
+    width:9px;
+    height:9px;
+    border-radius:50%;
+    background:var(--line);
+  }
+  .bead.done{background:var(--leaf);}
+  .bead.active{background:var(--posho); transform:scale(1.3);}
+
+  .step-box{
+    background:var(--parchment-dim);
+    border-left:3px solid var(--leaf);
+    border-radius:4px;
+    padding:20px 22px;
+    font-size:1.02rem;
+    line-height:1.6;
+    min-height:64px;
+  }
+
+  .step-nav{
+    display:flex;
+    gap:10px;
+    margin-top:18px;
+  }
+
+  button{
+    font-family:'Work Sans', sans-serif;
+    font-weight:600;
+    font-size:0.9rem;
+    border:none;
+    border-radius:4px;
+    padding:11px 22px;
+    cursor:pointer;
+    background:var(--leaf);
+    color:var(--parchment);
+    transition:background 0.15s ease, opacity 0.15s ease;
+  }
+  button:hover{background:var(--leaf-dark);}
+  button:disabled{opacity:0.35; cursor:default;}
+  button.secondary{
+    background:transparent;
+    color:var(--ink);
+    border:1px solid var(--line);
+  }
+  button.secondary:hover{background:var(--parchment-dim);}
+
+  /* ---------- Chat ---------- */
+  .chat-box{
+    background:var(--charcoal);
+    border-radius:8px;
+    padding:32px;
+    color:var(--parchment);
+  }
+  .chat-box h2{color:var(--parchment);}
+  .chat-box .section-sub{color:rgba(251,243,231,0.55);}
+
+  .chat-row{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+  }
+  #questionInput{
+    flex:1;
+    padding:13px 16px;
+    border-radius:4px;
+    border:1px solid rgba(251,243,231,0.2);
+    background:rgba(251,243,231,0.06);
+    color:var(--parchment);
+    font-family:'Work Sans', sans-serif;
+    font-size:0.95rem;
+  }
+  #questionInput::placeholder{color:rgba(251,243,231,0.4);}
+  #questionInput:focus{
+    outline:2px solid var(--posho);
+    outline-offset:1px;
+  }
+  .chat-row button{background:var(--posho); color:var(--charcoal);}
+  .chat-row button:hover{background:#f0b955;}
+
+  .ai-answer{
+    margin-top:20px;
+    background:rgba(251,243,231,0.06);
+    border-left:3px solid var(--posho);
+    border-radius:4px;
+    padding:16px 18px;
+    line-height:1.6;
+    font-size:0.95rem;
+  }
+  .ai-answer .who{
+    font-family:'Space Mono', monospace;
+    font-size:0.72rem;
+    text-transform:uppercase;
+    letter-spacing:0.1em;
+    color:var(--posho);
+    display:block;
+    margin-bottom:6px;
+  }
+
+  @media (max-width:600px){
+    header.hero{padding:48px 20px 40px;}
+    #recipeDetails{padding:22px;}
+    .chat-box{padding:22px;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important;}
+  }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Ugandan Cooking Assistant</h1>
-    <p>Your AI-powered guide to Ugandan recipes 🍲</p>
-  </header>
 
-  <main>
-    <section id="recipes">
-      <h2>Available Recipes</h2>
-      <div id="recipeList">Loading recipes...</div>
-    </section>
+<header class="hero">
+  <div class="eyebrow">Fumba AI</div>
+  <h1>Ugandan Cooking Assistant</h1>
+  <p>Traditional recipes, ingredient by ingredient — plus an AI chef trained on real Ugandan dishes to help when you're stuck.</p>
+</header>
 
-    <section id="recipeDetails" style="display:none;">
-      <h2 id="recipeName"></h2>
-      <p id="recipeDescription"></p>
+<main>
+  <section id="recipes">
+    <h2>Available Recipes</h2>
+    <p class="section-sub">Pick a dish to see ingredients and cook step by step.</p>
+    <div id="recipeList"><span class="loading-msg">Loading recipes…</span></div>
+  </section>
 
-      <h3>Ingredients</h3>
-      <ul id="ingredientsList"></ul>
+  <section id="recipeDetails" style="display:none;">
+    <span class="back-link" id="backLink">← All recipes</span>
+    <h2 id="recipeName"></h2>
+    <p id="recipeDescription"></p>
 
-      <h3>Steps</h3>
-      <p id="currentStep"></p>
+    <h3 class="subhead">Ingredients</h3>
+    <ul id="ingredientsList"></ul>
 
-      <div style="margin-top:10px;">
-        <button id="prevStep">Previous</button>
-        <button id="nextStep">Next</button>
-      </div>
-    </section>
-
-    <div class="chat-box">
-      <h3>Ask the AI Chef</h3>
-      <input type="text" id="questionInput" placeholder="Ask about ingredients or cooking..." />
-      <button id="askBtn">Ask</button>
-      <div id="aiAnswer" class="ai-answer" style="display:none;"></div>
+    <h3 class="subhead">Method</h3>
+    <div class="step-tracker" id="stepTracker"></div>
+    <div class="step-box" id="currentStep"></div>
+    <div class="step-nav">
+      <button class="secondary" id="prevStep">← Back</button>
+      <button id="nextStep">Next step →</button>
     </div>
-  </main>
+  </section>
 
-  <script>
-    let recipes = [];
-    let currentRecipe = null;
-    let currentStep = 0;
+  <section class="chat-box">
+    <h2>Ask the AI Chef</h2>
+    <p class="section-sub">Not sure about a substitution or technique? Ask.</p>
+    <div class="chat-row">
+      <input type="text" id="questionInput" placeholder="e.g. What can I use instead of groundnuts?" />
+      <button id="askBtn">Ask</button>
+    </div>
+    <div id="aiAnswer" class="ai-answer" style="display:none;"></div>
+  </section>
+</main>
 
-    async function loadRecipes() {
-      const res = await fetch('/api/recipes');
-      recipes = await res.json();
-      const listDiv = document.getElementById('recipeList');
-      listDiv.innerHTML = '';
+<script>
+  let recipes = [];
+  let currentRecipe = null;
+  let currentStep = 0;
 
-      recipes.forEach(r => {
-        const btn = document.createElement('button');
-        btn.textContent = r;
-        btn.onclick = () => loadRecipe(r);
-        listDiv.appendChild(btn);
+  async function loadRecipes() {
+    const res = await fetch('/api/recipes');
+    recipes = await res.json();
+    const listDiv = document.getElementById('recipeList');
+    listDiv.innerHTML = '';
+
+    if (!recipes.length) {
+      listDiv.innerHTML = '<span class="loading-msg">No recipes found yet.</span>';
+      return;
+    }
+
+    recipes.forEach(r => {
+      const btn = document.createElement('button');
+      btn.className = 'recipe-card';
+      btn.textContent = r;
+      btn.onclick = () => loadRecipe(r);
+      listDiv.appendChild(btn);
+    });
+  }
+
+  async function loadRecipe(name) {
+    const res = await fetch(`/api/recipe/${encodeURIComponent(name)}`);
+    const data = await res.json();
+    currentRecipe = data;
+    currentStep = 0;
+
+    document.getElementById('recipes').style.display = 'none';
+    document.getElementById('recipeDetails').style.display = 'block';
+
+    document.getElementById('recipeName').textContent =
+      (data.name && data.name.en) ? data.name.en : name;
+    document.getElementById('recipeDescription').textContent = data.description || '';
+
+    const list = document.getElementById('ingredientsList');
+    list.innerHTML = '';
+    if (data.ingredients) {
+      const items = Array.isArray(data.ingredients)
+        ? data.ingredients
+        : Object.values(data.ingredients).flat();
+
+      items.forEach(ing => {
+        const li = document.createElement('li');
+        if (typeof ing === 'string') {
+          li.textContent = ing;
+        } else {
+          const qty = ing.quantity || '';
+          const item = ing.item || ing.name || '';
+          li.textContent = `${qty} ${item}`.trim();
+        }
+        list.appendChild(li);
       });
     }
 
-    async function loadRecipe(name) {
-      const res = await fetch(`/api/recipe/${encodeURIComponent(name)}`);
-      const data = await res.json();
-      currentRecipe = data;
-      currentStep = 0;
+    buildStepTracker();
+    showStep();
+  }
 
-      document.getElementById('recipes').style.display = 'none';
-      document.getElementById('recipeDetails').style.display = 'block';
+  function getSteps() {
+    if (!currentRecipe) return [];
+    if (currentRecipe.steps) return currentRecipe.steps;
+    if (currentRecipe.instructions) return currentRecipe.instructions;
+    return [];
+  }
 
-      document.getElementById('recipeName').textContent = data.name?.en || name;
-      document.getElementById('recipeDescription').textContent = data.description || '';
+  function stepText(step) {
+    return step.instruction || step.details || step.action || String(step);
+  }
 
-      const list = document.getElementById('ingredientsList');
-      list.innerHTML = '';
-      if (data.ingredients) {
-        Object.values(data.ingredients).flat().forEach(ing => {
-          const li = document.createElement('li');
-          li.textContent = `${ing.quantity || ''} ${ing.unit || ''} ${ing.name || ''}`;
-          list.appendChild(li);
-        });
-      }
+  function buildStepTracker() {
+    const steps = getSteps();
+    const tracker = document.getElementById('stepTracker');
+    tracker.innerHTML = '';
+    steps.forEach((_, i) => {
+      const b = document.createElement('span');
+      b.className = 'bead';
+      tracker.appendChild(b);
+    });
+  }
 
+  function updateTracker() {
+    const beads = document.querySelectorAll('#stepTracker .bead');
+    beads.forEach((b, i) => {
+      b.classList.remove('done', 'active');
+      if (i < currentStep) b.classList.add('done');
+      if (i === currentStep) b.classList.add('active');
+    });
+  }
+
+  function showStep() {
+    const steps = getSteps();
+    const stepEl = document.getElementById('currentStep');
+    const prevBtn = document.getElementById('prevStep');
+    const nextBtn = document.getElementById('nextStep');
+
+    if (steps.length === 0) {
+      stepEl.textContent = 'No steps found for this recipe.';
+      prevBtn.disabled = true;
+      nextBtn.disabled = true;
+      return;
+    }
+
+    stepEl.textContent = `Step ${currentStep + 1} of ${steps.length} — ${stepText(steps[currentStep])}`;
+    prevBtn.disabled = currentStep === 0;
+    nextBtn.disabled = currentStep === steps.length - 1;
+    updateTracker();
+  }
+
+  document.getElementById('nextStep').onclick = () => {
+    const steps = getSteps();
+    if (currentRecipe && currentStep < steps.length - 1) {
+      currentStep++;
       showStep();
     }
+  };
 
-    function showStep() {
-      if (!currentRecipe || !currentRecipe.steps) return;
-      const steps = currentRecipe.steps;
-      const stepEl = document.getElementById('currentStep');
-      if (steps.length === 0) {
-        stepEl.textContent = 'No steps found.';
-        return;
-      }
-      stepEl.textContent = `Step ${currentStep + 1}: ${steps[currentStep].instruction}`;
+  document.getElementById('prevStep').onclick = () => {
+    if (currentRecipe && currentStep > 0) {
+      currentStep--;
+      showStep();
     }
+  };
 
-    document.getElementById('nextStep').onclick = () => {
-      if (currentRecipe && currentStep < currentRecipe.steps.length - 1) {
-        currentStep++;
-        showStep();
-      }
-    };
+  document.getElementById('backLink').onclick = () => {
+    document.getElementById('recipeDetails').style.display = 'none';
+    document.getElementById('recipes').style.display = 'block';
+  };
 
-    document.getElementById('prevStep').onclick = () => {
-      if (currentRecipe && currentStep > 0) {
-        currentStep--;
-        showStep();
-      }
-    };
+  document.getElementById('askBtn').onclick = async () => {
+    const input = document.getElementById('questionInput');
+    const question = input.value.trim();
+    if (!question) return;
 
-    document.getElementById('askBtn').onclick = async () => {
-      const question = document.getElementById('questionInput').value.trim();
-      if (!question) return alert("Please enter a question");
+    const answerDiv = document.getElementById('aiAnswer');
+    answerDiv.style.display = 'block';
+    answerDiv.innerHTML = '<span class="who">Fumba AI</span>Thinking…';
 
+    try {
       const res = await fetch('/api/ask_ai', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({question})
       });
       const data = await res.json();
-      const answerDiv = document.getElementById('aiAnswer');
-      answerDiv.style.display = 'block';
-      answerDiv.innerHTML = data.answer ? `<strong>AI:</strong> ${data.answer}` : `<strong>Error:</strong> ${data.error}`;
-    };
+      answerDiv.innerHTML = data.answer
+        ? `<span class="who">Fumba AI</span>${data.answer}`
+        : `<span class="who">Error</span>${data.error}`;
+    } catch (e) {
+      answerDiv.innerHTML = `<span class="who">Error</span>Could not reach the AI chef. Try again.`;
+    }
+  };
 
-    window.onload = loadRecipes;
-  </script>
+  document.getElementById('questionInput').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') document.getElementById('askBtn').click();
+  });
+
+  window.onload = loadRecipes;
+</script>
+
 </body>
 </html>
